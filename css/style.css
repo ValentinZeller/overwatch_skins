@@ -1,0 +1,103 @@
+@import url("variable.css");
+
+@font-face {
+ font-family: "BigNoodleTitlingOblique";
+ src: url("./fonts/big_noodle_titling_oblique.ttf") format("truetype");
+}
+
+
+body {
+  font-family: BigNoodleTitlingOblique;
+  background: url('../images/background.png') no-repeat fixed 0% 0% / cover;
+  margin: 0;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.rowCategory {
+  background: none;
+  align-content: center;
+}
+
+.rowHeader {
+  width: calc(var(--width)/3);
+  height: var(--height);
+}
+
+.rowCount {
+  display: flex;
+  flex-direction: column;
+  width: var(--width);
+  height: var(--height);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.count {
+  flex: 0 1 60px;
+  margin: auto;
+  font-size: xxx-large;
+}
+
+.epicSkin {
+  color: var(--epic);
+}
+
+.legendarySkin {
+  color: var(--legendary);
+}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  width: var(--width);
+  height: var(--height);
+  flex-wrap: wrap;
+}
+
+.row .item {
+  flex: 0 1 auto;
+  width: var(--width);
+  height: var(--height);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.row .category {
+  margin: 1% 0;
+}
+
+.row .epic {
+  border-bottom: 3px solid var(--epic);
+}
+
+.row .half {
+  width: calc(var(--width)/2);
+  height: var(--height));
+}
+
+.row .quarter {
+  width: calc(var(--width)/2);
+  height: calc(var(--height)/2);
+}
+
+.row .eigth {
+  width: calc(var(--width)/4);
+  height: calc(var(--height)/2);
+}
+
+.row .sixteenth {
+  width: calc(var(--width)/4);
+  height: calc(var(--height)/4);
+}
