@@ -5,11 +5,11 @@
  src: url("./fonts/big_noodle_titling_oblique.ttf") format("truetype");
 }
 
-
 body {
   font-family: BigNoodleTitlingOblique;
   background: url('../images/background.png') no-repeat fixed 0% 0% / cover;
   margin: 0;
+  width: max-content;
 }
 
 .container {
