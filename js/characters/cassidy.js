@@ -65,7 +65,12 @@ let cassidy = {
       rarity: 0
     }
   ],
-  challenge: [],
+  challenge: [
+    {
+      name: "sandstorm",
+      rarity: 0
+    }
+  ],
   blizzard: [],
   owl: []
 };
