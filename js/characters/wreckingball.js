@@ -11,7 +11,12 @@ let wreckingball = {
       rarity: 1
     }
   ],
-  christmas: [],
+  christmas: [
+    {
+      name: "snowman",
+      rarity: 1
+    }
+  ],
   lunar: [
     {
       name: "papercutting",

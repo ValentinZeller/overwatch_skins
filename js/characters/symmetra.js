@@ -19,6 +19,10 @@ let symmetra = {
     {
       name: "figureskater",
       rarity: 1
+    },
+    {
+      name: "mistletoe",
+      rarity: 0
     }
   ],
   lunar: [

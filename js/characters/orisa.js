@@ -15,7 +15,12 @@ let orisa = {
       rarity: 1
     }
   ],
-  christmas: [],
+  christmas: [
+    {
+      name: "reindeer",
+      rarity: 1
+    }
+  ],
   lunar: [
     {
       name: "sanye",

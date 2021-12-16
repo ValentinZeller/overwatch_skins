@@ -19,7 +19,12 @@ let genji = {
       rarity: 0
     }
   ],
-  christmas: [],
+  christmas: [
+    {
+      name: "icewraith",
+      rarity: 1
+    }
+  ],
   lunar: [
     {
       name: "baihu",

@@ -11,7 +11,12 @@ let baptiste = {
       rarity: 0
     }
   ],
-  christmas: [],
+  christmas: [
+    {
+      name: "snowboarder",
+      rarity: 1
+    }
+  ],
   lunar: [
     {
       name: "terracotamedic",

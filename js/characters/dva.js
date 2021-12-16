@@ -15,7 +15,12 @@ let dva = {
       rarity: 1
     }
   ],
-  christmas: [],
+  christmas: [
+    {
+      name: "sleighing",
+      rarity: 1
+    }
+  ],
   lunar: [
     {
       name: "palanquin",

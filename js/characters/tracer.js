@@ -23,6 +23,10 @@ let tracer = {
     {
       name: "jingle",
       rarity: 1
+    },
+    {
+      name: "wooltide",
+      rarity: 0
     }
   ],
   lunar: [

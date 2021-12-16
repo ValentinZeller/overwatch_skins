@@ -19,7 +19,12 @@ let brigitte = {
       rarity: 1
     }
   ],
-  christmas: [],
+  christmas: [
+    {
+      name: "peppermintbark",
+      rarity: 0
+    }
+  ],
   lunar: [
     {
       name: "general",
