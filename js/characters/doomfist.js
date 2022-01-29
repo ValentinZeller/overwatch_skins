@@ -8,7 +8,8 @@ let doomfist = {
   halloween: [
     {
       name: "swampmonster",
-      rarity: 1
+      rarity: 1,
+      display: "swamp monster"
     }
   ],
   christmas: [
@@ -36,7 +37,8 @@ let doomfist = {
     },
     {
       name: "carbonfiber",
-      rarity: 0
+      rarity: 0,
+      display: "carbon fiber"
     },
     {
       name: "gladiator",

@@ -32,7 +32,8 @@ let zenyatta = {
     },
     {
       name: "zhugeliang",
-      rarity: 1
+      rarity: 1,
+      display: "zhuge liang"
     }
   ],
   archives: [
@@ -58,7 +59,8 @@ let zenyatta = {
   owl: [
     {
       name: "sennakji",
-      rarity: 1
+      rarity: 1,
+      display: "zen-nakji"
     }
   ]
 };

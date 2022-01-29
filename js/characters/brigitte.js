@@ -2,7 +2,8 @@ let brigitte = {
   summer: [
     {
       name: "trekonor",
-      rarity: 0
+      rarity: 0,
+      display: "tre konor"
     },
     {
       name: "feskarn",
@@ -16,13 +17,15 @@ let brigitte = {
     },
     {
       name: "vampirehunter",
-      rarity: 1
+      rarity: 1,
+      display: "vampire hunter"
     }
   ],
   christmas: [
     {
       name: "peppermintbark",
-      rarity: 0
+      rarity: 0,
+      display: "peppermint bark"
     }
   ],
   lunar: [
@@ -43,7 +46,8 @@ let brigitte = {
     },
     {
       name: "riotpolice",
-      rarity: 1
+      rarity: 1,
+      display: "riot police"
     }
   ],
   permanent: [],

@@ -8,7 +8,8 @@ let junkrat = {
   halloween: [
     {
       name: "drjunkeinstein",
-      rarity: 1
+      rarity: 1,
+      display: "dr. junkeinstein"
     },
     {
       name: "inferno",
@@ -42,7 +43,8 @@ let junkrat = {
     },
     {
       name: "kingjamison",
-      rarity: 1
+      rarity: 1,
+      display: "king jamison"
     }
   ],
   anniversary: [

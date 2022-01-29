@@ -12,7 +12,8 @@ let dva = {
   halloween: [
     {
       name: "shinryeong",
-      rarity: 1
+      rarity: 1,
+      display: "shin-ryeong"
     }
   ],
   christmas: [
@@ -49,20 +50,23 @@ let dva = {
     },
     {
       name: "blackcat",
-      rarity: 1
+      rarity: 1,
+      display: "black cat"
     }
   ],
   challenge: [
     {
       name: "nanocola",
-      rarity: 0
+      rarity: 0,
+      display: "nano"
     }
   ],
   blizzard: [],
   owl: [
     {
       name: "allstar",
-      rarity: 1
+      rarity: 1,
+      display: "2020 pacific all-stars"
     }
   ]
 };

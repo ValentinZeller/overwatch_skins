@@ -6,7 +6,8 @@ let mercy = {
     },
     {
       name: "wingedvictory",
-      rarity: 1
+      rarity: 1,
+      display: "winged victory"
     }
   ],
   halloween: [
@@ -18,11 +19,13 @@ let mercy = {
   christmas: [
     {
       name: "sugarplumfairy",
-      rarity: 1
+      rarity: 1,
+      display: "sugar plum fairy"
     },
     {
       name: "snowangel",
-      rarity: 0
+      rarity: 0,
+      display: "snow angel"
     }
   ],
   lunar: [
@@ -33,12 +36,17 @@ let mercy = {
     {
       name: "zhuque",
       rarity: 1
+    },
+    {
+      name: "seolbim",
+      rarity: 1
     }
   ],
   archives: [
     {
       name: "combatmedic",
-      rarity: 1
+      rarity: 1,
+      display: "combat medic"
     },
     {
       name: "camouflage",
@@ -55,19 +63,22 @@ let mercy = {
   challenge: [
     {
       name: "dr",
-      rarity: 1
+      rarity: 1,
+      display: "dr. ziegler"
     }
   ],
   blizzard: [
     {
       name: "bcrf",
-      rarity: 1
+      rarity: 1,
+      display: "pink"
     }
   ],
   owl: [
     {
       name: "allstar",
-      rarity: 1
+      rarity: 1,
+      display: "2019 atlantic all-stars"
     }
   ]
 };

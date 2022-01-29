@@ -2,7 +2,8 @@ let orisa = {
   summer: [
     {
       name: "icecream",
-      rarity: 0
+      rarity: 0,
+      display: "ice cream"
     },
     {
       name: "referee",
@@ -28,19 +29,22 @@ let orisa = {
     },
     {
       name: "bulldemon",
-      rarity: 1
+      rarity: 1,
+      display: "bull demon"
     }
   ],
   archives: [
     {
       name: "nullsector",
-      rarity: 1
+      rarity: 1,
+      display: "null sector"
     }
   ],
   anniversary: [
     {
       name: "forestspirit",
-      rarity: 1
+      rarity: 1,
+      display: "forest spirit"
     }
   ],
   permanent: [

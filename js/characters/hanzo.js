@@ -16,7 +16,8 @@ let hanzo = {
     },
     {
       name: "daitengu",
-      rarity: 1
+      rarity: 1,
+      display: "dai-tengu"
     }
   ],
   christmas: [
@@ -28,7 +29,8 @@ let hanzo = {
   lunar: [
     {
       name: "huangzhong",
-      rarity: 1
+      rarity: 1,
+      display: "huang zhong"
     }
   ],
   archives: [
@@ -52,7 +54,8 @@ let hanzo = {
   challenge: [
     {
       name: "kanezaka",
-      rarity: 0
+      rarity: 0,
+      display: "kyōgisha"
     }
   ],
   blizzard: [],

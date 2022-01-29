@@ -42,7 +42,8 @@ let reinhardt = {
   archives: [
     {
       name: "lieutenantwilhelm",
-      rarity: 0
+      rarity: 0,
+      display: "lieutenant wilhelm"
     }
   ],
   anniversary: [],
@@ -70,7 +71,8 @@ let reinhardt = {
   owl: [
     {
       name: "allstar",
-      rarity: 1
+      rarity: 1,
+      display: "2020 atlantic all-stars"
     }
   ]
 };

@@ -2,7 +2,8 @@ let bastion = {
   summer: [
     {
       name: "sandcastle",
-      rarity: 0
+      rarity: 0,
+      display: "sand castle"
     }
   ],
   halloween: [
@@ -22,7 +23,8 @@ let bastion = {
     },
     {
       name: "giftwrap",
-      rarity: 0
+      rarity: 0,
+      display: "gift wrap"
     }
   ],
   lunar: [
@@ -38,7 +40,8 @@ let bastion = {
   archives: [
     {
       name: "nullsector",
-      rarity: 0
+      rarity: 0,
+      display: "null sector"
     },
     {
       name: "gwishin",
@@ -48,7 +51,8 @@ let bastion = {
   anniversary: [
     {
       name: "dunebuggy",
-      rarity: 1
+      rarity: 1,
+      display: "dune buggy"
     },
     {
       name: "stealth",
@@ -65,17 +69,20 @@ let bastion = {
   blizzard: [
     {
       name: "origins",
-      rarity: 1
+      rarity: 1,
+      display: "overgrown"
     },
     {
       name: "blizzcon",
-      rarity: 0
+      rarity: 0,
+      display: "blizzcon 2016"
     }
   ],
   owl: [
     {
       name: "pirate",
-      rarity: 1
+      rarity: 1,
+      display: "pirate ship"
     }
   ]
 };

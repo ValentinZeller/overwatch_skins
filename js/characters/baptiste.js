@@ -20,7 +20,8 @@ let baptiste = {
   lunar: [
     {
       name: "terracotamedic",
-      rarity: 0
+      rarity: 0,
+      display: "terracota medic"
     }
   ],
   archives: [
@@ -39,7 +40,8 @@ let baptiste = {
   challenge: [
     {
       name: "medic",
-      rarity: 0
+      rarity: 0,
+      display: "combat medic"
     }
   ],
   blizzard: [],

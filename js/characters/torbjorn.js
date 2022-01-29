@@ -2,11 +2,13 @@ let torbjorn = {
   summer: [
     {
       name: "trekronor",
-      rarity: 0
+      rarity: 0,
+      display: "tre konor"
     },
     {
       name: "surfnsplash",
-      rarity: 1
+      rarity: 1,
+      display: "surf 'n' spash"
     }
   ],
   halloween: [
@@ -28,7 +30,8 @@ let torbjorn = {
   lunar: [
     {
       name: "zhangfei",
-      rarity: 1
+      rarity: 1,
+      display: "zhang fei"
     }
   ],
   archives: [
@@ -38,7 +41,8 @@ let torbjorn = {
     },
     {
       name: "chiefengineerlindholm",
-      rarity: 1
+      rarity: 1,
+      display: "chief engineer lindholm"
     },
     {
       name: "rustclad",
@@ -48,7 +52,8 @@ let torbjorn = {
   anniversary: [
     {
       name: "cybjorn",
-      rarity: 1
+      rarity: 1,
+      display: "cybjörn"
     }
   ],
   permanent: [

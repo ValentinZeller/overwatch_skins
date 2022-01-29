@@ -22,7 +22,8 @@ let ana = {
   christmas: [
     {
       name: "snowowl",
-      rarity: 1
+      rarity: 1,
+      display: "snow owl"
     },
     {
       name: "gingerbread",

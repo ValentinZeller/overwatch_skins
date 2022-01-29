@@ -26,23 +26,27 @@ let reaper = {
     },
     {
       name: "ratking",
-      rarity: 1
+      rarity: 1,
+      display: "rat king"
     }
   ],
   lunar: [
     {
       name: "lubu",
-      rarity: 1
+      rarity: 1,
+      display: "lü bu"
     },
     {
       name: "imperialguard",
-      rarity: 0
+      rarity: 0,
+      display: "imperial guard"
     }
   ],
   archives: [
     {
       name: "soldier24",
-      rarity: 1
+      rarity: 1,
+      display: "soldier: 24"
     }
   ],
   anniversary: [
@@ -61,7 +65,8 @@ let reaper = {
   blizzard: [
     {
       name: "origins",
-      rarity: 1
+      rarity: 1,
+      display: "blackwatch reyes"
     }
   ],
   owl: []

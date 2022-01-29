@@ -12,7 +12,8 @@ let genji = {
   halloween: [
     {
       name: "karasutengu",
-      rarity: 1
+      rarity: 1,
+      display: "karasu-tengu"
     },
     {
       name: "skeleton",
@@ -22,7 +23,8 @@ let genji = {
   christmas: [
     {
       name: "icewraith",
-      rarity: 1
+      rarity: 1,
+      display: "ice wraith"
     }
   ],
   lunar: [
@@ -63,7 +65,8 @@ let genji = {
   owl: [
     {
       name: "allstar",
-      rarity: 1
+      rarity: 1,
+      display: "2018 pacific all-stars"
     }
   ]
 };

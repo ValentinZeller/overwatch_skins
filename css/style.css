@@ -36,7 +36,6 @@ body {
 
 .rowCount {
   display: flex;
-  flex-direction: column;
   width: var(--width);
   height: var(--height);
   flex-wrap: wrap;
@@ -46,7 +45,7 @@ body {
 .count {
   flex: 0 1 60px;
   margin: auto;
-  font-size: xxx-large;
+  font-size: x-large;
 }
 
 .epicSkin {
@@ -100,4 +99,15 @@ body {
 .row .sixteenth {
   width: calc(var(--width)/4);
   height: calc(var(--height)/4);
+}
+
+[data-tooltip]:before {
+  content : attr(data-tooltip);
+  opacity : 0;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+[data-tooltip]:hover:before {
+  opacity : 1;
 }

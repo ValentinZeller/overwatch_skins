@@ -16,7 +16,8 @@ let pharah = {
     },
     {
       name: "enchantedarmor",
-      rarity: 1
+      rarity: 1,
+      display: "enchanted armor"
     }
   ],
   christmas: [
@@ -44,7 +45,8 @@ let pharah = {
     },
     {
       name: "carbonfiber",
-      rarity: 0
+      rarity: 0,
+      display: "carbon fiber"
     },
     {
       name: "orbital",
@@ -61,7 +63,8 @@ let pharah = {
   blizzard: [
     {
       name: "origins",
-      rarity: 1
+      rarity: 1,
+      display: "security chief"
     }
   ],
   owl: []

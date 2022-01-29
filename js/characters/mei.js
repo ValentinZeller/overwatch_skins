@@ -22,7 +22,8 @@ let mei = {
   christmas: [
     {
       name: "meirry",
-      rarity: 1
+      rarity: 1,
+      display: "mei-rry"
     },
     {
       name: "penguin",
@@ -36,7 +37,8 @@ let mei = {
     },
     {
       name: "change",
-      rarity: 1
+      rarity: 1,
+      display: "chang'e"
     }
   ],
   archives: [
@@ -62,7 +64,8 @@ let mei = {
   permanent: [
     {
       name: "ecopoint",
-      rarity: 1
+      rarity: 1,
+      display: "ecopoint: antarctica"
     }
   ],
   challenge: [],
@@ -70,7 +73,8 @@ let mei = {
   owl: [
     {
       name: "mm",
-      rarity: 1
+      rarity: 1,
+      display: "mm-mei"
     }
   ]
 };

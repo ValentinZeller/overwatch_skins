@@ -6,7 +6,8 @@ let widowmaker = {
     },
     {
       name: "coteazur",
-      rarity: 1
+      rarity: 1,
+      display: "côte d'azur"
     }
   ],
   halloween: [
@@ -28,11 +29,13 @@ let widowmaker = {
   lunar: [
     {
       name: "blacklily",
-      rarity: 1
+      rarity: 1,
+      display: "black lily"
     },
     {
       name: "paleserpent",
-      rarity: 1
+      rarity: 1,
+      display: "pale serpent"
     }
   ],
   archives: [
@@ -52,7 +55,8 @@ let widowmaker = {
     },
     {
       name: "fleurlys",
-      rarity: 0
+      rarity: 0,
+      display: "fleur de lis"
     }
   ],
   permanent: [
@@ -65,7 +69,8 @@ let widowmaker = {
   blizzard: [
     {
       name: "preorder",
-      rarity: 1
+      rarity: 1,
+      display: "noire"
     },
     {
       name: "kerrigan",
@@ -75,7 +80,8 @@ let widowmaker = {
   owl: [
     {
       name: "angemort",
-      rarity: 1
+      rarity: 1,
+      display: "ange de la mort"
     }
   ]
 };

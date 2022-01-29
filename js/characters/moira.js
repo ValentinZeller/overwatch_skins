@@ -18,13 +18,15 @@ let moira = {
     },
     {
       name: "iceempress",
-      rarity: 1
+      rarity: 1,
+      display: "ice empress"
     }
   ],
   lunar: [
     {
       name: "maskdancer",
-      rarity: 1
+      rarity: 1,
+      display: "mask dancer"
     }
   ],
   archives: [

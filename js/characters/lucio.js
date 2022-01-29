@@ -6,7 +6,8 @@ let lucio = {
     },
     {
       name: "selecao",
-      rarity: 1
+      rarity: 1,
+      display: "seleção"
     }
   ],
   halloween: [
@@ -26,13 +27,15 @@ let lucio = {
     },
     {
       name: "snowfox",
-      rarity: 1
+      rarity: 1,
+      display: "snow fox"
     }
   ],
   lunar: [
     {
       name: "samulnori",
-      rarity: 1
+      rarity: 1,
+      display: "samul nori"
     }
   ],
   archives: [
@@ -66,7 +69,8 @@ let lucio = {
   owl: [
     {
       name: "allstar",
-      rarity: 1
+      rarity: 1,
+      display: "2019 pacific all-stars"
     }
   ]
 };

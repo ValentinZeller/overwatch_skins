@@ -32,7 +32,10 @@ for (let hero in heroes) {
         for (var i = 0; i < heroes[hero][category].length; i++) {
             let skin = heroes[hero][category][i];
             let item = generateDiv('item',skin.name);
-
+            item.setAttribute('data-tooltip',skin.name);
+            if (skin.display) {
+              item.setAttribute('data-tooltip',skin.display);
+            }
             /* Skins per cell : split the width/height of each */
             if (heroes[hero][category].length == 1) { // 1
               item.setAttribute('class','item');

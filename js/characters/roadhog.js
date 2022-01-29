@@ -8,7 +8,8 @@ let roadhog = {
   halloween: [
     {
       name: "junkeinsteinmonster",
-      rarity: 1
+      rarity: 1,
+      display: "junkeinstein's monster"
     },
     {
       name: "clown",
@@ -22,7 +23,8 @@ let roadhog = {
     },
     {
       name: "icefisherman",
-      rarity: 1
+      rarity: 1,
+      display: "ice fisherman"
     },
     {
       name: "frosty",

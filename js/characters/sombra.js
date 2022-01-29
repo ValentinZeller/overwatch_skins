@@ -32,7 +32,8 @@ let sombra = {
   lunar: [
     {
       name: "facechanger",
-      rarity: 1
+      rarity: 1,
+      display: "face changer"
     }
   ],
   archives: [
@@ -48,7 +49,8 @@ let sombra = {
     },
     {
       name: "blackcat",
-      rarity: 1
+      rarity: 1,
+      display: "black cat"
     }
   ],
   permanent: [],
@@ -56,7 +58,8 @@ let sombra = {
   blizzard: [
     {
       name: "demonhunter",
-      rarity: 1
+      rarity: 1,
+      display: "demon hunter"
     }
   ],
   owl: []

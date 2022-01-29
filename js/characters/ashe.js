@@ -20,7 +20,12 @@ let ashe = {
   lunar: [
     {
       name: "tigerhuntress",
-      rarity: 1
+      rarity: 1,
+      display: "tiger huntress"
+    },
+    {
+      name: "prosperity",
+      rarity: 0
     }
   ],
   archives: [
@@ -32,14 +37,16 @@ let ashe = {
   anniversary: [
     {
       name: "littlered",
-      rarity: 1
+      rarity: 1,
+      display: "little red"
     }
   ],
   permanent: [],
   challenge: [
     {
       name: "mardigras",
-      rarity: 0
+      rarity: 0,
+      display: "mardi gras"
     },
     {
       name: "deadlock",

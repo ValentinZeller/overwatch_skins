@@ -8,7 +8,8 @@ let sigma = {
   halloween: [
     {
       name: "flyingdutchman",
-      rarity: 1
+      rarity: 1,
+      display: "flying dutchman"
     }
   ],
   christmas: [
@@ -22,7 +23,8 @@ let sigma = {
   anniversary: [
     {
       name: "carbonfiber",
-      rarity: 0
+      rarity: 0,
+      display: "carbon fiber"
     }
   ],
   permanent: [],

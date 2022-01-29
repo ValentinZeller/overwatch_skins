@@ -12,7 +12,8 @@ let zarya = {
   halloween: [
     {
       name: "totally80",
-      rarity: 1
+      rarity: 1,
+      display: "totally 80's"
     },
     {
       name: "einherjar",
@@ -58,7 +59,8 @@ let zarya = {
   permanent: [
     {
       name: "barbaress",
-      rarity: 1
+      rarity: 1,
+      display: "barbarian"
     }
   ],
   challenge: [],

@@ -12,7 +12,8 @@ let cassidy = {
   halloween: [
     {
       name: "vanhelsing",
-      rarity: 1
+      rarity: 1,
+      display: "van helsing"
     },
     {
       name: "undead",
@@ -26,7 +27,8 @@ let cassidy = {
     },
     {
       name: "mountainman",
-      rarity: 1
+      rarity: 1,
+      display: "mountain man"
     }
   ],
   lunar: [
@@ -56,7 +58,8 @@ let cassidy = {
     },
     {
       name: "maskedman",
-      rarity: 0
+      rarity: 0,
+      display: "masked man"
     }
   ],
   permanent: [

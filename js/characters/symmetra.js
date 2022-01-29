@@ -18,7 +18,8 @@ let symmetra = {
   christmas: [
     {
       name: "figureskater",
-      rarity: 1
+      rarity: 1,
+      display: "figure skater"
     },
     {
       name: "mistletoe",

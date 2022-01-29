@@ -2,7 +2,8 @@ let echo = {
   summer: [
     {
       name: "surfsup",
-      rarity: 1
+      rarity: 1,
+      display: "surf's up"
     }
   ],
   halloween: [
@@ -12,7 +13,8 @@ let echo = {
     },
     {
       name: "vampirebat",
-      rarity: 1
+      rarity: 1,
+      display: "vampire bat"
     }
   ],
   christmas: [],
@@ -26,7 +28,8 @@ let echo = {
   anniversary: [
     {
       name: "birdofparadise",
-      rarity: 0
+      rarity: 0,
+      display: "bird of paradise"
     }
   ],
   permanent: [],
@@ -35,7 +38,8 @@ let echo = {
   owl: [
     {
       name: "goodbad",
-      rarity: 1
+      rarity: 1,
+      display: "good and evil"
     }
   ]
 };
