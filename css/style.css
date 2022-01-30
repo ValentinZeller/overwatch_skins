@@ -43,7 +43,6 @@ body {
 }
 
 .count {
-  flex: 0 1 60px;
   margin: auto;
   font-size: x-large;
 }
