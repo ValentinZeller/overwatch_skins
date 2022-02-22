@@ -61,7 +61,12 @@ let reaper = {
       rarity: 0
     }
   ],
-  challenge: [],
+  challenge: [
+    {
+      name: "dusk",
+      rarity: 1
+    }
+  ],
   blizzard: [
     {
       name: "origins",
