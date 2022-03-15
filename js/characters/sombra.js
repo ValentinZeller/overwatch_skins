@@ -62,5 +62,10 @@ let sombra = {
       display: "demon hunter"
     }
   ],
-  owl: []
+  owl: [
+    {
+      name: "zhulong",
+      rarity: 1
+    }
+  ]
 };
