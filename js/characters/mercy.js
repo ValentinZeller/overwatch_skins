@@ -57,6 +57,10 @@ let mercy = {
     {
       name: "dragoon",
       rarity: 1
+    },
+    {
+      name: "mage",
+      rarity: 1
     }
   ],
   permanent: [],

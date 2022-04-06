@@ -41,6 +41,11 @@ let dva = {
     {
       name: "academy",
       rarity: 1
+    },
+    {
+      name: "whitecat",
+      rarity: 1,
+      display: "white cat"
     }
   ],
   permanent: [

@@ -46,7 +46,12 @@ let reinhardt = {
       display: "lieutenant wilhelm"
     }
   ],
-  anniversary: [],
+  anniversary: [
+    {
+      name: "steelhardt",
+      rarity: 1
+    }
+  ],
   permanent: [
     {
       name: "balderich",

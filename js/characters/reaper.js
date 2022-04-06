@@ -53,6 +53,10 @@ let reaper = {
     {
       name: "masquerade",
       rarity: 1
+    },
+    {
+      name: "evermore",
+      rarity: 1
     }
   ],
   permanent: [

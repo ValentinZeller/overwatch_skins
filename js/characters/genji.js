@@ -47,6 +47,10 @@ let genji = {
     {
       name: "sentai",
       rarity: 1
+    },
+    {
+      name: "demon",
+      rarity: 1
     }
   ],
   permanent: [

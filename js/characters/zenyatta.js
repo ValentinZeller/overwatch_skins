@@ -46,6 +46,10 @@ let zenyatta = {
     {
       name: "huitzilopochtli",
       rarity: 1
+    },
+    {
+      name: "zealot",
+      rarity: 1
     }
   ],
   permanent: [
