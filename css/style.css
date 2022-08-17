@@ -82,7 +82,7 @@ body {
 
 .row .half {
   width: calc(var(--width)/2);
-  height: var(--height));
+  height: var(--height);
 }
 
 .row .quarter {
@@ -91,7 +91,7 @@ body {
 }
 
 .row .eigth {
-  width: calc(var(--width)/4);
+  width: calc(var(--width)/4.01);
   height: calc(var(--height)/2);
 }
 

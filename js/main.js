@@ -5,9 +5,9 @@ let totalLegendary = 0;
 let heroes = 0;
 
 async function fetchSkins() {
-  let test = await fetch("https://api.jsonbin.io/b/6269619738be296761f8fbb8/6");
+  let test = await fetch("https://api.jsonbin.io/v3/b/6269619738be296761f8fbb8/6");
   let json = await test.json();
-  heroes = json;
+  heroes = json.record;
   generateCategoryRow();
   generateContent();
 }
