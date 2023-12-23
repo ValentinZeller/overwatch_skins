@@ -1,111 +1,174 @@
 let container = document.getElementById('container');
 
-let totalEpic = 0;
-let totalLegendary = 0;
-let heroes = 0;
-
-async function fetchSkins() {
-  let test = await fetch("https://api.jsonbin.io/v3/b/6269619738be296761f8fbb8/6");
-  let json = await test.json();
-  heroes = json.record;
-  generateCategoryRow();
-  generateContent();
-}
-
-fetchSkins();
-
-function generateContent() {
-  for (let hero in heroes) {
-    let row = generateDiv('row',hero);
-    container.appendChild(row);
-
-    /* First column : hero picture */
-    let rowHeader = generateDiv('rowHeader');
-    row.appendChild(rowHeader);
-    rowHeader.style.background = "url('./images/" + hero + "/character.png') no-repeat scroll 50% 0% / cover";
-
-    let skinLegendaryCount = 0;
-    let skinEpicCount = 0;
-
-    if(hero === "total") {
-      /* Last row : count */
-      for(category in heroes.total) {
-        row.appendChild(generateRowCount(heroes.total[category].epic,heroes.total[category].legendary));
-        skinEpicCount += heroes.total[category].epic;
-        skinLegendaryCount += heroes.total[category].legendary;
-      }
-    } else {
-        for(let category in heroes[hero]) {
-          let cell = generateDiv('cell',category);
-          row.appendChild(cell);
-
-          for (var i = 0; i < heroes[hero][category].length; i++) {
-              let skin = heroes[hero][category][i];
-              let item = generateDiv('item',skin.name);
-              item.setAttribute('data-tooltip',skin.name);
-              if (skin.display) {
-                item.setAttribute('data-tooltip',skin.display);
-              }
-              /* Skins per cell : split the width/height of each */
-              if (heroes[hero][category].length == 1) { // 1
-                item.setAttribute('class','item');
-              } else if (heroes[hero][category].length <= 2) { // 2
-                item.setAttribute('class','item half');
-              } else if (heroes[hero][category].length <= 4) { // 3-4
-                item.setAttribute('class','item quarter');
-              } else if (heroes[hero][category].length <= 8) { // 5-8
-                item.setAttribute('class','item eigth');
-              } else if (heroes[hero][category].length <= 16) { // 9-16
-                item.setAttribute('class','item sixteenth');
-              }
-
-              /* Add epic border and count epic/legendary skins */
-              if (skin.rarity === 0) {
-                item.classList.add('epic');
-                skinEpicCount++;
-                heroes.total[category].epic++;
-              } else {
-                skinLegendaryCount++;
-                heroes.total[category].legendary++;
-              }
-              cell.appendChild(item);
-              item.style.background = "url('./images/" + hero + "/" + skin.name + ".png') no-repeat scroll 50% 0% / cover";
-          }
-        }
-    }
-    row.appendChild(generateRowCount(skinEpicCount,skinLegendaryCount));
+/* search bar modifies content */
+const queryString = window.location.search;
+if (queryString) {
+  const urlParams = new URLSearchParams(queryString);
+  if (urlParams.has('heroes')) {
+    heroes = urlParams.getAll('heroes')
+  }
+  if (urlParams.has('categories')) {
+    categories = urlParams.getAll('categories')
   }
 }
 
-function generateCategoryRow() {
-  let row = generateDiv('row rowCategory','category');
-  let rowHeader = generateDiv('rowHeader');
+createContent()
+
+/* Generate content */
+function createContent() {
+  createCategoryRow()
+  for (let i = 0; i < heroes.length; i++) {
+    if (heroes[i] == 'total') {
+      container.appendChild(createTotalRow())
+    } else {
+      container.appendChild(createHeroRow(heroes[i]))
+    }
+  }
+}
+
+/* Generate hero row */
+function createHeroRow(hero) {
+  let row = createDiv('row', hero)
+  row.appendChild(createHeroHeader(hero))
+
+  for (let i = 0; i < categories.length; i++) {
+    if (categories[i] == 'total') {
+      let skinsFlat = skins[heroesID.indexOf(hero)].flat(1)
+
+      let epic = skinsFlat.filter((skin) => skin.rarity == 0).length
+      let legendary = skinsFlat.filter((skin) => skin.rarity == 1).length
+      let total = [epic, legendary]
+      row.appendChild(createTotalCell(total))
+    } else {
+      row.appendChild(createHeroCell(hero, categories[i]))
+    }
+  }
+
+  return row
+}
+
+/* Generate hero header */
+function createHeroHeader(hero) {
+  let rowHeader = createDiv('rowHeader');
+  rowHeader.style.background = "url('./images/" + hero + "/character.png') no-repeat scroll 50% 0% / cover";
+  rowHeader.setAttribute('data-tooltip', hero)
+  return rowHeader
+}
+
+/* Generate hero cell */
+function createHeroCell(hero, category) {
+  let cell = createDiv('cell', category)
+
+  let heroIndex = heroesID.indexOf(hero)
+  let categoryIndex = categoriesID.indexOf(category)
+  let skinsCell = ""
+
+  if (heroIndex > -1 && categoryIndex > -1) {
+    skinsCell = skins[heroIndex][categoryIndex]
+  }
+
+  if (skinsCell) {
+    for (let i = 0; i < skinsCell.length; i++) {
+      cell.appendChild(createHeroSkin(skinsCell[i], skinsCell.length, hero))
+    }
+  }
+
+  return cell
+}
+
+/* Generate hero skin */
+function createHeroSkin(skin, length, hero) {
+  let item = createDiv('item', skin.name)
+  item.setAttribute('data-tooltip', skin.name);
+  if (skin.display) {
+    item.setAttribute('data-tooltip', skin.display);
+  }
+  item.setAttribute('class', splitSkin(length))
+  item.style.background = "url('./images/" + hero + "/" + skin.name + ".png') no-repeat scroll 50% 0% / cover";
+  if (skin.rarity === 0) {
+    item.classList.add('epic');
+  }
+  return item
+}
+
+/* Generate category row */
+function createCategoryRow() {
+  let row = createDiv('row rowCategory', 'category');
+  let rowHeader = createDiv('rowHeader');
   row.appendChild(rowHeader);
 
   container.appendChild(row);
-  for (let category in heroes.total) {
-    let item = generateDiv('item category',category);
+  for (let category of categories) {
+    let item = createDiv('item category', category);
     row.appendChild(item);
     item.style.background = "url('./images/categories/" + category + ".png') no-repeat scroll 50% 0% / contain";
+    item.setAttribute('data-tooltip', category)
   }
-  let item = generateDiv('item category','total');
-  row.appendChild(item);
-  item.style.background = "url('./images/categories/total.png') no-repeat scroll 50% 0% / contain";
+}
+
+/* Generate total row */
+function createTotalRow() {
+  let row = createDiv('row', 'total')
+  row.appendChild(createHeroHeader('total'))
+
+  for (let i = 0; i < categories.length; i++) {
+    let epic = 0
+    let legendary = 0
+    for (let j = 0; j < heroes.filter((hero) => hero != 'total').length; j++) {
+      if (skins[j] && skins[j][i]) {
+        let skinsFlat = skins[j][i].flat(1)
+        epic += skinsFlat.filter((skin) => skin.rarity == 0).length
+        legendary += skinsFlat.filter((skin) => skin.rarity == 1).length
+      }
+    }
+
+    if (i == categories.length - 1) {
+      let skinsFlat = skins.flat(2)
+      epic = skinsFlat.filter((skin) => skin.rarity == 0).length
+      legendary = skinsFlat.filter((skin) => skin.rarity == 1).length
+    }
+    let total = [epic, legendary]
+    row.appendChild(createTotalCell(total))
+  }
+
+  return row
+}
+
+/* Generate total cell */
+function createTotalCell(total) {
+  let totalCell = createDiv('rowCount')
+  let totalCount = total[0] + total[1]
+  totalCell.innerHTML = "<p class='count epicSkin'>" + total[0] + "</p><p class='count legendarySkin'>" + total[1] + "</p><p class='count allSkin'>" + totalCount
+
+  return totalCell
 }
 
 /* Generate a div with class and id */
-function generateDiv(classes,id) {
+function createDiv(classes, id) {
   let div = document.createElement('div');
-  div.setAttribute('class',classes);
+  div.setAttribute('class', classes);
   if (id) {
-    div.setAttribute('id',id);
+    div.setAttribute('id', id);
   }
   return div;
 }
 
-/* Generate the row count */
-function generateRowCount(epicCount, legendaryCount) {
-  let rowCount = generateDiv('rowCount');
-  rowCount.innerHTML = "<p class='count epicSkin'>" + epicCount + "</p><p class='count legendarySkin'>" + legendaryCount + "</p><p class='count allSkin'>" + (epicCount + legendaryCount);
-  return rowCount;
+/* Split skin width/height */
+function splitSkin(length) {
+  let splitClass = "item"
+  switch (length) {
+    case 2:
+      splitClass += " half"
+      break
+    case 3: case 4:
+      splitClass += " quarter"
+      break
+    case 5: case 6: case 7: case 8:
+      splitClass += " eigth"
+      break
+    case 9: case 10: case 11: case 12: case 13: case 14: case 15: case 16:
+      splitClass += " sixteenth"
+      break
+  }
+  return splitClass
 }
