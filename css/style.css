@@ -121,6 +121,10 @@ body {
   height: calc(var(--height)/4);
 }
 
+[data-tooltip]:hover {
+  cursor: pointer;
+}
+
 [data-tooltip]:before {
   content: attr(data-tooltip);
   opacity: 0;

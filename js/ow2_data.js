@@ -1,3 +1,4 @@
+// Heroes input array, changeable
 let heroes = [
   'ana',
   'ashe',
@@ -41,6 +42,7 @@ let heroes = [
   'total'
 ]
 
+// Heroes reference array, not changeable
 let heroesID = [
   'ana',
   'ashe',
@@ -84,6 +86,7 @@ let heroesID = [
   'total'
 ]
 
+// Categories input array, changeable
 let categories = [
   'battlepass',
   'shop',
@@ -93,6 +96,7 @@ let categories = [
   'total'
 ]
 
+// Categories reference array, not changeable
 let categoriesID = [
   'battlepass',
   'shop',
@@ -102,6 +106,7 @@ let categoriesID = [
   'total'
 ]
 
+// Skins reference array
 let skins = [
   [ //ana
     [

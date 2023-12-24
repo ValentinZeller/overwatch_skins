@@ -1,9 +1,9 @@
-let container = document.getElementById('container');
+let container = document.getElementById('container')
 
 /* search bar modifies content */
-const queryString = window.location.search;
+const queryString = window.location.search
 if (queryString) {
-  const urlParams = new URLSearchParams(queryString);
+  const urlParams = new URLSearchParams(queryString)
   if (urlParams.has('heroes')) {
     heroes = urlParams.getAll('heroes')
   }
@@ -52,12 +52,16 @@ function createHeroRow(hero) {
 
 /* Generate hero header */
 function createHeroHeader(hero) {
-  let rowHeader = createDiv('rowHeader');
+  let rowHeader = createDiv('rowHeader')
+  let fileName = "character"
   if (heroes.includes('kiriko')) {
-    rowHeader.style.background = "url('./images/" + hero + "/character2.png') no-repeat scroll 50% 0% / cover";
-  } else {
-    rowHeader.style.background = "url('./images/" + hero + "/character.png') no-repeat scroll 50% 0% / cover";
+    fileName = "character2"
   }
+  rowHeader.style.background = "url('./images/" + hero + "/" + fileName + ".png') no-repeat scroll 50% 0% / cover"
+  
+  rowHeader.addEventListener('click', function () {
+    window.open("./images/" + hero + "/" + fileName + ".png", "_blank")
+  });
 
   rowHeader.setAttribute('data-tooltip', hero)
   return rowHeader
@@ -87,33 +91,41 @@ function createHeroCell(hero, category) {
 /* Generate hero skin */
 function createHeroSkin(skin, length, hero) {
   let item = createDiv('item', skin.name)
-  item.setAttribute('data-tooltip', skin.name);
+  item.setAttribute('data-tooltip', skin.name)
   if (skin.display) {
-    item.setAttribute('data-tooltip', skin.display);
+    item.setAttribute('data-tooltip', skin.display)
   }
   item.setAttribute('class', splitSkin(length))
-  item.style.background = "url('./images/" + hero + "/" + skin.name + ".png') no-repeat scroll 50% 0% / cover";
+  item.style.background = "url('./images/" + hero + "/" + skin.name + ".png') no-repeat scroll 50% 0% / cover"
+
+  item.addEventListener('click', function () {
+    window.open("./images/" + hero + "/" + skin.name + ".png", "_blank")
+  });
+
   if (skin.rarity === 0) {
-    item.classList.add('epic');
+    item.classList.add('epic')
   } else if (skin.rarity === 1) {
-    item.classList.add('legendary');
+    item.classList.add('legendary')
   } else if (skin.rarity === 2) {
-    item.classList.add('mythic');
+    item.classList.add('mythic')
   }
   return item
 }
 
 /* Generate category row */
 function createCategoryRow() {
-  let row = createDiv('row rowCategory', 'category');
-  let rowHeader = createDiv('rowHeader');
-  row.appendChild(rowHeader);
+  let row = createDiv('row rowCategory', 'category')
+  let rowHeader = createDiv('rowHeader')
+  row.appendChild(rowHeader)
 
-  container.appendChild(row);
+  container.appendChild(row)
   for (let category of categories) {
-    let item = createDiv('item category', category);
-    row.appendChild(item);
-    item.style.background = "url('./images/categories/" + category + ".png') no-repeat scroll 50% 0% / contain";
+    let item = createDiv('item category', category)
+    row.appendChild(item)
+    item.style.background = "url('./images/categories/" + category + ".png') no-repeat scroll 50% 0% / contain"
+    item.addEventListener('click', function () {
+      window.open("./images/categories/" + category + ".png", "_blank")
+    });
     item.setAttribute('data-tooltip', category)
   }
 }
@@ -127,6 +139,8 @@ function createTotalRow() {
     let epic = 0
     let legendary = 0
     let mythic = 0
+
+    // Category total
     for (let j = 0; j < heroes.filter((hero) => hero != 'total').length; j++) {
       if (skins[j] && skins[j][i]) {
         let skinsFlat = skins[j][i].flat(1)
@@ -136,6 +150,7 @@ function createTotalRow() {
       }
     }
 
+    // Complete total
     if (i == categories.length - 1) {
       let skinsFlat = skins.flat(2)
       epic = skinsFlat.filter((skin) => skin.rarity == 0).length
@@ -166,12 +181,12 @@ function createTotalCell(total) {
 
 /* Generate a div with class and id */
 function createDiv(classes, id) {
-  let div = document.createElement('div');
-  div.setAttribute('class', classes);
+  let div = document.createElement('div')
+  div.setAttribute('class', classes)
   if (id) {
-    div.setAttribute('id', id);
+    div.setAttribute('id', id)
   }
-  return div;
+  return div
 }
 
 /* Split skin width/height */
