@@ -88,7 +88,7 @@ let heroesID = [
 
 // Categories input array, changeable
 let categories = [
-  'battlepass',
+  'battle pass',
   'shop',
   'challenge',
   'blizzard',
@@ -98,7 +98,7 @@ let categories = [
 
 // Categories reference array, not changeable
 let categoriesID = [
-  'battlepass',
+  'battle pass',
   'shop',
   'challenge',
   'blizzard',
