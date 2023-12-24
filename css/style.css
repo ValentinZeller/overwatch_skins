@@ -7,7 +7,7 @@
 
 body {
   font-family: BigNoodleTitlingOblique;
-  background: url('../images/background.png') no-repeat fixed 0% 0% / cover;
+  background: url('../images/background.png') 0% 0% / cover;
   margin: 0;
   width: max-content;
 }
