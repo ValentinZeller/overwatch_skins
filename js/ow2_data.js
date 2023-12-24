@@ -963,13 +963,13 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "cursed captain",
         "rarity": 1
       }
     ],
-    [],
     [
       {
         "name": "chained king",
