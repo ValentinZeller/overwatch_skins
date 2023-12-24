@@ -57,7 +57,7 @@ body {
 
 .mythicSkin {
   background: #00ffd0;
-  background-image: linear-gradient(90deg, #00ffd0 0%, #e5e5e5 50%, #ff33ce 100%);
+  background-image: var(--mythic);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,6 +90,17 @@ body {
   border-bottom: 3px solid var(--epic);
 }
 
+.row .legendary {
+  border-bottom: 3px solid var(--legendary);
+}
+
+.row .mythic {
+  border-bottom: 3px solid transparent;
+  border-image: var(--mythic);
+  border-image-slice: 1;
+  width: 100%;
+}
+
 .row .half {
   width: calc(var(--width)/2);
   height: var(--height);
@@ -115,6 +126,9 @@ body {
   opacity: 0;
   color: white;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 12px;
+  z-index: 10;
+  position: relative;
 }
 
 [data-tooltip]:hover:before {

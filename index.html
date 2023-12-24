@@ -12,10 +12,18 @@
 </head>
 
 <body>
+  <nav>
+    <a href="ow.html">Overwatch 1</a>
+    <span>-</span>
+    <span>Epic : </span><input type="checkbox" onchange="manageBar(event);" checked data-rarity="epic" />
+    <span>Legendary : </span><input type="checkbox" onchange="manageBar(event);" checked data-rarity="legendary" />
+    <span>Mythic : </span><input type="checkbox" onchange="manageBar(event);" checked data-rarity="mythic" />
+  </nav>
   <div class="container" id="container">
   </div>
 </body>
-<script type="text/javascript" src="./js/data.js"></script>
+<script type="text/javascript" src="./js/ow2_data.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/visualBar.js"></script>
 
 </html>

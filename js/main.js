@@ -37,7 +37,10 @@ function createHeroRow(hero) {
 
       let epic = skinsFlat.filter((skin) => skin.rarity == 0).length
       let legendary = skinsFlat.filter((skin) => skin.rarity == 1).length
-      let total = [epic, legendary]
+      let mythic = skinsFlat.filter((skin) => skin.rarity == 2).length
+
+      let total = [epic, legendary, mythic]
+
       row.appendChild(createTotalCell(total))
     } else {
       row.appendChild(createHeroCell(hero, categories[i]))
@@ -50,7 +53,12 @@ function createHeroRow(hero) {
 /* Generate hero header */
 function createHeroHeader(hero) {
   let rowHeader = createDiv('rowHeader');
-  rowHeader.style.background = "url('./images/" + hero + "/character.png') no-repeat scroll 50% 0% / cover";
+  if (heroes.includes('kiriko')) {
+    rowHeader.style.background = "url('./images/" + hero + "/character2.png') no-repeat scroll 50% 0% / cover";
+  } else {
+    rowHeader.style.background = "url('./images/" + hero + "/character.png') no-repeat scroll 50% 0% / cover";
+  }
+
   rowHeader.setAttribute('data-tooltip', hero)
   return rowHeader
 }
@@ -87,6 +95,10 @@ function createHeroSkin(skin, length, hero) {
   item.style.background = "url('./images/" + hero + "/" + skin.name + ".png') no-repeat scroll 50% 0% / cover";
   if (skin.rarity === 0) {
     item.classList.add('epic');
+  } else if (skin.rarity === 1) {
+    item.classList.add('legendary');
+  } else if (skin.rarity === 2) {
+    item.classList.add('mythic');
   }
   return item
 }
@@ -114,11 +126,13 @@ function createTotalRow() {
   for (let i = 0; i < categories.length; i++) {
     let epic = 0
     let legendary = 0
+    let mythic = 0
     for (let j = 0; j < heroes.filter((hero) => hero != 'total').length; j++) {
       if (skins[j] && skins[j][i]) {
         let skinsFlat = skins[j][i].flat(1)
         epic += skinsFlat.filter((skin) => skin.rarity == 0).length
         legendary += skinsFlat.filter((skin) => skin.rarity == 1).length
+        mythic += skinsFlat.filter((skin) => skin.rarity == 2).length
       }
     }
 
@@ -126,8 +140,9 @@ function createTotalRow() {
       let skinsFlat = skins.flat(2)
       epic = skinsFlat.filter((skin) => skin.rarity == 0).length
       legendary = skinsFlat.filter((skin) => skin.rarity == 1).length
+      mythic = mythic += skinsFlat.filter((skin) => skin.rarity == 2).length
     }
-    let total = [epic, legendary]
+    let total = [epic, legendary, mythic]
     row.appendChild(createTotalCell(total))
   }
 
@@ -137,8 +152,14 @@ function createTotalRow() {
 /* Generate total cell */
 function createTotalCell(total) {
   let totalCell = createDiv('rowCount')
-  let totalCount = total[0] + total[1]
-  totalCell.innerHTML = "<p class='count epicSkin'>" + total[0] + "</p><p class='count legendarySkin'>" + total[1] + "</p><p class='count allSkin'>" + totalCount
+  let totalCount = total[0] + total[1] + total[2]
+
+  totalCell.innerHTML += "<p class='count epicSkin'>" + total[0] + "</p>"
+  totalCell.innerHTML += "<p class='count legendarySkin'>" + total[1] + "</p>"
+  if (heroes.includes('kiriko')) {
+    totalCell.innerHTML += "<p class='count mythicSkin'>" + total[2] + "</p>"
+  }
+  totalCell.innerHTML += "<p class='count allSkin'>" + totalCount
 
   return totalCell
 }

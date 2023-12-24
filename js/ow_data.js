@@ -100,7 +100,7 @@ let categoriesID = [
 
 let skins =
   [
-    [
+    [ //ana
       [
         {
           "name": "cabana",
@@ -170,7 +170,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //ashe
       [
         {
           "name": "poolside",
@@ -228,7 +228,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //baptiste
       [
         {
           "name": "tropical",
@@ -282,7 +282,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //bastion
       [
         {
           "name": "sandcastle",
@@ -370,7 +370,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //brigitte
       [
         {
           "name": "trekonor",
@@ -437,7 +437,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //cassidy
       [
         {
           "name": "american",
@@ -516,7 +516,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //d.va
       [
         {
           "name": "taekgeukgi",
@@ -597,7 +597,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //doomfist
       [
         {
           "name": "karate",
@@ -664,7 +664,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //echo
       [
         {
           "name": "surfsup",
@@ -709,7 +709,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //genji
       [
         {
           "name": "nihon",
@@ -793,7 +793,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //hanzo
       [
         {
           "name": "wave",
@@ -861,7 +861,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //junkrat
       [
         {
           "name": "cricket",
@@ -930,7 +930,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //lúcio
       [
         {
           "name": "striker",
@@ -1011,7 +1011,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //mei
       [
         {
           "name": "zongguo",
@@ -1091,7 +1091,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //mercy
       [
         {
           "name": "eidgenossin",
@@ -1184,7 +1184,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //moira
       [
         {
           "name": "eireannach",
@@ -1236,7 +1236,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //orisa
       [
         {
           "name": "icecream",
@@ -1295,7 +1295,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //pharah
       [
         {
           "name": "lifeguard",
@@ -1370,7 +1370,7 @@ let skins =
       ],
       []
     ],
-    [
+    [ //reaper
       [
         {
           "name": "biker",
@@ -1457,7 +1457,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //reinhardt
       [
         {
           "name": "gridironhardt",
@@ -1540,7 +1540,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //roadhog
       [
         {
           "name": "lacrosse",
@@ -1615,7 +1615,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //sigma
       [
         {
           "name": "scuba",
@@ -1654,7 +1654,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //soldier 76
       [
         {
           "name": "grillmaster",
@@ -1730,7 +1730,7 @@ let skins =
       ],
       []
     ],
-    [
+    [ //sombra
       [
         {
           "name": "tulum",
@@ -1810,7 +1810,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //symmetra
       [
         {
           "name": "mermaid",
@@ -1884,7 +1884,7 @@ let skins =
       ],
       []
     ],
-    [
+    [ //torbjorn
       [
         {
           "name": "trekronor",
@@ -1952,7 +1952,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //tracer
       [
         {
           "name": "trackandfield",
@@ -2049,7 +2049,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //widowmaker
       [
         {
           "name": "tricolore",
@@ -2136,7 +2136,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //winston
       [
         {
           "name": "catcher",
@@ -2201,7 +2201,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //wrecking ball
       [
         {
           "name": "lucioball",
@@ -2256,7 +2256,7 @@ let skins =
       [],
       []
     ],
-    [
+    [ //zarya
       [
         {
           "name": "weightlifter",
@@ -2329,7 +2329,7 @@ let skins =
         }
       ]
     ],
-    [
+    [ //zenyatta
       [
         {
           "name": "fastball",

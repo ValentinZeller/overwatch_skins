@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Overwatch Skins</title>
+  <link rel="shortcut icon" type="image/png" href="./images/logo.png" />
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Overwatch 2</a>
+    <span>-</span>
+    <span>Epic : </span><input type="checkbox" onchange="manageBar(event);" checked data-rarity="epic" />
+    <span>Legendary : </span><input type="checkbox" onchange="manageBar(event);" checked data-rarity="legendary" />
+  </nav>
+  <div class="container" id="container">
+  </div>
+</body>
+<script type="text/javascript" src="./js/ow_data.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/visualBar.js"></script>
+
+</html>

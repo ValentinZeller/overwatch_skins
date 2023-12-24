@@ -3,4 +3,5 @@
     --height: 77.5px;
     --epic: #ff00ff;
     --legendary: #ff9c00;
+    --mythic: linear-gradient(90deg, #00ffd0 0%, #bebcd8 50%, #ff33ce 100%);
 }
