@@ -57,10 +57,10 @@ function createHeroHeader(hero) {
   if (heroes.includes('kiriko')) {
     fileName = "character2"
   }
-  rowHeader.style.background = "url('./images/" + hero + "/" + fileName + ".png') no-repeat scroll 50% 0% / cover"
-  
+  rowHeader.style.background = "url('./images/" + hero + "/" + fileName + ".webp') no-repeat scroll 50% 0% / cover"
+
   rowHeader.addEventListener('click', function () {
-    window.open("./images/" + hero + "/" + fileName + ".png", "_blank")
+    window.open("./images/" + hero + "/" + fileName + ".webp", "_blank")
   });
 
   rowHeader.setAttribute('data-tooltip', hero)
@@ -96,10 +96,10 @@ function createHeroSkin(skin, length, hero) {
     item.setAttribute('data-tooltip', skin.display)
   }
   item.setAttribute('class', splitSkin(length))
-  item.style.background = "url('./images/" + hero + "/" + skin.name + ".png') no-repeat scroll 50% 0% / cover"
+  item.style.background = "url('./images/" + hero + "/" + skin.name + ".webp') no-repeat scroll 50% 0% / cover"
 
   item.addEventListener('click', function () {
-    window.open("./images/" + hero + "/" + skin.name + ".png", "_blank")
+    window.open("./images/" + hero + "/" + skin.name + ".webp", "_blank")
   });
 
   if (skin.rarity === 0) {
@@ -122,9 +122,9 @@ function createCategoryRow() {
   for (let category of categories) {
     let item = createDiv('item category', category)
     row.appendChild(item)
-    item.style.background = "url('./images/categories/" + category + ".png') no-repeat scroll 50% 0% / contain"
+    item.style.background = "url('./images/categories/" + category + ".webp') no-repeat scroll 50% 0% / contain"
     item.addEventListener('click', function () {
-      window.open("./images/categories/" + category + ".png", "_blank")
+      window.open("./images/categories/" + category + ".webp", "_blank")
     });
     item.setAttribute('data-tooltip', category)
   }
