@@ -112,12 +112,17 @@ body {
 }
 
 .row .eigth {
-  width: calc(var(--width)/4.01);
+  width: calc(var(--width)/4.001);
   height: calc(var(--height)/2);
 }
 
+.row .twelve {
+  width: calc(var(--width)/4.001);
+  height: calc(var(--height)/3);
+}
+
 .row .sixteenth {
-  width: calc(var(--width)/4);
+  width: calc(var(--width)/4.001);
   height: calc(var(--height)/4);
 }
 

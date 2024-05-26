@@ -34,6 +34,7 @@ let heroes = [
   'symmetra',
   'torbjorn',
   'tracer',
+  'venture',
   'widowmaker',
   'winston',
   'wrecking ball',
@@ -78,6 +79,7 @@ let heroesID = [
   'symmetra',
   'torbjorn',
   'tracer',
+  'venture',
   'widowmaker',
   'winston',
   'wrecking ball',
@@ -90,6 +92,7 @@ let heroesID = [
 let categories = [
   'battle pass',
   'shop',
+  'mythic shop',
   'challenge',
   'blizzard',
   'overwatch league',
@@ -100,6 +103,7 @@ let categories = [
 let categoriesID = [
   'battle pass',
   'shop',
+  'mythic shop',
   'challenge',
   'blizzard',
   'overwatch league',
@@ -135,8 +139,21 @@ let skins = [
       {
         "name": "blackbraid",
         "rarity": 1
+      },
+      {
+        "name": "sanguine curse",
+        "rarity": 0
+      },
+      {
+        "name": "arch-commandant",
+        "rarity": 1
+      },
+      {
+        "name": "stakeout",
+        "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "spiritwarder",
@@ -173,8 +190,17 @@ let skins = [
       {
         "name": "storm rider",
         "rarity": 1
+      },
+      {
+        "name": "faye valentine",
+        "rarity": 1
+      },
+      {
+        "name": "haunted",
+        "rarity": 0
       }
     ],
+    [],
     [],
     [],
     []
@@ -184,6 +210,10 @@ let skins = [
       {
         "name": "deluxe",
         "rarity": 0
+      },
+      {
+        "name": "scorpion",
+        "rarity": 1
       }
     ],
     [
@@ -196,6 +226,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "formalwear",
@@ -210,6 +241,10 @@ let skins = [
       {
         "name": "infinite annihilator",
         "rarity": 0
+      },
+      {
+        "name": "rikimaru ramen",
+        "rarity": 1
       }
     ],
     [
@@ -228,10 +263,16 @@ let skins = [
     ],
     [],
     [],
+    [],
     []
   ],
   [ //brigitte
-    [],
+    [
+      {
+        "name": "talon",
+        "rarity": 0
+      }
+    ],
     [
       {
         "name": "pearlescent",
@@ -250,6 +291,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "ice queen",
@@ -272,6 +314,10 @@ let skins = [
       {
         "name": "invisible man",
         "rarity": 1
+      },
+      {
+        "name": "longhorn",
+        "rarity": 1
       }
     ],
     [
@@ -286,8 +332,13 @@ let skins = [
       {
         "name": "c-455 sharpshooter",
         "rarity": 1
-      }
+      },
+      {
+        "name": "spike spiegel",
+        "rarity": 1
+      },
     ],
+    [],
     [
       {
         "name": "formalwear",
@@ -320,8 +371,17 @@ let skins = [
       {
         "name": "antifragile dazzle",
         "rarity": 1
+      },
+      {
+        "name": "rosy hanbok",
+        "rarity": 1
+      },
+      {
+        "name": "porsche",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [
       {
@@ -340,6 +400,10 @@ let skins = [
       {
         "name": "bonebreaker",
         "rarity": 1
+      },
+      {
+        "name": "strike commander",
+        "rarity": 1
       }
     ],
     [
@@ -356,6 +420,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "tropical",
@@ -388,8 +453,13 @@ let skins = [
       {
         "name": "3ch-0",
         "rarity": 1
-      }
+      },
+      {
+        "name": "retro future",
+        "rarity": 0
+      },
     ],
+    [],
     [],
     [],
     []
@@ -403,6 +473,10 @@ let skins = [
       {
         "name": "cyber demon",
         "rarity": 2
+      },
+      {
+        "name": "junker",
+        "rarity": 0
       }
     ],
     [
@@ -421,8 +495,13 @@ let skins = [
       {
         "name": "volcanic",
         "rarity": 1
+      },
+      {
+        "name": "heihu",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     [
@@ -465,10 +544,15 @@ let skins = [
         "rarity": 1
       },
       {
-        "name": "great tengu ",
+        "name": "great tengu",
+        "rarity": 1
+      },
+      {
+        "name": "hashimoto",
         "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -482,6 +566,10 @@ let skins = [
       {
         "name": "nightraven",
         "rarity": 1
+      },
+      {
+        "name": "shadowchild",
+        "rarity": 0
       }
     ],
     [
@@ -494,6 +582,7 @@ let skins = [
         "rarity": 0
       }
     ],
+    [],
     [
       {
         "name": "winter jammies",
@@ -546,6 +635,7 @@ let skins = [
     ],
     [],
     [],
+    [],
     []
   ],
   [ //junkrat
@@ -573,6 +663,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "fawksey james",
@@ -625,8 +716,17 @@ let skins = [
       {
         "name": "festive",
         "rarity": 1
+      },
+      {
+        "name": "sakura",
+        "rarity": 0
+      },
+      {
+        "name": "hashimoto",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -658,8 +758,13 @@ let skins = [
       {
         "name": "cleric",
         "rarity": 1
+      },
+      {
+        "name": "harbinger",
+        "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "cassia",
@@ -696,9 +801,19 @@ let skins = [
       {
         "name": "bard",
         "rarity": 1
+      },
+      {
+        "name": "dark faun",
+        "rarity": 1
       }
     ],
     [],
+    [
+      {
+        "name": "boleiro",
+        "rarity": 1
+      }
+    ],
     [],
     []
   ],
@@ -713,8 +828,17 @@ let skins = [
       {
         "name": "magma",
         "rarity": 1
+      },
+      {
+        "name": "rugby",
+        "rarity": 0
+      },
+      {
+        "name": "jet black",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -724,6 +848,10 @@ let skins = [
       {
         "name": "alchemist",
         "rarity": 1
+      },
+      {
+        "name": "cursed seer",
+        "rarity": 0
       }
     ],
     [
@@ -748,6 +876,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -783,6 +912,16 @@ let skins = [
       {
         "name": "jingle bell",
         "rarity": 1
+      },
+      {
+        "name": "mystic swan",
+        "rarity": 1
+      }
+    ],
+    [
+      {
+        "name": "vengeance",
+        "rarity": 2
       }
     ],
     [],
@@ -799,6 +938,10 @@ let skins = [
       {
         "name": "demon queen",
         "rarity": 1
+      },
+      {
+        "name": "ancient caller",
+        "rarity": 2
       }
     ],
     [
@@ -823,6 +966,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [],
     [],
     [
@@ -859,8 +1003,21 @@ let skins = [
       {
         "name": "rubber ducky",
         "rarity": 1
+      },
+      {
+        "name": "fiend",
+        "rarity": 1
+      },
+      {
+        "name": "or-unit",
+        "rarity": 1
+      },
+      {
+        "name": "retro future",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -896,8 +1053,13 @@ let skins = [
       {
         "name": "nutcracker",
         "rarity": 1
+      },
+      {
+        "name": "porsche",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -941,6 +1103,7 @@ let skins = [
     ],
     [],
     [],
+    [],
     []
   ],
   [ //reaper
@@ -966,8 +1129,13 @@ let skins = [
       {
         "name": "eagle warrior",
         "rarity": 1
+      },
+      {
+        "name": "heartbreaker",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [
       {
@@ -1015,10 +1183,20 @@ let skins = [
         "rarity": 1
       },
       {
-        "name": "heaven's devil",
+        "name": "heaven_s devil",
+        "rarity": 1,
+        "display": "heaven's devil"
+      },
+      {
+        "name": "rosahardt",
+        "rarity": 1
+      },
+      {
+        "name": "fallen knight",
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "wrapping paper",
@@ -1033,6 +1211,10 @@ let skins = [
       {
         "name": "cairn",
         "rarity": 0
+      },
+      {
+        "name": "horror hog",
+        "rarity": 1
       }
     ],
     [
@@ -1055,6 +1237,7 @@ let skins = [
     ],
     [],
     [],
+    [],
     []
   ],
   [ //sigma
@@ -1070,6 +1253,10 @@ let skins = [
       {
         "name": "galactic emperor",
         "rarity": 2
+      },
+      {
+        "name": "beholder",
+        "rarity": 1
       }
     ],
     [
@@ -1084,6 +1271,12 @@ let skins = [
     ],
     [],
     [],
+    [
+      {
+        "name": "drowned warrior",
+        "rarity": 0
+      }
+    ],
     []
   ],
   [ //sojourn
@@ -1125,8 +1318,13 @@ let skins = [
       {
         "name": "formalwear",
         "rarity": 1
+      },
+      {
+        "name": "night ops",
+        "rarity": 0
       }
     ],
+    [],
     [],
     [],
     []
@@ -1145,6 +1343,11 @@ let skins = [
         "name": "infinite guard",
         "display": "infinite guard: 76",
         "rarity": 1
+      },
+      {
+        "name": "survivor",
+        "display": "survivor: 76",
+        "rarity": 1
       }
     ],
     [
@@ -1158,6 +1361,7 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "mumen rider",
@@ -1170,6 +1374,16 @@ let skins = [
         "name": "biker",
         "display": "biker: 76",
         "rarity": 1
+      },
+      {
+        "name": "fuel biker",
+        "display": "fuel biker: 76",
+        "rarity": 1
+      },
+      {
+        "name": "mayhem biker",
+        "display": "mayhem biker: 76",
+        "rarity": 1
       }
     ]
   ],
@@ -1178,6 +1392,10 @@ let skins = [
       {
         "name": "folklórica",
         "rarity": 1
+      },
+      {
+        "name": "agent colomar",
+        "rarity": 0
       }
     ],
     [
@@ -1200,8 +1418,13 @@ let skins = [
       {
         "name": "antifragile slay star",
         "rarity": 1
+      },
+      {
+        "name": "ed",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -1214,6 +1437,10 @@ let skins = [
       },
       {
         "name": "s-900 sentry",
+        "rarity": 1
+      },
+      {
+        "name": "junker",
         "rarity": 1
       }
     ],
@@ -1250,6 +1477,10 @@ let skins = [
       {
         "name": "dark iron",
         "rarity": 0
+      },
+      {
+        "name": "tentacle horror",
+        "rarity": 1
       }
     ],
     [
@@ -1297,8 +1528,25 @@ let skins = [
       {
         "name": "formalwear",
         "rarity": 1
+      },
+      {
+        "name": "operative oxton",
+        "rarity": 1
       }
     ],
+    [],
+    [],
+    []
+  ],
+  [ //venture
+    [],
+    [
+      {
+        "name": "ice cream",
+        "rarity": 0
+      }
+    ],
+    [],
     [],
     [],
     []
@@ -1311,6 +1559,14 @@ let skins = [
       },
       {
         "name": "ghostly bride",
+        "rarity": 1
+      },
+      {
+        "name": "endless sight",
+        "rarity": 0
+      },
+      {
+        "name": "captain lacroix",
         "rarity": 1
       }
     ],
@@ -1330,8 +1586,17 @@ let skins = [
       {
         "name": "wild tracker",
         "rarity": 1
+      },
+      {
+        "name": "rose lily",
+        "rarity": 1
+      },
+      {
+        "name": "saint-tropez",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     []
@@ -1349,6 +1614,10 @@ let skins = [
       {
         "name": "lab technician",
         "rarity": 1
+      },
+      {
+        "name": "ringmaster",
+        "rarity": 1
       }
     ],
     [
@@ -1361,6 +1630,7 @@ let skins = [
         "rarity": 0
       }
     ],
+    [],
     [],
     [],
     []
@@ -1390,10 +1660,15 @@ let skins = [
         "rarity": 1
       }
     ],
+    [],
     [
       {
         "name": "asteroid",
         "rarity": 0
+      },
+      {
+        "name": "ein",
+        "rarity": 1
       }
     ],
     [],
@@ -1414,8 +1689,13 @@ let skins = [
       {
         "name": "frozen",
         "rarity": 0
+      },
+      {
+        "name": "talon",
+        "rarity": 0
       }
     ],
+    [],
     [],
     [],
     [
@@ -1460,8 +1740,13 @@ let skins = [
       {
         "name": "takoyaki",
         "rarity": 1
+      },
+      {
+        "name": "z-3n destroyer",
+        "rarity": 1
       }
     ],
+    [],
     [],
     [],
     [

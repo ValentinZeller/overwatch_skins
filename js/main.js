@@ -205,6 +205,9 @@ function splitSkin(length) {
     case 5: case 6: case 7: case 8:
       splitClass += " eigth"
       break
+    case 9: case 10: case 11: case 12:
+      splitClass += " twelve"
+      break
     case 9: case 10: case 11: case 12: case 13: case 14: case 15: case 16:
       splitClass += " sixteenth"
       break
