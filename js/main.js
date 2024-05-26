@@ -24,6 +24,8 @@ function createContent() {
       container.appendChild(createHeroRow(heroes[i]))
     }
   }
+
+
 }
 
 /* Generate hero row */
@@ -95,8 +97,9 @@ function createHeroSkin(skin, length, hero) {
   if (skin.display) {
     item.setAttribute('data-tooltip', skin.display)
   }
+  item.setAttribute('data-bg', "url('./images/" + hero + "/" + skin.name + ".webp') no-repeat scroll 50% 0% / cover")
   item.setAttribute('class', splitSkin(length))
-  item.style.background = "url('./images/" + hero + "/" + skin.name + ".webp') no-repeat scroll 50% 0% / cover"
+  //item.style.background = "url('./images/" + hero + "/" + skin.name + ".webp') no-repeat scroll 50% 0% / cover"
 
   item.addEventListener('click', function () {
     window.open("./images/" + hero + "/" + skin.name + ".webp", "_blank")
@@ -191,7 +194,7 @@ function createDiv(classes, id) {
 
 /* Split skin width/height */
 function splitSkin(length) {
-  let splitClass = "item"
+  let splitClass = "item lazy-background"
   switch (length) {
     case 2:
       splitClass += " half"
@@ -208,3 +211,21 @@ function splitSkin(length) {
   }
   return splitClass
 }
+/* Lazy loading */
+document.addEventListener("DOMContentLoaded", function () {
+  var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-background"));
+  if ("IntersectionObserver" in window) {
+    let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.background = entry.target.dataset.bg;
+          lazyBackgroundObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    lazyBackgrounds.forEach(function (lazyBackground) {
+      lazyBackgroundObserver.observe(lazyBackground);
+    });
+  }
+});
