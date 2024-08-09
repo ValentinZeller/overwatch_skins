@@ -37,11 +37,12 @@ function createHeroRow(hero) {
     if (categories[i] == 'total') {
       let skinsFlat = skins[heroesID.indexOf(hero)].flat(1)
 
+      let rare = skinsFlat.filter((skin) => skin.rarity == -1).length
       let epic = skinsFlat.filter((skin) => skin.rarity == 0).length
       let legendary = skinsFlat.filter((skin) => skin.rarity == 1).length
       let mythic = skinsFlat.filter((skin) => skin.rarity == 2).length
 
-      let total = [epic, legendary, mythic]
+      let total = [rare, epic, legendary, mythic]
 
       row.appendChild(createTotalCell(total))
     } else {
@@ -111,6 +112,8 @@ function createHeroSkin(skin, length, hero) {
     item.classList.add('legendary')
   } else if (skin.rarity === 2) {
     item.classList.add('mythic')
+  } else if (skin.rarity === -1) {
+    item.classList.add('rare')
   }
   return item
 }
@@ -139,6 +142,7 @@ function createTotalRow() {
   row.appendChild(createHeroHeader('total'))
 
   for (let i = 0; i < categories.length; i++) {
+    let rare = 0
     let epic = 0
     let legendary = 0
     let mythic = 0
@@ -147,6 +151,7 @@ function createTotalRow() {
     for (let j = 0; j < heroes.filter((hero) => hero != 'total').length; j++) {
       if (skins[j] && skins[j][i]) {
         let skinsFlat = skins[j][i].flat(1)
+        rare += skinsFlat.filter((skin) => skin.rarity == -1).length
         epic += skinsFlat.filter((skin) => skin.rarity == 0).length
         legendary += skinsFlat.filter((skin) => skin.rarity == 1).length
         mythic += skinsFlat.filter((skin) => skin.rarity == 2).length
@@ -156,11 +161,12 @@ function createTotalRow() {
     // Complete total
     if (i == categories.length - 1) {
       let skinsFlat = skins.flat(2)
+      rare = skinsFlat.filter((skin) => skin.rarity == -1).length
       epic = skinsFlat.filter((skin) => skin.rarity == 0).length
       legendary = skinsFlat.filter((skin) => skin.rarity == 1).length
       mythic = mythic += skinsFlat.filter((skin) => skin.rarity == 2).length
     }
-    let total = [epic, legendary, mythic]
+    let total = [rare, epic, legendary, mythic]
     row.appendChild(createTotalCell(total))
   }
 
@@ -172,10 +178,11 @@ function createTotalCell(total) {
   let totalCell = createDiv('rowCount')
   let totalCount = total[0] + total[1] + total[2]
 
-  totalCell.innerHTML += "<p class='count epicSkin'>" + total[0] + "</p>"
-  totalCell.innerHTML += "<p class='count legendarySkin'>" + total[1] + "</p>"
+  totalCell.innerHTML += "<p class='count rareSkin'>" + total[0] + "</p>"
+  totalCell.innerHTML += "<p class='count epicSkin'>" + total[1] + "</p>"
+  totalCell.innerHTML += "<p class='count legendarySkin'>" + total[2] + "</p>"
   if (heroes.includes('kiriko')) {
-    totalCell.innerHTML += "<p class='count mythicSkin'>" + total[2] + "</p>"
+    totalCell.innerHTML += "<p class='count mythicSkin'>" + total[3] + "</p>"
   }
   totalCell.innerHTML += "<p class='count allSkin'>" + totalCount
 

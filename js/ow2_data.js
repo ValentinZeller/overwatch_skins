@@ -95,7 +95,7 @@ let categories = [
   'mythic shop',
   'challenge',
   'blizzard',
-  'overwatch league',
+  'overwatch esports',
   'total'
 ]
 
@@ -106,7 +106,7 @@ let categoriesID = [
   'mythic shop',
   'challenge',
   'blizzard',
-  'overwatch league',
+  'overwatch esports',
   'total'
 ]
 
@@ -151,6 +151,10 @@ let skins = [
       {
         "name": "stakeout",
         "rarity": 1
+      },
+      {
+        "name": "ultrawatch",
+        "rarity": 0
       }
     ],
     [],
@@ -200,7 +204,12 @@ let skins = [
         "rarity": 0
       }
     ],
-    [],
+    [
+      {
+        "name": "calimity empress",
+        "rarity": 2
+      }
+    ],
     [],
     [],
     []
@@ -258,6 +267,10 @@ let skins = [
       },
       {
         "name": "fire engine",
+        "rarity": 1
+      },
+      {
+        "name": "bumblebee",
         "rarity": 1
       }
     ],
@@ -337,6 +350,10 @@ let skins = [
         "name": "spike spiegel",
         "rarity": 1
       },
+      {
+        "name": "ultrawatch",
+        "rarity": 1
+      }
     ],
     [],
     [
@@ -458,6 +475,10 @@ let skins = [
         "name": "retro future",
         "rarity": 0
       },
+      {
+        "name": "strawberry",
+        "rarity": 1
+      }
     ],
     [],
     [],
@@ -477,6 +498,10 @@ let skins = [
       {
         "name": "junker",
         "rarity": 0
+      },
+      {
+        "name": "ultrawatch",
+        "rarity": 1
       }
     ],
     [
@@ -550,12 +575,21 @@ let skins = [
       {
         "name": "hashimoto",
         "rarity": 1
+      },
+      {
+        "name": "streetwear",
+        "rarity": 1
       }
     ],
     [],
     [],
     [],
-    []
+    [
+      {
+        "name": "azure flame",
+        "rarity": 1
+      }
+    ]
   ],
   [ //illari
     [
@@ -580,6 +614,10 @@ let skins = [
       {
         "name": "nightfall",
         "rarity": 0
+      },
+      {
+        "name": "arcee",
+        "rarity": 1
       }
     ],
     [],
@@ -646,6 +684,10 @@ let skins = [
       },
       {
         "name": "hong hai er",
+        "rarity": 1
+      },
+      {
+        "name": "lifeguard",
         "rarity": 1
       }
     ],
@@ -724,6 +766,10 @@ let skins = [
       {
         "name": "hashimoto",
         "rarity": 1
+      },
+      {
+        "name": "lifeguard",
+        "rarity": 1
       }
     ],
     [],
@@ -762,6 +808,10 @@ let skins = [
       {
         "name": "harbinger",
         "rarity": 1
+      },
+      {
+        "name": "lifeguarder",
+        "rarity": 1
       }
     ],
     [],
@@ -791,6 +841,10 @@ let skins = [
       {
         "name": "grafiteiro",
         "rarity": 1
+      },
+      {
+        "name": "lifeguard",
+        "rarity": 0
       }
     ],
     [
@@ -805,6 +859,10 @@ let skins = [
       {
         "name": "dark faun",
         "rarity": 1
+      },
+      {
+        "name": "octopus",
+        "rarity": 0
       }
     ],
     [],
@@ -821,6 +879,10 @@ let skins = [
     [
       {
         "name": "bonesplinter",
+        "rarity": 1
+      },
+      {
+        "name": "port-de-paix",
         "rarity": 1
       }
     ],
@@ -874,6 +936,10 @@ let skins = [
       {
         "name": "flower child",
         "rarity": 1
+      },
+      {
+        "name": "strawberry",
+        "rarity": 1
       }
     ],
     [],
@@ -916,6 +982,10 @@ let skins = [
       {
         "name": "mystic swan",
         "rarity": 1
+      },
+      {
+        "name": "beach rescue",
+        "rarity": 1
       }
     ],
     [
@@ -925,7 +995,12 @@ let skins = [
       }
     ],
     [],
-    [],
+    [
+      {
+        "name": "rose gold",
+        "rarity": 1
+      }
+    ],
     [
       {
         "name": "royal gladiator",
@@ -1057,6 +1132,10 @@ let skins = [
       {
         "name": "porsche",
         "rarity": 1
+      },
+      {
+        "name": "beach rescue",
+        "rarity": 1
       }
     ],
     [],
@@ -1098,6 +1177,10 @@ let skins = [
       },
       {
         "name": "summoner",
+        "rarity": 1
+      },
+      {
+        "name": "megatron",
         "rarity": 1
       }
     ],
@@ -1194,6 +1277,10 @@ let skins = [
       {
         "name": "fallen knight",
         "rarity": 1
+      },
+      {
+        "name": "optimus prime",
+        "rarity": 1
       }
     ],
     [],
@@ -1214,6 +1301,14 @@ let skins = [
       },
       {
         "name": "horror hog",
+        "rarity": 1
+      },
+      {
+        "name": "kaiju",
+        "rarity": 1
+      },
+      {
+        "name": "lifeguard",
         "rarity": 1
       }
     ],
@@ -1283,6 +1378,10 @@ let skins = [
     [
       {
         "name": "commando",
+        "rarity": 1
+      },
+      {
+        "name": "ultrawatch",
         "rarity": 1
       }
     ],
@@ -1358,6 +1457,11 @@ let skins = [
       },
       {
         "name": "space raider",
+        "rarity": 1
+      },
+      {
+        "name": "hunstman",
+        "display": "hunstman: 76",
         "rarity": 1
       }
     ],
@@ -1442,6 +1546,10 @@ let skins = [
       {
         "name": "junker",
         "rarity": 1
+      },
+      {
+        "name": "butterfly",
+        "rarity": 0
       }
     ],
     [
@@ -1490,6 +1598,10 @@ let skins = [
       },
       {
         "name": "starship engineer",
+        "rarity": 1
+      },
+      {
+        "name": "prospector",
         "rarity": 1
       }
     ],
@@ -1549,7 +1661,12 @@ let skins = [
     [],
     [],
     [],
-    []
+    [
+      {
+        "name": "monarch",
+        "rarity": -1
+      }
+    ]
   ],
   [ //widowmaker
     [
@@ -1648,6 +1765,10 @@ let skins = [
       {
         "name": "azmodan",
         "rarity": 1
+      },
+      {
+        "name": "ultrawatch",
+        "rarity": 0
       }
     ],
     [
@@ -1693,6 +1814,10 @@ let skins = [
       {
         "name": "talon",
         "rarity": 0
+      },
+      {
+        "name": "cybervision",
+        "rarity": 1
       }
     ],
     [],
@@ -1743,6 +1868,10 @@ let skins = [
       },
       {
         "name": "z-3n destroyer",
+        "rarity": 1
+      },
+      {
+        "name": "kaiju",
         "rarity": 1
       }
     ],

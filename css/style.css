@@ -47,6 +47,10 @@ body {
   font-size: x-large;
 }
 
+.rareSkin {
+  color: var(--rare);
+}
+
 .epicSkin {
   color: var(--epic);
 }
@@ -84,6 +88,10 @@ body {
 .row .category {
   margin: 1% 0;
   height: var(--height)/2;
+}
+
+.row .rare {
+  border-bottom: 3px solid var(--rare);
 }
 
 .row .epic {

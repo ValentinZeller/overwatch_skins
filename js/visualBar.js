@@ -1,11 +1,14 @@
 // Get Local storage data
+let rareBar = localStorage.getItem('rare') === 'true' ? true : false;
 let epicBar = localStorage.getItem('epic') === 'true' ? true : false;
 let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : false;
 let mythicBar = localStorage.getItem('mythic') === 'true' ? true : false;
 
 // Apply data
+document.querySelector("[data-rarity='rare']").checked = rareBar
 document.querySelector("[data-rarity='epic']").checked = epicBar
 document.querySelector("[data-rarity='legendary']").checked = legendaryBar
+updateBar(rareBar, 'rare');
 updateBar(epicBar, 'epic');
 updateBar(legendaryBar, 'legendary');
 
