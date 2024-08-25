@@ -100,7 +100,6 @@ function createHeroSkin(skin, length, hero) {
   }
   item.setAttribute('data-bg', "url('./images/" + hero + "/" + skin.name + ".webp') no-repeat scroll 50% 0% / cover")
   item.setAttribute('class', splitSkin(length))
-  //item.style.background = "url('./images/" + hero + "/" + skin.name + ".webp') no-repeat scroll 50% 0% / cover"
 
   item.addEventListener('click', function () {
     window.open("./images/" + hero + "/" + skin.name + ".webp", "_blank")
