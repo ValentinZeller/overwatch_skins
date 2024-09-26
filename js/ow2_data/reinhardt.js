@@ -42,6 +42,10 @@ let reinhardt = [
         {
             'name': 'polar',
             'rarity': 1
+        },
+        {
+            'name': 'lich king',
+            'rarity': 1
         }
     ],
     [

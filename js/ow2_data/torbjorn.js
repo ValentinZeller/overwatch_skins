@@ -25,6 +25,10 @@ let torbjorn = [
         {
             'name': 'prospector',
             'rarity': 1
+        },
+        {
+            'name': 'diamond magni',
+            'rarity': 1
         }
     ],
     [],

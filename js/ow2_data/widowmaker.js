@@ -49,6 +49,10 @@ let widowmaker = [
         {
             'name': 'euryale',
             'rarity': 1
+        },
+        {
+            'name': 'sylvanas',
+            'rarity': 1
         }
     ],
     [],

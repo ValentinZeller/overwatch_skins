@@ -33,6 +33,10 @@ let zenyatta = [
         {
             'name': 'kaiju',
             'rarity': 1
+        },
+        {
+            'name': 'thrall',
+            'rarity': 1
         }
     ],
     [],
