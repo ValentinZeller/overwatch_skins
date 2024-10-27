@@ -1,12 +1,14 @@
 let zenyatta = [
     [
         {
-            'name': 'beast whisperer',
-            'rarity': 0
+            'name': 'royal astronomer',
+            'rarity': 1,
+            'season': 5
         },
         {
-            'name': 'royal astronomer',
-            'rarity': 1
+            'name': 'beast whisperer',
+            'rarity': 0,
+            'season': 8
         }
     ],
     [

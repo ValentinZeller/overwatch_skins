@@ -2,19 +2,23 @@ let wreckingball = [
     [
         {
             'name': 'honeycomb',
-            'rarity': 0
-        },
-        {
-            'name': 'critter egg',
-            'rarity': 0
+            'rarity': 0,
+            'season': 5
         },
         {
             'name': 'azmodan',
-            'rarity': 1
+            'rarity': 1,
+            'season': 7
+        },
+        {
+            'name': 'critter egg',
+            'rarity': 0,
+            'season': 8
         },
         {
             'name': 'ultrawatch',
-            'rarity': 0
+            'rarity': 0,
+            'season': 11
         }
     ],
     [

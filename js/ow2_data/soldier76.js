@@ -1,22 +1,20 @@
 let soldier76 = [
     [
         {
-            'name': 'crimson clown',
-            'rarity': 0
-        },
-        {
             'name': 'bug hero',
-            'rarity': 1
+            'rarity': 1,
+            'season': 2
         },
         {
-            'name': 'infinite guard',
-            'display': 'infinite guard: 76',
-            'rarity': 1
+            'name': 'crimson clown',
+            'rarity': 0,
+            'season': 7
         },
         {
             'name': 'survivor',
             'display': 'survivor: 76',
-            'rarity': 1
+            'rarity': 1,
+            'season': 9
         }
     ],
     [
@@ -26,17 +24,28 @@ let soldier76 = [
             'rarity': 0
         },
         {
+            'name': 'infinite guard',
+            'display': 'infinite guard: 76',
+            'rarity': 1
+        },
+        {
             'name': 'space raider',
             'rarity': 1
         },
         {
-            'name': 'hunstman',
+            'name': 'huntsman',
             'display': 'hunstman: 76',
             'rarity': 1
         },
         {
             'name': 'heist',
             'rarity': 1
+        },
+        {
+            'name': 'grill zombie',
+            'display': 'grill zombie: 76',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

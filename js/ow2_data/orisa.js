@@ -2,11 +2,13 @@ let orisa = [
     [
         {
             'name': 'gr-iffon',
-            'rarity': 1
+            'rarity': 1,
+            'season': 5
         },
         {
             'name': 'grand beast',
-            'rarity': 2
+            'rarity': 2,
+            'season': 8
         }
     ],
     [

@@ -2,11 +2,13 @@ let hanzo = [
     [
         {
             'name': 'festival',
-            'rarity': 0
+            'rarity': 0,
+            'season': 4
         },
         {
             'name': 'onryõ',
-            'rarity': 2
+            'rarity': 2,
+            'season': 7
         }
     ],
     [

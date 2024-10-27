@@ -2,11 +2,18 @@ let sojourn = [
     [
         {
             'name': 'commando',
-            'rarity': 1
+            'rarity': 1,
+            'season': 1
         },
         {
             'name': 'ultrawatch',
-            'rarity': 1
+            'rarity': 1,
+            'season': 11
+        },
+        {
+            'name': 'witchbane',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [

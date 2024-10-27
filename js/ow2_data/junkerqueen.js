@@ -2,19 +2,28 @@ let junkerqueen = [
     [
         {
             'name': 'beast hunter',
-            'rarity': 0
-        },
-        {
-            'name': 'black metal',
-            'rarity': 1
-        },
-        {
-            'name': 'huntress',
-            'rarity': 1
+            'rarity': 0,
+            'season': 1
         },
         {
             'name': 'zeus',
-            'rarity': 2
+            'rarity': 2,
+            'season': 2
+        },
+        {
+            'name': 'black metal',
+            'rarity': 1,
+            'season': 3
+        },
+        {
+            'name': 'huntress',
+            'rarity': 1,
+            'season': 8
+        },
+        {
+            'name': 'necrotic witch',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [

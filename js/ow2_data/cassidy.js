@@ -2,15 +2,18 @@ let cassidy = [
     [
         {
             'name': 'forest ranger',
-            'rarity': 0
+            'rarity': 0,
+            'season': 1
         },
         {
             'name': 'invisible man',
-            'rarity': 1
+            'rarity': 1,
+            'season': 3
         },
         {
             'name': 'longhorn',
-            'rarity': 1
+            'rarity': 1,
+            'season': 10
         }
     ],
     [

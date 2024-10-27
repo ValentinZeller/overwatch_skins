@@ -1,12 +1,14 @@
 let mercy = [
     [
         {
-            'name': 'infinite seer',
-            'rarity': 0
+            'name': 'miko',
+            'rarity': 1,
+            'season': 1
         },
         {
-            'name': 'miko',
-            'rarity': 1
+            'name': 'infinite seer',
+            'rarity': 0,
+            'season': 4
         }
     ],
     [
@@ -45,12 +47,18 @@ let mercy = [
         {
             'name': 'wyvern',
             'rarity': 1
+        },
+        {
+            'name': 'conjurer',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [
         {
             'name': 'vengeance',
-            'rarity': 2
+            'rarity': 2,
+            'season': 10
         }
     ],
     [],

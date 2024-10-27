@@ -1,19 +1,26 @@
 let torbjorn = [
     [
         {
-            'name': 'steampunk',
-            'rarity': 0
-        },
-        {
             'name': 'dark iron',
-            'rarity': 0
+            'rarity': 0,
+            'season': 6
         },
         {
             'name': 'tentacle horror',
-            'rarity': 1
+            'rarity': 1,
+            'season': 9
+        },
+        {
+            'name': 'gnome',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [
+        {
+            'name': 'steampunk',
+            'rarity': 0
+        },
         {
             'name': 'captain',
             'rarity': 1
@@ -29,6 +36,11 @@ let torbjorn = [
         {
             'name': 'diamond magni',
             'rarity': 1
+        },
+        {
+            'name': 'drowned',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

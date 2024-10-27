@@ -1,16 +1,19 @@
 let kiriko = [
     [
         {
-            'name': 'rogue',
-            'rarity': 0
-        },
-        {
             'name': 'hinotori',
-            'rarity': 1
+            'rarity': 1,
+            'season': 1
         },
         {
             'name': 'amaterasu',
-            'rarity': 2
+            'rarity': 2,
+            'season': 3
+        },
+        {
+            'name': 'rogue',
+            'rarity': 0,
+            'season': 5
         }
     ],
     [
@@ -57,6 +60,21 @@ let kiriko = [
         {
             'name': 'oni',
             'rarity': 1
+        },
+        {
+            'name': 'divinator',
+            'rarity': 1,
+            'season': 13
+        },
+        {
+            'name': 'yatagarasu',
+            'rarity': 1,
+            'season': 13
+        },
+        {
+            'name': 'himiko toga',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

@@ -2,15 +2,18 @@ let zarya = [
     [
         {
             'name': 'tactical',
-            'rarity': 0
+            'rarity': 0,
+            'season': 3
         },
         {
             'name': 'apocalypse',
-            'rarity': 1
+            'rarity': 1,
+            'season': 6
         },
         {
             'name': 'apep',
-            'rarity': 0
+            'rarity': 0,
+            'season': 12
         }
     ],
     [
@@ -25,6 +28,11 @@ let zarya = [
         {
             'name': 'cybervision',
             'rarity': 1
+        },
+        {
+            'name': 'apocalypse trainer',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

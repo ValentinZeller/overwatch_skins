@@ -2,7 +2,8 @@ let dva = [
     [
         {
             'name': 'edm',
-            'rarity': 1
+            'rarity': 1,
+            'season': 1
         }
     ],
     [

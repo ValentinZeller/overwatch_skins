@@ -2,11 +2,13 @@ let moira = [
     [
         {
             'name': 'demon queen',
-            'rarity': 1
+            'rarity': 1,
+            'season': 3
         },
         {
             'name': 'ancient caller',
-            'rarity': 2
+            'rarity': 2,
+            'season': 9
         }
     ],
     [

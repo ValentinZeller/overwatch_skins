@@ -1,16 +1,19 @@
 let ashe = [
     [
         {
-            'name': 'snake wrangler',
-            'rarity': 0
+            'name': 'intergalatic smuggler',
+            'rarity': 1,
+            'season': 4
         },
         {
-            'name': 'intergalatic smuggler',
-            'rarity': 1
+            'name': 'snake wrangler',
+            'rarity': 0,
+            'season': 6
         },
         {
             'name': 'dorothy',
-            'rarity': 1
+            'rarity': 1,
+            'season': 12
         }
     ],
     [
@@ -42,7 +45,8 @@ let ashe = [
     [
         {
             'name': 'calimity empress',
-            'rarity': 2
+            'rarity': 2,
+            'season': 11
         }
     ],
     [],

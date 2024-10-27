@@ -2,23 +2,33 @@ let sigma = [
     [
         {
             'name': 'galactic',
-            'rarity': 0
+            'rarity': 0,
+            'season': 3
         },
         {
             'name': 'beekeeper',
-            'rarity': 1
+            'rarity': 1,
+            'season': 3
         },
         {
             'name': 'galactic emperor',
-            'rarity': 2
+            'rarity': 2,
+            'season': 4
         },
         {
             'name': 'beholder',
-            'rarity': 1
+            'rarity': 1,
+            'season': 9
         },
         {
             'name': 'captain',
-            'rarity': 1
+            'rarity': 1,
+            'season': 12
+        },
+        {
+            'name': 'monstrosus',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [

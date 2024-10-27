@@ -2,11 +2,13 @@ let bastion = [
     [
         {
             'name': 'infinite annihilator',
-            'rarity': 0
+            'rarity': 0,
+            'season': 4
         },
         {
             'name': 'rikimaru ramen',
-            'rarity': 1
+            'rarity': 1,
+            'season': 9
         }
     ],
     [

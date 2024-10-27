@@ -2,11 +2,23 @@ let reaper = [
     [
         {
             'name': 'chasa',
-            'rarity': 1
+            'rarity': 1,
+            'season': 3
         },
         {
             'name': 'hazmat',
-            'rarity': 1
+            'rarity': 1,
+            'season': 8
+        },
+        {
+            'name': 'ultrawatch',
+            'rarity': 1,
+            'season': 11
+        },
+        {
+            'name': 'grim effigy',
+            'rarity': 0,
+            'season': 13
         }
     ],
     [
@@ -25,12 +37,23 @@ let reaper = [
         {
             'name': 'heartbreaker',
             'rarity': 1
+        },
+        {
+            'name': 'ringleader',
+            'rarity': 0,
+            'season': 13
+        },
+        {
+            'name': 'tomura shigaraki',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [
         {
             'name': 'anubis',
-            'rarity': 2
+            'rarity': 2,
+            'season': 12
         }
     ],
     [],

@@ -1,20 +1,24 @@
 let doomfist = [
     [
         {
-            'name': 'cursed warrior',
-            'rarity': 0
+            'name': 'bonebreaker',
+            'rarity': 1,
+            'season': 4
         },
         {
-            'name': 'bonebreaker',
-            'rarity': 1
+            'name': 'cursed warrior',
+            'rarity': 0,
+            'season': 7
         },
         {
             'name': 'strike commander',
-            'rarity': 1
+            'rarity': 1,
+            'season': 10
         },
         {
             'name': 'bast',
-            'rarity': 1
+            'rarity': 1,
+            'season': 12
         }
     ],
     [

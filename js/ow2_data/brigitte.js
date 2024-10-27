@@ -2,7 +2,8 @@ let brigitte = [
     [
         {
             'name': 'talon',
-            'rarity': 0
+            'rarity': 0,
+            'season': 10
         }
     ],
     [
@@ -25,6 +26,11 @@ let brigitte = [
         {
             'name': 'polar',
             'rarity': 1
+        },
+        {
+            'name': 'turned hunter',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

@@ -1,16 +1,19 @@
 let junkrat = [
     [
         {
-            'name': 'sawtooth trapper',
-            'rarity': 0
+            'name': 'hong hai er',
+            'rarity': 1,
+            'season': 3
         },
         {
-            'name': 'hong hai er',
-            'rarity': 1
+            'name': 'sawtooth trapper',
+            'rarity': 0,
+            'season': 8
         },
         {
             'name': 'lifeguard',
-            'rarity': 1
+            'rarity': 1,
+            'season': 11
         }
     ],
     [

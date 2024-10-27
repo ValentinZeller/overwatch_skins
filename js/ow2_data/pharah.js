@@ -2,15 +2,18 @@ let pharah = [
     [
         {
             'name': 'sky centurion',
-            'rarity': 1
+            'rarity': 1,
+            'season': 1
         },
         {
             'name': 'hades',
-            'rarity': 1
+            'rarity': 1,
+            'season': 2
         },
         {
             'name': 'p-900 warhead',
-            'rarity': 1
+            'rarity': 1,
+            'season': 6
         }
     ],
     [

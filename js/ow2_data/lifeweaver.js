@@ -1,12 +1,14 @@
 let lifeweaver = [
     [
         {
-            'name': 'ghostbloom',
-            'rarity': 0
+            'name': 'phi ta khon',
+            'rarity': 1,
+            'season': 4
         },
         {
-            'name': 'phi ta khon',
-            'rarity': 1
+            'name': 'ghostbloom',
+            'rarity': 0,
+            'season': 7
         }
     ],
     [
@@ -33,6 +35,11 @@ let lifeweaver = [
         {
             'name': 'lifeguarder',
             'rarity': 1
+        },
+        {
+            'name': 'cotton candy',
+            'rarity': 0,
+            'season': 13
         }
     ],
     [],

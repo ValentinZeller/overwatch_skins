@@ -2,11 +2,13 @@ let tracer = [
     [
         {
             'name': 'street urchin',
-            'rarity': 1
+            'rarity': 1,
+            'season': 2
         },
         {
             'name': 'adventurer',
-            'rarity': 2
+            'rarity': 2,
+            'season': 5
         }
     ],
     [
@@ -37,6 +39,11 @@ let tracer = [
         {
             'name': 'evening wear',
             'rarity': 1
+        },
+        {
+            'name': 'deku',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

@@ -1,25 +1,25 @@
 let genji = [
     [
         {
-            'name': 'royal guard',
-            'rarity': 1
+            'name': 'cyber demon',
+            'rarity': 2,
+            'season': 1
         },
         {
-            'name': 'cyber demon',
-            'rarity': 2
+            'name': 'royal guard',
+            'rarity': 1,
+            'season': 5
         },
         {
             'name': 'junker',
-            'rarity': 0
+            'rarity': 0,
+            'season': 10
         },
         {
             'name': 'ultrawatch',
-            'rarity': 1
+            'rarity': 1,
+            'season': 11
         },
-        {
-            'name': 'omakase',
-            'rarity': 1
-        }
     ],
     [
         {
@@ -45,6 +45,16 @@ let genji = [
         {
             'name': 'polar',
             'rarity': 0
+        },
+        {
+            'name': 'omakase',
+            'rarity': 1,
+            'season': 12
+        },
+        {
+            'name': 'stone crow',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [],

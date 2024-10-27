@@ -2,15 +2,18 @@ let baptiste = [
     [
         {
             'name': 'deluxe',
-            'rarity': 0
+            'rarity': 0,
+            'season': 3
         },
         {
             'name': 'scorpion',
-            'rarity': 1
+            'rarity': 1,
+            'season': 10
         },
         {
             'name': 'mummy',
-            'rarity': 0
+            'rarity': 0,
+            'season': 12
         }
     ],
     [

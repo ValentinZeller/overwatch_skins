@@ -2,19 +2,23 @@ let illari = [
     [
         {
             'name': 'llama pajamas',
-            'rarity': 1
+            'rarity': 1,
+            'season': 6
         },
         {
             'name': 'nightraven',
-            'rarity': 1
+            'rarity': 1,
+            'season': 7
         },
         {
             'name': 'shadowchild',
-            'rarity': 0
+            'rarity': 0,
+            'season': 9
         },
         {
             'name': 'thoth',
-            'rarity': 1
+            'rarity': 1,
+            'season': 12
         }
     ],
     [

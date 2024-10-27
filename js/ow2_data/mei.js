@@ -2,11 +2,18 @@ let mei = [
     [
         {
             'name': 'alchemist',
-            'rarity': 1
+            'rarity': 1,
+            'season': 5
         },
         {
             'name': 'cursed seer',
-            'rarity': 0
+            'rarity': 0,
+            'season': 9
+        },
+        {
+            'name': 'arcane apprentice',
+            'rarity': 0,
+            'season': 13
         }
     ],
     [

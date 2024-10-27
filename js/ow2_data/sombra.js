@@ -2,11 +2,13 @@ let sombra = [
     [
         {
             'name': 'folklórica',
-            'rarity': 1
+            'rarity': 1,
+            'season': 3
         },
         {
             'name': 'agent colomar',
-            'rarity': 0
+            'rarity': 0,
+            'season': 10
         }
     ],
     [
@@ -37,6 +39,11 @@ let sombra = [
         {
             'name': 'magma',
             'rarity': 1
+        },
+        {
+            'name': 'nightshade',
+            'rarity': 0,
+            'season': 13
         }
     ],
     [],

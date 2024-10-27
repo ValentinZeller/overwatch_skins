@@ -2,7 +2,8 @@ let reinhardt = [
     [
         {
             'name': 'demon lord',
-            'rarity': 1
+            'rarity': 1,
+            'season': 5
         }
     ],
     [
@@ -46,6 +47,11 @@ let reinhardt = [
         {
             'name': 'lich king',
             'rarity': 1
+        },
+        {
+            'name': 'all might',
+            'rarity': 1,
+            'season': 13
         }
     ],
     [

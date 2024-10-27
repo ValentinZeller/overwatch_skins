@@ -2,11 +2,13 @@ let mauga = [
     [
         {
             'name': 'bonesplinter',
-            'rarity': 1
+            'rarity': 1,
+            'season': 8
         },
         {
             'name': 'port-de-paix',
-            'rarity': 1
+            'rarity': 1,
+            'season': 11
         }
     ],
     [

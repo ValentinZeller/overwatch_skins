@@ -1,23 +1,27 @@
 let widowmaker = [
     [
         {
-            'name': 'medusa',
-            'rarity': 1
-        },
-        {
             'name': 'ghostly bride',
-            'rarity': 1
+            'rarity': 1,
+            'season': 7
         },
         {
             'name': 'endless sight',
-            'rarity': 0
+            'rarity': 0,
+            'season': 9
         },
         {
             'name': 'captain lacroix',
-            'rarity': 1
+            'rarity': 1,
+            'season': 10
         }
     ],
     [
+        {
+            'name': 'medusa',
+            'rarity': 1,
+            'season': 2
+        },
         {
             'name': 'harlequin',
             'rarity': 0
@@ -55,7 +59,13 @@ let widowmaker = [
             'rarity': 1
         }
     ],
-    [],
+    [
+        {
+            'name': 'spellbinder',
+            'rarity': 2,
+            'season': 13
+        }
+    ],
     [],
     [],
     []

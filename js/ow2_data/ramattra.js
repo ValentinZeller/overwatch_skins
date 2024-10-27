@@ -2,15 +2,18 @@ let ramattra = [
     [
         {
             'name': 'primordial',
-            'rarity': 0
+            'rarity': 0,
+            'season': 2
         },
         {
             'name': 'poseidon',
-            'rarity': 1
+            'rarity': 1,
+            'season': 2
         },
         {
             'name': 'diesel baron',
-            'rarity': 1
+            'rarity': 1,
+            'season': 7
         }
     ],
     [

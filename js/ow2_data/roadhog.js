@@ -2,19 +2,28 @@ let roadhog = [
     [
         {
             'name': 'cairn',
-            'rarity': 0
+            'rarity': 0,
+            'season': 6
         },
         {
             'name': 'horror hog',
-            'rarity': 1
+            'rarity': 1,
+            'season': 9
         },
         {
             'name': 'kaiju',
-            'rarity': 1
+            'rarity': 1,
+            'season': 11
         },
         {
             'name': 'lifeguard',
-            'rarity': 1
+            'rarity': 1,
+            'season': 11
+        },
+        {
+            'name': 'haunted doll',
+            'rarity': 0,
+            'season': 13
         }
     ],
     [
