@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : lun. 22 sep. 2025 à 13:25
+-- Généré le : mer. 15 oct. 2025 à 09:01
 -- Version du serveur : 8.0.43-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
@@ -188,7 +188,8 @@ INSERT INTO `season` (`id`, `name`, `start_date`, `end_date`) VALUES
 (15, 'Season 15: Honor and Glory', '2025-02-18', '2025-04-22'),
 (16, 'Season 16: Stadium', '2025-04-22', '2025-06-24'),
 (17, 'Season 17: Powered Up!', '2025-06-24', '2025-08-26'),
-(18, 'Season 18: Stadium Quickplay', '2025-08-26', '2025-10-14');
+(18, 'Season 18: Stadium Quickplay', '2025-08-26', '2025-10-14'),
+(19, 'Season 19: Haunted Masquerade', '2025-10-14', '2025-12-09');
 
 -- --------------------------------------------------------
 
@@ -1683,7 +1684,38 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1681, 42, 9, 18, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/SOLARIS.webp', 'legendary', 'Solaris', NULL, NULL),
 (1682, 23, 9, 18, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/SOLARIS.webp', 'legendary', 'Solaris', NULL, NULL),
 (1683, 5, 9, 18, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/SOLARIS.webp', 'legendary', 'Solaris', NULL, NULL),
-(1684, 27, 9, 18, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/SOLARIS.webp', 'legendary', 'Solaris', NULL, NULL);
+(1684, 27, 9, 18, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/SOLARIS.webp', 'legendary', 'Solaris', NULL, NULL),
+(1685, 18, 8, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/DIVINE_DRUID.webp', 'mythic', 'Divine Druid', NULL, NULL),
+(1686, 23, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/VAMPIRE.webp', 'legendary', 'Vampire', NULL, NULL),
+(1687, 44, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/MERMONSTER.webp', 'legendary', 'Mermonster', NULL, NULL),
+(1688, 33, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/NINJA.webp', 'legendary', 'Ninja', NULL, NULL),
+(1689, 9, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/CURSED_WOODS.webp', 'epic', 'Cursed Woods', NULL, NULL),
+(1690, 42, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/CURSED_TEDDY.webp', 'epic', 'Cursed Teddy', NULL, NULL),
+(1691, 28, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/ONE-EYED_WILHELM.webp', 'legendary', 'One-Eyed Wilhelm', NULL, NULL),
+(1692, 35, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/CURSED_CANDLE.webp', 'epic', 'Cursed Candle', NULL, NULL),
+(1693, 6, 3, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/ONI.webp', 'legendary', 'Oni', NULL, NULL),
+(1694, 6, 17, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/STADIUM_ALL-STAR.webp', 'legendary', 'Stadium All-Star', NULL, NULL),
+(1695, 43, 18, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/VAMPIRE.webp', 'legendary', 'Vampire', NULL, 10),
+(1696, 26, 18, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/R-7K_PRESERVER.webp', 'legendary', 'R-7K Preserver', NULL, 10),
+(1697, 37, 18, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/CURSED_MUMMY.webp', 'epic', 'Cursed Mummy', NULL, 9),
+(1698, 10, 9, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SCARLET_FLARE.webp', 'legendary', 'Scarlet Flare', NULL, NULL),
+(1699, 17, 9, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SCARLET_EMBER.webp', 'legendary', 'Scarlet Ember', NULL, NULL),
+(1700, 22, 9, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/SCARLET_ANGEL.webp', 'legendary', 'Scarlet Angel', NULL, NULL),
+(1701, 22, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/FALLEN_ANGEL.webp', 'legendary', 'Fallen Angel', NULL, NULL),
+(1702, 10, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/ARCHANGEL.webp', 'legendary', 'Archangel', NULL, NULL),
+(1703, 11, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/ARCHANGEL.webp', 'legendary', 'Archangel', NULL, NULL),
+(1704, 25, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/ARCHANGEL.webp', 'legendary', 'Archangel', NULL, NULL),
+(1705, 3, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/ARCHANGEL.webp', 'legendary', 'Archangel', NULL, NULL),
+(1706, 30, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/ARCHANGEL.webp', 'legendary', 'Archangel', NULL, NULL),
+(1707, 29, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/TANUKI.webp', 'legendary', 'Tanuki', NULL, NULL),
+(1708, 2, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/LUCKY_CAT.webp', 'legendary', 'Lucky Cat', NULL, NULL),
+(1709, 2, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/CURSED_DOLL.webp', 'legendary', 'Cursed Doll', NULL, NULL),
+(1710, 27, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/ONI.webp', 'legendary', 'Oni', NULL, NULL),
+(1711, 38, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/YUKI-ONNA.webp', 'legendary', 'Yuki-Onna', NULL, NULL),
+(1712, 5, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/TYRIAN_DRAKE.webp', 'legendary', 'Tyrian Drake', NULL, NULL),
+(1713, 14, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/GOTHIC_CAT.webp', 'legendary', 'Gothic Cat', NULL, NULL),
+(1714, 43, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/INARI.webp', 'legendary', 'Inari', NULL, NULL),
+(1715, 22, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/GOTHIC_CAT.webp', 'legendary', 'Gothic Cat', NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1753,13 +1785,13 @@ ALTER TABLE `hero`
 -- AUTO_INCREMENT pour la table `season`
 --
 ALTER TABLE `season`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT pour la table `skin`
 --
 ALTER TABLE `skin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1685;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1716;
 
 --
 -- Contraintes pour les tables déchargées
