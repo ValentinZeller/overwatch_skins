@@ -12177,4 +12177,20 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/GOTHIC_CAT.webp"
   rarity: "legendary"
   name: "Gothic Cat"
+-
+  id: 1716
+  id_hero: 44
+  id_category: 15
+  id_season: 19
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/GAROU.webp"
+  rarity: "legendary"
+  name: "Garou"
+-
+  id: 1717
+  id_hero: 2
+  id_category: 15
+  id_season: 19
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HELLISH_BLIZZARD.webp"
+  rarity: "legendary"
+  name: "Hellish Blizzard"
 ...

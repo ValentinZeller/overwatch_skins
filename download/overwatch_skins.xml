@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : mer. 15 oct. 2025 à 09:01
+- Généré le : jeu. 16 oct. 2025 à 21:19
 - Version du serveur : 8.0.43-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -78,7 +78,7 @@
                   CONSTRAINT `skin_condition` FOREIGN KEY (`id_condition`) REFERENCES `condition_special` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_hero` FOREIGN KEY (`id_hero`) REFERENCES `hero` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_season` FOREIGN KEY (`id_season`) REFERENCES `season` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=1716 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=1718 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -18653,6 +18653,30 @@
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/GOTHIC_CAT.webp</column>
             <column name="rarity">legendary</column>
             <column name="name">Gothic Cat</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1716</column>
+            <column name="id_hero">44</column>
+            <column name="id_category">15</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/GAROU.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Garou</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1717</column>
+            <column name="id_hero">2</column>
+            <column name="id_category">15</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HELLISH_BLIZZARD.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Hellish Blizzard</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>
