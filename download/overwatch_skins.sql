@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 16 oct. 2025 à 21:19
+-- Généré le : mar. 11 nov. 2025 à 23:24
 -- Version du serveur : 8.0.43-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
@@ -1717,7 +1717,18 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1714, 43, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/INARI.webp', 'legendary', 'Inari', NULL, NULL),
 (1715, 22, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/GOTHIC_CAT.webp', 'legendary', 'Gothic Cat', NULL, NULL),
 (1716, 44, 15, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/GAROU.webp', 'legendary', 'Garou', NULL, NULL),
-(1717, 2, 15, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HELLISH_BLIZZARD.webp', 'legendary', 'Hellish Blizzard', NULL, NULL);
+(1717, 2, 15, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HELLISH_BLIZZARD.webp', 'legendary', 'Hellish Blizzard', NULL, NULL),
+(1718, 16, 8, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/CYBER_FUEL.webp', 'mythic', 'Cyber Fuel', NULL, NULL),
+(1719, 7, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
+(1720, 20, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
+(1721, 8, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/LAPIS.webp', 'legendary', 'Lapis', NULL, NULL),
+(1722, 32, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
+(1723, 14, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/SUNSTONE.webp', 'legendary', 'Sunstone', NULL, NULL),
+(1724, 25, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/MALACHITE.webp', 'legendary', 'Malachite', NULL, NULL),
+(1725, 27, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/ANTI-HERO.webp', 'legendary', 'Anti-Hero', NULL, NULL),
+(1726, 38, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/FEMME_FATALE.webp', 'legendary', 'Femme Fatale', NULL, NULL),
+(1727, 34, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
+(1728, 17, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1793,7 +1804,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT pour la table `skin`
 --
 ALTER TABLE `skin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1718;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1729;
 
 --
 -- Contraintes pour les tables déchargées

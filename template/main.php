@@ -12,14 +12,14 @@
     <?php echo template('template/category_color.php', ['categories' => $categories, 'maxSkinCategory' => $maxSkinCategory]); ?>
 </head>
 <body>
-    <div id="setting" onclick="openNav()">&#9881;</div>
-    <div class="overlay" id="myNav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="setting" onclick="openSettings()">&#9881;</div>
+    <div class="overlay" id="mySettings">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
           <div class="overlay-content">
             <a href="<?= $link ?>"><?= $linkText ?> ↗</a>
             <a href="download.php">Download ↗</a>
-            <?php echo template('template/visual_bar.php', ['rarities' => $rarityList]); ?>
-            <?php echo template('template/setting_form.php', [
+            <?php echo template('template/visual_settings.php', ['rarities' => $rarityList]); ?>
+            <?php echo template('template/filter_form.php', [
                 'rarityList' => $rarityList,
                 'categoryList' => $categoryList,
                 'heroList' => $heroList,

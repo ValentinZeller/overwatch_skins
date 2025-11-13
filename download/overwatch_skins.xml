@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : jeu. 16 oct. 2025 à 21:19
+- Généré le : mar. 11 nov. 2025 à 23:24
 - Version du serveur : 8.0.43-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -78,7 +78,7 @@
                   CONSTRAINT `skin_condition` FOREIGN KEY (`id_condition`) REFERENCES `condition_special` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_hero` FOREIGN KEY (`id_hero`) REFERENCES `hero` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_season` FOREIGN KEY (`id_season`) REFERENCES `season` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=1718 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=1729 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -18677,6 +18677,138 @@
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HELLISH_BLIZZARD.webp</column>
             <column name="rarity">legendary</column>
             <column name="name">Hellish Blizzard</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1718</column>
+            <column name="id_hero">16</column>
+            <column name="id_category">8</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/CYBER_FUEL.webp</column>
+            <column name="rarity">mythic</column>
+            <column name="name">Cyber Fuel</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1719</column>
+            <column name="id_hero">7</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/MAGEPUNK.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Magepunk</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1720</column>
+            <column name="id_hero">20</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/MAGEPUNK.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Magepunk</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1721</column>
+            <column name="id_hero">8</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/LAPIS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Lapis</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1722</column>
+            <column name="id_hero">32</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/MAGEPUNK.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Magepunk</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1723</column>
+            <column name="id_hero">14</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/SUNSTONE.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Sunstone</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1724</column>
+            <column name="id_hero">25</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/MALACHITE.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Malachite</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1725</column>
+            <column name="id_hero">27</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/ANTI-HERO.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Anti-Hero</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1726</column>
+            <column name="id_hero">38</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/FEMME_FATALE.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Femme Fatale</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1727</column>
+            <column name="id_hero">34</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/MAGEPUNK.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Magepunk</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1728</column>
+            <column name="id_hero">17</column>
+            <column name="id_category">12</column>
+            <column name="id_season">19</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Magepunk</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>

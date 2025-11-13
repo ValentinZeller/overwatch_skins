@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* Open when someone clicks on the span element */
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+function openSettings() {
+    document.getElementById("mySettings").style.width = "100%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+function closeSettings() {
+    document.getElementById("mySettings").style.width = "0%";
 }
 
 // Get Local storage data
@@ -37,16 +37,16 @@ let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true 
 // Apply data
 if (document.querySelector('[data-rarity="rare"]') != null) {
     document.querySelector('[data-rarity="rare"]').checked = rareBar
-    updateBar(rareBar, 'rare');
+    updateBarVisibility(rareBar, 'rare');
     document.querySelector('[data-rarity="mythic"]').checked = mythicBar
-    updateBar(mythicBar, 'mythic');
+    updateBarVisibility(mythicBar, 'mythic');
 }
 document.getElementById('categoriesColors').checked = categoriesColor
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
 updateCategoryColor(categoriesColor);
-updateBar(epicBar, 'epic');
-updateBar(legendaryBar, 'legendary');
+updateBarVisibility(epicBar, 'epic');
+updateBarVisibility(legendaryBar, 'legendary');
 
 function updateCategoryColor(show) {
     localStorage.setItem('categoriesColor', show);
@@ -56,12 +56,12 @@ function updateCategoryColor(show) {
 }
 
 // Change bar visibility from a checkbox
-function manageBar(event) {
-    updateBar(event.target.checked, event.target.dataset.rarity)
+function checkBarVisibility(event) {
+    updateBarVisibility(event.target.checked, event.target.dataset.rarity)
 }
 
 //Change bar visibility
-function updateBar(show, rarity) {
+function updateBarVisibility(show, rarity) {
     localStorage.setItem(rarity, show)
     let elmt = document.getElementsByClassName(rarity)
     for (let i = 0; i < elmt.length; i++) {
@@ -90,7 +90,7 @@ function selectRole(role) {
     }
 }
 
-function sortAlph() {
+function sortHeroesAlphabetically() {
     let container = document.getElementById('container');
     let category = document.getElementById('category');
     let total = document.getElementById('total');
@@ -104,7 +104,7 @@ function sortAlph() {
     container.append(total);
 }
 
-function sortHeroes() {
+function sortHeroesBySkinsAmount() {
     let container = document.getElementById('container');
     let category = document.getElementById('category');
     let total = document.getElementById('total');
