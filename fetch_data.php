@@ -6,6 +6,7 @@ require_once('category/CategoryManager.php');
 require_once('season/SeasonManager.php');
 define('YEARS', [2016,2017,2018,2019,2020,2021,2022]);
 define('MAX_SKIN_AMOUNT', 8);
+define('CACHE_PATH', 'cache/');
 
 $db = ConnectBDD();
 $skinManager = new SkinManager($db);
@@ -13,22 +14,14 @@ $heroManager = new HeroManager($db);
 $categoryManager = new CategoryManager($db);
 $seasonManager = new SeasonManager($db);
 
-$skinData = $skinManager->getOWSkin($version);
-$skinData->setFetchMode(PDO::FETCH_ASSOC);
-$skinData = $skinData->fetchAll();
+$skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
 
-$heroList = $heroManager->getListeHero($version);
-$heroList->setFetchMode(PDO::FETCH_ASSOC);
-$heroList = $heroList->fetchAll();
+$heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
 
-$categoryList = $categoryManager->getCategoryOW($version);
-$categoryList->setFetchMode(PDO::FETCH_ASSOC);
-$categoryList = $categoryList->fetchAll();
+$categoryList = initialValue('category',$version,[$categoryManager,'getCategoryOW']);
 
 if ($version === 'ow2') {
-    $seasonList = $seasonManager->getListeSeason();
-    $seasonList->setFetchMode(PDO::FETCH_ASSOC);
-    $seasonList = $seasonList->fetchAll();
+    $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
 } else {
     $seasonList = null;
 }
@@ -36,6 +29,21 @@ if ($version === 'ow2') {
 $rarityList = ['epic','legendary'];
 if ($version === 'ow2') {
     $rarityList = ['rare','epic','legendary','mythic'];
+}
+
+function initialValue($type,$version,$fetchFunction) {
+    $list = null;
+    if (file_exists(CACHE_PATH.$type.'_'.$version.'.php')) {
+        // Load from cache
+        $list = include(CACHE_PATH.$type.'_'.$version.'.php');
+    } else {
+        // Fetch from database and cache it
+        $list = $fetchFunction($version);
+        $list->setFetchMode(PDO::FETCH_ASSOC);
+        $list = $list->fetchAll();
+        file_put_contents(CACHE_PATH.$type.'_'.$version.'.php', '<?php return ' . var_export($list, true) . ';');
+    }
+    return $list;
 }
 
 ?>
