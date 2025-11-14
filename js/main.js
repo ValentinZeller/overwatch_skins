@@ -28,6 +28,7 @@ function closeSettings() {
 }
 
 // Get Local storage data
+let commonBar = localStorage.getItem('common') === 'true' ? true : false;
 let rareBar = localStorage.getItem('rare') === 'true' ? true : false;
 let epicBar = localStorage.getItem('epic') === 'true' ? true : false;
 let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : false;
@@ -35,12 +36,19 @@ let mythicBar = localStorage.getItem('mythic') === 'true' ? true : false;
 let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : false;
 
 // Apply data
+if (document.querySelector('[data-rarity="common"]') != null) {
+    document.querySelector('[data-rarity="common"]').checked = commonBar
+    updateBarVisibility(commonBar, 'common');
+}
 if (document.querySelector('[data-rarity="rare"]') != null) {
     document.querySelector('[data-rarity="rare"]').checked = rareBar
     updateBarVisibility(rareBar, 'rare');
+}
+if (document.querySelector('[data-rarity="mythic"]') != null) {
     document.querySelector('[data-rarity="mythic"]').checked = mythicBar
     updateBarVisibility(mythicBar, 'mythic');
 }
+
 document.getElementById('categoriesColors').checked = categoriesColor
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar

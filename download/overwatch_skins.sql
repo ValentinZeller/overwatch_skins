@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mar. 11 nov. 2025 à 23:24
+-- Généré le : ven. 14 nov. 2025 à 13:14
 -- Version du serveur : 8.0.43-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
@@ -783,12 +783,12 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (584, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/BLE.webp', 'rare', 'Ble', NULL, NULL),
 (585, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/VYOLET.webp', 'rare', 'Vyolèt', NULL, NULL),
 (586, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/VET.webp', 'rare', 'Vèt', NULL, NULL),
-(587, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WOUGE.webp', 'rare', 'Wouge', NULL, NULL),
+(587, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WOUJ.webp', 'rare', 'Wouj', NULL, NULL),
 (588, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/CAMOUFLAGE.webp', 'epic', 'Camouflage', NULL, NULL),
 (589, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WASTELAND.webp', 'epic', 'Wasteland', NULL, NULL),
 (590, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/DESERT_OPS.webp', 'legendary', 'Desert Ops', NULL, NULL),
 (591, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/SPEC_OPS.webp', 'legendary', 'Spec Ops', NULL, NULL),
-(592, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/ BUCCANEER.webp', 'legendary', 'Buccaneer', NULL, NULL),
+(592, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/BUCCANEER.webp', 'legendary', 'Buccaneer', NULL, NULL),
 (593, 3, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/PIRATE.webp', 'legendary', 'Pirate', NULL, NULL),
 (607, 2, 3, 4, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/INTERGALACTIC_SMUGGLER.webp', 'legendary', 'Intergalactic Smuggler', NULL, NULL),
 (608, 2, 3, 6, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/SNAKE_WRANGLER.webp', 'epic', 'Snake Wrangler', NULL, NULL),
@@ -839,7 +839,7 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (681, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/DAWN.webp', 'rare', 'Dawn', NULL, NULL),
 (682, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/MEADOW.webp', 'rare', 'Meadow', NULL, NULL),
 (683, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SKY.webp', 'rare', 'Sky', NULL, NULL),
-(684, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SCOT.webp', 'rare', 'Scot', NULL, NULL),
+(684, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SOOT.webp', 'rare', 'Soot', NULL, NULL),
 (685, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/DEFENSE_MATRIX.webp', 'epic', 'Defense Matrix', NULL, NULL),
 (686, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/OMNIC_CRISIS.webp', 'epic', 'Omnic Crisis', NULL, NULL),
 (687, 4, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/ANTIQUE.webp', 'legendary', 'Antique', NULL, NULL),
@@ -1033,7 +1033,7 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (914, 25, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/THUNDERBIRD.webp', 'legendary', 'Thunderbird', NULL, NULL),
 (915, 25, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/RAINDANCER.webp', 'legendary', 'Raindancer', NULL, NULL),
 (916, 26, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DETACHMENT.webp', 'rare', 'Detachment', NULL, NULL),
-(917, 26, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DISCIPLINEwebp', 'rare', 'Discipline', NULL, NULL),
+(917, 26, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DISCIPLINE.webp', 'rare', 'Discipline', NULL, NULL),
 (918, 26, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/REVERENCE.webp', 'rare', 'Reverence', NULL, NULL),
 (919, 26, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/WISDOM.webp', 'rare', 'Wisdom', NULL, NULL),
 (920, 26, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/CONSTRUCTION.webp', 'epic', 'Construction', NULL, NULL),
@@ -1150,7 +1150,7 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1051, 38, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/ODETTE.webp', 'legendary', 'Odette', NULL, NULL),
 (1052, 38, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/ODILE.webp', 'legendary', 'Odile', NULL, NULL),
 (1053, 38, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/HUNTRESS.webp', 'legendary', 'Huntress', NULL, NULL),
-(1054, 38, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COMTESS.webp', 'legendary', 'Comtess', NULL, NULL),
+(1054, 38, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COMTESSE.webp', 'legendary', 'Comtesse', NULL, NULL),
 (1055, 39, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Winston/ATMOSPHERE.webp', 'rare', 'Atmosphere', NULL, NULL),
 (1056, 39, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Winston/BANANA.webp', 'rare', 'Banana', NULL, NULL),
 (1057, 39, 16, NULL, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Winston/FOREST.webp', 'rare', 'Forest', NULL, NULL),

@@ -1,6 +1,7 @@
 :root {
   --width: 220px;
   --height: 124px;
+  --common: #c5c5c5;
   --rare: #1ac9ff;
   --epic: #ff00ff;
   --legendary: #ff9c00;
@@ -53,6 +54,10 @@ body {
     background-size: contain;
     background-attachment: scroll;
     background-position: 50% 0%;
+  }
+
+  .common {
+    border-bottom: 3px solid var(--common);
   }
 
   .rare {
@@ -123,6 +128,10 @@ body {
 .count {
   margin: auto;
   font-size: x-large;
+}
+
+.commonSkin {
+  color: var(--common);
 }
 
 .rareSkin {

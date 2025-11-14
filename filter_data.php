@@ -16,7 +16,7 @@ setupArrayByFilter('rarity', $rarities, $rarityList, $filtered);
 if ($version == 'ow2') {
     $seasonIdList = array_map(function($season) { return $season['id']; }, $seasonList);
     setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
-} else {
+} else if ($version == 'ow1') {
     setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
 }
 
@@ -53,11 +53,13 @@ function setupArrayByFilter($key, &$array, $defaut, &$filtered, $list = null) {
 function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seasons, $yearsSelected, &$skins) {
     if (isset($_POST['hero']) || isset($_POST['category']) || isset($_POST['rarity']) || isset($_POST['season']) || isset($_POST['year'])) {
         foreach ($skinData as $skin) {
+            
             if (in_array($skin['hero_name'], array_column($heroes, 'name')) &&
             in_array($skin['category_name'], array_column($categories, 'name')) &&
             in_array($skin['rarity'], $rarities) &&
             ( ($version == 'ow1' && in_array($skin['year'], $yearsSelected)) ||
-            ($version == 'ow2' && in_array($skin['id_season'], $seasons)) )
+            ($version == 'ow2' && in_array($skin['id_season'], $seasons)) || 
+            ($version == 'base') )
             ) {
                 $skins[] = $skin;
             }

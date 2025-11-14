@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : mar. 11 nov. 2025 à 23:24
+- Généré le : ven. 14 nov. 2025 à 13:14
 - Version du serveur : 8.0.43-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -7502,9 +7502,9 @@
             <column name="id_category">16</column>
             <column name="id_season">NULL</column>
             <column name="year">NULL</column>
-            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WOUGE.webp</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WOUJ.webp</column>
             <column name="rarity">rare</column>
-            <column name="name">Wouge</column>
+            <column name="name">Wouj</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>
@@ -7562,7 +7562,7 @@
             <column name="id_category">16</column>
             <column name="id_season">NULL</column>
             <column name="year">NULL</column>
-            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/ BUCCANEER.webp</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/BUCCANEER.webp</column>
             <column name="rarity">legendary</column>
             <column name="name">Buccaneer</column>
             <column name="id_category_secondary">NULL</column>
@@ -8174,9 +8174,9 @@
             <column name="id_category">16</column>
             <column name="id_season">NULL</column>
             <column name="year">NULL</column>
-            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SCOT.webp</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SOOT.webp</column>
             <column name="rarity">rare</column>
-            <column name="name">Scot</column>
+            <column name="name">Soot</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>
@@ -10490,7 +10490,7 @@
             <column name="id_category">16</column>
             <column name="id_season">NULL</column>
             <column name="year">NULL</column>
-            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DISCIPLINEwebp</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DISCIPLINE.webp</column>
             <column name="rarity">rare</column>
             <column name="name">Discipline</column>
             <column name="id_category_secondary">NULL</column>
@@ -11894,9 +11894,9 @@
             <column name="id_category">16</column>
             <column name="id_season">NULL</column>
             <column name="year">NULL</column>
-            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COMTESS.webp</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COMTESSE.webp</column>
             <column name="rarity">legendary</column>
-            <column name="name">Comtess</column>
+            <column name="name">Comtesse</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>

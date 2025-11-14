@@ -14,22 +14,29 @@ $heroManager = new HeroManager($db);
 $categoryManager = new CategoryManager($db);
 $seasonManager = new SeasonManager($db);
 
-$skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
-
-$heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
-
-$categoryList = initialValue('category',$version,[$categoryManager,'getCategoryOW']);
-
-if ($version === 'ow2') {
-    $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
-} else {
+if ($version == 'base') {
+    $skinData = initialValue('base_skin','ow2',[$skinManager,'getBaseSkin']);
+    $heroList = initialValue('hero','ow2',[$heroManager,'getListeHero']);
+    $rarityList = ['common','rare','epic','legendary'];
+    $categoryList = raritiesAsCategory($rarityList);
     $seasonList = null;
+} else {
+    $skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
+    $heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
+    $categoryList = initialValue('category',$version,[$categoryManager,'getCategoryOW']);
+    
+    if ($version === 'ow2') {
+        $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
+    } else {
+        $seasonList = null;
+    }
+
+    $rarityList = ['epic','legendary'];
+    if ($version === 'ow2') {
+        $rarityList = ['rare','epic','legendary','mythic'];
+    }
 }
 
-$rarityList = ['epic','legendary'];
-if ($version === 'ow2') {
-    $rarityList = ['rare','epic','legendary','mythic'];
-}
 
 function initialValue($type,$version,$fetchFunction) {
     $list = null;
@@ -44,6 +51,19 @@ function initialValue($type,$version,$fetchFunction) {
         file_put_contents(CACHE_PATH.$type.'_'.$version.'.php', '<?php return ' . var_export($list, true) . ';');
     }
     return $list;
+}
+
+function raritiesAsCategory($rarityList) {
+    $rarities = array();
+    foreach ($rarityList as $index => $rarity) {
+        $rarities[$index] = array(
+            'id' => $index + 1,
+            'name' => $rarity,
+            'icon_url' => 'https://foxyjr.cloudns.ph/overwatch_skins/image/rarity/'.$rarity.'.webp',
+            'display_order' => $index + 1,
+        );
+    }
+    return $rarities;
 }
 
 ?>

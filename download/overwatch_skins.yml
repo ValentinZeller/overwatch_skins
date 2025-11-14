@@ -5031,9 +5031,9 @@
   id: 587
   id_hero: 3
   id_category: 16
-  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WOUGE.webp"
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/WOUJ.webp"
   rarity: "rare"
-  name: "Wouge"
+  name: "Wouj"
 -
   id: 588
   id_hero: 3
@@ -5066,7 +5066,7 @@
   id: 592
   id_hero: 3
   id_category: 16
-  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/ BUCCANEER.webp"
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/BUCCANEER.webp"
   rarity: "legendary"
   name: "Buccaneer"
 -
@@ -5476,9 +5476,9 @@
   id: 684
   id_hero: 4
   id_category: 16
-  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SCOT.webp"
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SOOT.webp"
   rarity: "rare"
-  name: "Scot"
+  name: "Soot"
 -
   id: 685
   id_hero: 4
@@ -6831,7 +6831,7 @@
   id: 917
   id_hero: 26
   id_category: 16
-  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DISCIPLINEwebp"
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/DISCIPLINE.webp"
   rarity: "rare"
   name: "Discipline"
 -
@@ -7654,9 +7654,9 @@
   id: 1054
   id_hero: 38
   id_category: 16
-  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COMTESS.webp"
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COMTESSE.webp"
   rarity: "legendary"
-  name: "Comtess"
+  name: "Comtesse"
 -
   id: 1055
   id_hero: 39

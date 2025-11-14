@@ -9,14 +9,16 @@
                 </label>
             <?php endforeach; ?>
         </div>
-        <div class="category-filter filter-section">
-            <?php foreach ($categoryList as $category): ?>
-                <label class="category">
-                    <input type="checkbox" name="category[]" value="<?= $category['name'] ?>" <?php echo (in_array($category['name'], array_column($categories, 'name'))&&$filtered['category'] ? "checked" : "") ?>>
-                    <?= $category['name'] ?>
-                </label>
-            <?php endforeach; ?>
-        </div>
+        <?php if ($version != 'base'): ?>
+            <div class="category-filter filter-section">
+                <?php foreach ($categoryList as $category): ?>
+                    <label class="category">
+                        <input type="checkbox" name="category[]" value="<?= $category['name'] ?>" <?php echo (in_array($category['name'], array_column($categories, 'name'))&&$filtered['category'] ? "checked" : "") ?>>
+                        <?= $category['name'] ?>
+                    </label>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
         <div class="hero-filter filter-section">
             <div id="select-buttons">
                 <button type="button" class='select-hero' onclick="selectRole('tank')">Select Tanks</button>
@@ -41,6 +43,7 @@
                         <?= $season['name'] ?>
                     </label>
                 <?php endforeach; ?>
+            <?php elseif ($version == 'base'): ?>
             <?php else: ?>
                 <?php foreach (YEARS as $year): ?>
                     <label class="season">

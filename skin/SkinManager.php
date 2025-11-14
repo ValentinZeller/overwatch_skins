@@ -46,6 +46,18 @@
       $stmt->execute();
       return $stmt;
     }
+    
+    public function getBaseSkin() {
+        $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.rarity AS category_name
+                FROM skin
+                LEFT JOIN hero ON skin.id_hero = hero.id
+                LEFT JOIN category ON skin.id_category = category.id
+                WHERE skin.id_category = 16
+                ORDER BY hero.name, rarity, skin.name';
+        $stmt = $this->_db->prepare($req);
+        $stmt->execute();
+        return $stmt;
+    }
 
     public function filterSkinByHero($heroName, $array) {
         $result = [];
