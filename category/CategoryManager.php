@@ -13,7 +13,7 @@
       $this->_db=$db;
     }
 
-    public function getListeCategory($version = 'ow1') {
+    public function getListeCategory() {
       $req = 'SELECT * FROM category ORDER BY name';
       $stmt = $this->_db->prepare($req);
       $stmt->execute();

@@ -16,13 +16,10 @@
     <div class="overlay" id="mySettings">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
           <div class="overlay-content">
-            <?php if ($version == 'base'): ?>
-                <a href="ow1">Overwatch 1 ↗</a>
-                <a href="ow2">Overwatch 2 ↗</a>
-            <?php else: ?>
-                <a href="<?= $link ?>"><?= $linkText ?> ↗</a>
-                <a href="base">Base Skin ↗</a>
-            <?php endif; ?>
+            <a href="ow1">Overwatch 1 ↗</a>
+            <a href="ow2">Overwatch 2 ↗</a>
+            <a href="base">Base Skin ↗</a>
+            <a href="all">All Skins ↗</a>
             <a href="download.php">Download ↗</a>
             <?php echo template('template/visual_settings.php', ['rarities' => $rarityList]); ?>
             <?php echo template('template/filter_form.php', [

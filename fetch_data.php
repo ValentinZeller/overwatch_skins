@@ -20,23 +20,24 @@ if ($version == 'base') {
     $rarityList = ['common','rare','epic','legendary'];
     $categoryList = raritiesAsCategory($rarityList);
     $seasonList = null;
-} else {
+} else if ($version != null ) {
     $skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
     $heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
     $categoryList = initialValue('category',$version,[$categoryManager,'getCategoryOW']);
+    $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
+    $rarityList = ['rare','epic','legendary','mythic'];
     
-    if ($version === 'ow2') {
-        $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
-    } else {
+    if ($version === 'ow1') {
         $seasonList = null;
+        $rarityList = ['epic','legendary'];
     }
-
-    $rarityList = ['epic','legendary'];
-    if ($version === 'ow2') {
-        $rarityList = ['rare','epic','legendary','mythic'];
-    }
+} else {
+    $skinData = initialValue('all_skin','ow2',[$skinManager,'getListeSkin']);
+    $heroList = initialValue('hero','ow2',[$heroManager,'getListeHero']);
+    $categoryList = initialValue('all_category','ow2',[$categoryManager,'getListeCategory']);
+    $seasonList = initialValue('season','ow2',[$seasonManager,'getListeSeason']);
+    $rarityList = ['common','rare','epic','legendary','mythic'];
 }
-
 
 function initialValue($type,$version,$fetchFunction) {
     $list = null;

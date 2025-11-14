@@ -36,15 +36,15 @@
             <?php endforeach; ?>
         </div>
         <div class="season-filter filter-section">
-            <?php if ($version == 'ow2'): ?>
+            <?php if ($version == 'ow2' || $version == null): ?>
                 <?php foreach ($seasonList as $season): ?>
                     <label class="season">
                         <input type="checkbox" name="season[]" value="<?= $season['id'] ?>" <?php echo (in_array($season['id'], $seasons)&&$filtered['season'] ? "checked" : "") ?>>
                         <?= $season['name'] ?>
                     </label>
                 <?php endforeach; ?>
-            <?php elseif ($version == 'base'): ?>
-            <?php else: ?>
+            <?php endif; ?>
+            <?php if ($version == 'ow1' || $version == null): ?>
                 <?php foreach (YEARS as $year): ?>
                     <label class="season">
                         <input type="checkbox" name="year[]" value="<?= $year ?>" <?php echo (in_array($year, $yearsSelected)&&$filtered['year'] ? "checked" : "") ?>>

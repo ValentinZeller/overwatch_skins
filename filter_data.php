@@ -18,6 +18,10 @@ if ($version == 'ow2') {
     setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
 } else if ($version == 'ow1') {
     setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
+} else if ($version == null) {
+    $seasonIdList = array_map(function($season) { return $season['id']; }, $seasonList);
+    setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
+    setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
 }
 
 filterSkin($skinData, $version, $heroes, $categories, $rarities, $seasons, $yearsSelected, $skins);
