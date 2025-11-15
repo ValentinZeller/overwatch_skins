@@ -14,7 +14,7 @@
     }
 
     public function getListeSkin() {
-      $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.year
+      $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.year, skin.id_season, condition_special.name AS condition_name
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN season ON skin.id_season = season.id
