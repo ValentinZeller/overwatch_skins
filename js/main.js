@@ -110,6 +110,7 @@ function sortHeroesAlphabetically() {
         container.append(hero);
     });
     container.append(total);
+    closeSettings();
 }
 
 function sortHeroesBySkinsAmount() {
@@ -124,4 +125,5 @@ function sortHeroesBySkinsAmount() {
         container.append(hero);
     });
     container.append(total);
+    closeSettings();
 }
