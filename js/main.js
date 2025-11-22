@@ -127,3 +127,18 @@ function sortHeroesBySkinsAmount() {
     container.append(total);
     closeSettings();
 }
+
+function sortHeroesByReleaseDate() {
+    let container = document.getElementById('container');
+    let category = document.getElementById('category');
+    let total = document.getElementById('total');
+    let heroes = document.querySelectorAll('[data-release-date]');
+    heroes = Array.from(heroes).sort((a, b) => new Date(a.getAttribute('data-release-date')) - new Date(b.getAttribute('data-release-date')));
+    container.innerHTML = '';
+    container.append(category);
+    heroes.forEach(hero => {
+        container.append(hero);
+    });
+    container.append(total);
+    closeSettings();
+}

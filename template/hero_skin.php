@@ -1,6 +1,6 @@
 <?php require_once('function.php'); ?>
 
-<div class="row" id="<?= $hero['name'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
+<div class="row" id="<?= $hero['name'] ?>" data-release-date="<?= $hero['release_date'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
     <div class="rowHeader" style="background-image: url('<?= $hero['portrait_url'] ?>');"></div>
     <?php foreach ($categories as $category): ?>
         <?php
