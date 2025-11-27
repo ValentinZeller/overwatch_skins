@@ -98,7 +98,8 @@ function selectRole(role) {
     }
 }
 
-function sortHeroesAlphabetically() {
+function sortHeroesAlphabetically(event) {
+    console.log(event);
     let container = document.getElementById('container');
     let category = document.getElementById('category');
     let total = document.getElementById('total');
@@ -134,6 +135,42 @@ function sortHeroesByReleaseDate() {
     let total = document.getElementById('total');
     let heroes = document.querySelectorAll('[data-release-date]');
     heroes = Array.from(heroes).sort((a, b) => new Date(a.getAttribute('data-release-date')) - new Date(b.getAttribute('data-release-date')));
+    container.innerHTML = '';
+    container.append(category);
+    heroes.forEach(hero => {
+        container.append(hero);
+    });
+    container.append(total);
+    closeSettings();
+}
+
+function sortHeroes(parameter) {
+    let container = document.getElementById('container');
+    let category = document.getElementById('category');
+    let total = document.getElementById('total');
+    let heroes = document.querySelectorAll('[data-' + parameter + ']');
+    let button = document.getElementById('sort-' + parameter);
+    let order = button.getAttribute('data-sort');
+    order = order === 'asc' ? 'desc' : 'asc';
+    button.setAttribute('data-sort', order);
+
+    if (parameter === 'name') {
+        heroes = Array.from(heroes).sort((a, b) => { return order === 'asc' ? a.id.localeCompare(b.id) : b.id.localeCompare(a.id); });
+    } else {
+        heroes = Array.from(heroes).sort((a, b) => {
+            let aValue = a.getAttribute('data-' + parameter);
+            let bValue = b.getAttribute('data-' + parameter);
+            if (parameter === 'release-date') {
+                aValue = new Date(aValue);
+                bValue = new Date(bValue);
+            }
+            if (order === 'asc') {
+                return aValue - bValue;
+            } else {
+                return bValue - aValue;
+            }
+        });
+    }
     container.innerHTML = '';
     container.append(category);
     heroes.forEach(hero => {

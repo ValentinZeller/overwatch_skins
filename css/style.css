@@ -346,3 +346,11 @@ button:hover {
   margin-right: 10px;
   margin-bottom: 5px;
 }
+
+button[data-sort="asc"]::after {
+  content: " ▲";
+}
+
+button[data-sort="desc"]::after {
+  content: " ▼";
+}
