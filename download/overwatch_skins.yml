@@ -12281,4 +12281,13 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp"
   rarity: "legendary"
   name: "Magepunk"
+-
+  id: 1729
+  id_hero: 34
+  id_category: 15
+  id_season: 19
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/XAL'ATAH.webp"
+  rarity: "legendary"
+  name: "Xal'Atah"
+  id_category_secondary: 4
 ...

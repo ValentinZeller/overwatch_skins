@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : ven. 14 nov. 2025 à 13:14
--- Version du serveur : 8.0.43-0ubuntu0.22.04.1
+-- Généré le : mer. 03 déc. 2025 à 09:08
+-- Version du serveur : 8.0.44-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -1728,7 +1728,8 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1725, 27, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/ANTI-HERO.webp', 'legendary', 'Anti-Hero', NULL, NULL),
 (1726, 38, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/FEMME_FATALE.webp', 'legendary', 'Femme Fatale', NULL, NULL),
 (1727, 34, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
-(1728, 17, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL);
+(1728, 17, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
+(1729, 34, 15, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/XAL\'ATAH.webp', 'legendary', 'Xal\'Atah', 4, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1804,7 +1805,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT pour la table `skin`
 --
 ALTER TABLE `skin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1729;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1730;
 
 --
 -- Contraintes pour les tables déchargées
