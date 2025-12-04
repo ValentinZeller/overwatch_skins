@@ -1,3 +1,4 @@
 ﻿# overwatch_skins
 
-Download hero.zip : https://foxyjr.cloudns.ph/overwatch_skins/download/hero.zip
+Website : https://foxyjr.cloudns.ph/overwatch_skins/ow2
+Download ressources : https://foxyjr.cloudns.ph/overwatch_skins/download.php
