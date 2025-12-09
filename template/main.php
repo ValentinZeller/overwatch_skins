@@ -15,7 +15,7 @@
     <div id="setting" onclick="openSettings()">&#9881;</div>
     <div class="overlay" id="mySettings">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
-          <div class="overlay-content">
+        <div class="overlay-content">
             <a href="ow1">Overwatch 1 ↗</a>
             <a href="ow2">Overwatch 2 ↗</a>
             <a href="base">Base Skin ↗</a>

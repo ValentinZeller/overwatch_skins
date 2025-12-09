@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mer. 03 déc. 2025 à 09:08
+-- Généré le : mar. 09 déc. 2025 à 22:58
 -- Version du serveur : 8.0.44-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
@@ -99,7 +99,7 @@ CREATE TABLE `hero` (
   `id` int NOT NULL,
   `name` varchar(30) NOT NULL,
   `role` enum('tank','damage','support') NOT NULL,
-  `release_date` date NOT NULL DEFAULT '2016-05-24',
+  `release_date` date NOT NULL DEFAULT (curdate()),
   `portrait_url` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -151,7 +151,8 @@ INSERT INTO `hero` (`id`, `name`, `role`, `release_date`, `portrait_url`) VALUES
 (41, 'Zarya', 'tank', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zarya.webp'),
 (42, 'Zenyatta', 'support', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zenyatta.webp'),
 (43, 'Kiriko', 'support', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Kiriko.webp'),
-(44, 'Wuyang', 'support', '2025-08-26', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp');
+(44, 'Wuyang', 'support', '2025-08-26', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp'),
+(45, 'Vendetta', 'damage', '2025-12-09', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Vendetta.webp');
 
 -- --------------------------------------------------------
 
@@ -189,7 +190,8 @@ INSERT INTO `season` (`id`, `name`, `start_date`, `end_date`) VALUES
 (16, 'Season 16: Stadium', '2025-04-22', '2025-06-24'),
 (17, 'Season 17: Powered Up!', '2025-06-24', '2025-08-26'),
 (18, 'Season 18: Stadium Quickplay', '2025-08-26', '2025-10-14'),
-(19, 'Season 19: Haunted Masquerade', '2025-10-14', '2025-12-09');
+(19, 'Season 19: Haunted Masquerade', '2025-10-14', '2025-12-09'),
+(20, 'Season 20: Vendetta', '2025-12-09', '2026-02-09');
 
 -- --------------------------------------------------------
 
@@ -1729,7 +1731,52 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1726, 38, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/FEMME_FATALE.webp', 'legendary', 'Femme Fatale', NULL, NULL),
 (1727, 34, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
 (1728, 17, 12, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp', 'legendary', 'Magepunk', NULL, NULL),
-(1729, 34, 15, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/XAL\'ATAH.webp', 'legendary', 'Xal\'Atah', 4, NULL);
+(1729, 34, 15, 19, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/XAL\'ATAH.webp', 'legendary', 'Xal\'Atah', 4, NULL),
+(1730, 45, 16, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/OVERWATCH_2.webp', 'common', 'Overwatch 2', NULL, NULL),
+(1731, 45, 16, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/MARMOR.webp', 'rare', 'Marmor', NULL, NULL),
+(1732, 45, 16, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/POZZOLANA.webp', 'rare', 'Pozzolana', NULL, NULL),
+(1733, 45, 16, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/TUFA.webp', 'rare', 'Tufa', NULL, NULL),
+(1734, 45, 16, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/VERDIGRIS.webp', 'rare', 'Verdigris', NULL, NULL),
+(1735, 6, 5, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/FROZEN_MOUNTAINEER.webp', 'legendary', 'Frozen Mountaineer', 14, NULL),
+(1736, 16, 5, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/FROZEN_DEMON.webp', 'legendary', 'Frozen Demon', 14, NULL),
+(1737, 27, 17, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/STADIUM_ALL-STAR.webp', 'legendary', 'Stadium All-Star', NULL, NULL),
+(1738, 28, 9, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/COSMIC.webp', 'legendary', 'Cosmic', NULL, NULL),
+(1739, 38, 9, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COSMIC.webp', 'legendary', 'Cosmic', NULL, NULL),
+(1740, 19, 9, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/COSMIC.webp', 'legendary', 'Cosmic', NULL, NULL),
+(1741, 45, 18, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/HIGH_SOCIETY.webp', 'legendary', 'High Society', NULL, 10),
+(1742, 36, 18, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/REINDEER.webp', 'legendary', 'Reindeer', NULL, 10),
+(1743, 28, 18, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/BOREALIS.webp', 'epic', 'Borealis', NULL, 9),
+(1744, 6, 8, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/DIVINE_DESPERADO.webp', 'mythic', 'Divine Desperado', NULL, NULL),
+(1745, 10, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SKADI.webp', 'legendary', 'Skadi', NULL, NULL),
+(1746, 11, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/YUKIZARU.webp', 'legendary', 'Yukizaru', NULL, NULL),
+(1747, 27, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/FROST_LICH.webp', 'legendary', 'Frost Lich', NULL, NULL),
+(1748, 32, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/COLDER_76.webp', 'legendary', 'Colder: 76', NULL, NULL),
+(1749, 34, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/ICE_CRYSTAL.webp', 'epic', 'Ice Crystal', NULL, NULL),
+(1750, 36, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/COLD_FRONT.webp', 'epic', 'Cold Front', NULL, NULL),
+(1751, 37, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/CELESTIAL.webp', 'legendary', 'Celestial', NULL, NULL),
+(1752, 14, 3, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/WINTER_GUARDIAN.webp', 'epic', 'Winter Guardian', NULL, NULL),
+(1753, 13, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hazard/EXO-URS4.webp', 'legendary', 'EXO-URS4', NULL, NULL),
+(1754, 2, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/EXO-L2PUS.webp', 'legendary', 'EXO-L2PUS', NULL, NULL),
+(1755, 45, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/EXO-PANT6RA.webp', 'legendary', 'EXO-PANT6RA', NULL, NULL),
+(1756, 5, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/EXO-L5O.webp', 'legendary', 'EXO-L5O', NULL, NULL),
+(1757, 43, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/EXO-VU7PES.webp', 'legendary', 'EXO-VU7PES', NULL, NULL),
+(1758, 20, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/COZY.webp', 'legendary', 'Cozy', NULL, NULL),
+(1759, 17, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/COZY.webp', 'legendary', 'Cozy', NULL, NULL),
+(1760, 2, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/COZY.webp', 'legendary', 'Cozy', NULL, NULL),
+(1761, 44, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/COZY.webp', 'legendary', 'Cozy', NULL, NULL),
+(1762, 29, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/HEIST.webp', 'legendary', 'Heist', NULL, NULL),
+(1763, 2, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HEIST.webp', 'legendary', 'Heist', NULL, NULL),
+(1764, 27, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/HEIST.webp', 'legendary', 'Heist', NULL, NULL),
+(1765, 30, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/VALHALLA.webp', 'legendary', 'Valhalla', NULL, NULL),
+(1766, 4, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SNOWMAN.webp', 'legendary', 'Snowman', NULL, NULL),
+(1767, 21, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/STARGAZER.webp', 'legendary', 'Stargazer', NULL, NULL),
+(1768, 31, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/POLARIS.webp', 'legendary', 'Polaris', NULL, NULL),
+(1769, 33, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/SIGYN.webp', 'legendary', 'Sigyn', NULL, NULL),
+(1770, 22, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/IVORY_ROSE.webp', 'legendary', 'Ivory Rose', NULL, NULL),
+(1771, 18, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
+(1772, 9, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
+(1773, 22, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
+(1774, 44, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1793,19 +1840,19 @@ ALTER TABLE `condition_special`
 -- AUTO_INCREMENT pour la table `hero`
 --
 ALTER TABLE `hero`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT pour la table `season`
 --
 ALTER TABLE `season`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT pour la table `skin`
 --
 ALTER TABLE `skin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1730;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1775;
 
 --
 -- Contraintes pour les tables déchargées

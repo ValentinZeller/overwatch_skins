@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : mer. 03 déc. 2025 à 09:08
+- Généré le : mar. 09 déc. 2025 à 22:58
 - Version du serveur : 8.0.44-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -40,10 +40,10 @@
                   `id` int NOT NULL AUTO_INCREMENT,
                   `name` varchar(30) NOT NULL,
                   `role` enum(&#039;tank&#039;,&#039;damage&#039;,&#039;support&#039;) NOT NULL,
-                  `release_date` date NOT NULL DEFAULT &#039;2016-05-24&#039;,
+                  `release_date` date NOT NULL DEFAULT (curdate()),
                   `portrait_url` text NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
             <pma:table name="season">
                 CREATE TABLE `season` (
@@ -52,7 +52,7 @@
                   `start_date` date NOT NULL,
                   `end_date` date NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
             <pma:table name="skin">
                 CREATE TABLE `skin` (
@@ -78,7 +78,7 @@
                   CONSTRAINT `skin_condition` FOREIGN KEY (`id_condition`) REFERENCES `condition_special` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_hero` FOREIGN KEY (`id_hero`) REFERENCES `hero` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_season` FOREIGN KEY (`id_season`) REFERENCES `season` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=1730 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=1775 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -576,6 +576,13 @@
             <column name="release_date">2025-08-26</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp</column>
         </table>
+        <table name="hero">
+            <column name="id">45</column>
+            <column name="name">Vendetta</column>
+            <column name="role">damage</column>
+            <column name="release_date">2025-12-09</column>
+            <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Vendetta.webp</column>
+        </table>
         <!-- Table season -->
         <table name="season">
             <column name="id">1</column>
@@ -690,6 +697,12 @@
             <column name="name">Season 19: Haunted Masquerade</column>
             <column name="start_date">2025-10-14</column>
             <column name="end_date">2025-12-09</column>
+        </table>
+        <table name="season">
+            <column name="id">20</column>
+            <column name="name">Season 20: Vendetta</column>
+            <column name="start_date">2025-12-09</column>
+            <column name="end_date">2026-02-09</column>
         </table>
         <!-- Table skin -->
         <table name="skin">
@@ -18822,6 +18835,546 @@
             <column name="rarity">legendary</column>
             <column name="name">Xal&#039;Atah</column>
             <column name="id_category_secondary">4</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1730</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">16</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/OVERWATCH_2.webp</column>
+            <column name="rarity">common</column>
+            <column name="name">Overwatch 2</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1731</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">16</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/MARMOR.webp</column>
+            <column name="rarity">rare</column>
+            <column name="name">Marmor</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1732</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">16</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/POZZOLANA.webp</column>
+            <column name="rarity">rare</column>
+            <column name="name">Pozzolana</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1733</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">16</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/TUFA.webp</column>
+            <column name="rarity">rare</column>
+            <column name="name">Tufa</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1734</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">16</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/VERDIGRIS.webp</column>
+            <column name="rarity">rare</column>
+            <column name="name">Verdigris</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1735</column>
+            <column name="id_hero">6</column>
+            <column name="id_category">5</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/FROZEN_MOUNTAINEER.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Frozen Mountaineer</column>
+            <column name="id_category_secondary">14</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1736</column>
+            <column name="id_hero">16</column>
+            <column name="id_category">5</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/FROZEN_DEMON.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Frozen Demon</column>
+            <column name="id_category_secondary">14</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1737</column>
+            <column name="id_hero">27</column>
+            <column name="id_category">17</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/STADIUM_ALL-STAR.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Stadium All-Star</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1738</column>
+            <column name="id_hero">28</column>
+            <column name="id_category">9</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/COSMIC.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cosmic</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1739</column>
+            <column name="id_hero">38</column>
+            <column name="id_category">9</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COSMIC.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cosmic</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1740</column>
+            <column name="id_hero">19</column>
+            <column name="id_category">9</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/COSMIC.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cosmic</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1741</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">18</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/HIGH_SOCIETY.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">High Society</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">10</column>
+        </table>
+        <table name="skin">
+            <column name="id">1742</column>
+            <column name="id_hero">36</column>
+            <column name="id_category">18</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/REINDEER.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Reindeer</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">10</column>
+        </table>
+        <table name="skin">
+            <column name="id">1743</column>
+            <column name="id_hero">28</column>
+            <column name="id_category">18</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/BOREALIS.webp</column>
+            <column name="rarity">epic</column>
+            <column name="name">Borealis</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">9</column>
+        </table>
+        <table name="skin">
+            <column name="id">1744</column>
+            <column name="id_hero">6</column>
+            <column name="id_category">8</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/DIVINE_DESPERADO.webp</column>
+            <column name="rarity">mythic</column>
+            <column name="name">Divine Desperado</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1745</column>
+            <column name="id_hero">10</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SKADI.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Skadi</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1746</column>
+            <column name="id_hero">11</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/YUKIZARU.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Yukizaru</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1747</column>
+            <column name="id_hero">27</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/FROST_LICH.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Frost Lich</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1748</column>
+            <column name="id_hero">32</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/COLDER_76.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Colder: 76</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1749</column>
+            <column name="id_hero">34</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/ICE_CRYSTAL.webp</column>
+            <column name="rarity">epic</column>
+            <column name="name">Ice Crystal</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1750</column>
+            <column name="id_hero">36</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/COLD_FRONT.webp</column>
+            <column name="rarity">epic</column>
+            <column name="name">Cold Front</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1751</column>
+            <column name="id_hero">37</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/CELESTIAL.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Celestial</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1752</column>
+            <column name="id_hero">14</column>
+            <column name="id_category">3</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/WINTER_GUARDIAN.webp</column>
+            <column name="rarity">epic</column>
+            <column name="name">Winter Guardian</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1753</column>
+            <column name="id_hero">13</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hazard/EXO-URS4.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">EXO-URS4</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1754</column>
+            <column name="id_hero">2</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/EXO-L2PUS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">EXO-L2PUS</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1755</column>
+            <column name="id_hero">45</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/EXO-PANT6RA.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">EXO-PANT6RA</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1756</column>
+            <column name="id_hero">5</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/EXO-L5O.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">EXO-L5O</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1757</column>
+            <column name="id_hero">43</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/EXO-VU7PES.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">EXO-VU7PES</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1758</column>
+            <column name="id_hero">20</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/COZY.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cozy</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1759</column>
+            <column name="id_hero">17</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/COZY.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cozy</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1760</column>
+            <column name="id_hero">2</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/COZY.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cozy</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1761</column>
+            <column name="id_hero">44</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/COZY.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Cozy</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1762</column>
+            <column name="id_hero">29</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/HEIST.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Heist</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1763</column>
+            <column name="id_hero">2</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/HEIST.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Heist</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1764</column>
+            <column name="id_hero">27</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/HEIST.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Heist</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1765</column>
+            <column name="id_hero">30</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/VALHALLA.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Valhalla</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1766</column>
+            <column name="id_hero">4</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/SNOWMAN.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Snowman</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1767</column>
+            <column name="id_hero">21</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/STARGAZER.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Stargazer</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1768</column>
+            <column name="id_hero">31</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/POLARIS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Polaris</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1769</column>
+            <column name="id_hero">33</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/SIGYN.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Sigyn</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1770</column>
+            <column name="id_hero">22</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/IVORY_ROSE.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Ivory Rose</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1771</column>
+            <column name="id_hero">18</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/BOREALIS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Borealis</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1772</column>
+            <column name="id_hero">9</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/BOREALIS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Borealis</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1773</column>
+            <column name="id_hero">22</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/BOREALIS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Borealis</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1774</column>
+            <column name="id_hero">44</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/BOREALIS.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Borealis</column>
+            <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>
     </database>
