@@ -5,4 +5,4 @@
         <p class="count <?= $rarity ?>Skin"><?= $filterSkinCount ?></p>
     <?php endif; ?>
 <?php endforeach; ?>
-<p class="count"><?= count($skinData) ?></p>
+<p class="count"><?= $skinData ? count($skinData) : 0 ?></p>

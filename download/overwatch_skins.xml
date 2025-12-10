@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : mar. 09 déc. 2025 à 22:58
+- Généré le : mer. 10 déc. 2025 à 09:43
 - Version du serveur : 8.0.44-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -7792,7 +7792,7 @@
             <column name="id_season">13</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/NEON_STREETS.webp</column>
-            <column name="rarity">epic</column>
+            <column name="rarity">legendary</column>
             <column name="name">Neon Streets</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
@@ -8044,7 +8044,7 @@
             <column name="id_season">1</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/CALAVERA.webp</column>
-            <column name="rarity">legendary</column>
+            <column name="rarity">epic</column>
             <column name="name">Calavera</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
@@ -13156,7 +13156,7 @@
             <column name="id_season">3</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/TAKOYAKI.webp</column>
-            <column name="rarity">epic</column>
+            <column name="rarity">legendary</column>
             <column name="name">Takoyaki</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
@@ -13432,7 +13432,7 @@
             <column name="id_season">4</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/INFINITE_ADMIRAL.webp</column>
-            <column name="rarity">legendary</column>
+            <column name="rarity">epic</column>
             <column name="name">Infinite Admiral</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
@@ -14956,7 +14956,7 @@
             <column name="id_season">9</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/SAKURA.webp</column>
-            <column name="rarity">legendary</column>
+            <column name="rarity">epic</column>
             <column name="name">Sakura</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
@@ -15676,7 +15676,7 @@
             <column name="id_season">12</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/POLAR.webp</column>
-            <column name="rarity">epic</column>
+            <column name="rarity">legendary</column>
             <column name="name">Polar</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>

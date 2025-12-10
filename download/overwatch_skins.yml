@@ -5223,7 +5223,7 @@
   id_category: 9
   id_season: 13
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/NEON_STREETS.webp"
-  rarity: "epic"
+  rarity: "legendary"
   name: "Neon Streets"
 -
   id: 624
@@ -5395,7 +5395,7 @@
   id_category: 12
   id_season: 1
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/CALAVERA.webp"
-  rarity: "legendary"
+  rarity: "epic"
   name: "Calavera"
 -
   id: 673
@@ -8464,7 +8464,7 @@
   id_category: 12
   id_season: 3
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/TAKOYAKI.webp"
-  rarity: "epic"
+  rarity: "legendary"
   name: "Takoyaki"
 -
   id: 1159
@@ -8658,7 +8658,7 @@
   id_category: 12
   id_season: 4
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/INFINITE_ADMIRAL.webp"
-  rarity: "legendary"
+  rarity: "epic"
   name: "Infinite Admiral"
 -
   id: 1182
@@ -9703,7 +9703,7 @@
   id_category: 12
   id_season: 9
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/SAKURA.webp"
-  rarity: "legendary"
+  rarity: "epic"
   name: "Sakura"
 -
   id: 1407
@@ -10183,7 +10183,7 @@
   id_category: 12
   id_season: 12
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/POLAR.webp"
-  rarity: "epic"
+  rarity: "legendary"
   name: "Polar"
 -
   id: 1467

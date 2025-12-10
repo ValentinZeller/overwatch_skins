@@ -689,7 +689,7 @@
 "620","40","5","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wrecking_Ball/ASTEROID.webp","epic","Asteroid",NULL,NULL
 "621","37","9","10",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/MONARCH.webp","rare","Monarch","4","5"
 "622","12","9","10",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/AZURE_FLAME.webp","legendary","Azure Flame",NULL,NULL
-"623","36","9","13",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/NEON_STREETS.webp","epic","Neon Streets",NULL,NULL
+"623","36","9","13",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/NEON_STREETS.webp","legendary","Neon Streets",NULL,NULL
 "624","16","9","13",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/NEON_STREETS.webp","epic","Neon Streets",NULL,NULL
 "625","21","9","13",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/NEON_STREETS.webp","legendary","Neon Streets",NULL,NULL
 "630","7","15","6",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/GENTLE_TOKKI_AQUA.webp","legendary","Gentle Tokki Aqua",NULL,NULL
@@ -710,7 +710,7 @@
 "669","22","3","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/MIKO.webp","legendary","Miko",NULL,NULL
 "670","23","12","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/MIME.webp","legendary","Mime",NULL,NULL
 "671","25","3","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/SKY_CENTURION.webp","legendary","Sky Centurion",NULL,NULL
-"672","27","12","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/CALAVERA.webp","legendary","Calavera",NULL,NULL
+"672","27","12","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/CALAVERA.webp","epic","Calavera",NULL,NULL
 "673","28","3","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/PRIDEFUL.webp","legendary","Prideful",NULL,NULL
 "674","31","3","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/COMMANDO.webp","legendary","Commando",NULL,NULL
 "675","31","12","1",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/FIREFIGHTER.webp","epic","Firefighter",NULL,NULL
@@ -1136,7 +1136,7 @@
 "1155","39","12","3",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Winston/MONKEY_BUSINESS.webp","epic","Monkey Business",NULL,NULL
 "1156","40","12","3",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wrecking_Ball/SUGAR_BOMB.webp","epic","Sugar Bomb",NULL,NULL
 "1157","41","3","3",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/TACTICAL.webp","epic","Tactical",NULL,NULL
-"1158","42","12","3",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/TAKOYAKI.webp","epic","Takoyaki",NULL,NULL
+"1158","42","12","3",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/TAKOYAKI.webp","legendary","Takoyaki",NULL,NULL
 "1159","26","12","3",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/NECROMANCER.webp","legendary","Necromancer",NULL,NULL
 "1160","19","18","2",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/DISCO.webp","epic","Disco",NULL,"9"
 "1161","32","18","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/INFINITE_GUARD_76.webp","legendary","Infinite Guard: 76",NULL,"10"
@@ -1159,7 +1159,7 @@
 "1178","28","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/CARDBOARD.webp","legendary","Cardboard",NULL,NULL
 "1179","29","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/ROADBOT.webp","legendary","Roadbot",NULL,NULL
 "1180","30","8","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/GALACTIC_EMPEROR.webp","mythic","Galactic Emperor","3",NULL
-"1181","31","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/INFINITE_ADMIRAL.webp","legendary","Infinite Admiral",NULL,NULL
+"1181","31","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/INFINITE_ADMIRAL.webp","epic","Infinite Admiral",NULL,NULL
 "1182","35","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/STARSHIP_ENGINEER.webp","legendary","Starship Engineer",NULL,NULL
 "1183","36","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/SYNTHWAVE.webp","epic","Synthwave",NULL,NULL
 "1184","38","12","4",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/HARLEQUIN.webp","epic","Harlequin",NULL,NULL
@@ -1286,7 +1286,7 @@
 "1403","20","15","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/JET_BLACK.webp","legendary","Jet Black",NULL,NULL
 "1404","7","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/ROSY_HANBOK.webp","legendary","Rosy Hanbok",NULL,NULL
 "1405","11","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/HEIHU.webp","legendary","Heihu",NULL,NULL
-"1406","43","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/SAKURA.webp","legendary","Sakura",NULL,NULL
+"1406","43","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/SAKURA.webp","epic","Sakura",NULL,NULL
 "1407","19","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/DARK_FAUN.webp","legendary","Dark Faun",NULL,NULL
 "1408","24","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Orisa/FIEND.webp","legendary","Fiend",NULL,NULL
 "1409","28","12","9",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/ROSAHARDT.webp","legendary","Rosahardt",NULL,NULL
@@ -1346,7 +1346,7 @@
 "1463","38","15","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/SYLVANAS.webp","legendary","Sylvanas",NULL,NULL
 "1464","42","15","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/THRALL.webp","legendary","Thrall",NULL,NULL
 "1465","3","12","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/POLAR.webp","epic","Polar",NULL,NULL
-"1466","5","12","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/POLAR.webp","epic","Polar",NULL,NULL
+"1466","5","12","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/POLAR.webp","legendary","Polar",NULL,NULL
 "1467","11","12","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/POLAR.webp","epic","Polar",NULL,NULL
 "1468","19","12","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/POLAR.webp","epic","Polar",NULL,NULL
 "1469","28","12","12",NULL,"https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/POLAR.webp","epic","Polar",NULL,NULL

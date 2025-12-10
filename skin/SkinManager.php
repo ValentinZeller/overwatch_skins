@@ -61,6 +61,9 @@
 
     public function filterSkinByHero($heroName, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['hero_name'] === $heroName) {
                 $result[] = $item;
@@ -71,6 +74,9 @@
 
     public function filterSkinByCategory($categoryName, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['category_name'] === $categoryName) {
                 $result[] = $item;
@@ -81,6 +87,9 @@
 
     public function filterSkinByYear($year, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['year'] === $year) {
                 $result[] = $item;
@@ -91,6 +100,9 @@
 
     public function filterSkinByRarity($rarity, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['rarity'] === $rarity) {
                 $result[] = $item;
@@ -101,6 +113,9 @@
 
     public function filterSkinByCondition($conditionName, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['condition_name'] === $conditionName) {
                 $result[] = $item;
@@ -111,6 +126,9 @@
 
     public function filterSkinBySeason($season, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['id_season'] === $season) {
                 $result[] = $item;
@@ -121,6 +139,9 @@
 
     public function filterSkinByHeroAndCategory($heroName, $categoryName, $array) {
         $result = [];
+        if ($array === null) {
+            return $result;
+        }
         foreach ($array as $item) {
             if ($item['hero_name'] === $heroName && $item['category_name'] === $categoryName) {
                 $result[] = $item;
