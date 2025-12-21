@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : mer. 10 déc. 2025 à 09:43
+-- Généré le : dim. 21 déc. 2025 à 10:44
 -- Version du serveur : 8.0.44-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
@@ -131,7 +131,7 @@ INSERT INTO `hero` (`id`, `name`, `role`, `release_date`, `portrait_url`) VALUES
 (21, 'Mei', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mei.webp'),
 (22, 'Mercy', 'support', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mercy.webp'),
 (23, 'Moira', 'support', '2017-11-16', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Moira.webp'),
-(24, 'Orisa', 'tank', '2017-07-27', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp'),
+(24, 'Orisa', 'tank', '2017-03-21', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp'),
 (25, 'Pharah', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Pharah.webp'),
 (26, 'Ramattra', 'tank', '2022-12-06', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ramattra.webp'),
 (27, 'Reaper', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reaper.webp'),

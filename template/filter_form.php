@@ -1,5 +1,5 @@
 <h3>Filter :</h3>
-<form method="post">
+<form method="get">
     <div id="filter-form">
         <div class="rarity-filter filter-section">
             <?php foreach ($rarityList as $rarity): ?>

@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : mer. 10 déc. 2025 à 09:43
+- Généré le : dim. 21 déc. 2025 à 10:45
 - Version du serveur : 8.0.44-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -433,7 +433,7 @@
             <column name="id">24</column>
             <column name="name">Orisa</column>
             <column name="role">tank</column>
-            <column name="release_date">2017-07-27</column>
+            <column name="release_date">2017-03-21</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp</column>
         </table>
         <table name="hero">

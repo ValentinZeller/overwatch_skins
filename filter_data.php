@@ -20,16 +20,16 @@ if ($version == 'ow2') {
     setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
 } else if ($version == null) {
     $seasonIdList = array_map(function($season) { return $season['id']; }, $seasonList);
-    if (isset($_POST['season']) == isset($_POST['year'])) {
+    if (isset($_GET['season']) == isset($_GET['year'])) {
         setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
         setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
     } else {
-        if (isset($_POST['season'])) {
+        if (isset($_GET['season'])) {
             setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
             $filtered['year'] = true;
             $yearsSelected = [];
         }
-        if (isset($_POST['year'])) {
+        if (isset($_GET['year'])) {
             setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
             $filtered['season'] = true;
             $seasons = [];
@@ -53,9 +53,9 @@ function getMaxSkinCategory($categories, $heroes, $skins, $manager) {
 }
 
 function setupArrayByFilter($key, &$array, $defaut, &$filtered, $list = null) {
-    if (isset($_POST[$key])) {
+    if (isset($_GET[$key])) {
         $filtered[$key] = true;
-        foreach ($_POST[$key] as $value) {
+        foreach ($_GET[$key] as $value) {
             if ($list) {
                 $array[] = $list[array_search($value, array_column($list, 'name'))];
             } else {
@@ -68,7 +68,7 @@ function setupArrayByFilter($key, &$array, $defaut, &$filtered, $list = null) {
 }
 
 function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seasons, $yearsSelected, &$skins) {
-    if (isset($_POST['hero']) || isset($_POST['category']) || isset($_POST['rarity']) || isset($_POST['season']) || isset($_POST['year'])) {
+    if (isset($_GET['hero']) || isset($_GET['category']) || isset($_GET['rarity']) || isset($_GET['season']) || isset($_GET['year'])) {
         foreach ($skinData as $skin) {
             
             if (in_array($skin['hero_name'], array_column($heroes, 'name')) &&
