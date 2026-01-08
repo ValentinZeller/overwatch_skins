@@ -1670,7 +1670,11 @@
 {"id":"1771","id_hero":"18","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Lifeweaver\/BOREALIS.webp","rarity":"legendary","name":"Borealis","id_category_secondary":null,"id_condition":null},
 {"id":"1772","id_hero":"9","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Echo\/BOREALIS.webp","rarity":"legendary","name":"Borealis","id_category_secondary":null,"id_condition":null},
 {"id":"1773","id_hero":"22","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Mercy\/BOREALIS.webp","rarity":"legendary","name":"Borealis","id_category_secondary":null,"id_condition":null},
-{"id":"1774","id_hero":"44","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Wuyang\/BOREALIS.webp","rarity":"legendary","name":"Borealis","id_category_secondary":null,"id_condition":null}
+{"id":"1774","id_hero":"44","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Wuyang\/BOREALIS.webp","rarity":"legendary","name":"Borealis","id_category_secondary":null,"id_condition":null},
+{"id":"1775","id_hero":"8","id_category":"8","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Doomfist\/MAGMA_TITAN.webp","rarity":"mythic","name":"Magma Titan","id_category_secondary":null,"id_condition":null},
+{"id":"1776","id_hero":"11","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Genji\/GOD_OF_WEALTH.webp","rarity":"legendary","name":"God Of Wealth","id_category_secondary":null,"id_condition":null},
+{"id":"1777","id_hero":"43","id_category":"12","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Kiriko\/GOD_OF_PROSPERITY.webp","rarity":"legendary","name":"God Of Prosperity","id_category_secondary":null,"id_condition":null},
+{"id":"1778","id_hero":"41","id_category":"5","id_season":"20","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Zarya\/NEW_ERA.webp","rarity":"epic","name":"New Era","id_category_secondary":null,"id_condition":null}
 ]
 }
 ]

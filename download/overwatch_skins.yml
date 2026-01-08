@@ -12666,4 +12666,36 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/BOREALIS.webp"
   rarity: "legendary"
   name: "Borealis"
+-
+  id: 1775
+  id_hero: 8
+  id_category: 8
+  id_season: 20
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/MAGMA_TITAN.webp"
+  rarity: "mythic"
+  name: "Magma Titan"
+-
+  id: 1776
+  id_hero: 11
+  id_category: 12
+  id_season: 20
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/GOD_OF_WEALTH.webp"
+  rarity: "legendary"
+  name: "God Of Wealth"
+-
+  id: 1777
+  id_hero: 43
+  id_category: 12
+  id_season: 20
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/GOD_OF_PROSPERITY.webp"
+  rarity: "legendary"
+  name: "God Of Prosperity"
+-
+  id: 1778
+  id_hero: 41
+  id_category: 5
+  id_season: 20
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp"
+  rarity: "epic"
+  name: "New Era"
 ...

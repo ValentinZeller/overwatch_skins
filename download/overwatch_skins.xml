@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : dim. 21 déc. 2025 à 10:45
+- Généré le : jeu. 08 jan. 2026 à 20:55
 - Version du serveur : 8.0.44-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.22
 -->
@@ -78,7 +78,7 @@
                   CONSTRAINT `skin_condition` FOREIGN KEY (`id_condition`) REFERENCES `condition_special` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_hero` FOREIGN KEY (`id_hero`) REFERENCES `hero` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_season` FOREIGN KEY (`id_season`) REFERENCES `season` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=1775 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=1779 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -19374,6 +19374,54 @@
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/BOREALIS.webp</column>
             <column name="rarity">legendary</column>
             <column name="name">Borealis</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1775</column>
+            <column name="id_hero">8</column>
+            <column name="id_category">8</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/MAGMA_TITAN.webp</column>
+            <column name="rarity">mythic</column>
+            <column name="name">Magma Titan</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1776</column>
+            <column name="id_hero">11</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/GOD_OF_WEALTH.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">God Of Wealth</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1777</column>
+            <column name="id_hero">43</column>
+            <column name="id_category">12</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/GOD_OF_PROSPERITY.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">God Of Prosperity</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1778</column>
+            <column name="id_hero">41</column>
+            <column name="id_category">5</column>
+            <column name="id_season">20</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp</column>
+            <column name="rarity">epic</column>
+            <column name="name">New Era</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
         </table>

@@ -59,6 +59,27 @@
         return $stmt;
     }
 
+    public function getSkinCount($groupByCategory = false, $version = 'ow1') {
+        $req = 'SELECT hero.name AS hero_name, category.name AS category_name, COUNT(skin.id) AS skin_count
+                FROM skin
+                LEFT JOIN hero ON skin.id_hero = hero.id
+                LEFT JOIN category ON skin.id_category = category.id';
+        if ($version === 'ow1') {
+            $req .= ' WHERE id_season IS NULL AND hero.release_date < "2022-10-04"';
+        } else {
+            $req .= ' WHERE id_season IS NOT NULL';
+        }
+        if ($groupByCategory) {
+            $req .= ' GROUP BY category.name';
+        } else {
+            $req .= ' GROUP BY hero.name, category.name';
+        }
+        $req .= ' ORDER BY hero.name, category.name';
+        $stmt = $this->_db->prepare($req);
+        $stmt->execute();
+        return $stmt;
+    }
+
     public function filterSkinByHero($heroName, $array) {
         $result = [];
         if ($array === null) {

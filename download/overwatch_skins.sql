@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : dim. 21 déc. 2025 à 10:44
+-- Généré le : jeu. 08 jan. 2026 à 20:54
 -- Version du serveur : 8.0.44-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.22
 
@@ -1776,7 +1776,11 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1771, 18, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
 (1772, 9, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
 (1773, 22, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
-(1774, 44, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL);
+(1774, 44, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/BOREALIS.webp', 'legendary', 'Borealis', NULL, NULL),
+(1775, 8, 8, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/MAGMA_TITAN.webp', 'mythic', 'Magma Titan', NULL, NULL),
+(1776, 11, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/GOD_OF_WEALTH.webp', 'legendary', 'God Of Wealth', NULL, NULL),
+(1777, 43, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/GOD_OF_PROSPERITY.webp', 'legendary', 'God Of Prosperity', NULL, NULL),
+(1778, 41, 5, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp', 'epic', 'New Era', NULL, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1852,7 +1856,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT pour la table `skin`
 --
 ALTER TABLE `skin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1775;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1779;
 
 --
 -- Contraintes pour les tables déchargées

@@ -22,10 +22,10 @@ $manager = new SkinManager($db);
             <th>Hero name</th>
             <th>Skin name</th>
             <th>Rarity</th>
+            <th>Image URL</th>
             <th>Category name</th>
-            <th>Season name</th>
             <th>Year</th>
-            <th>Secondary category name</th>
+            <th>Season</th>
             <th>Condition name</th>
         </tr>
     </thead>
