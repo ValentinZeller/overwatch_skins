@@ -3,7 +3,7 @@
     <div id="filter-form">
         <div class="rarity-filter filter-section">
             <?php foreach ($rarityList as $rarity): ?>
-                <label class="<?= $rarity ?>Skin rarity">
+                <label class="<?= $rarity ?>-skin rarity">
                     <input type="checkbox" name="rarity[]" value="<?= $rarity ?>" <?php echo (in_array($rarity, $rarities)&&$filtered['rarity'] ? "checked" : "") ?>>
                     <?= $rarity ?>
                 </label>

@@ -12,9 +12,9 @@
     <?php echo template('template/category_color.php', ['categories' => $categories, 'maxSkinCategory' => $maxSkinCategory]); ?>
 </head>
 <body>
-    <div id="setting" onclick="openSettings()">&#9881;</div>
-    <div class="overlay" id="mySettings">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
+    <div id="open-setting" onclick="openSettings()">&#9881;</div>
+    <div class="overlay" id="setting">
+        <a href="javascript:void(0)" id="close-setting" onclick="closeSettings()">&times;</a>
         <div class="overlay-content">
             <a href="ow1">Overwatch 1 ↗</a>
             <a href="ow2">Overwatch 2 ↗</a>

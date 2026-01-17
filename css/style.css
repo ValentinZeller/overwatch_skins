@@ -1,28 +1,10 @@
-:root {
-  --width: 220px;
-  --height: 124px;
-  --common: #c5c5c5;
-  --rare: #1ac9ff;
-  --epic: #ff00ff;
-  --legendary: #ff9c00;
-  --mythic: linear-gradient(90deg, #00ffd0 0%, #bebcd8 50%, #ff33ce 100%);
-}
-
-@font-face {
-  font-family: "BigNoodleTitlingOblique";
-  src: url("./fonts/big_noodle_titling_oblique.ttf") format("truetype");
-}
-
-body {
-  font-family: BigNoodleTitlingOblique;
-  background: url('../image/background.webp') 0% 0% / cover;
-  margin: 0;
-  width: max-content;
-
-  &>a {
-    display: block;
-  }
-}
+@import url(root.css);
+@import url(row.css);
+@import url(cell_size_color.css);
+@import url(text_color.css);
+@import url(overlay.css);
+@import url(label.css);
+@import url(button.css);
 
 .container {
   display: inline-grid;
@@ -30,256 +12,14 @@ body {
   grid-template-rows: auto;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  /* background: rgba(255, 255, 255, 0.5); */
-
-  .item {
-    flex: 0 1 auto;
-    width: var(--width);
-    height: var(--height);
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: 50% 0%;
-  }
-
-  .category {
-    height: var(--height)/2;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: scroll;
-    background-position: 50% 0%;
-  }
-
-  .common {
-    border-bottom: 3px solid var(--common);
-  }
-
-  .rare {
-    border-bottom: 3px solid var(--rare);
-  }
-
-  .epic {
-    border-bottom: 3px solid var(--epic);
-  }
-
-  .legendary {
-    border-bottom: 3px solid var(--legendary);
-  }
-
-  .mythic {
-    border-bottom: 3px solid transparent;
-    border-image: var(--mythic);
-    border-image-slice: 1;
-  }
-
-  .half-column {
-    width: calc(var(--width)/2);
-  }
-
-  .half-row {
-    height: calc(var(--height)/2);
-  }
-
-  .quarter-column {
-    width: calc(var(--width)/4);
-  }
-
-  .quarter-row {
-    height: calc(var(--height)/4);
-  }
-
-}
-
-.rowCategory {
-  background: none;
-  align-content: center;
-}
-
-.rowHeader {
-  width: calc(var(--height));
-  height: var(--height);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  background-color: rgba(0, 0, 0, 0.75);
-  background-position: 50% 0%;
-}
-
-.rowCount {
-  display: flex;
-  width: var(--width);
-  height: var(--height);
-  flex-wrap: wrap;
-  align-items: center;
-  color: white;
-
-  p {
-    filter: drop-shadow(1px 1px 1px #000);
-    -webkit-filter: drop-shadow(1px 1px 1px #000);
-  }
-}
-
-.count {
-  margin: auto;
-  font-size: x-large;
-}
-
-.commonSkin {
-  color: var(--common);
-}
-
-.rareSkin {
-  color: var(--rare);
-}
-
-.epicSkin {
-  color: var(--epic);
-}
-
-.legendarySkin {
-  color: var(--legendary);
-}
-
-.mythicSkin {
-  color: #00ffd0;
-  background: #00ffd0;
-  background-image: var(--mythic);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-.cell {
-  display: flex;
-  flex-direction: row;
-  width: var(--width);
-  height: var(--height);
-  flex-wrap: wrap;
-}
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-
-  a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 1em;
-    color: #818181;
-    display: inline-block;
-    margin-left: 20px;
-    transition: 0.3s;
-
-    &:hover,
-    &:focus {
-      color: #f1f1f1;
-    }
-  }
-
-  .closebtn {
-    position: absolute;
-    right: 45px;
-    font-size: 60px
-  }
-}
-
-.overlay-content {
-  position: relative;
-  width: 88%;
-  margin-left: 10px;
-  color: white;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    right: 35px;
-  }
-}
-
-#show {
+#show-hide-text {
   margin-right: 20px;
-}
-
-#setting {
-  position: fixed;
-  top: -5px;
-  left: -5px;
-  font-size: 3em;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  border: 2px solid #575757;
-  background-color: #575757;
-  border-radius: 5px;
-  padding: 5px 10px;
 }
 
 input[type=checkbox] {
   appearance: none;
   -webkit-appearance: none;
   display: none;
-}
-
-label {
-  display: inline-block;
-  border: 1px solid currentcolor;
-  margin-right: 1rem;
-  padding: 0.5em;
-  cursor: pointer;
-}
-
-label.mythicSkin {
-  border: 1px solid;
-  border-image-slice: 1;
-  border-width: 1px;
-  border-image-source: var(--mythic);
-}
-
-label.category {
-  color: white;
-  margin-bottom: 10px;
-}
-
-label.rarity {
-  margin-bottom: 10px;
-  ;
-}
-
-label:has(input[type=checkbox]:not(:checked)):hover {
-  opacity: 0.5;
-}
-
-label:has(input[type=checkbox]:focus-visible) {
-  opacity: 0.5;
-}
-
-label:has(input[type=checkbox]:checked) {
-  background: color-mix(in srgb, currentcolor 50%, transparent);
-}
-
-label:has(input[type=checkbox]:checked).mythicSkin {
-  background: var(--mythic);
-  text-shadow: #000000 0 0 1px;
 }
 
 .rarity-filter,
@@ -298,59 +38,10 @@ label:has(input[type=checkbox]:checked).mythicSkin {
   flex-wrap: wrap;
 }
 
-.season-filter label {
-  margin-bottom: 5px;
-}
-
-.hero-filter label {
-  margin-right: 0.5rem;
-  padding: 0.25em;
-  opacity: 0.3;
-}
-
-.hero-filter label:has(input[type=checkbox]:checked) {
-  opacity: 1;
-}
-
 #filter-form {
   display: flex;
 }
 
-#form-button {
-  text-align: center;
-}
-
-button {
-  background-color: #046daa;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: BigNoodleTitlingOblique;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #035f8a;
-}
-
 #select-buttons {
   margin-bottom: 10px;
-}
-
-.select-hero {
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-button[data-sort="asc"]::after {
-  content: " ▲";
-}
-
-button[data-sort="desc"]::after {
-  content: " ▼";
 }

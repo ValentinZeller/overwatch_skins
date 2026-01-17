@@ -1,0 +1,55 @@
+label {
+    display: inline-block;
+    border: 1px solid currentcolor;
+    margin-right: 1rem;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+label.mythic-skin {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: var(--mythic);
+}
+
+label.category {
+    color: white;
+    margin-bottom: 10px;
+}
+
+label.rarity {
+    margin-bottom: 10px;
+    ;
+}
+
+label:has(input[type=checkbox]:not(:checked)):hover {
+    opacity: 0.5;
+}
+
+label:has(input[type=checkbox]:focus-visible) {
+    opacity: 0.5;
+}
+
+label:has(input[type=checkbox]:checked) {
+    background: color-mix(in srgb, currentcolor 50%, transparent);
+}
+
+label.mythic-skin:has(input[type=checkbox]:checked) {
+    background: var(--mythic);
+    text-shadow: #000000 0 0 1px;
+}
+
+.season-filter label {
+    margin-bottom: 5px;
+}
+
+.hero-filter label {
+    margin-right: 0.5rem;
+    padding: 0.25em;
+    opacity: 0.3;
+}
+
+.hero-filter label:has(input[type=checkbox]:checked) {
+    opacity: 1;
+}

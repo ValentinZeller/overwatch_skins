@@ -1,0 +1,47 @@
+.row {
+    .common {
+        border-bottom: 3px solid var(--common);
+    }
+
+    .rare {
+        border-bottom: 3px solid var(--rare);
+    }
+
+    .epic {
+        border-bottom: 3px solid var(--epic);
+    }
+
+    .legendary {
+        border-bottom: 3px solid var(--legendary);
+    }
+
+    .mythic {
+        border-bottom: 3px solid transparent;
+        border-image: var(--mythic);
+        border-image-slice: 1;
+    }
+
+    .half-column {
+        width: calc(var(--width)/2);
+    }
+
+    .half-row {
+        height: calc(var(--height)/2);
+    }
+
+    .quarter-column {
+        width: calc(var(--width)/4);
+    }
+
+    .quarter-row {
+        height: calc(var(--height)/4);
+    }
+}
+
+.cell {
+    display: flex;
+    flex-direction: row;
+    width: var(--width);
+    height: var(--height);
+    flex-wrap: wrap;
+}

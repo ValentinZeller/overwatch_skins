@@ -1,0 +1,48 @@
+button {
+    background-color: #046daa;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: BigNoodleTitlingOblique;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #035f8a;
+}
+
+button[data-sort="asc"]::after {
+    content: " ▲";
+}
+
+button[data-sort="desc"]::after {
+    content: " ▼";
+}
+
+button.select-hero {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#open-setting {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #575757;
+    background-color: #575757;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#form-button {
+    text-align: center;
+}

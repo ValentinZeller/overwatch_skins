@@ -1,0 +1,25 @@
+.common-skin {
+    color: var(--common);
+}
+
+.rare-skin {
+    color: var(--rare);
+}
+
+.epic-skin {
+    color: var(--epic);
+}
+
+.legendary-skin {
+    color: var(--legendary);
+}
+
+.mythic-skin {
+    color: #00ffd0;
+    background: #00ffd0;
+    background-image: var(--mythic);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}

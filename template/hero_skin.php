@@ -1,7 +1,7 @@
 <?php require_once('function.php'); ?>
 
 <div class="row" id="<?= $hero['name'] ?>" data-name="<?= $hero['name'] ?>" data-release-date="<?= $hero['release_date'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
-    <div class="rowHeader" style="background-image: url('<?= $hero['portrait_url'] ?>');"></div>
+    <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');"></div>
     <?php foreach ($categories as $category): ?>
         <?php
             $nbColumn = getNbColumn($category, $maxSkinCategory, $manager);
@@ -24,12 +24,12 @@
                 <?php endif; ?>
         </div>
     <?php endforeach; ?>
-    <div class="rowCount">
+    <div class="row-count">
         <?php echo template('template/rarity_count.php', [
             'rarities' => $rarities,
             'skinData' => $manager->filterSkinByHero($hero['name'],$skinData),
             'manager' => $manager
         ]) ?>
     </div>
-    <div class="rowHeader" style="background-image: url('<?= $hero['portrait_url'] ?>');"></div>
+    <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');"></div>
 </div>

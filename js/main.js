@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Open when someone clicks on the span element */
 function openSettings() {
-    document.getElementById("mySettings").style.width = "100%";
+    document.getElementById("setting").style.width = "100%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeSettings() {
-    document.getElementById("mySettings").style.width = "0%";
+    document.getElementById("setting").style.width = "0%";
 }
 
 // Get Local storage data
@@ -49,7 +49,7 @@ if (document.querySelector('[data-rarity="mythic"]') != null) {
     updateBarVisibility(mythicBar, 'mythic');
 }
 
-document.getElementById('categoriesColors').checked = categoriesColor
+document.getElementById('categories-colors').checked = categoriesColor
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
 updateCategoryColor(categoriesColor);
@@ -96,52 +96,6 @@ function selectRole(role) {
     for (let i = 0; i < elmt.length; i++) {
         elmt[i].checked = true
     }
-}
-
-function sortHeroesAlphabetically(event) {
-    console.log(event);
-    let container = document.getElementById('container');
-    let category = document.getElementById('category');
-    let total = document.getElementById('total');
-    let heroes = document.querySelectorAll('[data-count]');
-    heroes = Array.from(heroes).sort((a, b) => a.id.localeCompare(b.id));
-    container.innerHTML = '';
-    container.append(category);
-    heroes.forEach(hero => {
-        container.append(hero);
-    });
-    container.append(total);
-    closeSettings();
-}
-
-function sortHeroesBySkinsAmount() {
-    let container = document.getElementById('container');
-    let category = document.getElementById('category');
-    let total = document.getElementById('total');
-    let heroes = document.querySelectorAll('[data-count]');
-    heroes = Array.from(heroes).sort((a, b) => b.getAttribute('data-count') - a.getAttribute('data-count'));
-    container.innerHTML = '';
-    container.append(category);
-    heroes.forEach(hero => {
-        container.append(hero);
-    });
-    container.append(total);
-    closeSettings();
-}
-
-function sortHeroesByReleaseDate() {
-    let container = document.getElementById('container');
-    let category = document.getElementById('category');
-    let total = document.getElementById('total');
-    let heroes = document.querySelectorAll('[data-release-date]');
-    heroes = Array.from(heroes).sort((a, b) => new Date(a.getAttribute('data-release-date')) - new Date(b.getAttribute('data-release-date')));
-    container.innerHTML = '';
-    container.append(category);
-    heroes.forEach(hero => {
-        container.append(hero);
-    });
-    container.append(total);
-    closeSettings();
 }
 
 function sortHeroes(parameter) {
