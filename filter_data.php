@@ -8,7 +8,7 @@ $yearsSelected = NULL;
 
 $maxSkinCategory = [];
 
-$filtered = ['hero' => false, 'category' => false, 'rarity' => false, 'season' => false, 'year' => false];
+$filtered = ['hero' => false, 'category' => false, 'rarity' => false, 'season' => false, 'year' => false, 'no-recolor' => false, 'recolor-only' => false];
 
 setupArrayByFilter('hero', $heroes, $heroList, $filtered, $heroList);
 setupArrayByFilter('category', $categories, $categoryList, $filtered, $categoryList);
@@ -35,6 +35,15 @@ if ($version == 'ow2') {
             $seasons = [];
         }
     }
+}
+
+if (isset($_GET['no-recolor'])) {
+    $filtered['no-recolor'] = true;
+    $skinData = $skinManager->filterSkinRecolor($skinData, false);
+}
+if (isset($_GET['recolor-only'])) {
+    $filtered['recolor-only'] = true;
+    $skinData = $skinManager->filterSkinRecolor($skinData, true);
 }
 
 filterSkin($skinData, $version, $heroes, $categories, $rarities, $seasons, $yearsSelected, $skins);
@@ -70,7 +79,6 @@ function setupArrayByFilter($key, &$array, $defaut, &$filtered, $list = null) {
 function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seasons, $yearsSelected, &$skins) {
     if (isset($_GET['hero']) || isset($_GET['category']) || isset($_GET['rarity']) || isset($_GET['season']) || isset($_GET['year'])) {
         foreach ($skinData as $skin) {
-            
             if (in_array($skin['hero_name'], array_column($heroes, 'name')) &&
             in_array($skin['category_name'], array_column($categories, 'name')) &&
             in_array($skin['rarity'], $rarities) &&

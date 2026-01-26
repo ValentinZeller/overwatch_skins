@@ -45,3 +45,21 @@ input[type=checkbox] {
 #select-buttons {
   margin-bottom: 10px;
 }
+
+.skin-information {
+  font-size: 20px;
+  width: 100%;
+  max-width: 1200px;
+
+  p,
+  h1 {
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
+  }
+}

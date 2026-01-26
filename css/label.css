@@ -53,3 +53,11 @@ label.mythic-skin:has(input[type=checkbox]:checked) {
 .hero-filter label:has(input[type=checkbox]:checked) {
     opacity: 1;
 }
+
+#no-recolor-label:has(input[type=checkbox]:checked)~#recolor-only-label {
+    display: none;
+}
+
+#no-recolor-label:has(+ #recolor-only-label input[type=checkbox]:checked) {
+    display: none;
+}

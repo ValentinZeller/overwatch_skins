@@ -45,3 +45,14 @@
     height: var(--height);
     flex-wrap: wrap;
 }
+
+.recolor-after {
+    content: 'Recolor';
+    position: absolute;
+    padding: 2px 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 10px;
+    border-radius: 4px;
+    display: inline
+}

@@ -34,6 +34,7 @@ let epicBar = localStorage.getItem('epic') === 'true' ? true : false;
 let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : false;
 let mythicBar = localStorage.getItem('mythic') === 'true' ? true : false;
 let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : false;
+let displayRecolors = localStorage.getItem('displayRecolors') === 'false' ? false : true;
 
 // Apply data
 if (document.querySelector('[data-rarity="common"]') != null) {
@@ -53,6 +54,7 @@ document.getElementById('categories-colors').checked = categoriesColor
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
 updateCategoryColor(categoriesColor);
+updateRecolors(displayRecolors);
 updateBarVisibility(epicBar, 'epic');
 updateBarVisibility(legendaryBar, 'legendary');
 
@@ -62,6 +64,22 @@ function updateCategoryColor(show) {
         element.style.backgroundColor = show ? '' : 'unset';
     });
 }
+
+function updateRecolors(show) {
+    localStorage.setItem('displayRecolors', show);
+    document.querySelectorAll('.recolor').forEach(function (element) {
+        if (show) {
+            let recolor_after = document.createElement('span');
+            recolor_after.className = 'recolor-after';
+            recolor_after.innerText = 'Recolor';
+            element.appendChild(recolor_after);
+        } else {
+            element.removeChild(element.querySelector('.recolor-after'));
+        }
+
+    });
+}
+
 
 // Change bar visibility from a checkbox
 function checkBarVisibility(event) {

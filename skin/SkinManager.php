@@ -14,7 +14,7 @@
     }
 
     public function getListeSkin() {
-      $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.year, skin.id_season, condition_special.name AS condition_name
+      $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.year, skin.id_season, condition_special.name AS condition_name, skin.recolor_of
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN season ON skin.id_season = season.id
@@ -28,7 +28,7 @@
     }
 
     public function getOWSkin($version = 'ow1', $base = false) {
-      $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.year, skin.id_season, category.name AS category_name, condition_special.name AS condition_name
+      $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.year, skin.id_season, category.name AS category_name, condition_special.name AS condition_name, skin.recolor_of
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN category ON skin.id_category = category.id
@@ -48,7 +48,7 @@
     }
     
     public function getBaseSkin() {
-        $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.rarity AS category_name
+        $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.rarity AS category_name, skin.recolor_of
                 FROM skin
                 LEFT JOIN hero ON skin.id_hero = hero.id
                 LEFT JOIN category ON skin.id_category = category.id
@@ -158,6 +158,20 @@
         return $result;
     }
 
+    public function filterSkinRecolor($array, $recolor) {
+        // $recolor = true to get only recolors, false to exclude recolors
+        $result = [];
+        if ($array === null) {
+            return $result;
+        }
+        foreach ($array as $item) {
+            if ( ($recolor && $item['recolor_of'] != null) || (!$recolor && $item['recolor_of'] == null) ) {
+                $result[] = $item;
+            }
+        }
+        return $result;
+    }
+
     public function filterSkinByHeroAndCategory($heroName, $categoryName, $array) {
         $result = [];
         if ($array === null) {
@@ -171,19 +185,18 @@
         return $result;
     }
 
-    public function getSkinById($num) {
-      $req = "SELECT * FROM skin WHERE id = '".$num."'";
-      $stmt = $this->_db->prepare($req);
-      $stmt->execute();
-      $stmt->setFetchMode(PDO::FETCH_ASSOC);
-
-      foreach ($stmt as $value) {
-        $mSkin[] = $value;
-      }
-
-      $skin = new Skin;
-      $skin->hydrate($mSkin[0]);
-      return $skin;
+    public function getSkinById($id) {
+        $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.recolor_of as recolor_of, skin2.name AS recolor_name
+              FROM skin
+              LEFT JOIN hero ON skin.id_hero = hero.id
+              LEFT JOIN category ON skin.id_category = category.id
+              LEFT JOIN skin AS skin2 ON skin.recolor_of = skin2.id
+              WHERE skin.id = ' . intval($id) . '
+              ORDER BY hero.name, skin.name';
+        $stmt = $this->_db->prepare($req);
+        $stmt->execute();
+        $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        return $stmt;
     }
 
   }

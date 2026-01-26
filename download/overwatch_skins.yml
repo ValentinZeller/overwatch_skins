@@ -715,6 +715,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/NIGHT_OWL.webp"
   rarity: "legendary"
   name: "Night Owl"
+  recolor_of: 29
 -
   id: 28
   id_hero: 1
@@ -795,6 +796,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/BLACKBRAID.webp"
   rarity: "legendary"
   name: "Blackbraid"
+  recolor_of: 30
 -
   id: 38
   id_hero: 1
@@ -812,6 +814,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/STAKEOUT.webp"
   rarity: "legendary"
   name: "Stakeout"
+  recolor_of: 26
 -
   id: 40
   id_hero: 1
@@ -820,6 +823,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/TOMB_WALKER.webp"
   rarity: "legendary"
   name: "Tomb Walker"
+  recolor_of: 31
 -
   id: 41
   id_hero: 1
@@ -828,6 +832,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 32
 -
   id: 42
   id_hero: 6
@@ -1278,6 +1283,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/BEACH_RESCUE.webp"
   rarity: "legendary"
   name: "Beach Rescue"
+  recolor_of: 100
 -
   id: 104
   id_hero: 25
@@ -1286,6 +1292,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/BEACH_RESCUE.webp"
   rarity: "legendary"
   name: "Beach Rescue"
+  recolor_of: 90
 -
   id: 105
   id_hero: 29
@@ -1779,6 +1786,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/TURNED_HUNTER.webp"
   rarity: "legendary"
   name: "Turned Hunter"
+  recolor_of: 152
 -
   id: 166
   id_hero: 11
@@ -1787,6 +1795,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/STONE_CROW.webp"
   rarity: "legendary"
   name: "Stone Crow"
+  recolor_of: 144
 -
   id: 167
   id_hero: 43
@@ -1795,6 +1804,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/DIVINATOR.webp"
   rarity: "legendary"
   name: "Divinator"
+  recolor_of: 157
 -
   id: 168
   id_hero: 22
@@ -1803,6 +1813,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/CONJURER.webp"
   rarity: "legendary"
   name: "Conjurer"
+  recolor_of: 114
 -
   id: 169
   id_hero: 34
@@ -1979,6 +1990,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/FESTIVE.webp"
   rarity: "epic"
   name: "Festive"
+  recolor_of: 1259
 -
   id: 191
   id_hero: 16
@@ -2253,6 +2265,7 @@
   rarity: "legendary"
   name: "Wrapping Paper"
   id_category_secondary: 14
+  recolor_of: 1178
 -
   id: 225
   id_hero: 3
@@ -2304,6 +2317,7 @@
   rarity: "legendary"
   name: "Winter Jammies"
   id_category_secondary: 14
+  recolor_of: 1312
 -
   id: 232
   id_hero: 29
@@ -2320,6 +2334,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/NUTCRACKER.webp"
   rarity: "legendary"
   name: "Nutcracker"
+  recolor_of: 129
 -
   id: 234
   id_hero: 6
@@ -2338,6 +2353,7 @@
   rarity: "legendary"
   name: "Merry Marionette"
   id_category_secondary: 14
+  recolor_of: 1316
 -
   id: 236
   id_hero: 38
@@ -2355,6 +2371,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/HAPPY_HOLLY.webp"
   rarity: "legendary"
   name: "Happy Holly"
+  recolor_of: 1379
 -
   id: 238
   id_hero: 4
@@ -2773,6 +2790,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/AZURE_HUNTRESS.webp"
   rarity: "legendary"
   name: "Azure Huntress"
+  recolor_of: 273
 -
   id: 289
   id_hero: 12
@@ -2830,6 +2848,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/BIAN_LIAN.webp"
   rarity: "legendary"
   name: "Bian Lian"
+  recolor_of: 269
 -
   id: 296
   id_hero: 30
@@ -2846,6 +2865,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/JADE_SERPENT.webp"
   rarity: "legendary"
   name: "Jade Serpent"
+  recolor_of: 277
 -
   id: 298
   id_hero: 28
@@ -3580,6 +3600,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/WHITE_CAT.webp"
   rarity: "legendary"
   name: "White Cat"
+  recolor_of: 450
 -
   id: 388
   id_hero: 11
@@ -3588,6 +3609,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DEMON.webp"
   rarity: "legendary"
   name: "Demon"
+  recolor_of: 448
 -
   id: 389
   id_hero: 22
@@ -3596,6 +3618,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/MAGE.webp"
   rarity: "legendary"
   name: "Mage"
+  recolor_of: 114
 -
   id: 390
   id_hero: 27
@@ -3612,6 +3635,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/STEELHARDT.webp"
   rarity: "legendary"
   name: "Steelhardt"
+  recolor_of: 939
 -
   id: 392
   id_hero: 42
@@ -3620,6 +3644,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/ZEALOT.webp"
   rarity: "legendary"
   name: "Zealot"
+  recolor_of: 123
 -
   id: 393
   id_hero: 12
@@ -3628,6 +3653,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/DARK_WOLF.webp"
   rarity: "legendary"
   name: "Dark Wolf"
+  recolor_of: 794
 -
   id: 394
   id_hero: 19
@@ -3636,6 +3662,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/POISON_DART.webp"
   rarity: "legendary"
   name: "Poison Dart"
+  recolor_of: 849
 -
   id: 395
   id_hero: 29
@@ -3644,6 +3671,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/NOXIOUS.webp"
   rarity: "legendary"
   name: "Noxious"
+  recolor_of: 370
 -
   id: 396
   id_hero: 33
@@ -3652,6 +3680,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/NEON_CAT.webp"
   rarity: "legendary"
   name: "Neon Cat"
+  recolor_of: 386
 -
   id: 397
   id_hero: 34
@@ -3660,6 +3689,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/HYDRA.webp"
   rarity: "legendary"
   name: "Hydra"
+  recolor_of: 120
 -
   id: 398
   id_hero: 3
@@ -3668,6 +3698,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/ARCTIC_OPS.webp"
   rarity: "legendary"
   name: "Arctic Ops"
+  recolor_of: 590
 -
   id: 399
   id_hero: 7
@@ -3676,6 +3707,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/VARSITY.webp"
   rarity: "legendary"
   name: "Varsity"
+  recolor_of: 367
 -
   id: 400
   id_hero: 11
@@ -3684,6 +3716,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/GENJIMAN.webp"
   rarity: "legendary"
   name: "Genjiman"
+  recolor_of: 341
 -
   id: 401
   id_hero: 25
@@ -3692,6 +3725,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/MECHATRON.webp"
   rarity: "legendary"
   name: "Mechatron"
+  recolor_of: 912
 -
   id: 402
   id_hero: 32
@@ -3700,6 +3734,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/PROTEUS_76.webp"
   rarity: "legendary"
   name: "Proteus: 76"
+  recolor_of: 346
 -
   id: 403
   id_hero: 11
@@ -3868,6 +3903,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DALLAS_SUMMER.webp"
   rarity: "legendary"
   name: "Dallas Summer"
+  recolor_of: 420
 -
   id: 424
   id_hero: 11
@@ -3876,6 +3912,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/SHANGHAI_SUMMER.webp"
   rarity: "legendary"
   name: "Shanghai Summer"
+  recolor_of: 420
 -
   id: 425
   id_hero: 22
@@ -3884,6 +3921,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/ROYAL_GLADIATOR.webp"
   rarity: "legendary"
   name: "Royal Gladiator"
+  recolor_of: 422
 -
   id: 426
   id_hero: 27
@@ -3900,6 +3938,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/LION_LUCHADOR.webp"
   rarity: "legendary"
   name: "Lion Luchador"
+  recolor_of: 421
 -
   id: 428
   id_hero: 27
@@ -3908,6 +3947,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/TIGER_LUCHADOR.webp"
   rarity: "legendary"
   name: "Tiger Luchador"
+  recolor_of: 421
 -
   id: 429
   id_hero: 23
@@ -3924,6 +3964,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/WICKED_REIGN.webp"
   rarity: "legendary"
   name: "Wicked Reign"
+  recolor_of: 429
 -
   id: 431
   id_hero: 32
@@ -3948,6 +3989,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/CHARGED_CLIMBER.webp"
   rarity: "legendary"
   name: "Charged Climber"
+  recolor_of: 435
 -
   id: 434
   id_hero: 41
@@ -3956,6 +3998,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/REIGNING_CLIMBER.webp"
   rarity: "legendary"
   name: "Reigning Climber"
+  recolor_of: 435
 -
   id: 435
   id_hero: 41
@@ -3972,6 +4015,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/FUEL_BIKER_76.webp"
   rarity: "legendary"
   name: "Fuel Biker: 76"
+  recolor_of: 431
 -
   id: 437
   id_hero: 32
@@ -3980,6 +4024,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/MAYHEM_BIKER_76.webp"
   rarity: "legendary"
   name: "Mayhem Biker: 76"
+  recolor_of: 431
 -
   id: 438
   id_hero: 4
@@ -4250,6 +4295,7 @@
   name: "Kerrigan"
   id_category_secondary: 15
   id_condition: 7
+  recolor_of: 463
 -
   id: 470
   id_hero: 7
@@ -4427,6 +4473,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/TAGGED.webp"
   rarity: "legendary"
   name: "Tagged"
+  recolor_of: 348
 -
   id: 492
   id_hero: 19
@@ -5143,6 +5190,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/STORM_RIDER.webp"
   rarity: "legendary"
   name: "Storm Rider"
+  recolor_of: 611
 -
   id: 614
   id_hero: 2
@@ -5175,6 +5223,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/SAKURA.webp"
   rarity: "legendary"
   name: "Sakura"
+  recolor_of: 318
 -
   id: 618
   id_hero: 2
@@ -5225,6 +5274,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/NEON_STREETS.webp"
   rarity: "legendary"
   name: "Neon Streets"
+  recolor_of: 348
 -
   id: 624
   id_hero: 16
@@ -5249,6 +5299,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/GENTLE_TOKKI_AQUA.webp"
   rarity: "legendary"
   name: "Gentle Tokki Aqua"
+  recolor_of: 662
 -
   id: 631
   id_hero: 7
@@ -5257,6 +5308,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/GENTLE_TOKKI_FUCHSIA.webp"
   rarity: "legendary"
   name: "Gentle Tokki Fuchsia"
+  recolor_of: 662
 -
   id: 632
   id_hero: 22
@@ -5266,6 +5318,7 @@
   rarity: "legendary"
   name: "Rose Gold"
   id_condition: 4
+  recolor_of: 468
 -
   id: 633
   id_hero: 5
@@ -8005,6 +8058,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 412
 -
   id: 1102
   id_hero: 9
@@ -8013,6 +8067,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 413
 -
   id: 1103
   id_hero: 11
@@ -8021,6 +8076,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 403
 -
   id: 1104
   id_hero: 11
@@ -8029,6 +8085,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/CRIMSON_SUMMER.webp"
   rarity: "legendary"
   name: "Crimson Summer"
+  recolor_of: 420
 -
   id: 1105
   id_hero: 22
@@ -8037,6 +8094,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/CRIMSON_KNIGHT.webp"
   rarity: "legendary"
   name: "Crimson Knight"
+  recolor_of: 422
 -
   id: 1106
   id_hero: 22
@@ -8045,6 +8103,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 409
 -
   id: 1107
   id_hero: 22
@@ -8069,6 +8128,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 404
 -
   id: 1110
   id_hero: 42
@@ -8077,6 +8137,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 432
 -
   id: 1111
   id_hero: 9
@@ -9131,6 +9192,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junker_Queen/HEAVY_METAL.webp"
   rarity: "legendary"
   name: "Heavy Metal"
+  recolor_of: 1139
 -
   id: 1299
   id_hero: 16
@@ -9283,6 +9345,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/VOLCANIC.webp"
   rarity: "legendary"
   name: "Volcanic"
+  recolor_of: 216
 -
   id: 1318
   id_hero: 12
@@ -9349,6 +9412,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/GILDED_HUNTER.webp"
   rarity: "legendary"
   name: "Gilded Hunter"
+  recolor_of: 440
 -
   id: 1326
   id_hero: 33
@@ -9406,6 +9470,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/SUMMONER.webp"
   rarity: "legendary"
   name: "Summoner"
+  recolor_of: 1159
 -
   id: 1333
   id_hero: 18
@@ -9446,6 +9511,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/GREAT_TENGU.webp"
   rarity: "legendary"
   name: "Great Tengu"
+  recolor_of: 145
 -
   id: 1375
   id_hero: 15
@@ -9511,6 +9577,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/HEAVEN'S_DEVIL.webp"
   rarity: "legendary"
   name: "Heaven's Devil"
+  recolor_of: 443
 -
   id: 1383
   id_hero: 30
@@ -9519,6 +9586,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/PLUNDERER.webp"
   rarity: "legendary"
   name: "Plunderer"
+  recolor_of: 146
 -
   id: 1384
   id_hero: 34
@@ -9527,6 +9595,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/SIN'DOREI.webp"
   rarity: "legendary"
   name: "Sin'Dorei"
+  recolor_of: 442
 -
   id: 1385
   id_hero: 40
@@ -9689,6 +9758,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/ROSY_HANBOK.webp"
   rarity: "legendary"
   name: "Rosy Hanbok"
+  recolor_of: 243
 -
   id: 1405
   id_hero: 11
@@ -9697,6 +9767,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/HEIHU.webp"
   rarity: "legendary"
   name: "Heihu"
+  recolor_of: 251
 -
   id: 1406
   id_hero: 43
@@ -9713,6 +9784,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/DARK_FAUN.webp"
   rarity: "legendary"
   name: "Dark Faun"
+  recolor_of: 154
 -
   id: 1408
   id_hero: 24
@@ -9721,6 +9793,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Orisa/FIEND.webp"
   rarity: "legendary"
   name: "Fiend"
+  recolor_of: 137
 -
   id: 1409
   id_hero: 28
@@ -9729,6 +9802,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/ROSAHARDT.webp"
   rarity: "legendary"
   name: "Rosahardt"
+  recolor_of: 939
 -
   id: 1410
   id_hero: 38
@@ -9737,6 +9811,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/ROSE_LILY.webp"
   rarity: "legendary"
   name: "Rose Lily"
+  recolor_of: 254
 -
   id: 1411
   id_hero: 22
@@ -9905,6 +9980,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/SAINT-TROPEZ.webp"
   rarity: "legendary"
   name: "Saint-Tropez"
+  recolor_of: 60
 -
   id: 1432
   id_hero: 11
@@ -9993,6 +10069,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/STREETWEAR.webp"
   rarity: "legendary"
   name: "Streetwear"
+  recolor_of: 183
 -
   id: 1443
   id_hero: 28
@@ -10025,6 +10102,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/STRAWBERRY.webp"
   rarity: "legendary"
   name: "Strawberry"
+  recolor_of: 221
 -
   id: 1447
   id_hero: 21
@@ -10033,6 +10111,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/STRAWBERRY.webp"
   rarity: "legendary"
   name: "Strawberry"
+  recolor_of: 368
 -
   id: 1448
   id_hero: 32
@@ -10041,6 +10120,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/HUNTSMAN_76.webp"
   rarity: "legendary"
   name: "Huntsman: 76"
+  recolor_of: 987
 -
   id: 1449
   id_hero: 41
@@ -10049,6 +10129,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/CYBERVISION.webp"
   rarity: "legendary"
   name: "Cybervision"
+  recolor_of: 349
 -
   id: 1450
   id_hero: 25
@@ -10217,6 +10298,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/MAGMA.webp"
   rarity: "legendary"
   name: "Magma"
+  recolor_of: 320
 -
   id: 1471
   id_hero: 12
@@ -10225,6 +10307,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/HEIR.webp"
   rarity: "legendary"
   name: "Heir"
+  recolor_of: 309
 -
   id: 1472
   id_hero: 22
@@ -10233,6 +10316,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/WYVERN.webp"
   rarity: "legendary"
   name: "Wyvern"
+  recolor_of: 376
 -
   id: 1473
   id_hero: 31
@@ -10241,6 +10325,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/SEA_SOLDIER.webp"
   rarity: "legendary"
   name: "Sea Soldier"
+  recolor_of: 1108
 -
   id: 1474
   id_hero: 33
@@ -10249,6 +10334,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/MAGMA.webp"
   rarity: "legendary"
   name: "Magma"
+  recolor_of: 187
 -
   id: 1475
   id_hero: 35
@@ -10257,6 +10343,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/DIAMOND_MAGNI.webp"
   rarity: "legendary"
   name: "Diamond Magni"
+  recolor_of: 462
 -
   id: 1476
   id_hero: 36
@@ -10265,6 +10352,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/EVENING_WEAR.webp"
   rarity: "legendary"
   name: "Evening Wear"
+  recolor_of: 228
 -
   id: 1477
   id_hero: 38
@@ -10273,6 +10361,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/EURYALE.webp"
   rarity: "legendary"
   name: "Euryale"
+  recolor_of: 1126
 -
   id: 1478
   id_hero: 40
@@ -10281,6 +10370,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wrecking_Ball/DEEP_SEA.webp"
   rarity: "legendary"
   name: "Deep Sea"
+  recolor_of: 1127
 -
   id: 1479
   id_hero: 26
@@ -10289,6 +10379,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/OCEAN_KING.webp"
   rarity: "legendary"
   name: "Ocean King"
+  recolor_of: 1128
 -
   id: 1480
   id_hero: 38
@@ -10434,6 +10525,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/DAINTY_CAT.webp"
   rarity: "legendary"
   name: "Dainty Cat"
+  recolor_of: 450
 -
   id: 1498
   id_hero: 9
@@ -10442,6 +10534,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/PHOENIX.webp"
   rarity: "legendary"
   name: "Phoenix"
+  recolor_of: 275
 -
   id: 1499
   id_hero: 19
@@ -10450,6 +10543,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/POET.webp"
   rarity: "legendary"
   name: "Poet"
+  recolor_of: 1260
 -
   id: 1500
   id_hero: 32
@@ -10458,6 +10552,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/GRILL_ZOMBIE_76.webp"
   rarity: "legendary"
   name: "Grill Zombie: 76"
+  recolor_of: 58
 -
   id: 1501
   id_hero: 33
@@ -10466,6 +10561,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/TUXEDO_CAT.webp"
   rarity: "legendary"
   name: "Tuxedo Cat"
+  recolor_of: 386
 -
   id: 1502
   id_hero: 35
@@ -10474,6 +10570,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/DROWNED.webp"
   rarity: "legendary"
   name: "Drowned"
+  recolor_of: 81
 -
   id: 1503
   id_hero: 41
@@ -10482,6 +10579,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/APOCALYPSE_TRAINER.webp"
   rarity: "legendary"
   name: "Apocalypse Trainer"
+  recolor_of: 330
 -
   id: 1504
   id_hero: 28
@@ -10643,6 +10741,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/CELESTIAL.webp"
   rarity: "legendary"
   name: "Celestial"
+  recolor_of: 347
 -
   id: 1524
   id_hero: 42
@@ -10708,6 +10807,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Baptiste/FLIRTY_FLARE.webp"
   rarity: "legendary"
   name: "Flirty Flare"
+  recolor_of: 382
 -
   id: 1532
   id_hero: 8
@@ -10716,6 +10816,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/NORSE.webp"
   rarity: "legendary"
   name: "Norse"
+  recolor_of: 201
 -
   id: 1533
   id_hero: 12
@@ -10724,6 +10825,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/LOVESTRUCK.webp"
   rarity: "legendary"
   name: "Lovestruck"
+  recolor_of: 1138
 -
   id: 1534
   id_hero: 43
@@ -10732,6 +10834,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/IDUNN.webp"
   rarity: "legendary"
   name: "Idunn"
+  recolor_of: 1259
 -
   id: 1535
   id_hero: 19
@@ -10740,6 +10843,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/CYBER_DJ.webp"
   rarity: "legendary"
   name: "Cyber DJ"
+  recolor_of: 1377
 -
   id: 1536
   id_hero: 27
@@ -10748,6 +10852,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/EMOTIONAL.webp"
   rarity: "legendary"
   name: "Emotional"
+  recolor_of: 1401
 -
   id: 1537
   id_hero: 35
@@ -10756,6 +10861,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/NORSE.webp"
   rarity: "legendary"
   name: "Norse"
+  recolor_of: 121
 -
   id: 1538
   id_hero: 38
@@ -10764,6 +10870,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/CYBER_FIEND.webp"
   rarity: "legendary"
   name: "Cyber Fiend"
+  recolor_of: 679
 -
   id: 1539
   id_hero: 42
@@ -10858,9 +10965,10 @@
   id_hero: 24
   id_category: 5
   id_season: 15
-  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Orisa/RAINY_DAY.webp"
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Orisa/RAINY_DUCKY.webp"
   rarity: "legendary"
-  name: "Rainy Day"
+  name: "Rainy Ducky"
+  recolor_of: 1322
 -
   id: 1551
   id_hero: 36
@@ -10870,6 +10978,7 @@
   rarity: "legendary"
   name: "Rainy Day"
   id_condition: 11
+  recolor_of: 348
 -
   id: 1552
   id_hero: 39
@@ -10902,6 +11011,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/BLUE_FLAME.webp"
   rarity: "legendary"
   name: "Blue Flame"
+  recolor_of: 1313
 -
   id: 1556
   id_hero: 7
@@ -10910,6 +11020,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/BLUE_FLAME.webp"
   rarity: "legendary"
   name: "Blue Flame"
+  recolor_of: 1315
 -
   id: 1557
   id_hero: 43
@@ -10918,6 +11029,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/BLUE_FLAME.webp"
   rarity: "legendary"
   name: "Blue Flame"
+  recolor_of: 1320
 -
   id: 1558
   id_hero: 33
@@ -10926,6 +11038,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/BLUE_FLAME.webp"
   rarity: "legendary"
   name: "Blue Flame"
+  recolor_of: 1326
 -
   id: 1559
   id_hero: 36
@@ -10934,6 +11047,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/BLUE_FLAME.webp"
   rarity: "legendary"
   name: "Blue Flame"
+  recolor_of: 1327
 -
   id: 1560
   id_hero: 22
@@ -11095,6 +11209,7 @@
   rarity: "legendary"
   name: "Ice Princess"
   id_condition: 5
+  recolor_of: 194
 -
   id: 1580
   id_hero: 38
@@ -11159,6 +11274,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/ROYAL_ARCHER.webp"
   rarity: "legendary"
   name: "Royal Archer"
+  recolor_of: 309
 -
   id: 1588
   id_hero: 19
@@ -11167,6 +11283,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/ROYAL_PRINCE.webp"
   rarity: "legendary"
   name: "Royal Prince"
+  recolor_of: 1176
 -
   id: 1589
   id_hero: 21
@@ -11175,6 +11292,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/GLITTER.webp"
   rarity: "legendary"
   name: "Glitter"
+  recolor_of: 95
 -
   id: 1590
   id_hero: 24
@@ -11183,6 +11301,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Orisa/DREAM_SHEEP.webp"
   rarity: "legendary"
   name: "Dream Sheep"
+  recolor_of: 1118
 -
   id: 1591
   id_hero: 7
@@ -11360,6 +11479,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/8-BIT.webp"
   rarity: "legendary"
   name: "8-Bit"
+  recolor_of: 339
 -
   id: 1613
   id_hero: 9
@@ -11368,6 +11488,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/8-BIT.webp"
   rarity: "legendary"
   name: "8-Bit"
+  recolor_of: 767
 -
   id: 1614
   id_hero: 31
@@ -11376,6 +11497,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sojourn/INSTRUCTOR_CHASE.webp"
   rarity: "legendary"
   name: "Instructor Chase"
+  recolor_of: 227
 -
   id: 1615
   id_hero: 36
@@ -11384,6 +11506,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/INSTRUCTOR_OXTON.webp"
   rarity: "legendary"
   name: "Instructor Oxton"
+  recolor_of: 486
 -
   id: 1616
   id_hero: 40
@@ -11400,6 +11523,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/CYBER_ONI.webp"
   rarity: "legendary"
   name: "Cyber Oni"
+  recolor_of: 664
 -
   id: 1618
   id_hero: 18
@@ -11417,6 +11541,7 @@
   rarity: "legendary"
   name: "Frozen Seer"
   id_condition: 6
+  recolor_of: 1238
 -
   id: 1620
   id_hero: 18
@@ -11433,6 +11558,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/BOLEIRO.webp"
   rarity: "epic"
   name: "Boleiro"
+  recolor_of: 49
 -
   id: 1622
   id_hero: 24
@@ -11507,6 +11633,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/DEMON.webp"
   rarity: "legendary"
   name: "Demon"
+  recolor_of: 35
 -
   id: 1631
   id_hero: 1
@@ -11531,6 +11658,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/ROBBER.webp"
   rarity: "legendary"
   name: "Robber"
+  recolor_of: 1243
 -
   id: 1634
   id_hero: 7
@@ -11611,6 +11739,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/DEMON.webp"
   rarity: "legendary"
   name: "Demon"
+  recolor_of: 1458
 -
   id: 1644
   id_hero: 18
@@ -11635,6 +11764,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/TROPICAL.webp"
   rarity: "legendary"
   name: "Tropical"
+  recolor_of: 49
 -
   id: 1647
   id_hero: 21
@@ -11717,6 +11847,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/ROBBER.webp"
   rarity: "legendary"
   name: "Robber"
+  recolor_of: 1462
 -
   id: 1657
   id_hero: 32
@@ -11765,6 +11896,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/VAMPIRE_BRIDE.webp"
   rarity: "legendary"
   name: "Vampire Bride"
+  recolor_of: 1328
 -
   id: 1663
   id_hero: 44
@@ -11905,6 +12037,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/VAMPIRE_REGENT.webp"
   rarity: "legendary"
   name: "Vampire Regent"
+  recolor_of: 840
 -
   id: 1681
   id_hero: 42
@@ -11913,6 +12046,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/SOLARIS.webp"
   rarity: "legendary"
   name: "Solaris"
+  recolor_of: 406
 -
   id: 1682
   id_hero: 23
@@ -11921,6 +12055,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/SOLARIS.webp"
   rarity: "legendary"
   name: "Solaris"
+  recolor_of: 429
 -
   id: 1683
   id_hero: 5
@@ -11929,6 +12064,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/SOLARIS.webp"
   rarity: "legendary"
   name: "Solaris"
+  recolor_of: 411
 -
   id: 1684
   id_hero: 27
@@ -11937,6 +12073,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/SOLARIS.webp"
   rarity: "legendary"
   name: "Solaris"
+  recolor_of: 421
 -
   id: 1685
   id_hero: 18
@@ -12060,6 +12197,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SCARLET_EMBER.webp"
   rarity: "legendary"
   name: "Scarlet Ember"
+  recolor_of: 828
 -
   id: 1700
   id_hero: 22
@@ -12068,6 +12206,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/SCARLET_ANGEL.webp"
   rarity: "legendary"
   name: "Scarlet Angel"
+  recolor_of: 1107
 -
   id: 1701
   id_hero: 22
@@ -12140,6 +12279,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/CURSED_DOLL.webp"
   rarity: "legendary"
   name: "Cursed Doll"
+  recolor_of: 612
 -
   id: 1710
   id_hero: 27
@@ -12164,6 +12304,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/TYRIAN_DRAKE.webp"
   rarity: "legendary"
   name: "Tyrian Drake"
+  recolor_of: 1295
 -
   id: 1713
   id_hero: 14
@@ -12172,6 +12313,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/GOTHIC_CAT.webp"
   rarity: "legendary"
   name: "Gothic Cat"
+  recolor_of: 1493
 -
   id: 1714
   id_hero: 43
@@ -12188,6 +12330,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/GOTHIC_CAT.webp"
   rarity: "legendary"
   name: "Gothic Cat"
+  recolor_of: 1489
 -
   id: 1716
   id_hero: 44
@@ -12236,6 +12379,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/LAPIS.webp"
   rarity: "legendary"
   name: "Lapis"
+  recolor_of: 1452
 -
   id: 1722
   id_hero: 32
@@ -12252,6 +12396,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/SUNSTONE.webp"
   rarity: "legendary"
   name: "Sunstone"
+  recolor_of: 1454
 -
   id: 1724
   id_hero: 25
@@ -12260,6 +12405,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/MALACHITE.webp"
   rarity: "legendary"
   name: "Malachite"
+  recolor_of: 1460
 -
   id: 1725
   id_hero: 27
@@ -12301,6 +12447,7 @@
   rarity: "legendary"
   name: "Xal'Atah"
   id_category_secondary: 4
+  recolor_of: 442
 -
   id: 1730
   id_hero: 45
@@ -12350,6 +12497,7 @@
   rarity: "legendary"
   name: "Frozen Mountaineer"
   id_category_secondary: 14
+  recolor_of: 200
 -
   id: 1736
   id_hero: 16
@@ -12359,6 +12507,7 @@
   rarity: "legendary"
   name: "Frozen Demon"
   id_category_secondary: 14
+  recolor_of: 191
 -
   id: 1737
   id_hero: 27
@@ -12375,6 +12524,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 414
 -
   id: 1739
   id_hero: 38
@@ -12383,6 +12533,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 419
 -
   id: 1740
   id_hero: 19
@@ -12391,6 +12542,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/COSMIC.webp"
   rarity: "legendary"
   name: "Cosmic"
+  recolor_of: 408
 -
   id: 1741
   id_hero: 45
@@ -12594,6 +12746,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/VALHALLA.webp"
   rarity: "legendary"
   name: "Valhalla"
+  recolor_of: 1507
 -
   id: 1766
   id_hero: 4
@@ -12610,6 +12763,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/STARGAZER.webp"
   rarity: "legendary"
   name: "Stargazer"
+  recolor_of: 1505
 -
   id: 1768
   id_hero: 31
@@ -12626,6 +12780,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/SIGYN.webp"
   rarity: "legendary"
   name: "Sigyn"
+  recolor_of: 1522
 -
   id: 1770
   id_hero: 22
@@ -12634,6 +12789,7 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/IVORY_ROSE.webp"
   rarity: "legendary"
   name: "Ivory Rose"
+  recolor_of: 1247
 -
   id: 1771
   id_hero: 18

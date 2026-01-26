@@ -55,6 +55,12 @@
         </div>
     </div>
     <div id="form-button">
+        <label class="recolor-label" for="no-recolor" id="no-recolor-label" >No Recolors
+            <input type="checkbox" id="no-recolor" name="no-recolor" <?= $filtered['no-recolor'] ? "checked" : '' ?>/>
+        </label>
+        <label class="recolor-label" for="recolor-only" id="recolor-only-label">Only Recolors
+            <input type="checkbox" id="recolor-only" name="recolor-only" <?= $filtered['recolor-only'] ? "checked" : '' ?>/>
+        </label>
         <button type="submit">Filter</button>
     </div>
 </form>
