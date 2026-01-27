@@ -28,13 +28,13 @@ function closeSettings() {
 }
 
 // Get Local storage data
-let commonBar = localStorage.getItem('common') === 'true' ? true : false;
-let rareBar = localStorage.getItem('rare') === 'true' ? true : false;
-let epicBar = localStorage.getItem('epic') === 'true' ? true : false;
-let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : false;
-let mythicBar = localStorage.getItem('mythic') === 'true' ? true : false;
-let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : false;
-let displayRecolors = localStorage.getItem('displayRecolors') === 'false' ? false : true;
+let commonBar = localStorage.getItem('common') === 'true' ? true : null;
+let rareBar = localStorage.getItem('rare') === 'true' ? true : null;
+let epicBar = localStorage.getItem('epic') === 'true' ? true : null;
+let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : null;
+let mythicBar = localStorage.getItem('mythic') === 'true' ? true : null;
+let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : null;
+let displayRecolors = localStorage.getItem('displayRecolors') === 'true' ? true : null;
 
 // Apply data
 if (document.querySelector('[data-rarity="common"]') != null) {
@@ -51,8 +51,10 @@ if (document.querySelector('[data-rarity="mythic"]') != null) {
 }
 
 document.getElementById('categories-colors').checked = categoriesColor
+document.getElementById('display-recolors').checked = displayRecolors
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
+
 updateCategoryColor(categoriesColor);
 updateRecolors(displayRecolors);
 updateBarVisibility(epicBar, 'epic');
@@ -74,12 +76,13 @@ function updateRecolors(show) {
             recolor_after.innerText = 'Recolor';
             element.appendChild(recolor_after);
         } else {
-            element.removeChild(element.querySelector('.recolor-after'));
+            if (element.querySelector('.recolor-after')) {
+                element.removeChild(element.querySelector('.recolor-after'));
+            }
         }
 
     });
 }
-
 
 // Change bar visibility from a checkbox
 function checkBarVisibility(event) {
