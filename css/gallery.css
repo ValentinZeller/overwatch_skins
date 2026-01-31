@@ -1,0 +1,57 @@
+#hero-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+
+    .item-gallery {
+        width: 480px;
+        height: 480px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &.common {
+            border-bottom: 4px solid var(--common);
+        }
+
+        &.rare {
+            border-bottom: 4px solid var(--rare);
+        }
+
+        &.epic {
+            border-bottom: 4px solid var(--epic);
+        }
+
+        &.legendary {
+            border-bottom: 4px solid #ffa500;
+        }
+
+        &.mythic {
+            border-bottom: 4px solid transparent;
+            border-image: var(--mythic);
+            border-image-slice: 1;
+        }
+
+        &.recolor::after {
+            content: 'Recolor';
+            float: right;
+            padding: 2px 6px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+    }
+
+    .category-icon {
+        height: 32px;
+        padding: 5px;
+    }
+}

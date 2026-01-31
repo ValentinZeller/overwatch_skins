@@ -186,16 +186,30 @@
     }
 
     public function getSkinById($id) {
-        $req = 'SELECT hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.recolor_of as recolor_of, skin2.name AS recolor_name
+        $req = 'SELECT hero.name AS hero_name, skin.id_hero, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.recolor_of as recolor_of, skin2.name AS recolor_name, condition_special.name AS condition_name
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN category ON skin.id_category = category.id
               LEFT JOIN skin AS skin2 ON skin.recolor_of = skin2.id
-              WHERE skin.id = ' . intval($id) . '
+              LEFT JOIN condition_special ON skin.id_condition = condition_special.id
+              WHERE skin.id = :id
               ORDER BY hero.name, skin.name';
         $stmt = $this->_db->prepare($req);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
+        return $stmt;
+    }
+
+    public function getSkinByHeroId($heroId) {
+        $req = 'SELECT skin.id, skin.name AS skin_name, skin.rarity, skin.image_url, skin.recolor_of, skin.id_category, category.icon_url as category_icon_url
+              FROM skin
+              LEFT JOIN category ON skin.id_category = category.id
+              WHERE skin.id_hero = :heroId
+              ORDER BY skin.rarity DESC, skin.name';
+        $stmt = $this->_db->prepare($req);
+        $stmt->bindParam(':heroId', $heroId, PDO::PARAM_INT);
+        $stmt->execute();
         return $stmt;
     }
 

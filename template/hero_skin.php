@@ -1,7 +1,7 @@
 <?php require_once('function.php'); ?>
 
 <div class="row" id="<?= $hero['name'] ?>" data-name="<?= $hero['name'] ?>" data-release-date="<?= $hero['release_date'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
-    <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
+   <a href="hero.php?id=<?= $hero['id'] ?>" target="_blank"><div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div></a>
     <?php foreach ($categories as $category): ?>
         <?php
             $nbColumn = getNbColumn($category, $maxSkinCategory, $manager);

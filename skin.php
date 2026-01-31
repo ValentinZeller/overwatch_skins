@@ -24,7 +24,7 @@ if (!$skin) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Overwatch Skins</title>
+    <title>Skin Details</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="image/logo.webp">
 </head>
@@ -32,11 +32,14 @@ if (!$skin) {
     <div class="skin-information">
         <img src="<?= $skin['image_url'] ?>" alt="<?= $skin['skin_name'] ?>">
         <h1><?= $skin['skin_name'] ?></h1>
-        <p>Hero: <?= $skin['hero_name'] ?></p>
+        <p>Hero: <a href="hero.php?id=<?= $skin['id_hero'] ?>" target="_blank"><?= $skin['hero_name'] ?></a></p>
         <p>Category: <?= $skin['category_name'] ?></p>
         <p>Rarity: <?= $skin['rarity'] ?></p>
         <?php if (!empty($skin['recolor_of'])): ?>
             <p>Recolor of: <a href="skin.php?id=<?= $skin['recolor_of'] ?>" target="_blank"><?= $skin['recolor_name'] ?></a></p>
+        <?php endif; ?>
+        <?php if (!empty($skin['condition_name'])): ?>
+            <p>Special Condition: <?= $skin['condition_name'] ?></p>
         <?php endif; ?>
     </div>
 </body>
