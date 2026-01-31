@@ -5,6 +5,10 @@
     justify-content: center;
     padding: 20px;
 
+    a {
+        text-decoration: none;
+    }
+
     .item-gallery {
         width: 480px;
         height: 480px;
@@ -12,10 +16,6 @@
         background-position: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
-
-        &:hover {
-            transform: scale(1.05);
-        }
 
         &.common {
             border-bottom: 4px solid var(--common);
@@ -48,10 +48,21 @@
             font-size: 20px;
             border-radius: 4px;
         }
+
+        .item-name {
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            position: relative;
+            top: 455px;
+            left: 10px;
+        }
     }
 
     .category-icon {
         height: 32px;
         padding: 5px;
+        position: absolute;
     }
+
+
 }

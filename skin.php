@@ -1,24 +1,3 @@
-<?php
-require_once('connect.php');
-require_once('skin/SkinManager.php');
-
-$id = $_GET['id'] ?? null;
-if ($id === null) {
-    echo "No skin ID provided.";
-    exit;
-}
-
-$db = ConnectBDD();
-$skinManager = new SkinManager($db);
-$skin = $skinManager->getSkinById($id)->fetch();
-
-if (!$skin) {
-    echo "Skin not found.";
-    exit;
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +7,26 @@ if (!$skin) {
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="image/logo.webp">
 </head>
+<?php
+require_once('connect.php');
+require_once('skin/SkinManager.php');
+
+$id = $_GET['id'] ?? null;
+if ($id === null) {
+    echo "<div>No skin ID provided : <a href='index.php'>Return to homepage</a></div>";
+    exit;
+}
+
+$db = ConnectBDD();
+$skinManager = new SkinManager($db);
+$skin = $skinManager->getSkinById($id)->fetch();
+
+if (!$skin) {
+    echo "<div>Skin not found : <a href='index.php'>Return to homepage</a></div>";
+    exit;
+}
+
+?>
 <body>
     <div class="skin-information">
         <img src="<?= $skin['image_url'] ?>" alt="<?= $skin['skin_name'] ?>">
