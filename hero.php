@@ -50,7 +50,7 @@ function initialValue($id,$skinManager) {
             $skin['image_url'] = str_replace("'", "\'", $skin['image_url']);
             ?>
             <a target="_blank" href="skin.php?id=<?= $skin['id'] ?>">
-                <div width=480px height=480px class="item-gallery <?= $skin['rarity'] ?> <?= $skin['recolor_of'] ? 'recolor' : '' ?>" title="<?= $skin['skin_name'] ?>" style="background-image: url('<?= $skin['image_url'] ?>');">
+                <div class="item-gallery <?= $skin['rarity'] ?> <?= $skin['recolor_of'] ? 'recolor' : '' ?>" title="<?= $skin['skin_name'] ?>" style="background-image: url('<?= $skin['image_url'] ?>');">
                     <img class="category-icon" src="<?= $skin['category_icon_url'] ?>">
                     <span class="item-name"><?= $skin['skin_name'] ?></span>
                 </div>
