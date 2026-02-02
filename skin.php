@@ -41,5 +41,6 @@ if (!$skin) {
             <p>Special Condition: <?= $skin['condition_name'] ?></p>
         <?php endif; ?>
     </div>
+    <a href="index.php" class="back-home">← Back to Home</a>
 </body>
 </html>

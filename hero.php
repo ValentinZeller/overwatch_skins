@@ -59,6 +59,7 @@ function initialValue($id,$skinManager) {
         }
         ?>
     </div>
+    <a href="index.php" class="back-home">← Back to Home</a>
     <script src="js/lazy_loading.js" type="text/javascript"></script>
 </body>
 </html>

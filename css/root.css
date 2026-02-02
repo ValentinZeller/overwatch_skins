@@ -15,7 +15,7 @@
 
 body {
     font-family: BigNoodleTitlingOblique;
-    background: url('../image/background.webp') 0% 0% / cover;
+    background: url('../image/background.webp') 0% 0% / cover fixed no-repeat;
     margin: 0;
 
     &>a {
