@@ -50,8 +50,8 @@ function initialValue($id,$skinManager) {
             $skin['image_url'] = str_replace("'", "\'", $skin['image_url']);
             ?>
             <a target="_blank" href="skin.php?id=<?= $skin['id'] ?>">
-                <div class="item-gallery <?= $skin['rarity'] ?> <?= $skin['recolor_of'] ? 'recolor' : '' ?>" title="<?= $skin['skin_name'] ?>" style="background-image: url('<?= $skin['image_url'] ?>');">
-                    <img class="category-icon" src="<?= $skin['category_icon_url'] ?>">
+                <div class="item-gallery lazy-background <?= $skin['rarity'] ?> <?= $skin['recolor_of'] ? 'recolor' : '' ?>" title="<?= $skin['skin_name'] ?>" data-bg="url('<?= $skin['image_url'] ?>')">
+                    <img loading="lazy" class="category-icon" src="<?= $skin['category_icon_url'] ?>">
                     <span class="item-name"><?= $skin['skin_name'] ?></span>
                 </div>
             </a>
@@ -59,5 +59,6 @@ function initialValue($id,$skinManager) {
         }
         ?>
     </div>
+    <script src="js/lazy_loading.js" type="text/javascript"></script>
 </body>
 </html>
