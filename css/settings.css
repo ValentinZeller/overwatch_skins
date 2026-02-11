@@ -1,0 +1,33 @@
+#show-hide-text {
+    margin-right: 20px;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.rarity-filter,
+.category-filter,
+.season-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-filter {
+    width: 650px;
+}
+
+.season-filter {
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+#filter-form {
+    display: flex;
+}
+
+#select-buttons {
+    margin-bottom: 10px;
+}

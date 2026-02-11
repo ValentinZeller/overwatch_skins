@@ -15,6 +15,7 @@
                         <a target="_blank" href="skin.php?id=<?= $skin['id'] ?>">
                             <?php
                                 $skin['image_url'] = str_replace("'", "\'", $skin['image_url']);
+                                echo "<script>console.log('".renameFile($skin['image_url'])."');</script>";
                             ?>
                             <div class="<?= split($filterSkinCount, $nbColumn) ?> <?= $skin['rarity'] ?> <?= $skin['recolor_of']? 'recolor' : ''  ?>" data-bg="url('<?= renameFile($skin['image_url']) ?>')" title="<?= $skin['skin_name'] ?>"></div>
                         </a>

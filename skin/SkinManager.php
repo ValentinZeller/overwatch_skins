@@ -27,13 +27,13 @@
       return $stmt;
     }
 
-    public function getOWSkin($version = 'ow1', $base = false) {
+    public function getOWSkin($version = 'main', $base = false) {
       $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.year, skin.id_season, category.name AS category_name, condition_special.name AS condition_name, skin.recolor_of
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN category ON skin.id_category = category.id
               LEFT JOIN condition_special ON skin.id_condition = condition_special.id';
-      if ($version === 'ow1') {
+      if ($version === 'legacy') {
           $req .= ' WHERE id_season IS NULL AND hero.release_date < "2022-10-04"';
       } else {
         $req .= ' WHERE id_season IS NOT NULL';
@@ -59,12 +59,12 @@
         return $stmt;
     }
 
-    public function getSkinCount($groupByCategory = false, $version = 'ow1') {
+    public function getSkinCount($groupByCategory = false, $version = 'main') {
         $req = 'SELECT hero.name AS hero_name, category.name AS category_name, COUNT(skin.id) AS skin_count
                 FROM skin
                 LEFT JOIN hero ON skin.id_hero = hero.id
                 LEFT JOIN category ON skin.id_category = category.id';
-        if ($version === 'ow1') {
+        if ($version === 'legacy') {
             $req .= ' WHERE id_season IS NULL AND hero.release_date < "2022-10-04"';
         } else {
             $req .= ' WHERE id_season IS NOT NULL';
@@ -106,19 +106,6 @@
         return $result;
     }
 
-    public function filterSkinByYear($year, $array) {
-        $result = [];
-        if ($array === null) {
-            return $result;
-        }
-        foreach ($array as $item) {
-            if ($item['year'] === $year) {
-                $result[] = $item;
-            }
-        }
-        return $result;
-    }
-
     public function filterSkinByRarity($rarity, $array) {
         $result = [];
         if ($array === null) {
@@ -131,33 +118,7 @@
         }
         return $result;
     }
-
-    public function filterSkinByCondition($conditionName, $array) {
-        $result = [];
-        if ($array === null) {
-            return $result;
-        }
-        foreach ($array as $item) {
-            if ($item['condition_name'] === $conditionName) {
-                $result[] = $item;
-            }
-        }
-        return $result;
-    }
-
-    public function filterSkinBySeason($season, $array) {
-        $result = [];
-        if ($array === null) {
-            return $result;
-        }
-        foreach ($array as $item) {
-            if ($item['id_season'] === $season) {
-                $result[] = $item;
-            }
-        }
-        return $result;
-    }
-
+    
     public function filterSkinRecolor($array, $recolor) {
         // $recolor = true to get only recolors, false to exclude recolors
         $result = [];

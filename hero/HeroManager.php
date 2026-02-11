@@ -13,9 +13,9 @@
       $this->_db=$db;
     }
 
-    public function getListeHero($version = 'ow2') {
+    public function getListeHero($version = 'main') {
       $req = 'SELECT * FROM hero ORDER BY name';
-      if ($version === 'ow1') {
+      if ($version === 'legacy') {
         $req = 'SELECT * FROM hero WHERE release_date < "2022-10-04" ORDER BY name';
       }
       $stmt = $this->_db->prepare($req);
@@ -30,7 +30,7 @@
       return $stmt->fetchColumn();
     }
 
-    public function getHeroCountOW1() {
+    public function getHeroCountLegacy() {
       $req = 'SELECT COUNT(*) FROM hero WHERE release_date < "2022-10-04"';
       $stmt = $this->_db->prepare($req);
       $stmt->execute();

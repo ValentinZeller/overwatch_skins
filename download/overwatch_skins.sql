@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : lun. 26 jan. 2026 à 21:14
--- Version du serveur : 8.0.44-0ubuntu0.22.04.1
+-- Généré le : jeu. 05 fév. 2026 à 15:04
+-- Version du serveur : 8.0.45-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -62,6 +62,25 @@ INSERT INTO `category` (`id`, `name`, `icon_url`, `display_ow1_order`, `display_
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `chapter`
+--
+
+CREATE TABLE `chapter` (
+  `id` int NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `start_date` date NOT NULL DEFAULT '2026-02-10'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `chapter`
+--
+
+INSERT INTO `chapter` (`id`, `name`, `start_date`) VALUES
+(1, 'Reign of Talon', '2026-02-10');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `condition_special`
 --
 
@@ -99,6 +118,7 @@ CREATE TABLE `hero` (
   `id` int NOT NULL,
   `name` varchar(30) NOT NULL,
   `role` enum('tank','damage','support') NOT NULL,
+  `subrole` enum('initiator','bruiser','stalwart','specialist','recon','flanker','sharpshooter','tactician','medic','survivor') DEFAULT NULL,
   `release_date` date NOT NULL DEFAULT (curdate()),
   `portrait_url` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -107,52 +127,57 @@ CREATE TABLE `hero` (
 -- Déchargement des données de la table `hero`
 --
 
-INSERT INTO `hero` (`id`, `name`, `role`, `release_date`, `portrait_url`) VALUES
-(1, 'Ana', 'support', '2016-07-19', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ana.webp'),
-(2, 'Ashe', 'damage', '2018-11-13', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ashe.webp'),
-(3, 'Baptiste', 'support', '2019-03-19', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Baptiste.webp'),
-(4, 'Bastion', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Bastion.webp'),
-(5, 'Brigitte', 'support', '2018-03-20', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Brigitte.webp'),
-(6, 'Cassidy', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Cassidy.webp'),
-(7, 'D.Va', 'tank', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-D.Va.webp'),
-(8, 'Doomfist', 'tank', '2017-07-27', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Doomfist.webp'),
-(9, 'Echo', 'damage', '2020-04-14', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Echo.webp'),
-(10, 'Freja', 'damage', '2025-04-25', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Freja.webp'),
-(11, 'Genji', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Genji.webp'),
-(12, 'Hanzo', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hanzo.webp'),
-(13, 'Hazard', 'tank', '2024-12-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hazard.webp'),
-(14, 'Illari', 'support', '2023-08-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Illari.webp'),
-(15, 'Junker Queen', 'tank', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junker_Queen.webp'),
-(16, 'Junkrat', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junkrat.webp'),
-(17, 'Juno', 'support', '2024-08-20', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Juno.webp'),
-(18, 'Lifeweaver', 'support', '2023-04-11', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lifeweaver.webp'),
-(19, 'Lúcio', 'support', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lucio.webp'),
-(20, 'Mauga', 'tank', '2023-12-05', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mauga.webp'),
-(21, 'Mei', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mei.webp'),
-(22, 'Mercy', 'support', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mercy.webp'),
-(23, 'Moira', 'support', '2017-11-16', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Moira.webp'),
-(24, 'Orisa', 'tank', '2017-03-21', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp'),
-(25, 'Pharah', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Pharah.webp'),
-(26, 'Ramattra', 'tank', '2022-12-06', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ramattra.webp'),
-(27, 'Reaper', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reaper.webp'),
-(28, 'Reinhardt', 'tank', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reinhardt.webp'),
-(29, 'Roadhog', 'tank', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Roadhog.webp'),
-(30, 'Sigma', 'tank', '2019-08-13', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sigma.webp'),
-(31, 'Sojourn', 'damage', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sojourn.webp'),
-(32, 'Soldier 76', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Soldier76.webp'),
-(33, 'Sombra', 'damage', '2016-11-15', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sombra.webp'),
-(34, 'Symmetra', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Symmetra.webp'),
-(35, 'Torbjörn', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Torbjorn.webp'),
-(36, 'Tracer', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Tracer.webp'),
-(37, 'Venture', 'damage', '2024-04-16', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Venture.webp'),
-(38, 'Widowmaker', 'damage', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Widowmaker.webp'),
-(39, 'Winston', 'tank', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Winston.webp'),
-(40, 'Wrecking Ball', 'tank', '2018-07-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wrecking_Ball.webp'),
-(41, 'Zarya', 'tank', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zarya.webp'),
-(42, 'Zenyatta', 'support', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zenyatta.webp'),
-(43, 'Kiriko', 'support', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Kiriko.webp'),
-(44, 'Wuyang', 'support', '2025-08-26', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp'),
-(45, 'Vendetta', 'damage', '2025-12-09', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Vendetta.webp');
+INSERT INTO `hero` (`id`, `name`, `role`, `subrole`, `release_date`, `portrait_url`) VALUES
+(1, 'Ana', 'support', 'tactician', '2016-07-19', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ana.webp'),
+(2, 'Ashe', 'damage', 'sharpshooter', '2018-11-13', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ashe.webp'),
+(3, 'Baptiste', 'support', 'tactician', '2019-03-19', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Baptiste.webp'),
+(4, 'Bastion', 'damage', 'specialist', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Bastion.webp'),
+(5, 'Brigitte', 'support', 'survivor', '2018-03-20', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Brigitte.webp'),
+(6, 'Cassidy', 'damage', 'sharpshooter', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Cassidy.webp'),
+(7, 'D.Va', 'tank', 'initiator', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-D.Va.webp'),
+(8, 'Doomfist', 'tank', 'initiator', '2017-07-27', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Doomfist.webp'),
+(9, 'Echo', 'damage', 'recon', '2020-04-14', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Echo.webp'),
+(10, 'Freja', 'damage', 'recon', '2025-04-25', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Freja.webp'),
+(11, 'Genji', 'damage', 'flanker', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Genji.webp'),
+(12, 'Hanzo', 'damage', 'sharpshooter', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hanzo.webp'),
+(13, 'Hazard', 'tank', 'stalwart', '2024-12-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hazard.webp'),
+(14, 'Illari', 'support', 'survivor', '2023-08-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Illari.webp'),
+(15, 'Junker Queen', 'tank', 'stalwart', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junker_Queen.webp'),
+(16, 'Junkrat', 'damage', 'specialist', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junkrat.webp'),
+(17, 'Juno', 'support', 'survivor', '2024-08-20', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Juno.webp'),
+(18, 'Lifeweaver', 'support', 'medic', '2023-04-11', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lifeweaver.webp'),
+(19, 'Lúcio', 'support', 'tactician', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lucio.webp'),
+(20, 'Mauga', 'tank', 'bruiser', '2023-12-05', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mauga.webp'),
+(21, 'Mei', 'damage', 'specialist', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mei.webp'),
+(22, 'Mercy', 'support', 'medic', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mercy.webp'),
+(23, 'Moira', 'support', 'medic', '2017-11-16', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Moira.webp'),
+(24, 'Orisa', 'tank', 'bruiser', '2017-03-21', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp'),
+(25, 'Pharah', 'damage', 'recon', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Pharah.webp'),
+(26, 'Ramattra', 'tank', 'stalwart', '2022-12-06', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ramattra.webp'),
+(27, 'Reaper', 'damage', 'flanker', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reaper.webp'),
+(28, 'Reinhardt', 'tank', 'stalwart', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reinhardt.webp'),
+(29, 'Roadhog', 'tank', 'bruiser', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Roadhog.webp'),
+(30, 'Sigma', 'tank', 'stalwart', '2019-08-13', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sigma.webp'),
+(31, 'Sojourn', 'damage', 'sharpshooter', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sojourn.webp'),
+(32, 'Soldier 76', 'damage', 'specialist', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Soldier76.webp'),
+(33, 'Sombra', 'damage', 'recon', '2016-11-15', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sombra.webp'),
+(34, 'Symmetra', 'damage', 'specialist', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Symmetra.webp'),
+(35, 'Torbjörn', 'damage', 'specialist', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Torbjorn.webp'),
+(36, 'Tracer', 'damage', 'flanker', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Tracer.webp'),
+(37, 'Venture', 'damage', 'flanker', '2024-04-16', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Venture.webp'),
+(38, 'Widowmaker', 'damage', 'sharpshooter', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Widowmaker.webp'),
+(39, 'Winston', 'tank', 'initiator', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Winston.webp'),
+(40, 'Wrecking Ball', 'tank', 'initiator', '2018-07-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wrecking_Ball.webp'),
+(41, 'Zarya', 'tank', 'bruiser', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zarya.webp'),
+(42, 'Zenyatta', 'support', 'tactician', '2016-05-24', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zenyatta.webp'),
+(43, 'Kiriko', 'support', 'medic', '2022-10-04', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Kiriko.webp'),
+(44, 'Wuyang', 'support', 'survivor', '2025-08-26', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp'),
+(45, 'Vendetta', 'damage', 'flanker', '2025-12-09', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Vendetta.webp'),
+(46, 'Domina', 'tank', 'stalwart', '2026-02-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Domina.webp'),
+(47, 'Emre', 'damage', 'specialist', '2026-02-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Emre.webp'),
+(48, 'Anran', 'damage', 'flanker', '2026-02-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Anran.webp'),
+(49, 'Jetpack Cat', 'support', 'tactician', '2026-02-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Jetpack_Cat.webp'),
+(50, 'Mizuki', 'support', 'survivor', '2026-02-10', 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mizuki.webp');
 
 -- --------------------------------------------------------
 
@@ -164,34 +189,36 @@ CREATE TABLE `season` (
   `id` int NOT NULL,
   `name` varchar(100) NOT NULL,
   `start_date` date NOT NULL,
-  `end_date` date NOT NULL
+  `end_date` date NOT NULL,
+  `id_chapter` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `season`
 --
 
-INSERT INTO `season` (`id`, `name`, `start_date`, `end_date`) VALUES
-(1, 'Season 1', '2022-10-04', '2022-12-06'),
-(2, 'Season 2', '2022-12-06', '2023-02-07'),
-(3, 'Season 3', '2023-02-07', '2023-04-11'),
-(4, 'Season 4', '2023-04-11', '2023-06-13'),
-(5, 'Season 5', '2023-06-13', '2023-08-10'),
-(6, 'Season 6: Invasion', '2023-08-10', '2023-10-10'),
-(7, 'Season 7: Rise of Darkness', '2023-10-10', '2023-12-05'),
-(8, 'Season 8: Call of the Hunt', '2023-12-05', '2024-02-13'),
-(9, 'Season 9: Champions', '2024-02-13', '2024-04-16'),
-(10, 'Season 10: Venture Forth', '2024-04-16', '2024-06-20'),
-(11, 'Season 11: Super Mega Ultrawatch', '2024-06-20', '2024-08-20'),
-(12, 'Season 12: New Frontiers', '2024-08-20', '2024-10-15'),
-(13, 'Season 13: Spellbinder', '2024-10-15', '2024-12-10'),
-(14, 'Season 14: Hazard', '2024-12-10', '2025-02-18'),
-(15, 'Season 15: Honor and Glory', '2025-02-18', '2025-04-22'),
-(16, 'Season 16: Stadium', '2025-04-22', '2025-06-24'),
-(17, 'Season 17: Powered Up!', '2025-06-24', '2025-08-26'),
-(18, 'Season 18: Stadium Quickplay', '2025-08-26', '2025-10-14'),
-(19, 'Season 19: Haunted Masquerade', '2025-10-14', '2025-12-09'),
-(20, 'Season 20: Vendetta', '2025-12-09', '2026-02-09');
+INSERT INTO `season` (`id`, `name`, `start_date`, `end_date`, `id_chapter`) VALUES
+(1, 'Season 1', '2022-10-04', '2022-12-06', NULL),
+(2, 'Season 2', '2022-12-06', '2023-02-07', NULL),
+(3, 'Season 3', '2023-02-07', '2023-04-11', NULL),
+(4, 'Season 4', '2023-04-11', '2023-06-13', NULL),
+(5, 'Season 5', '2023-06-13', '2023-08-10', NULL),
+(6, 'Season 6: Invasion', '2023-08-10', '2023-10-10', NULL),
+(7, 'Season 7: Rise of Darkness', '2023-10-10', '2023-12-05', NULL),
+(8, 'Season 8: Call of the Hunt', '2023-12-05', '2024-02-13', NULL),
+(9, 'Season 9: Champions', '2024-02-13', '2024-04-16', NULL),
+(10, 'Season 10: Venture Forth', '2024-04-16', '2024-06-20', NULL),
+(11, 'Season 11: Super Mega Ultrawatch', '2024-06-20', '2024-08-20', NULL),
+(12, 'Season 12: New Frontiers', '2024-08-20', '2024-10-15', NULL),
+(13, 'Season 13: Spellbinder', '2024-10-15', '2024-12-10', NULL),
+(14, 'Season 14: Hazard', '2024-12-10', '2025-02-18', NULL),
+(15, 'Season 15: Honor and Glory', '2025-02-18', '2025-04-22', NULL),
+(16, 'Season 16: Stadium', '2025-04-22', '2025-06-24', NULL),
+(17, 'Season 17: Powered Up!', '2025-06-24', '2025-08-26', NULL),
+(18, 'Season 18: Stadium Quickplay', '2025-08-26', '2025-10-14', NULL),
+(19, 'Season 19: Haunted Masquerade', '2025-10-14', '2025-12-09', NULL),
+(20, 'Season 20: Vendetta', '2025-12-09', '2026-02-09', NULL),
+(21, 'S1: Conquest', '2026-02-10', '2026-04-14', 1);
 
 -- --------------------------------------------------------
 
@@ -1589,7 +1616,7 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1584, 26, 15, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/EPYON.webp', 'legendary', 'Epyon', NULL, NULL, NULL),
 (1585, 18, 12, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/ROYAL_BUTLER.webp', 'legendary', 'Royal Butler', NULL, NULL, NULL),
 (1586, 17, 15, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/CHUN-LI.webp', 'legendary', 'Chun-Li', NULL, NULL, NULL),
-(1587, 12, 12, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/ROYAL_ARCHER.webp', 'legendary', 'Royal Archer', NULL, NULL, 309),
+(1587, 12, 12, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/ROYAL_ARCHER.webp', 'legendary', 'Royal Archer', NULL, NULL, NULL),
 (1588, 19, 12, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/ROYAL_PRINCE.webp', 'legendary', 'Royal Prince', NULL, NULL, 1176),
 (1589, 21, 12, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/GLITTER.webp', 'legendary', 'Glitter', NULL, NULL, 95),
 (1590, 24, 12, 16, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Orisa/DREAM_SHEEP.webp', 'legendary', 'Dream Sheep', NULL, NULL, 1118),
@@ -1781,7 +1808,7 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1775, 8, 8, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/MAGMA_TITAN.webp', 'mythic', 'Magma Titan', NULL, NULL, NULL),
 (1776, 11, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/GOD_OF_WEALTH.webp', 'legendary', 'God Of Wealth', NULL, NULL, NULL),
 (1777, 43, 12, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/GOD_OF_PROSPERITY.webp', 'legendary', 'God Of Prosperity', NULL, NULL, NULL),
-(1778, 41, 5, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp', 'epic', 'New Era', NULL, NULL, NULL);
+(1778, 41, 4, 20, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp', 'epic', 'New Era', NULL, 5, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -1794,6 +1821,12 @@ ALTER TABLE `category`
   ADD PRIMARY KEY (`id`),
   ADD KEY `display_ow1` (`display_ow1_order`),
   ADD KEY `display_ow2` (`display_ow2_order`);
+
+--
+-- Index pour la table `chapter`
+--
+ALTER TABLE `chapter`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `condition_special`
@@ -1811,7 +1844,8 @@ ALTER TABLE `hero`
 -- Index pour la table `season`
 --
 ALTER TABLE `season`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_chapter` (`id_chapter`);
 
 --
 -- Index pour la table `skin`
@@ -1837,6 +1871,12 @@ ALTER TABLE `category`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
+-- AUTO_INCREMENT pour la table `chapter`
+--
+ALTER TABLE `chapter`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT pour la table `condition_special`
 --
 ALTER TABLE `condition_special`
@@ -1846,13 +1886,13 @@ ALTER TABLE `condition_special`
 -- AUTO_INCREMENT pour la table `hero`
 --
 ALTER TABLE `hero`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT pour la table `season`
 --
 ALTER TABLE `season`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT pour la table `skin`
@@ -1863,6 +1903,12 @@ ALTER TABLE `skin`
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `season`
+--
+ALTER TABLE `season`
+  ADD CONSTRAINT `season_ibfk_1` FOREIGN KEY (`id_chapter`) REFERENCES `chapter` (`id`) ON DELETE SET NULL ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `skin`

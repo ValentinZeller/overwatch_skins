@@ -6,6 +6,16 @@
     --epic: #ff00ff;
     --legendary: #ff9c00;
     --mythic: linear-gradient(90deg, #00ffd0 0%, #bebcd8 50%, #ff33ce 100%);
+    --initiator: #06cfc2;
+    --bruiser: #0ab4fc;
+    --stalwart: #2179ff;
+    --specialist: #ff9f00;
+    --recon: #f23c46;
+    --flanker: #ff6218;
+    --sharpshooter: #ffe100;
+    --tactician: #ec4fff;
+    --medic: #8970ff;
+    --survivor: #b15fff;
 }
 
 @font-face {

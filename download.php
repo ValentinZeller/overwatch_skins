@@ -10,15 +10,16 @@
 <body id="main-page">
     <h1>Download</h1>
     <div id="navigation">
-        <a href="ow1">Overwatch 1 ↗</a>
-        <a href="ow2">Overwatch 2 ↗</a>
+        <a href="index">Home ↗</a>
+        <a href="main">Overwatch Skins ↗</a>
+        <a href="legacy">Legacy Skins ↗</a>
         <a href="base">Base Skin ↗</a>
         <a href="all">All Skins ↗</a>
     </div>
     <h2>Images</h2>
     <ul class="download-list">
-        <li><a href="image/Overwatch_Skins.webp" target="_blank">Overwatch 1 Skins Static Recap</a></li>
-        <li><a href="image/Overwatch_2_Skins.webp" target="_blank">Overwatch 2 Skins Static Recap</a></li>
+        <li><a href="image/Legacy_Skins.webp" target="_blank">Legacy Skins Static Recap</a></li>
+        <li><a href="image/Overwatch_Skins.webp" target="_blank">Overwatch Skins Static Recap</a></li>
         <li><a href="image/Base_Skins.webp" target="_blank">Base Skins Static Recap</a></li>
         <li><a href="image/All_Skins.webp" target="_blank">All Skins Static Recap</a></li>
         <li><a href="download/hero.zip" target="_blank">All Skins</a></li>

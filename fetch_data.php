@@ -4,6 +4,7 @@ require_once('skin/SkinManager.php');
 require_once('hero/HeroManager.php');
 require_once('category/CategoryManager.php');
 require_once('season/SeasonManager.php');
+require_once('chapter/ChapterManager.php');
 define('YEARS', [2016,2017,2018,2019,2020,2021,2022]);
 define('MAX_SKIN_AMOUNT', 8);
 define('CACHE_PATH', 'cache/');
@@ -13,30 +14,34 @@ $skinManager = new SkinManager($db);
 $heroManager = new HeroManager($db);
 $categoryManager = new CategoryManager($db);
 $seasonManager = new SeasonManager($db);
+$chapterManager = new ChapterManager($db);
 
 if ($version == 'base') {
-    $skinData = initialValue('base_skin','ow2',[$skinManager,'getBaseSkin']);
-    $heroList = initialValue('hero','ow2',[$heroManager,'getListeHero']);
+    $skinData = initialValue('base_skin','main',[$skinManager,'getBaseSkin']);
+    $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
     $rarityList = ['common','rare','epic','legendary'];
     $categoryList = raritiesAsCategory($rarityList);
     $seasonList = null;
+    $chapterList = null;
 } else if ($version != null ) {
     $skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
     $heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
     $categoryList = initialValue('category',$version,[$categoryManager,'getCategoryOW']);
     $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
+    $chapterList = initialValue('chapter',$version,[$chapterManager,'getListeChapter']);
     $rarityList = ['rare','epic','legendary','mythic'];
     
-    if ($version === 'ow1') {
+    if ($version === 'legacy') {
         $seasonList = null;
         $rarityList = ['epic','legendary'];
     }
 } else {
-    $skinData = initialValue('all_skin','ow2',[$skinManager,'getListeSkin']);
-    $heroList = initialValue('hero','ow2',[$heroManager,'getListeHero']);
-    $categoryList = initialValue('all_category','ow2',[$categoryManager,'getListeCategory']);
-    $seasonList = initialValue('season','ow2',[$seasonManager,'getListeSeason']);
+    $skinData = initialValue('all_skin','main',[$skinManager,'getListeSkin']);
+    $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
+    $categoryList = initialValue('all_category','main',[$categoryManager,'getListeCategory']);
+    $seasonList = initialValue('season','main',[$seasonManager,'getListeSeason']);
     $rarityList = ['common','rare','epic','legendary','mythic'];
+    $chapterList = initialValue('chapter',$version,[$chapterManager,'getListeChapter']);
 }
 
 function initialValue($type,$version,$fetchFunction) {

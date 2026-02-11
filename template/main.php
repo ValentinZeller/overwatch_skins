@@ -16,11 +16,12 @@
     <div class="overlay" id="setting">
         <a href="javascript:void(0)" id="close-setting" onclick="closeSettings()">&times;</a>
         <div class="overlay-content">
-            <a href="ow1">Overwatch 1 ↗</a>
-            <a href="ow2">Overwatch 2 ↗</a>
+            <a href="index">Home ↗</a>
+            <a href="main">Overwatch Skins ↗</a>
+            <a href="legacy">Legacy Skins ↗</a>
             <a href="base">Base Skin ↗</a>
             <a href="all">All Skins ↗</a>
-            <a href="download.php">Download ↗</a>
+            <a href="download">Download ↗</a>
             <?php echo template('template/visual_settings.php', ['rarities' => $rarityList]); ?>
             <?php echo template('template/filter_form.php', [
                 'rarityList' => $rarityList,
@@ -33,6 +34,7 @@
                 'heroes' => $heroes,
                 'seasons' => $seasons,
                 'yearsSelected' => $yearsSelected,
+                'chapterList' => $chapterList,
                 'version' => $version
             ]); ?>
         </div>

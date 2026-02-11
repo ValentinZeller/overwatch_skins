@@ -93,6 +93,11 @@
   name: "Bundle Special"
   icon_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/category/bundle.webp"
   display_ow2_order: 6
+# overwatch_skins.chapter
+-
+  id: 1
+  name: "Reign of Talon"
+  start_date: "2026-02-10"
 # overwatch_skins.condition_special
 -
   id: 1
@@ -138,272 +143,352 @@
   id: 1
   name: "Ana"
   role: "support"
+  subrole: "tactician"
   release_date: "2016-07-19"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ana.webp"
 -
   id: 2
   name: "Ashe"
   role: "damage"
+  subrole: "sharpshooter"
   release_date: "2018-11-13"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ashe.webp"
 -
   id: 3
   name: "Baptiste"
   role: "support"
+  subrole: "tactician"
   release_date: "2019-03-19"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Baptiste.webp"
 -
   id: 4
   name: "Bastion"
   role: "damage"
+  subrole: "specialist"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Bastion.webp"
 -
   id: 5
   name: "Brigitte"
   role: "support"
+  subrole: "survivor"
   release_date: "2018-03-20"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Brigitte.webp"
 -
   id: 6
   name: "Cassidy"
   role: "damage"
+  subrole: "sharpshooter"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Cassidy.webp"
 -
   id: 7
   name: "D.Va"
   role: "tank"
+  subrole: "initiator"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-D.Va.webp"
 -
   id: 8
   name: "Doomfist"
   role: "tank"
+  subrole: "initiator"
   release_date: "2017-07-27"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Doomfist.webp"
 -
   id: 9
   name: "Echo"
   role: "damage"
+  subrole: "recon"
   release_date: "2020-04-14"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Echo.webp"
 -
   id: 10
   name: "Freja"
   role: "damage"
+  subrole: "recon"
   release_date: "2025-04-25"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Freja.webp"
 -
   id: 11
   name: "Genji"
   role: "damage"
+  subrole: "flanker"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Genji.webp"
 -
   id: 12
   name: "Hanzo"
   role: "damage"
+  subrole: "sharpshooter"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hanzo.webp"
 -
   id: 13
   name: "Hazard"
   role: "tank"
+  subrole: "stalwart"
   release_date: "2024-12-10"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hazard.webp"
 -
   id: 14
   name: "Illari"
   role: "support"
+  subrole: "survivor"
   release_date: "2023-08-10"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Illari.webp"
 -
   id: 15
   name: "Junker Queen"
   role: "tank"
+  subrole: "stalwart"
   release_date: "2022-10-04"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junker_Queen.webp"
 -
   id: 16
   name: "Junkrat"
   role: "damage"
+  subrole: "specialist"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junkrat.webp"
 -
   id: 17
   name: "Juno"
   role: "support"
+  subrole: "survivor"
   release_date: "2024-08-20"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Juno.webp"
 -
   id: 18
   name: "Lifeweaver"
   role: "support"
+  subrole: "medic"
   release_date: "2023-04-11"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lifeweaver.webp"
 -
   id: 19
   name: "Lúcio"
   role: "support"
+  subrole: "tactician"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lucio.webp"
 -
   id: 20
   name: "Mauga"
   role: "tank"
+  subrole: "bruiser"
   release_date: "2023-12-05"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mauga.webp"
 -
   id: 21
   name: "Mei"
   role: "damage"
+  subrole: "specialist"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mei.webp"
 -
   id: 22
   name: "Mercy"
   role: "support"
+  subrole: "medic"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mercy.webp"
 -
   id: 23
   name: "Moira"
   role: "support"
+  subrole: "medic"
   release_date: "2017-11-16"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Moira.webp"
 -
   id: 24
   name: "Orisa"
   role: "tank"
+  subrole: "bruiser"
   release_date: "2017-03-21"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp"
 -
   id: 25
   name: "Pharah"
   role: "damage"
+  subrole: "recon"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Pharah.webp"
 -
   id: 26
   name: "Ramattra"
   role: "tank"
+  subrole: "stalwart"
   release_date: "2022-12-06"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ramattra.webp"
 -
   id: 27
   name: "Reaper"
   role: "damage"
+  subrole: "flanker"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reaper.webp"
 -
   id: 28
   name: "Reinhardt"
   role: "tank"
+  subrole: "stalwart"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reinhardt.webp"
 -
   id: 29
   name: "Roadhog"
   role: "tank"
+  subrole: "bruiser"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Roadhog.webp"
 -
   id: 30
   name: "Sigma"
   role: "tank"
+  subrole: "stalwart"
   release_date: "2019-08-13"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sigma.webp"
 -
   id: 31
   name: "Sojourn"
   role: "damage"
+  subrole: "sharpshooter"
   release_date: "2022-10-04"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sojourn.webp"
 -
   id: 32
   name: "Soldier 76"
   role: "damage"
+  subrole: "specialist"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Soldier76.webp"
 -
   id: 33
   name: "Sombra"
   role: "damage"
+  subrole: "recon"
   release_date: "2016-11-15"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sombra.webp"
 -
   id: 34
   name: "Symmetra"
   role: "damage"
+  subrole: "specialist"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Symmetra.webp"
 -
   id: 35
   name: "Torbjörn"
   role: "damage"
+  subrole: "specialist"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Torbjorn.webp"
 -
   id: 36
   name: "Tracer"
   role: "damage"
+  subrole: "flanker"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Tracer.webp"
 -
   id: 37
   name: "Venture"
   role: "damage"
+  subrole: "flanker"
   release_date: "2024-04-16"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Venture.webp"
 -
   id: 38
   name: "Widowmaker"
   role: "damage"
+  subrole: "sharpshooter"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Widowmaker.webp"
 -
   id: 39
   name: "Winston"
   role: "tank"
+  subrole: "initiator"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Winston.webp"
 -
   id: 40
   name: "Wrecking Ball"
   role: "tank"
+  subrole: "initiator"
   release_date: "2018-07-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wrecking_Ball.webp"
 -
   id: 41
   name: "Zarya"
   role: "tank"
+  subrole: "bruiser"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zarya.webp"
 -
   id: 42
   name: "Zenyatta"
   role: "support"
+  subrole: "tactician"
   release_date: "2016-05-24"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zenyatta.webp"
 -
   id: 43
   name: "Kiriko"
   role: "support"
+  subrole: "medic"
   release_date: "2022-10-04"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Kiriko.webp"
 -
   id: 44
   name: "Wuyang"
   role: "support"
+  subrole: "survivor"
   release_date: "2025-08-26"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp"
 -
   id: 45
   name: "Vendetta"
   role: "damage"
+  subrole: "flanker"
   release_date: "2025-12-09"
   portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Vendetta.webp"
+-
+  id: 46
+  name: "Domina"
+  role: "tank"
+  subrole: "stalwart"
+  release_date: "2026-02-10"
+  portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Domina.webp"
+-
+  id: 47
+  name: "Emre"
+  role: "damage"
+  subrole: "specialist"
+  release_date: "2026-02-10"
+  portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Emre.webp"
+-
+  id: 48
+  name: "Anran"
+  role: "damage"
+  subrole: "flanker"
+  release_date: "2026-02-10"
+  portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Anran.webp"
+-
+  id: 49
+  name: "Jetpack Cat"
+  role: "support"
+  subrole: "tactician"
+  release_date: "2026-02-10"
+  portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Jetpack_Cat.webp"
+-
+  id: 50
+  name: "Mizuki"
+  role: "support"
+  subrole: "survivor"
+  release_date: "2026-02-10"
+  portrait_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mizuki.webp"
 # overwatch_skins.season
 -
   id: 1
@@ -505,6 +590,12 @@
   name: "Season 20: Vendetta"
   start_date: "2025-12-09"
   end_date: "2026-02-09"
+-
+  id: 21
+  name: "S1: Conquest"
+  start_date: "2026-02-10"
+  end_date: "2026-04-14"
+  id_chapter: 1
 # overwatch_skins.skin
 -
   id: 1
@@ -11274,7 +11365,6 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/ROYAL_ARCHER.webp"
   rarity: "legendary"
   name: "Royal Archer"
-  recolor_of: 309
 -
   id: 1588
   id_hero: 19
@@ -12849,9 +12939,10 @@
 -
   id: 1778
   id_hero: 41
-  id_category: 5
+  id_category: 4
   id_season: 20
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp"
   rarity: "epic"
   name: "New Era"
+  id_condition: 5
 ...

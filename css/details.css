@@ -1,0 +1,13 @@
+details {
+    summary {
+        padding-right: 10px;
+    }
+
+    label {
+        display: block;
+    }
+}
+
+#legacy-season {
+    columns: 2;
+}

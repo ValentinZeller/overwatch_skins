@@ -6,7 +6,8 @@
 @import url(overlay.css);
 @import url(label.css);
 @import url(button.css);
-
+@import url(details.css);
+@import url(settings.css);
 
 #main-page {
   text-align: center;
@@ -31,17 +32,18 @@
   }
 }
 
-#navigation {
+#navigation,
+.static-recap {
   display: block;
   margin-top: 10px;
   margin-bottom: 20px;
 
   a {
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
     text-decoration: none;
     font-size: 1.5em;
-    padding: 0.5%;
+    padding: 5px 10px;
     color: white;
     background-color: #046daa;
     border-radius: 10px;
@@ -85,40 +87,6 @@
   display: inline-grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-}
-
-#show-hide-text {
-  margin-right: 20px;
-}
-
-input[type=checkbox] {
-  appearance: none;
-  -webkit-appearance: none;
-  display: none;
-}
-
-.rarity-filter,
-.category-filter,
-.season-filter {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-filter {
-  width: 620px;
-}
-
-.season-filter {
-  height: 500px;
-  flex-wrap: wrap;
-}
-
-#filter-form {
-  display: flex;
-}
-
-#select-buttons {
-  margin-bottom: 10px;
 }
 
 .skin-information {

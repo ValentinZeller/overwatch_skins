@@ -5,8 +5,8 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : lun. 26 jan. 2026 à 21:14
-- Version du serveur : 8.0.44-0ubuntu0.22.04.1
+- Généré le : jeu. 05 fév. 2026 à 15:04
+- Version du serveur : 8.0.45-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.23
 -->
 
@@ -28,6 +28,14 @@
                   KEY `display_ow2` (`display_ow2_order`)
                 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
+            <pma:table name="chapter">
+                CREATE TABLE `chapter` (
+                  `id` int NOT NULL AUTO_INCREMENT,
+                  `name` varchar(100) NOT NULL,
+                  `start_date` date NOT NULL DEFAULT &#039;2026-02-10&#039;,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+            </pma:table>
             <pma:table name="condition_special">
                 CREATE TABLE `condition_special` (
                   `id` int NOT NULL AUTO_INCREMENT,
@@ -40,10 +48,11 @@
                   `id` int NOT NULL AUTO_INCREMENT,
                   `name` varchar(30) NOT NULL,
                   `role` enum(&#039;tank&#039;,&#039;damage&#039;,&#039;support&#039;) NOT NULL,
+                  `subrole` enum(&#039;initiator&#039;,&#039;bruiser&#039;,&#039;stalwart&#039;,&#039;specialist&#039;,&#039;recon&#039;,&#039;flanker&#039;,&#039;sharpshooter&#039;,&#039;tactician&#039;,&#039;medic&#039;,&#039;survivor&#039;) DEFAULT NULL,
                   `release_date` date NOT NULL DEFAULT (curdate()),
                   `portrait_url` text NOT NULL,
                   PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
             <pma:table name="season">
                 CREATE TABLE `season` (
@@ -51,8 +60,11 @@
                   `name` varchar(100) NOT NULL,
                   `start_date` date NOT NULL,
                   `end_date` date NOT NULL,
-                  PRIMARY KEY (`id`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                  `id_chapter` int DEFAULT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `id_chapter` (`id_chapter`),
+                  CONSTRAINT `season_ibfk_1` FOREIGN KEY (`id_chapter`) REFERENCES `chapter` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
             <pma:table name="skin">
                 CREATE TABLE `skin` (
@@ -217,6 +229,12 @@
             <column name="display_ow1_order">NULL</column>
             <column name="display_ow2_order">6</column>
         </table>
+        <!-- Table chapter -->
+        <table name="chapter">
+            <column name="id">1</column>
+            <column name="name">Reign of Talon</column>
+            <column name="start_date">2026-02-10</column>
+        </table>
         <!-- Table condition_special -->
         <table name="condition_special">
             <column name="id">1</column>
@@ -275,6 +293,7 @@
             <column name="id">1</column>
             <column name="name">Ana</column>
             <column name="role">support</column>
+            <column name="subrole">tactician</column>
             <column name="release_date">2016-07-19</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ana.webp</column>
         </table>
@@ -282,6 +301,7 @@
             <column name="id">2</column>
             <column name="name">Ashe</column>
             <column name="role">damage</column>
+            <column name="subrole">sharpshooter</column>
             <column name="release_date">2018-11-13</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ashe.webp</column>
         </table>
@@ -289,6 +309,7 @@
             <column name="id">3</column>
             <column name="name">Baptiste</column>
             <column name="role">support</column>
+            <column name="subrole">tactician</column>
             <column name="release_date">2019-03-19</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Baptiste.webp</column>
         </table>
@@ -296,6 +317,7 @@
             <column name="id">4</column>
             <column name="name">Bastion</column>
             <column name="role">damage</column>
+            <column name="subrole">specialist</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Bastion.webp</column>
         </table>
@@ -303,6 +325,7 @@
             <column name="id">5</column>
             <column name="name">Brigitte</column>
             <column name="role">support</column>
+            <column name="subrole">survivor</column>
             <column name="release_date">2018-03-20</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Brigitte.webp</column>
         </table>
@@ -310,6 +333,7 @@
             <column name="id">6</column>
             <column name="name">Cassidy</column>
             <column name="role">damage</column>
+            <column name="subrole">sharpshooter</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Cassidy.webp</column>
         </table>
@@ -317,6 +341,7 @@
             <column name="id">7</column>
             <column name="name">D.Va</column>
             <column name="role">tank</column>
+            <column name="subrole">initiator</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-D.Va.webp</column>
         </table>
@@ -324,6 +349,7 @@
             <column name="id">8</column>
             <column name="name">Doomfist</column>
             <column name="role">tank</column>
+            <column name="subrole">initiator</column>
             <column name="release_date">2017-07-27</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Doomfist.webp</column>
         </table>
@@ -331,6 +357,7 @@
             <column name="id">9</column>
             <column name="name">Echo</column>
             <column name="role">damage</column>
+            <column name="subrole">recon</column>
             <column name="release_date">2020-04-14</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Echo.webp</column>
         </table>
@@ -338,6 +365,7 @@
             <column name="id">10</column>
             <column name="name">Freja</column>
             <column name="role">damage</column>
+            <column name="subrole">recon</column>
             <column name="release_date">2025-04-25</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Freja.webp</column>
         </table>
@@ -345,6 +373,7 @@
             <column name="id">11</column>
             <column name="name">Genji</column>
             <column name="role">damage</column>
+            <column name="subrole">flanker</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Genji.webp</column>
         </table>
@@ -352,6 +381,7 @@
             <column name="id">12</column>
             <column name="name">Hanzo</column>
             <column name="role">damage</column>
+            <column name="subrole">sharpshooter</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hanzo.webp</column>
         </table>
@@ -359,6 +389,7 @@
             <column name="id">13</column>
             <column name="name">Hazard</column>
             <column name="role">tank</column>
+            <column name="subrole">stalwart</column>
             <column name="release_date">2024-12-10</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hazard.webp</column>
         </table>
@@ -366,6 +397,7 @@
             <column name="id">14</column>
             <column name="name">Illari</column>
             <column name="role">support</column>
+            <column name="subrole">survivor</column>
             <column name="release_date">2023-08-10</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Illari.webp</column>
         </table>
@@ -373,6 +405,7 @@
             <column name="id">15</column>
             <column name="name">Junker Queen</column>
             <column name="role">tank</column>
+            <column name="subrole">stalwart</column>
             <column name="release_date">2022-10-04</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junker_Queen.webp</column>
         </table>
@@ -380,6 +413,7 @@
             <column name="id">16</column>
             <column name="name">Junkrat</column>
             <column name="role">damage</column>
+            <column name="subrole">specialist</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Junkrat.webp</column>
         </table>
@@ -387,6 +421,7 @@
             <column name="id">17</column>
             <column name="name">Juno</column>
             <column name="role">support</column>
+            <column name="subrole">survivor</column>
             <column name="release_date">2024-08-20</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Juno.webp</column>
         </table>
@@ -394,6 +429,7 @@
             <column name="id">18</column>
             <column name="name">Lifeweaver</column>
             <column name="role">support</column>
+            <column name="subrole">medic</column>
             <column name="release_date">2023-04-11</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lifeweaver.webp</column>
         </table>
@@ -401,6 +437,7 @@
             <column name="id">19</column>
             <column name="name">Lúcio</column>
             <column name="role">support</column>
+            <column name="subrole">tactician</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Lucio.webp</column>
         </table>
@@ -408,6 +445,7 @@
             <column name="id">20</column>
             <column name="name">Mauga</column>
             <column name="role">tank</column>
+            <column name="subrole">bruiser</column>
             <column name="release_date">2023-12-05</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mauga.webp</column>
         </table>
@@ -415,6 +453,7 @@
             <column name="id">21</column>
             <column name="name">Mei</column>
             <column name="role">damage</column>
+            <column name="subrole">specialist</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mei.webp</column>
         </table>
@@ -422,6 +461,7 @@
             <column name="id">22</column>
             <column name="name">Mercy</column>
             <column name="role">support</column>
+            <column name="subrole">medic</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mercy.webp</column>
         </table>
@@ -429,6 +469,7 @@
             <column name="id">23</column>
             <column name="name">Moira</column>
             <column name="role">support</column>
+            <column name="subrole">medic</column>
             <column name="release_date">2017-11-16</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Moira.webp</column>
         </table>
@@ -436,6 +477,7 @@
             <column name="id">24</column>
             <column name="name">Orisa</column>
             <column name="role">tank</column>
+            <column name="subrole">bruiser</column>
             <column name="release_date">2017-03-21</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Orisa.webp</column>
         </table>
@@ -443,6 +485,7 @@
             <column name="id">25</column>
             <column name="name">Pharah</column>
             <column name="role">damage</column>
+            <column name="subrole">recon</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Pharah.webp</column>
         </table>
@@ -450,6 +493,7 @@
             <column name="id">26</column>
             <column name="name">Ramattra</column>
             <column name="role">tank</column>
+            <column name="subrole">stalwart</column>
             <column name="release_date">2022-12-06</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Ramattra.webp</column>
         </table>
@@ -457,6 +501,7 @@
             <column name="id">27</column>
             <column name="name">Reaper</column>
             <column name="role">damage</column>
+            <column name="subrole">flanker</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reaper.webp</column>
         </table>
@@ -464,6 +509,7 @@
             <column name="id">28</column>
             <column name="name">Reinhardt</column>
             <column name="role">tank</column>
+            <column name="subrole">stalwart</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Reinhardt.webp</column>
         </table>
@@ -471,6 +517,7 @@
             <column name="id">29</column>
             <column name="name">Roadhog</column>
             <column name="role">tank</column>
+            <column name="subrole">bruiser</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Roadhog.webp</column>
         </table>
@@ -478,6 +525,7 @@
             <column name="id">30</column>
             <column name="name">Sigma</column>
             <column name="role">tank</column>
+            <column name="subrole">stalwart</column>
             <column name="release_date">2019-08-13</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sigma.webp</column>
         </table>
@@ -485,6 +533,7 @@
             <column name="id">31</column>
             <column name="name">Sojourn</column>
             <column name="role">damage</column>
+            <column name="subrole">sharpshooter</column>
             <column name="release_date">2022-10-04</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sojourn.webp</column>
         </table>
@@ -492,6 +541,7 @@
             <column name="id">32</column>
             <column name="name">Soldier 76</column>
             <column name="role">damage</column>
+            <column name="subrole">specialist</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Soldier76.webp</column>
         </table>
@@ -499,6 +549,7 @@
             <column name="id">33</column>
             <column name="name">Sombra</column>
             <column name="role">damage</column>
+            <column name="subrole">recon</column>
             <column name="release_date">2016-11-15</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sombra.webp</column>
         </table>
@@ -506,6 +557,7 @@
             <column name="id">34</column>
             <column name="name">Symmetra</column>
             <column name="role">damage</column>
+            <column name="subrole">specialist</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Symmetra.webp</column>
         </table>
@@ -513,6 +565,7 @@
             <column name="id">35</column>
             <column name="name">Torbjörn</column>
             <column name="role">damage</column>
+            <column name="subrole">specialist</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Torbjorn.webp</column>
         </table>
@@ -520,6 +573,7 @@
             <column name="id">36</column>
             <column name="name">Tracer</column>
             <column name="role">damage</column>
+            <column name="subrole">flanker</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Tracer.webp</column>
         </table>
@@ -527,6 +581,7 @@
             <column name="id">37</column>
             <column name="name">Venture</column>
             <column name="role">damage</column>
+            <column name="subrole">flanker</column>
             <column name="release_date">2024-04-16</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Venture.webp</column>
         </table>
@@ -534,6 +589,7 @@
             <column name="id">38</column>
             <column name="name">Widowmaker</column>
             <column name="role">damage</column>
+            <column name="subrole">sharpshooter</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Widowmaker.webp</column>
         </table>
@@ -541,6 +597,7 @@
             <column name="id">39</column>
             <column name="name">Winston</column>
             <column name="role">tank</column>
+            <column name="subrole">initiator</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Winston.webp</column>
         </table>
@@ -548,6 +605,7 @@
             <column name="id">40</column>
             <column name="name">Wrecking Ball</column>
             <column name="role">tank</column>
+            <column name="subrole">initiator</column>
             <column name="release_date">2018-07-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wrecking_Ball.webp</column>
         </table>
@@ -555,6 +613,7 @@
             <column name="id">41</column>
             <column name="name">Zarya</column>
             <column name="role">tank</column>
+            <column name="subrole">bruiser</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zarya.webp</column>
         </table>
@@ -562,6 +621,7 @@
             <column name="id">42</column>
             <column name="name">Zenyatta</column>
             <column name="role">support</column>
+            <column name="subrole">tactician</column>
             <column name="release_date">2016-05-24</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Zenyatta.webp</column>
         </table>
@@ -569,6 +629,7 @@
             <column name="id">43</column>
             <column name="name">Kiriko</column>
             <column name="role">support</column>
+            <column name="subrole">medic</column>
             <column name="release_date">2022-10-04</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Kiriko.webp</column>
         </table>
@@ -576,6 +637,7 @@
             <column name="id">44</column>
             <column name="name">Wuyang</column>
             <column name="role">support</column>
+            <column name="subrole">survivor</column>
             <column name="release_date">2025-08-26</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Wuyang.webp</column>
         </table>
@@ -583,8 +645,49 @@
             <column name="id">45</column>
             <column name="name">Vendetta</column>
             <column name="role">damage</column>
+            <column name="subrole">flanker</column>
             <column name="release_date">2025-12-09</column>
             <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Vendetta.webp</column>
+        </table>
+        <table name="hero">
+            <column name="id">46</column>
+            <column name="name">Domina</column>
+            <column name="role">tank</column>
+            <column name="subrole">stalwart</column>
+            <column name="release_date">2026-02-10</column>
+            <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Domina.webp</column>
+        </table>
+        <table name="hero">
+            <column name="id">47</column>
+            <column name="name">Emre</column>
+            <column name="role">damage</column>
+            <column name="subrole">specialist</column>
+            <column name="release_date">2026-02-10</column>
+            <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Emre.webp</column>
+        </table>
+        <table name="hero">
+            <column name="id">48</column>
+            <column name="name">Anran</column>
+            <column name="role">damage</column>
+            <column name="subrole">flanker</column>
+            <column name="release_date">2026-02-10</column>
+            <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Anran.webp</column>
+        </table>
+        <table name="hero">
+            <column name="id">49</column>
+            <column name="name">Jetpack Cat</column>
+            <column name="role">support</column>
+            <column name="subrole">tactician</column>
+            <column name="release_date">2026-02-10</column>
+            <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Jetpack_Cat.webp</column>
+        </table>
+        <table name="hero">
+            <column name="id">50</column>
+            <column name="name">Mizuki</column>
+            <column name="role">support</column>
+            <column name="subrole">survivor</column>
+            <column name="release_date">2026-02-10</column>
+            <column name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mizuki.webp</column>
         </table>
         <!-- Table season -->
         <table name="season">
@@ -592,120 +695,147 @@
             <column name="name">Season 1</column>
             <column name="start_date">2022-10-04</column>
             <column name="end_date">2022-12-06</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">2</column>
             <column name="name">Season 2</column>
             <column name="start_date">2022-12-06</column>
             <column name="end_date">2023-02-07</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">3</column>
             <column name="name">Season 3</column>
             <column name="start_date">2023-02-07</column>
             <column name="end_date">2023-04-11</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">4</column>
             <column name="name">Season 4</column>
             <column name="start_date">2023-04-11</column>
             <column name="end_date">2023-06-13</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">5</column>
             <column name="name">Season 5</column>
             <column name="start_date">2023-06-13</column>
             <column name="end_date">2023-08-10</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">6</column>
             <column name="name">Season 6: Invasion</column>
             <column name="start_date">2023-08-10</column>
             <column name="end_date">2023-10-10</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">7</column>
             <column name="name">Season 7: Rise of Darkness</column>
             <column name="start_date">2023-10-10</column>
             <column name="end_date">2023-12-05</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">8</column>
             <column name="name">Season 8: Call of the Hunt</column>
             <column name="start_date">2023-12-05</column>
             <column name="end_date">2024-02-13</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">9</column>
             <column name="name">Season 9: Champions</column>
             <column name="start_date">2024-02-13</column>
             <column name="end_date">2024-04-16</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">10</column>
             <column name="name">Season 10: Venture Forth</column>
             <column name="start_date">2024-04-16</column>
             <column name="end_date">2024-06-20</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">11</column>
             <column name="name">Season 11: Super Mega Ultrawatch</column>
             <column name="start_date">2024-06-20</column>
             <column name="end_date">2024-08-20</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">12</column>
             <column name="name">Season 12: New Frontiers</column>
             <column name="start_date">2024-08-20</column>
             <column name="end_date">2024-10-15</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">13</column>
             <column name="name">Season 13: Spellbinder</column>
             <column name="start_date">2024-10-15</column>
             <column name="end_date">2024-12-10</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">14</column>
             <column name="name">Season 14: Hazard</column>
             <column name="start_date">2024-12-10</column>
             <column name="end_date">2025-02-18</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">15</column>
             <column name="name">Season 15: Honor and Glory</column>
             <column name="start_date">2025-02-18</column>
             <column name="end_date">2025-04-22</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">16</column>
             <column name="name">Season 16: Stadium</column>
             <column name="start_date">2025-04-22</column>
             <column name="end_date">2025-06-24</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">17</column>
             <column name="name">Season 17: Powered Up!</column>
             <column name="start_date">2025-06-24</column>
             <column name="end_date">2025-08-26</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">18</column>
             <column name="name">Season 18: Stadium Quickplay</column>
             <column name="start_date">2025-08-26</column>
             <column name="end_date">2025-10-14</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">19</column>
             <column name="name">Season 19: Haunted Masquerade</column>
             <column name="start_date">2025-10-14</column>
             <column name="end_date">2025-12-09</column>
+            <column name="id_chapter">NULL</column>
         </table>
         <table name="season">
             <column name="id">20</column>
             <column name="name">Season 20: Vendetta</column>
             <column name="start_date">2025-12-09</column>
             <column name="end_date">2026-02-09</column>
+            <column name="id_chapter">NULL</column>
+        </table>
+        <table name="season">
+            <column name="id">21</column>
+            <column name="name">S1: Conquest</column>
+            <column name="start_date">2026-02-10</column>
+            <column name="end_date">2026-04-14</column>
+            <column name="id_chapter">1</column>
         </table>
         <!-- Table skin -->
         <table name="skin">
@@ -18503,7 +18633,7 @@
             <column name="name">Royal Archer</column>
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
-            <column name="recolor_of">309</column>
+            <column name="recolor_of">NULL</column>
         </table>
         <table name="skin">
             <column name="id">1588</column>
@@ -20978,14 +21108,14 @@
         <table name="skin">
             <column name="id">1778</column>
             <column name="id_hero">41</column>
-            <column name="id_category">5</column>
+            <column name="id_category">4</column>
             <column name="id_season">20</column>
             <column name="year">NULL</column>
             <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/NEW_ERA.webp</column>
             <column name="rarity">epic</column>
             <column name="name">New Era</column>
             <column name="id_category_secondary">NULL</column>
-            <column name="id_condition">NULL</column>
+            <column name="id_condition">5</column>
             <column name="recolor_of">NULL</column>
         </table>
     </database>

@@ -10,7 +10,7 @@
     }
 
     .item-gallery {
-        min-width: 24em;
+        min-width: 22em;
         max-width: 480px;
         height: 480px;
         background-size: cover;
