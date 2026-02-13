@@ -16,23 +16,26 @@
         <a href="base">Base Skin ↗</a>
         <a href="all">All Skins ↗</a>
     </div>
-    <h2>Images</h2>
+    <h2>Static Recaps</h2>
     <ul class="download-list">
         <li><a href="image/Legacy_Skins.webp" target="_blank">Legacy Skins Static Recap</a></li>
         <li><a href="image/Overwatch_Skins.webp" target="_blank">Overwatch Skins Static Recap</a></li>
         <li><a href="image/Base_Skins.webp" target="_blank">Base Skins Static Recap</a></li>
         <li><a href="image/All_Skins.webp" target="_blank">All Skins Static Recap</a></li>
-        <li><a href="download/hero.zip" target="_blank">All Skins</a></li>
-        <li><a href="download/hero_portrait.zip" target="_blank">All Heroes Portraits</a></li>
-        <li><a href="download/category.zip" target="_blank">All Categories Icons</a></li>
+    </ul>
+    <h2>Images</h2>
+    <ul class="download-list">
+        <li><a href="downloads/hero.zip" target="_blank">All Skins</a></li>
+        <li><a href="downloads/hero_portrait.zip" target="_blank">All Heroes Portraits</a></li>
+        <li><a href="downloads/category.zip" target="_blank">All Categories Icons</a></li>
     </ul>
     <h2>Database</h2>
     <ul class="download-list">
-        <li><a href="download/overwatch_skins.sql" target="_blank">SQL</a></li>
-        <li><a href="download/overwatch_skins.json" target="_blank">JSON</a></li>
-        <li><a href="download/overwatch_skins.csv" target="_blank">CSV</a></li>
-        <li><a href="download/overwatch_skins.xml" target="_blank">XML</a></li>
-        <li><a href="download/overwatch_skins.yml" target="_blank">YAML</a></li>
+        <li><a href="downloads/overwatch_skins.sql" target="_blank">SQL</a></li>
+        <li><a href="downloads/overwatch_skins.json" target="_blank">JSON</a></li>
+        <li><a href="downloads/overwatch_skins.csv" target="_blank">CSV</a></li>
+        <li><a href="downloads/overwatch_skins.xml" target="_blank">XML</a></li>
+        <li><a href="downloads/overwatch_skins.yml" target="_blank">YAML</a></li>
     </ul>
 </body>
 </html>

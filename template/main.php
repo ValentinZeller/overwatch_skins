@@ -1,6 +1,6 @@
 <?php require_once('function.php'); ?>
-<?php require_once('fetch_data.php'); ?>
-<?php require_once('filter_data.php'); ?>
+<?php require_once('controller/fetch_data.php'); ?>
+<?php require_once('controller/filter_data.php'); ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>

@@ -1,10 +1,10 @@
 <?php
 require_once('connect.php');
-require_once('skin/SkinManager.php');
-require_once('hero/HeroManager.php');
-require_once('category/CategoryManager.php');
-require_once('season/SeasonManager.php');
-require_once('chapter/ChapterManager.php');
+require_once('SkinManager.php');
+require_once('HeroManager.php');
+require_once('CategoryManager.php');
+require_once('SeasonManager.php');
+require_once('ChapterManager.php');
 define('YEARS', [2016,2017,2018,2019,2020,2021,2022]);
 define('MAX_SKIN_AMOUNT', 8);
 define('CACHE_PATH', 'cache/');

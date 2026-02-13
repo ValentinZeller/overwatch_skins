@@ -8,8 +8,8 @@
     <link rel="icon" type="image/x-icon" href="image/logo.webp">
 </head>
 <?php
-require_once('connect.php');
-require_once('skin/SkinManager.php');
+require_once('controller/connect.php');
+require_once('controller/SkinManager.php');
 
 $id = $_GET['id'] ?? null;
 if ($id === null) {
