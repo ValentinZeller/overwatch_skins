@@ -1,7 +1,9 @@
 <?php require_once('function.php'); ?>
 
 <div class="row" id="<?= $hero['name'] ?>" data-name="<?= $hero['name'] ?>" data-release-date="<?= $hero['release_date'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
-   <a href="hero.php?id=<?= $hero['id'] ?>" target="_blank"><div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div></a>
+   <a href="hero.php?id=<?= $hero['id'] ?>" target="_blank">
+        <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
+   </a>
     <?php foreach ($categories as $category): ?>
         <?php
             $nbColumn = getNbColumn($category, $maxSkinCategory, $manager);
@@ -15,7 +17,6 @@
                         <a target="_blank" href="skin.php?id=<?= $skin['id'] ?>">
                             <?php
                                 $skin['image_url'] = str_replace("'", "\'", $skin['image_url']);
-                                echo "<script>console.log('".renameFile($skin['image_url'])."');</script>";
                             ?>
                             <div class="<?= split($filterSkinCount, $nbColumn) ?> <?= $skin['rarity'] ?> <?= $skin['recolor_of']? 'recolor' : ''  ?>" data-bg="url('<?= renameFile($skin['image_url']) ?>')" title="<?= $skin['skin_name'] ?>"></div>
                         </a>
