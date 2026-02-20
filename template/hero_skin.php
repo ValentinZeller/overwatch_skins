@@ -33,5 +33,7 @@
             'manager' => $manager
         ]) ?>
     </div>
-    <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');"></div>
+    <a href="hero.php?id=<?= $hero['id'] ?>" target="_blank">
+        <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
+    </a>
 </div>

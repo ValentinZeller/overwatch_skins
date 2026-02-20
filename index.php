@@ -25,7 +25,7 @@
     <p>Visualization of skins distribution in Overwatch with settings and filters to customize the visual.</p>
     <p>Report issues or suggest features on <a href="https://github.com/ValentinZeller/overwatch_skins/issues">GitHub</a></p>
     <footer>
-        <p>Created by <a href="https://github.com/ValentinZeller">Foxy_Jr</p>
+        <p>Created by <a href="https://github.com/ValentinZeller">Foxy_Jr</a></p>
     </footer>
 </body>
 </html>
