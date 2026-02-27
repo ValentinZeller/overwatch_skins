@@ -13428,4 +13428,14 @@
   image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/STADIUM_ELITE.webp"
   rarity: "epic"
   name: "Stadium Elite"
+-
+  id: 1842
+  id_hero: 11
+  id_category: 15
+  id_season: 21
+  image_url: "https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DEVOURER.webp"
+  rarity: "legendary"
+  name: "Devourer"
+  id_category_secondary: 4
+  recolor_of: 441
 ...

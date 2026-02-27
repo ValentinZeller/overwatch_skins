@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : localhost:3306
-- Généré le : ven. 13 fév. 2026 à 12:22
+- Généré le : ven. 27 fév. 2026 à 10:02
 - Version du serveur : 8.0.45-0ubuntu0.22.04.1
 - Version de PHP : 8.1.2-1ubuntu2.23
 -->
@@ -93,7 +93,7 @@
                   CONSTRAINT `skin_hero` FOREIGN KEY (`id_hero`) REFERENCES `hero` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_ibfk_1` FOREIGN KEY (`recolor_of`) REFERENCES `skin` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
                   CONSTRAINT `skin_season` FOREIGN KEY (`id_season`) REFERENCES `season` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=1842 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=1843 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -21936,6 +21936,19 @@
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
             <column name="recolor_of">NULL</column>
+        </table>
+        <table name="skin">
+            <column name="id">1842</column>
+            <column name="id_hero">11</column>
+            <column name="id_category">15</column>
+            <column name="id_season">21</column>
+            <column name="year">NULL</column>
+            <column name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DEVOURER.webp</column>
+            <column name="rarity">legendary</column>
+            <column name="name">Devourer</column>
+            <column name="id_category_secondary">4</column>
+            <column name="id_condition">NULL</column>
+            <column name="recolor_of">441</column>
         </table>
     </database>
 </pma_xml_export>

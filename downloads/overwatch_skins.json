@@ -1748,7 +1748,8 @@
 {"id":"1838","id_hero":"42","id_category":"17","id_season":"21","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Zenyatta\/STADIUM_ELITE.webp","rarity":"epic","name":"Stadium Elite","id_category_secondary":null,"id_condition":null,"recolor_of":null},
 {"id":"1839","id_hero":"28","id_category":"17","id_season":"21","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Reinhardt\/STADIUM_ALL-STAR.webp","rarity":"legendary","name":"Stadium All-Star","id_category_secondary":null,"id_condition":null,"recolor_of":null},
 {"id":"1840","id_hero":"30","id_category":"17","id_season":"21","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Sigma\/STADIUM_ELITE.webp","rarity":"epic","name":"Stadium Elite","id_category_secondary":null,"id_condition":null,"recolor_of":null},
-{"id":"1841","id_hero":"36","id_category":"17","id_season":"21","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Tracer\/STADIUM_ELITE.webp","rarity":"epic","name":"Stadium Elite","id_category_secondary":null,"id_condition":null,"recolor_of":null}
+{"id":"1841","id_hero":"36","id_category":"17","id_season":"21","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Tracer\/STADIUM_ELITE.webp","rarity":"epic","name":"Stadium Elite","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":"1842","id_hero":"11","id_category":"15","id_season":"21","year":null,"image_url":"https:\/\/foxyjr.cloudns.ph\/overwatch_skins\/image\/hero\/Genji\/DEVOURER.webp","rarity":"legendary","name":"Devourer","id_category_secondary":"4","id_condition":null,"recolor_of":"441"}
 ]
 }
 ]

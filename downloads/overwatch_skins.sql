@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : ven. 13 fév. 2026 à 12:21
+-- Généré le : ven. 27 fév. 2026 à 10:02
 -- Version du serveur : 8.0.45-0ubuntu0.22.04.1
 -- Version de PHP : 8.1.2-1ubuntu2.23
 
@@ -1871,7 +1871,8 @@ INSERT INTO `skin` (`id`, `id_hero`, `id_category`, `id_season`, `year`, `image_
 (1838, 42, 17, 21, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/STADIUM_ELITE.webp', 'epic', 'Stadium Elite', NULL, NULL, NULL),
 (1839, 28, 17, 21, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/STADIUM_ALL-STAR.webp', 'legendary', 'Stadium All-Star', NULL, NULL, NULL),
 (1840, 30, 17, 21, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/STADIUM_ELITE.webp', 'epic', 'Stadium Elite', NULL, NULL, NULL),
-(1841, 36, 17, 21, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/STADIUM_ELITE.webp', 'epic', 'Stadium Elite', NULL, NULL, NULL);
+(1841, 36, 17, 21, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/STADIUM_ELITE.webp', 'epic', 'Stadium Elite', NULL, NULL, NULL),
+(1842, 11, 15, 21, NULL, 'https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DEVOURER.webp', 'legendary', 'Devourer', 4, NULL, 441);
 
 --
 -- Index pour les tables déchargées
@@ -1961,7 +1962,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT pour la table `skin`
 --
 ALTER TABLE `skin`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1842;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1843;
 
 --
 -- Contraintes pour les tables déchargées
