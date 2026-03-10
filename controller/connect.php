@@ -1,7 +1,7 @@
 <?php
 define('SERVERNAME',"localhost");
 define('USERNAME',"root");
-define('PASSWORD',"");
+define('PASSWORD',"admin");
 define('DBNAME',"overwatch_skins");
 
 function ConnectBDD() {

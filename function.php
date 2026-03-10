@@ -45,8 +45,10 @@ function getNbColumn($category, $maxSkinCategory) {
 }
 
 function renameFile($filename, $suffix = 'web') {
-    $pathinfo = pathinfo($filename);
-    return $pathinfo['dirname'] . '/' . $pathinfo['filename'] . '_' . $suffix . '.' . $pathinfo['extension'];
+    $x = explode('.', $filename);
+    $ext=end($x);
+    $filenameSansExt=str_replace('.'.$ext,"",$filename);
+    return $filenameSansExt.'_'.$suffix.'.'.$ext;
 }
 
 ?>

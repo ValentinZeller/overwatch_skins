@@ -14,6 +14,10 @@
     color: var(--legendary);
 }
 
+.exclusive-skin {
+    color: var(--exclusive);
+}
+
 .mythic-skin {
     color: #00ffd0;
     background: #00ffd0;
