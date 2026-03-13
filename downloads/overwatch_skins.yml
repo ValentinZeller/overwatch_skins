@@ -196,7 +196,7 @@
     - id: 13
       name: Hazard
       role: tank
-      subrole: stalwart
+      subrole: initiator
       release_date: 10/12/2024
       portrait_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Hazard.webp
     - id: 14
@@ -18392,3 +18392,146 @@
       id_category_secondary: 4
       id_condition: null
       recolor_of: 441
+    - id: 1843
+      id_hero: 28
+      id_category: 9
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/ELYSIAN_KEEPER.webp
+      rarity: legendary
+      name: Elysian Keeper
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1844
+      id_hero: 30
+      id_category: 12
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sigma/VOIDWALKER.webp
+      rarity: legendary
+      name: Voidwalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1845
+      id_hero: 2
+      id_category: 12
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/VOIDWALKER.webp
+      rarity: legendary
+      name: Voidwalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1846
+      id_hero: 9
+      id_category: 12
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/VOIDWALKER.webp
+      rarity: legendary
+      name: Voidwalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1847
+      id_hero: 21
+      id_category: 8
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/HOP_ONLINE!.webp
+      rarity: legendary
+      name: Hop Online!
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1848
+      id_hero: 45
+      id_category: 15
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/A2.webp
+      rarity: legendary
+      name: A2
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1849
+      id_hero: 37
+      id_category: 15
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/VOIDWALKER.webp
+      rarity: legendary
+      name: Voidwalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1850
+      id_hero: 43
+      id_category: 15
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/2B.webp
+      rarity: legendary
+      name: 2B
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1851
+      id_hero: 18
+      id_category: 15
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/ADAM.webp
+      rarity: legendary
+      name: Adam
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1852
+      id_hero: 18
+      id_category: 9
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/ELYSIAN_KEEPER.webp
+      rarity: legendary
+      name: Elysian Keeper
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1853
+      id_hero: 22
+      id_category: 15
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/COMMANDER_WHITE.webp
+      rarity: legendary
+      name: Commander White
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1854
+      id_hero: 44
+      id_category: 15
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/9S.webp
+      rarity: legendary
+      name: 9S
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1855
+      id_hero: 44
+      id_category: 9
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/ELYSIAN_KEEPER.webp
+      rarity: legendary
+      name: Elysian Keeper
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
