@@ -11,4 +11,7 @@
     <button class='select-hero' id="sort-release-date" data-sort="desc" onclick="sortHeroes('release-date')">Sort Heroes by Release Date</button>
     <label>Category Colors <input type="checkbox" onchange="updateCategoryColor(event.target.checked);" checked id='categories-colors' /></label>
     <label>Display Recolors <input type="checkbox" onchange="updateRecolors(event.target.checked);" checked id='display-recolors' /></label>
+    <?php if ($version == 'main'): ?>
+        <label>Display Recentness <input type="checkbox" onchange="updateRecentness(event.target.checked);" id='display-recentness' /></label>
+    <?php endif; ?>
 </div>

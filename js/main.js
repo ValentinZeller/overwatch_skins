@@ -16,6 +16,7 @@ let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : null;
 let mythicBar = localStorage.getItem('mythic') === 'true' ? true : null;
 let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : null;
 let displayRecolors = localStorage.getItem('displayRecolors') === 'true' ? true : null;
+let recent = localStorage.getItem('recent') === 'true' ? true : null;
 
 // Apply data
 if (document.querySelector('[data-rarity="common"]') != null) {
@@ -35,11 +36,13 @@ document.getElementById('categories-colors').checked = categoriesColor
 document.getElementById('display-recolors').checked = displayRecolors
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
+document.getElementById('display-recentness').checked = recent
 
 updateCategoryColor(categoriesColor);
 updateRecolors(displayRecolors);
 updateBarVisibility(epicBar, 'epic');
 updateBarVisibility(legendaryBar, 'legendary');
+updateRecentness(recent);
 
 function updateCategoryColor(show) {
     localStorage.setItem('categoriesColor', show);
@@ -134,4 +137,12 @@ function sortHeroes(parameter) {
     });
     container.append(total);
     closeSettings();
+}
+
+function updateRecentness(recent) {
+    localStorage.setItem('recent', recent);
+    document.querySelectorAll('[data-recent]').forEach(function (element) {
+        let percent = recent ? parseFloat(element.dataset.recent).toFixed(3) * 100 : 100;
+        element.style.filter = 'opacity(' + percent + '%)';
+    });
 }

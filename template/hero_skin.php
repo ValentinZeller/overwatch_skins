@@ -1,4 +1,6 @@
-<?php require_once('function.php'); ?>
+<?php require_once('function.php');
+$lastLegendarySeason = null;
+?>
 <div class="row" id="<?= $hero['name'] ?>" data-name="<?= $hero['name'] ?>" data-release-date="<?= $hero['release_date'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
    <a href="hero.php?id=<?= $hero['id'] ?>" target="_blank">
         <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
@@ -22,6 +24,9 @@
                                     style="background-image: url('<?= renameFile($skin['image_url']) ?>');"
                                 <?php else: ?>
                                     data-bg="url('<?= renameFile($skin['image_url']) ?>')"
+                                <?php endif; ?>
+                                <?php if (isset($skin['id_season']) && $skin['id_season']):?> 
+                                    data-recent="<?= number_format($skin['id_season']/21,3)?>"
                                 <?php endif; ?>
                             ></div>
                         </a>
