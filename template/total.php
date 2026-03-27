@@ -1,7 +1,7 @@
 <?php require_once('function.php'); ?>
 
 <div id="total" class="row total">
-    <div class="row-header" style="background-image: url('https://foxyjr.cloudns.ph/overwatch_skins/image/category/total.webp');"></div>
+    <div class="row-header category-title">Total</div>
     <?php foreach ($categories as $category): ?>
         <?php
             $filterSkin = $manager->filterSkinByCategory($category['name'], $skinData);

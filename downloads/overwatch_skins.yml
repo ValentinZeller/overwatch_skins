@@ -21,7 +21,7 @@
       display_main_order: 7
     - id: 5
       name: Challenge
-      icon_url: https://foxyjr.cloudns.ph/overwatch_skins/image/category/challenge.webp
+      icon_url: null
       display_legacy_order: 8
       display_main_order: 5
     - id: 6
@@ -51,7 +51,7 @@
       display_main_order: 9
     - id: 11
       name: Permanent
-      icon_url: https://foxyjr.cloudns.ph/overwatch_skins/image/category/permanent.webp
+      icon_url: null
       display_legacy_order: 7
       display_main_order: null
     - id: 12
@@ -71,7 +71,7 @@
       display_main_order: null
     - id: 15
       name: Collaboration
-      icon_url: https://foxyjr.cloudns.ph/overwatch_skins/image/category/collaboration%20shop.webp
+      icon_url: null
       display_legacy_order: null
       display_main_order: 4
     - id: 16
@@ -86,7 +86,7 @@
       display_main_order: 8
     - id: 18
       name: Bundle Special
-      icon_url: https://foxyjr.cloudns.ph/overwatch_skins/image/category/bundle.webp
+      icon_url: null
       display_legacy_order: null
       display_main_order: 6
 - chapter:
@@ -17152,7 +17152,7 @@
     - id: 1730
       id_hero: 45
       id_category: 16
-      id_season: 20
+      id_season: null
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/OVERWATCH.webp
       rarity: common
@@ -17163,7 +17163,7 @@
     - id: 1731
       id_hero: 45
       id_category: 16
-      id_season: 20
+      id_season: null
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/MARMOR.webp
       rarity: rare
@@ -17174,7 +17174,7 @@
     - id: 1732
       id_hero: 45
       id_category: 16
-      id_season: 20
+      id_season: null
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/POZZOLANA.webp
       rarity: rare
@@ -17185,7 +17185,7 @@
     - id: 1733
       id_hero: 45
       id_category: 16
-      id_season: 20
+      id_season: null
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/TUFA.webp
       rarity: rare
@@ -17196,7 +17196,7 @@
     - id: 1734
       id_hero: 45
       id_category: 16
-      id_season: 20
+      id_season: null
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/VERDIGRIS.webp
       rarity: rare
@@ -18460,7 +18460,7 @@
       recolor_of: null
     - id: 1849
       id_hero: 37
-      id_category: 15
+      id_category: 12
       id_season: 21
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/VOIDWALKER.webp

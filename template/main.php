@@ -21,6 +21,7 @@
             <a href="legacy">Legacy Skins ↗</a>
             <a href="base">Base Skin ↗</a>
             <a href="all">All Skins ↗</a>
+            <a href="season">Season ↗</a>
             <a href="download">Download ↗</a>
             <?php echo template('template/visual_settings.php', ['rarities' => $rarityList, 'version' => $version]); ?>
             <?php echo template('template/filter_form.php', [

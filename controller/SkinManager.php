@@ -59,6 +59,19 @@
         return $stmt;
     }
 
+    public function getSeasonSkin() {
+                $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, season.name AS category_name, category.name as season_category,skin.id_season, skin.recolor_of, category.icon_url as category_icon_url
+                FROM skin
+                LEFT JOIN hero ON skin.id_hero = hero.id
+                LEFT JOIN season ON skin.id_season = season.id
+                LEFT JOIN category ON skin.id_category = category.id
+                WHERE skin.id_season IS NOT NULL
+                ORDER BY hero.name, category_name, skin.name';
+        $stmt = $this->_db->prepare($req);
+        $stmt->execute();
+        return $stmt;
+    }
+
     public function getSkinCount($groupByCategory = false, $version = 'main') {
         $req = 'SELECT hero.name AS hero_name, category.name AS category_name, COUNT(skin.id) AS skin_count
                 FROM skin

@@ -15,6 +15,7 @@
         <a href="legacy">Legacy Skins ↗</a>
         <a href="base">Base Skin ↗</a>
         <a href="all">All Skins ↗</a>
+        <a href="season">Season ↗</a>
     </div>
     <h2>Static Recaps</h2>
     <ul class="download-list">
@@ -22,6 +23,7 @@
         <li><a href="image/Overwatch_Skins.webp" target="_blank">Overwatch Skins Static Recap</a></li>
         <li><a href="image/Base_Skins.webp" target="_blank">Base Skins Static Recap</a></li>
         <li><a href="image/All_Skins.webp" target="_blank">All Skins Static Recap</a></li>
+        <li><a href="image/Season_Skins.webp">Season Skins Static Recap</a></li>
     </ul>
     <h2>Images</h2>
     <ul class="download-list">

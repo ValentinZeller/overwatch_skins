@@ -4,20 +4,20 @@ id,name,icon_url,display_legacy_order,display_main_order
 2,Archives,https://foxyjr.cloudns.ph/overwatch_skins/image/category/archives.webp,5,null
 3,Battle Pass,https://foxyjr.cloudns.ph/overwatch_skins/image/category/battle%20pass.webp,null,1
 4,Blizzard Special,https://foxyjr.cloudns.ph/overwatch_skins/image/category/blizzard.webp,9,7
-5,Challenge,https://foxyjr.cloudns.ph/overwatch_skins/image/category/challenge.webp,8,5
+5,Challenge,null,8,5
 6,Halloween Terror,https://foxyjr.cloudns.ph/overwatch_skins/image/category/halloween%20terror.webp,2,null
 7,Lunar New Year,https://foxyjr.cloudns.ph/overwatch_skins/image/category/lunar%20new%20year.webp,4,null
 8,Mythic Shop,https://foxyjr.cloudns.ph/overwatch_skins/image/category/mythic%20shop.webp,null,2
 9,Overwatch Esports,https://foxyjr.cloudns.ph/overwatch_skins/image/category/overwatch%20esports.webp,null,10
 10,Overwatch League,https://foxyjr.cloudns.ph/overwatch_skins/image/category/overwatch%20league.webp,10,9
-11,Permanent,https://foxyjr.cloudns.ph/overwatch_skins/image/category/permanent.webp,7,null
+11,Permanent,null,7,null
 12,Shop,https://foxyjr.cloudns.ph/overwatch_skins/image/category/shop.webp,null,3
 13,Summer Games,https://foxyjr.cloudns.ph/overwatch_skins/image/category/summer%20games.webp,1,null
 14,Winter Wonderland,https://foxyjr.cloudns.ph/overwatch_skins/image/category/winter%20wonderland.webp,3,null
-15,Collaboration,https://foxyjr.cloudns.ph/overwatch_skins/image/category/collaboration%20shop.webp,null,4
+15,Collaboration,null,null,4
 16,Base,https://foxyjr.cloudns.ph/overwatch_skins/image/category/base.webp,null,null
 17,Competitive,https://foxyjr.cloudns.ph/overwatch_skins/image/category/competitive.webp,null,8
-18,Bundle Special,https://foxyjr.cloudns.ph/overwatch_skins/image/category/bundle.webp,null,6
+18,Bundle Special,null,null,6
 
 chapter:
 id,name,start_date
@@ -1629,11 +1629,11 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1727,34,12,19,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/MAGEPUNK.webp,legendary,Magepunk,null,null,null
 1728,17,12,19,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/MAGEPUNK.webp,legendary,Magepunk,null,null,null
 1729,34,15,19,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/XAL'ATAH.webp,legendary,Xal'Atah,4,null,442
-1730,45,16,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/OVERWATCH.webp,common,Overwatch,null,null,null
-1731,45,16,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/MARMOR.webp,rare,Marmor,null,null,null
-1732,45,16,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/POZZOLANA.webp,rare,Pozzolana,null,null,null
-1733,45,16,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/TUFA.webp,rare,Tufa,null,null,null
-1734,45,16,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/VERDIGRIS.webp,rare,Verdigris,null,null,null
+1730,45,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/OVERWATCH.webp,common,Overwatch,null,null,null
+1731,45,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/MARMOR.webp,rare,Marmor,null,null,null
+1732,45,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/POZZOLANA.webp,rare,Pozzolana,null,null,null
+1733,45,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/TUFA.webp,rare,Tufa,null,null,null
+1734,45,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/VERDIGRIS.webp,rare,Verdigris,null,null,null
 1735,6,5,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/FROZEN_MOUNTAINEER.webp,legendary,Frozen Mountaineer,14,null,200
 1736,16,5,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/FROZEN_DEMON.webp,legendary,Frozen Demon,14,null,191
 1737,27,17,20,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/STADIUM_ALL-STAR.webp,legendary,Stadium All-Star,null,null,null

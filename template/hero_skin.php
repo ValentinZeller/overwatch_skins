@@ -1,6 +1,4 @@
-<?php require_once('function.php');
-$lastLegendarySeason = null;
-?>
+<?php require_once('function.php');?>
 <div class="row" id="<?= $hero['name'] ?>" data-name="<?= $hero['name'] ?>" data-release-date="<?= $hero['release_date'] ?>" data-count="<?= count($manager->filterSkinByHero($hero['name'], $skinData)) ?>">
    <a href="hero.php?id=<?= $hero['id'] ?>" target="_blank">
         <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
@@ -28,7 +26,16 @@ $lastLegendarySeason = null;
                                 <?php if (isset($skin['id_season']) && $skin['id_season']):?> 
                                     data-recent="<?= number_format($skin['id_season']/21,3)?>"
                                 <?php endif; ?>
-                            ></div>
+                            >
+                                <?php if (array_key_exists('category_icon_url',$skin)): ?>
+                                    <?php if ($skin['category_icon_url']): ?>
+                                        <img loading="lazy" class="category-icon" src="<?= $skin['category_icon_url'] ?>">
+                                    <?php elseif (!$skin['category_icon_url']): ?>
+                                        <?php $skin['season_category'] = substr($skin['season_category'],0,6) ?>
+                                        <span title="<?= $skin['season_category']?>" data-category="<?= $skin['season_category'] ?>" class="item season-category"><?= $skin['season_category'] ?></span>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
                         </a>
                     <?php endforeach;
                 else: ?>

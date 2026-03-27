@@ -48,15 +48,32 @@
     width: var(--width);
     height: var(--height);
     flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .recolor-after {
     content: 'Recolor';
-    position: absolute;
+    float: right;
     padding: 2px 6px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 10px;
     border-radius: 4px;
-    display: inline
+}
+
+.category-icon {
+    height: 12px;
+    padding: 5px;
+    position: absolute;
+}
+
+.season-category {
+    font-style: unset;
+    color: white;
+    font-size: 10px;
+    text-shadow: 1px 1px 5px #000;
+    padding-left: 4px;
 }

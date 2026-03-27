@@ -4,7 +4,7 @@ $mainCategoryList = [];
 $legacySeasonList = [];
 $chapteredSeasonList = []; 
 
-if ($version == 'base') {
+if ($version == 'base' || $version == 'season') {
     $mainCategoryList = $categoryList;
 } else {
     foreach ($categoryList as $category) {
@@ -16,7 +16,7 @@ if ($version == 'base') {
     }
 }
 
-if ($version == 'main' || $version == null) {
+if ($version == 'main' || $version == null || $version == 'season') {
     foreach ($seasonList as $season) {
         if ($season['id'] <= SEASON_OFFSET) {
             $legacySeasonList[] = $season;
@@ -92,7 +92,7 @@ if ($version == 'main' || $version == null) {
                     <?php endforeach; ?>
                 </details>
             <?php endif; ?>
-            <?php if ($version == 'main' || $version == null): ?>
+            <?php if ($version == 'main' || $version == null || $version=='season'): ?>
                 <details name="season" id="legacy-season">
                     <summary>Legacy Seasons</summary>
                     <?php foreach ($legacySeasonList as $season): ?>
@@ -102,17 +102,17 @@ if ($version == 'main' || $version == null) {
                         </label>
                     <?php endforeach; ?>
                 </details>
-            <?php foreach ($chapterList as $chapter): ?>
-                <details name="season" <?= (count($chapterList) == $chapter['id']) ? 'open' : '' ?>>
-                    <summary><?= $chapter['name'] ?></summary>
-                    <?php foreach ($mainSeasonList as $season): ?>
-                        <label class="season">
-                            <input type="checkbox" name="season[]" value="<?= $season['id'] ?>" <?php echo (in_array($season['id'], $seasons)&&$filtered['season'] ? "checked" : "") ?>>
-                            <?= $season['name'] ?>
-                        </label>
-                    <?php endforeach; ?>
-                </details>
-            <?php endforeach; ?>
+                <?php foreach ($chapterList as $chapter): ?>
+                    <details name="season" <?= (count($chapterList) == $chapter['id']) ? 'open' : '' ?>>
+                        <summary><?= $chapter['name'] ?></summary>
+                        <?php foreach ($mainSeasonList as $season): ?>
+                            <label class="season">
+                                <input type="checkbox" name="season[]" value="<?= $season['id'] ?>" <?php echo (in_array($season['id'], $seasons)&&$filtered['season'] ? "checked" : "") ?>>
+                                <?= $season['name'] ?>
+                            </label>
+                        <?php endforeach; ?>
+                    </details>
+                <?php endforeach; ?>
             <?php endif; ?>
         </div>
     </div>

@@ -13,9 +13,20 @@ $filtered = ['hero' => false, 'category' => false, 'rarity' => false, 'season' =
 setupArrayByFilter('hero', $heroes, $heroList, $filtered, $heroList);
 setupArrayByFilter('category', $categories, $categoryList, $filtered, $categoryList);
 setupArrayByFilter('rarity', $rarities, $rarityList, $filtered);
-if ($version == 'main') {
+if ($version == 'base') {
+    $temp = NULL;
+    setupArrayByFilter('rarity', $temp, $rarityList, $filtered);
+    $categories = raritiesAsCategory($temp);
+}
+if ($version == 'main' || $version == 'season') {
     $seasonIdList = array_map(function($season) { return $season['id']; }, $seasonList);
     setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
+    if ($version == 'season') {
+        $temp = NULL;
+        array_reverse($seasonList);
+        setupArrayByFilter('season', $temp, array_reverse($seasonList), $filtered, array_reverse($seasonList));
+        $categories = seasonsAsCategory($temp);
+    }
 } else if ($version == 'legacy') {
     setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
 } else if ($version == null) {
@@ -83,8 +94,8 @@ function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seaso
             in_array($skin['category_name'], array_column($categories, 'name')) &&
             in_array($skin['rarity'], $rarities) &&
             ( (($version == 'legacy' || $version == null) && in_array($skin['year'], $yearsSelected)) ||
-            (($version == 'main' || $version == null) && in_array($skin['id_season'], $seasons)) || 
-            ($version == 'base' || $version == null) )
+            (($version == 'main' || $version == null  || $version == 'season') && in_array($skin['id_season'], $seasons)) || 
+            ($version == 'base' || $version == null ) )
             ) {
                 $skins[] = $skin;
             }
@@ -93,5 +104,4 @@ function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seaso
         $skins = $skinData;
     }
 }
-
 ?>

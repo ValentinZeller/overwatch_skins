@@ -36,13 +36,16 @@ document.getElementById('categories-colors').checked = categoriesColor
 document.getElementById('display-recolors').checked = displayRecolors
 document.querySelector('[data-rarity="epic"]').checked = epicBar
 document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
-document.getElementById('display-recentness').checked = recent
+
+if (document.getElementById('display-recentness') != null) {
+    document.getElementById('display-recentness').checked = recent
+    updateRecentness(recent);
+}
 
 updateCategoryColor(categoriesColor);
 updateRecolors(displayRecolors);
 updateBarVisibility(epicBar, 'epic');
 updateBarVisibility(legendaryBar, 'legendary');
-updateRecentness(recent);
 
 function updateCategoryColor(show) {
     localStorage.setItem('categoriesColor', show);

@@ -23,6 +23,13 @@ if ($version == 'base') {
     $categoryList = raritiesAsCategory($rarityList);
     $seasonList = null;
     $chapterList = null;
+} else if ($version == 'season') {
+    $skinData = initialValue('skin','season',[$skinManager,'getSeasonSkin']);
+    $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
+    $seasonList = initialValue('season','main',[$seasonManager,'getListeSeason']);
+    $chapterList = initialValue('chapter','main',[$chapterManager,'getListeChapter']);
+    $rarityList = ['rare','epic','legendary','mythic'];
+    $categoryList = seasonsAsCategory($seasonList);
 } else if ($version != null ) {
     $skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
     $heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
@@ -65,11 +72,25 @@ function raritiesAsCategory($rarityList) {
         $rarities[$index] = array(
             'id' => $index + 1,
             'name' => $rarity,
-            'icon_url' => 'https://foxyjr.cloudns.ph/overwatch_skins/image/rarity/'.$rarity.'.webp',
+            'icon_url' => null,
             'display_order' => $index + 1,
         );
     }
     return $rarities;
+}
+
+function seasonsAsCategory($seasonList) {
+    $seasons = array();
+    foreach ($seasonList as $index => $season) {
+        $seasons[$index] = array(
+            'id' => $season['id'],
+            'name' => $season['name'],
+            'icon_url' => null,
+            'display_order' => $index,
+            'start_date' => $season['start_date']
+        );
+    }
+    return $seasons;
 }
 
 ?>
