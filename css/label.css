@@ -20,7 +20,6 @@ label.category {
 
 label.rarity {
     margin-bottom: 10px;
-    ;
 }
 
 label:has(input[type=checkbox]:not(:checked)):hover {
