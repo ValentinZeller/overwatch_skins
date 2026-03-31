@@ -18535,3 +18535,14 @@
       id_category_secondary: null
       id_condition: null
       recolor_of: null
+    - id: 1856
+      id_hero: 14
+      id_category: 12
+      id_season: 21
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/VOIDWALKER.webp
+      rarity: legendary
+      name: Voidwalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
