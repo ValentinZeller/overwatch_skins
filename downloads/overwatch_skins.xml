@@ -806,7 +806,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="140" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1625" Avg_row_length="151" Data_length="245760" Max_data_length="0" Index_length="360448" Data_free="0" Auto_increment="1857" Create_time="2026-03-10 18:34:03" Update_time="2026-03-31 21:29:47" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1624" Avg_row_length="151" Data_length="245760" Max_data_length="0" Index_length="360448" Data_free="0" Auto_increment="1857" Create_time="2026-03-10 18:34:03" Update_time="2026-04-07 21:07:11" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -13414,7 +13414,7 @@
 		<field name="year" xsi:nil="true" />
 		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/HARMONIOUS.webp</field>
 		<field name="rarity">epic</field>
-		<field name="name">Harmonios</field>
+		<field name="name">Harmonious</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
 		<field name="recolor_of" xsi:nil="true" />
@@ -21980,7 +21980,7 @@
 		<field name="id_season">21</field>
 		<field name="year" xsi:nil="true" />
 		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/HOP_ONLINE!.webp</field>
-		<field name="rarity">legendary</field>
+		<field name="rarity">mythic</field>
 		<field name="name">Hop Online!</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
