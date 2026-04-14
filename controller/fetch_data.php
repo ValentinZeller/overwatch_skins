@@ -47,7 +47,7 @@ if ($version == 'base') {
     $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
     $categoryList = initialValue('all_category','main',[$categoryManager,'getListeCategory']);
     $seasonList = initialValue('season','main',[$seasonManager,'getListeSeason']);
-    $rarityList = ['common','rare','epic','legendary','mythic'];
+    $rarityList = ['common','rare','epic','legendary','exclusive','mythic'];
     $chapterList = initialValue('chapter',$version,[$chapterManager,'getListeChapter']);
 }
 

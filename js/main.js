@@ -14,6 +14,7 @@ let rareBar = localStorage.getItem('rare') === 'true' ? true : null;
 let epicBar = localStorage.getItem('epic') === 'true' ? true : null;
 let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : null;
 let mythicBar = localStorage.getItem('mythic') === 'true' ? true : null;
+let exclusiveBar = localStorage.getItem('exclusive') === 'true' ? true : null;
 let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : null;
 let displayRecolors = localStorage.getItem('displayRecolors') === 'true' ? true : null;
 let recent = localStorage.getItem('recent') === 'true' ? true : null;
@@ -30,6 +31,10 @@ if (document.querySelector('[data-rarity="rare"]') != null) {
 if (document.querySelector('[data-rarity="mythic"]') != null) {
     document.querySelector('[data-rarity="mythic"]').checked = mythicBar
     updateBarVisibility(mythicBar, 'mythic');
+}
+if (document.querySelector('[data-rarity="exclusive"') != null) {
+    document.querySelector('[data-rarity="exclusive"').checked = exclusiveBar
+    updateBarVisibility(exclusiveBar, 'exclusive')
 }
 
 document.getElementById('categories-colors').checked = categoriesColor

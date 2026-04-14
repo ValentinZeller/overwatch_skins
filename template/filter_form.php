@@ -8,7 +8,7 @@ if ($version == 'base' || $version == 'season') {
     $mainCategoryList = $categoryList;
 } else {
     foreach ($categoryList as $category) {
-        if ($category['display_main_order'] == null) {
+        if ($category['display_main_order'] == null && $category['name'] != 'Exclusive') {
             $legacyCategoryList[] = $category;
         } else {
             $mainCategoryList[] = $category;

@@ -22,7 +22,7 @@
         <a class="static" href="image/Legacy_Skins.webp" target="_blank">Legacy Skins Static Recap</a>
         <a class="static" href="image/Base_Skins.webp" target="_blank">Basic Skins Static Recap</a>
         <a class="static" href="image/All_Skins.webp" target="_blank">All Skins Static Recap</a>
-        <a href="image/Season_Skins.webp">Season Skins Static Recap</a>
+        <a class="static" href="image/Season_Skins.webp">Season Skins Static Recap</a>
     </div>
     <p>Visualization of skins distribution in Overwatch with settings and filters to customize the visual.</p>
     <p>Report issues or suggest features on <a href="https://github.com/ValentinZeller/overwatch_skins/issues">GitHub</a></p>

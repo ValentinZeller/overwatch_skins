@@ -65,7 +65,7 @@
                 LEFT JOIN hero ON skin.id_hero = hero.id
                 LEFT JOIN season ON skin.id_season = season.id
                 LEFT JOIN category ON skin.id_category = category.id
-                WHERE skin.id_season IS NOT NULL
+                WHERE skin.id_season IS NOT NULL AND id_category != 19
                 ORDER BY hero.name, category_name, skin.name';
         $stmt = $this->_db->prepare($req);
         $stmt->execute();

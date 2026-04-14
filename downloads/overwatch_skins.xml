@@ -10,7 +10,7 @@
 		<key Table="category" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="18" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="category" Non_unique="1" Key_name="display_ow1" Seq_in_index="1" Column_name="display_legacy_order" Collation="A" Cardinality="11" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="category" Non_unique="1" Key_name="display_ow2" Seq_in_index="1" Column_name="display_main_order" Collation="A" Cardinality="11" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="category" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="18" Avg_row_length="910" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="19" Create_time="2026-03-17 15:04:03" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="category" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="18" Avg_row_length="910" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="20" Create_time="2026-03-17 15:04:03" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="category">
 	<row>
@@ -139,6 +139,13 @@
 		<field name="display_legacy_order" xsi:nil="true" />
 		<field name="display_main_order">6</field>
 	</row>
+	<row>
+		<field name="id">19</field>
+		<field name="name">Exclusive</field>
+		<field name="icon_url" xsi:nil="true" />
+		<field name="display_legacy_order" xsi:nil="true" />
+		<field name="display_main_order" xsi:nil="true" />
+	</row>
 	</table_data>
 	<table_structure name="chapter">
 		<field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
@@ -222,7 +229,7 @@
 		<field Field="release_date" Type="date" Null="NO" Key="" Default="curdate()" Extra="DEFAULT_GENERATED" Comment="" />
 		<field Field="portrait_url" Type="text" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="hero" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="50" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="hero" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="50" Avg_row_length="327" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="51" Create_time="2026-03-04 14:32:17" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="hero" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="50" Avg_row_length="327" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="52" Create_time="2026-03-04 14:32:17" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="hero">
 	<row>
@@ -625,6 +632,14 @@
 		<field name="release_date">2026-02-10</field>
 		<field name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mizuki.webp</field>
 	</row>
+	<row>
+		<field name="id">51</field>
+		<field name="name">Sierra</field>
+		<field name="role">damage</field>
+		<field name="subrole">flanker</field>
+		<field name="release_date">2026-04-14</field>
+		<field name="portrait_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sierra.webp</field>
+	</row>
 	</table_data>
 	<table_structure name="season">
 		<field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
@@ -634,7 +649,7 @@
 		<field Field="id_chapter" Type="int" Null="YES" Key="MUL" Extra="" Comment="" />
 		<key Table="season" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="21" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="season" Non_unique="1" Key_name="id_chapter" Seq_in_index="1" Column_name="id_chapter" Collation="A" Cardinality="2" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="season" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="21" Avg_row_length="780" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="22" Create_time="2026-03-04 14:32:22" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="season" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="21" Avg_row_length="780" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="23" Create_time="2026-03-04 14:32:22" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="season">
 	<row>
@@ -784,6 +799,13 @@
 		<field name="end_date">2026-04-14</field>
 		<field name="id_chapter">1</field>
 	</row>
+	<row>
+		<field name="id">22</field>
+		<field name="name">S2: Summit</field>
+		<field name="start_date">2026-04-14</field>
+		<field name="end_date">2026-06-15</field>
+		<field name="id_chapter">1</field>
+	</row>
 	</table_data>
 	<table_structure name="skin">
 		<field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
@@ -806,7 +828,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="140" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1624" Avg_row_length="151" Data_length="245760" Max_data_length="0" Index_length="360448" Data_free="0" Auto_increment="1857" Create_time="2026-03-10 18:34:03" Update_time="2026-04-07 21:07:11" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1668" Avg_row_length="147" Data_length="245760" Max_data_length="0" Index_length="360448" Data_free="0" Auto_increment="1907" Create_time="2026-03-10 18:34:03" Update_time="2026-04-14 19:39:38" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -22101,6 +22123,656 @@
 		<field name="name">Voidwalker</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1857</field>
+		<field name="id_hero">7</field>
+		<field name="id_category">19</field>
+		<field name="id_season">21</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/FERIA_SHEN.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Feria Shen</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1858</field>
+		<field name="id_hero">10</field>
+		<field name="id_category">19</field>
+		<field name="id_season">21</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SHAYOL_WEI.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Shayol Wei</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1859</field>
+		<field name="id_hero">27</field>
+		<field name="id_category">19</field>
+		<field name="id_season">21</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/YUESHAN.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Yueshan</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1860</field>
+		<field name="id_hero">44</field>
+		<field name="id_category">19</field>
+		<field name="id_season">21</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/WUCHEN.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Wuchen</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1861</field>
+		<field name="id_hero">38</field>
+		<field name="id_category">19</field>
+		<field name="id_season">21</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/VIPER_NING.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Viper Ning</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1862</field>
+		<field name="id_hero">38</field>
+		<field name="id_category">19</field>
+		<field name="id_season">21</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/SCARLET_BRIDE_VIPER.webp</field>
+		<field name="rarity">exclusive</field>
+		<field name="name">Scarlet Bride Viper</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1863</field>
+		<field name="id_hero">7</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/FLAMEBOUND.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Flamebound</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">412</field>
+	</row>
+	<row>
+		<field name="id">1864</field>
+		<field name="id_hero">7</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/RAINY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rainy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1865</field>
+		<field name="id_hero">8</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/CRIMSON_COURT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Crimson Court</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1866</field>
+		<field name="id_hero">29</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/RAINY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rainy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1867</field>
+		<field name="id_hero">15</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junker_Queen/KANHIZAKURA.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Kanhizakura</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1868</field>
+		<field name="id_hero">47</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Emre/KANHIZAKURA.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Kanhizakura</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1869</field>
+		<field name="id_hero">21</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/CLOUDY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Cloudy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1548</field>
+	</row>
+	<row>
+		<field name="id">1870</field>
+		<field name="id_hero">32</field>
+		<field name="id_category">8</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/VOLTED_OVERDRIVE.webp</field>
+		<field name="rarity">mythic</field>
+		<field name="name">Volted Overdrive</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1871</field>
+		<field name="id_hero">32</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/FLAMEBOUND.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Flamebound</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">431</field>
+	</row>
+	<row>
+		<field name="id">1872</field>
+		<field name="id_hero">34</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/SPRING_FAIRY.webp</field>
+		<field name="rarity">epic</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1873</field>
+		<field name="id_hero">35</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/SPRING_FAIRY.webp</field>
+		<field name="rarity">epic</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1874</field>
+		<field name="id_hero">2</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/SPRING_FAIRY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1875</field>
+		<field name="id_hero">6</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/FORCE_FIGHTER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Force Fighter</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1441</field>
+	</row>
+	<row>
+		<field name="id">1876</field>
+		<field name="id_hero">12</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/FORCE_FIGHTER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Force Fighter</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1546</field>
+	</row>
+	<row>
+		<field name="id">1877</field>
+		<field name="id_hero">12</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/SAKURA.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Sakura</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1878</field>
+		<field name="id_hero">38</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/CRIMSON_COURT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Crimson Court</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1879</field>
+		<field name="id_hero">48</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Anran/CRIMSON_COURT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Crimson Court</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1880</field>
+		<field name="id_hero">48</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Anran/RAINY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rainy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1881</field>
+		<field name="id_hero">11</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/SAKURA.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Sakura</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1882</field>
+		<field name="id_hero">36</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/FLAMEBOUND.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Flamebound</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">404</field>
+	</row>
+	<row>
+		<field name="id">1883</field>
+		<field name="id_hero">36</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/SPRING_FAIRY.webp</field>
+		<field name="rarity">epic</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1884</field>
+		<field name="id_hero">9</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/SPRING_FAIRY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1885</field>
+		<field name="id_hero">10</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/RAINY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rainy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1886</field>
+		<field name="id_hero">10</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SAKURA.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Sakura</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1887</field>
+		<field name="id_hero">25</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/CRIMSON_COURT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Crimson Court</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1888</field>
+		<field name="id_hero">33</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/RAINY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rainy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1889</field>
+		<field name="id_hero">1</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/FORCE_FIGHTER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Force Fighter</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">20</field>
+	</row>
+	<row>
+		<field name="id">1890</field>
+		<field name="id_hero">49</field>
+		<field name="id_category">18</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Jetpack_Cat/PANDA.webp</field>
+		<field name="rarity">epic</field>
+		<field name="name">Panda</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition">9</field>
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1891</field>
+		<field name="id_hero">43</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/CLOUDY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Cloudy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1540</field>
+	</row>
+	<row>
+		<field name="id">1892</field>
+		<field name="id_hero">43</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/CRIMSON_COURT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Crimson Court</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1893</field>
+		<field name="id_hero">18</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/SPRING_FAIRY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1894</field>
+		<field name="id_hero">22</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/CLOUDY_DAY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Cloudy Day</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1549</field>
+	</row>
+	<row>
+		<field name="id">1895</field>
+		<field name="id_hero">22</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/FLAMEBOUND.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Flamebound</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">409</field>
+	</row>
+	<row>
+		<field name="id">1896</field>
+		<field name="id_hero">23</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/SPRING_FAIRY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1897</field>
+		<field name="id_hero">14</field>
+		<field name="id_category">18</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/SPRING_FAIRY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition">10</field>
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1898</field>
+		<field name="id_hero">17</field>
+		<field name="id_category">12</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SAKURA.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Sakura</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1899</field>
+		<field name="id_hero">44</field>
+		<field name="id_category">17</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/STADIUM_ALL-STAR.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Stadium All-Star</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1900</field>
+		<field name="id_hero">44</field>
+		<field name="id_category">3</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/SPRING_FAIRY.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Spring Fairy</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1901</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">16</field>
+		<field name="id_season" xsi:nil="true" />
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/OVERWATCH.webp</field>
+		<field name="rarity">common</field>
+		<field name="name">Overwatch</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1902</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">16</field>
+		<field name="id_season" xsi:nil="true" />
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/BLACK_CANYON.webp</field>
+		<field name="rarity">rare</field>
+		<field name="name">Black Canyon</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1903</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">16</field>
+		<field name="id_season" xsi:nil="true" />
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/SHENANDOAH.webp</field>
+		<field name="rarity">rare</field>
+		<field name="name">Shenandoah</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1904</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">16</field>
+		<field name="id_season" xsi:nil="true" />
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/WHITE_SANDS.webp</field>
+		<field name="rarity">rare</field>
+		<field name="name">White Sands</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1905</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">16</field>
+		<field name="id_season" xsi:nil="true" />
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/YELLOWSTONE.webp</field>
+		<field name="rarity">rare</field>
+		<field name="name">Yellowstone</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1906</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">18</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/PAINTER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Painter</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition">10</field>
 		<field name="recolor_of" xsi:nil="true" />
 	</row>
 	</table_data>

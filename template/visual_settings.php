@@ -1,5 +1,5 @@
 <div class="visual-settings">
-    <span id='show-hide-text'>Show/Hide Rarity bar : </span>
+    <span id='show-hide-text'>Toggle Rarity : </span>
     <?php foreach ($rarities as $rarity): ?>
         <label class="<?= $rarity ?>-skin rarity">
             <?= $rarity ?>

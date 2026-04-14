@@ -18,6 +18,7 @@ id,name,icon_url,display_legacy_order,display_main_order
 16,Base,https://foxyjr.cloudns.ph/overwatch_skins/image/category/base.webp,null,null
 17,Competitive,https://foxyjr.cloudns.ph/overwatch_skins/image/category/competitive.webp,null,8
 18,Bundle Special,null,null,6
+19,Exclusive,null,null,null
 
 chapter:
 id,name,start_date
@@ -91,6 +92,7 @@ id,name,role,subrole,release_date,portrait_url
 48,Anran,damage,flanker,10/02/2026,https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Anran.webp
 49,Jetpack Cat,support,tactician,10/02/2026,https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Jetpack_Cat.webp
 50,Mizuki,support,survivor,10/02/2026,https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Mizuki.webp
+51,Sierra,damage,flanker,14/04/2026,https://foxyjr.cloudns.ph/overwatch_skins/image/hero_portrait/Icon-Sierra.webp
 
 season:
 id,name,start_date,end_date,id_chapter
@@ -115,6 +117,7 @@ id,name,start_date,end_date,id_chapter
 19,Season 19: Haunted Masquerade,14/10/2025,09/12/2025,null
 20,Season 20: Vendetta,09/12/2025,09/02/2026,null
 21,S1: Conquest,10/02/2026,14/04/2026,1
+22,S2: Summit,14/04/2026,15/06/2026,1
 
 skin:
 id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondary,id_condition,recolor_of
@@ -1756,3 +1759,53 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1854,44,15,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/9S.webp,legendary,9S,null,null,null
 1855,44,9,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/ELYSIAN_KEEPER.webp,legendary,Elysian Keeper,null,null,null
 1856,14,12,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/VOIDWALKER.webp,legendary,Voidwalker,null,null,null
+1857,7,19,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/FERIA_SHEN.webp,legendary,Feria Shen,null,null,null
+1858,10,19,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SHAYOL_WEI.webp,legendary,Shayol Wei,null,null,null
+1859,27,19,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/YUESHAN.webp,legendary,Yueshan,null,null,null
+1860,44,19,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/WUCHEN.webp,legendary,Wuchen,null,null,null
+1861,38,19,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/VIPER_NING.webp,legendary,Viper Ning,null,null,null
+1862,38,19,21,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/SCARLET_BRIDE_VIPER.webp,exclusive,Scarlet Bride Viper,null,null,null
+1863,7,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/FLAMEBOUND.webp,legendary,Flamebound,null,null,412
+1864,7,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
+1865,8,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Doomfist/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
+1866,29,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
+1867,15,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junker_Queen/KANHIZAKURA.webp,legendary,Kanhizakura,null,null,null
+1868,47,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Emre/KANHIZAKURA.webp,legendary,Kanhizakura,null,null,null
+1869,21,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/CLOUDY_DAY.webp,legendary,Cloudy Day,null,null,1548
+1870,32,8,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/VOLTED_OVERDRIVE.webp,mythic,Volted Overdrive,null,null,null
+1871,32,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/FLAMEBOUND.webp,legendary,Flamebound,null,null,431
+1872,34,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/SPRING_FAIRY.webp,epic,Spring Fairy,null,null,null
+1873,35,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/SPRING_FAIRY.webp,epic,Spring Fairy,null,null,null
+1874,2,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ashe/SPRING_FAIRY.webp,legendary,Spring Fairy,null,null,null
+1875,6,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/FORCE_FIGHTER.webp,legendary,Force Fighter,null,null,1441
+1876,12,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/FORCE_FIGHTER.webp,legendary,Force Fighter,null,null,1546
+1877,12,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/SAKURA.webp,legendary,Sakura,null,null,null
+1878,38,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
+1879,48,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Anran/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
+1880,48,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Anran/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
+1881,11,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/SAKURA.webp,legendary,Sakura,null,null,null
+1882,36,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/FLAMEBOUND.webp,legendary,Flamebound,null,null,404
+1883,36,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/SPRING_FAIRY.webp,epic,Spring Fairy,null,null,null
+1884,9,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Echo/SPRING_FAIRY.webp,legendary,Spring Fairy,null,null,null
+1885,10,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
+1886,10,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SAKURA.webp,legendary,Sakura,null,null,null
+1887,25,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
+1888,33,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
+1889,1,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/FORCE_FIGHTER.webp,legendary,Force Fighter,null,null,20
+1890,49,18,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Jetpack_Cat/PANDA.webp,epic,Panda,null,9,null
+1891,43,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/CLOUDY_DAY.webp,legendary,Cloudy Day,null,null,1540
+1892,43,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
+1893,18,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/SPRING_FAIRY.webp,legendary,Spring Fairy,null,null,null
+1894,22,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/CLOUDY_DAY.webp,legendary,Cloudy Day,null,null,1549
+1895,22,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/FLAMEBOUND.webp,legendary,Flamebound,null,null,409
+1896,23,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Moira/SPRING_FAIRY.webp,legendary,Spring Fairy,null,null,null
+1897,14,18,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Illari/SPRING_FAIRY.webp,legendary,Spring Fairy,null,10,null
+1898,17,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SAKURA.webp,legendary,Sakura,null,null,null
+1899,44,17,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/STADIUM_ALL-STAR.webp,legendary,Stadium All-Star,null,null,null
+1900,44,3,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/SPRING_FAIRY.webp,legendary,Spring Fairy,null,null,null
+1901,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/OVERWATCH.webp,common,Overwatch,null,null,null
+1902,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/BLACK_CANYON.webp,rare,Black Canyon,null,null,null
+1903,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/SHENANDOAH.webp,rare,Shenandoah,null,null,null
+1904,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/WHITE_SANDS.webp,rare,White Sands,null,null,null
+1905,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/YELLOWSTONE.webp,rare,Yellowstone,null,null,null
+1906,51,18,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/PAINTER.webp,legendary,Painter,null,10,null
