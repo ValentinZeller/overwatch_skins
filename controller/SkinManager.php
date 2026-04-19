@@ -14,7 +14,7 @@
     }
 
     public function getListeSkin() {
-      $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.year, skin.id_season, condition_special.name AS condition_name, skin.recolor_of
+      $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, category.name AS category_column, skin.year, skin.id_season, condition_special.name AS condition_name, skin.recolor_of
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN season ON skin.id_season = season.id
@@ -28,7 +28,7 @@
     }
 
     public function getOWSkin($version = 'main', $base = false) {
-      $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.year, skin.id_season, category.name AS category_name, condition_special.name AS condition_name, skin.recolor_of
+      $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.year, skin.id_season, category.name AS category_name, category.name AS category_column, condition_special.name AS condition_name, skin.recolor_of
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN category ON skin.id_category = category.id
@@ -48,7 +48,7 @@
     }
     
     public function getBaseSkin() {
-        $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, skin.rarity AS category_name, skin.recolor_of
+        $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity AS rarity, skin.image_url, skin.rarity AS category_column, category.name AS category_name, skin.recolor_of
                 FROM skin
                 LEFT JOIN hero ON skin.id_hero = hero.id
                 LEFT JOIN category ON skin.id_category = category.id
@@ -60,7 +60,7 @@
     }
 
     public function getSeasonSkin() {
-                $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, season.name AS category_name, category.name as season_category,skin.id_season, skin.recolor_of, category.icon_url as category_icon_url
+                $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, season.name AS category_column, skin.id_season, skin.recolor_of, category.icon_url as category_icon_url
                 FROM skin
                 LEFT JOIN hero ON skin.id_hero = hero.id
                 LEFT JOIN season ON skin.id_season = season.id
@@ -152,7 +152,7 @@
             return $result;
         }
         foreach ($array as $item) {
-            if ($item['hero_name'] === $heroName && $item['category_name'] === $categoryName) {
+            if ($item['hero_name'] === $heroName && $item['category_column'] === $categoryName) {
                 $result[] = $item;
             }
         }

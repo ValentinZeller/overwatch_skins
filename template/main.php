@@ -9,7 +9,7 @@
     <title>Overwatch Skins</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="icon" type="image/x-icon" href="image/logo.webp">
-    <?php echo template('template/category_color.php', ['categories' => $categories, 'maxSkinCategory' => $maxSkinCategory]); ?>
+    <?php echo template('template/category_color.php', ['categories' => $columnCategories, 'maxSkinCategory' => $maxSkinCategory]); ?>
 </head>
 <body>
     <div id="open-setting" onclick="openSettings()">&#9881;</div>
@@ -45,13 +45,13 @@
     <?php
     echo template('template/category.php', [
         'maxSkinCategory' => $maxSkinCategory,
-        'categories' => $categories
+        'categories' => $columnCategories
     ]);
 
     foreach ($heroes as $hero) {
         echo template('template/hero_skin.php', [
             'hero' => $hero,
-            'categories' => $categories,
+            'categories' => $columnCategories,
             'skinData' => $skins,
             'maxSkinCategory' => $maxSkinCategory,
             'rarities' => $rarities,
@@ -59,7 +59,7 @@
         ]);
     }
     echo template('template/total.php', [
-        'categories' => $categories,
+        'categories' => $columnCategories,
         'maxSkinCategory' => $maxSkinCategory,
         'skinData' => $skins,
         'manager' => $skinManager,
@@ -68,7 +68,7 @@
 
     echo template('template/category.php', [
         'maxSkinCategory' => $maxSkinCategory,
-        'categories' => $categories
+        'categories' => $columnCategories
     ]);
     ?>
     </div>

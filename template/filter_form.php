@@ -4,9 +4,7 @@ $mainCategoryList = [];
 $legacySeasonList = [];
 $chapteredSeasonList = []; 
 
-if ($version == 'base' || $version == 'season') {
-    $mainCategoryList = $categoryList;
-} else {
+if ($version != 'base') {
     foreach ($categoryList as $category) {
         if ($category['display_main_order'] == null && $category['name'] != 'Exclusive') {
             $legacyCategoryList[] = $category;
@@ -52,7 +50,7 @@ if ($version == 'main' || $version == null || $version == 'season') {
                         <?php endforeach; ?>
                     </details>
                 <?php endif; ?>
-                <?php if ($version == 'main' || $version == null): ?>
+                <?php if ($version == 'main' || $version == null || $version == 'season'): ?>
                     <details name="category" open>
                         <summary>Categories</summary>
                         <?php foreach ($mainCategoryList as $category): ?>

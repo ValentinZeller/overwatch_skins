@@ -31,8 +31,8 @@
                                     <?php if ($skin['category_icon_url']): ?>
                                         <img loading="lazy" class="category-icon" src="<?= $skin['category_icon_url'] ?>">
                                     <?php elseif (!$skin['category_icon_url']): ?>
-                                        <?php $skin['season_category'] = substr($skin['season_category'],0,6) ?>
-                                        <span title="<?= $skin['season_category']?>" data-category="<?= $skin['season_category'] ?>" class="item season-category"><?= $skin['season_category'] ?></span>
+                                        <?php $skin['category_name'] = substr($skin['category_name'],0,6) ?>
+                                        <span title="<?= $skin['category_name']?>" data-category="<?= $skin['category_name'] ?>" class="item season-category"><?= $skin['category_name'] ?></span>
                                     <?php endif; ?>
                                 <?php endif; ?>
                             </div>

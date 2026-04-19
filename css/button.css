@@ -41,6 +41,7 @@ button.select-hero {
     background-color: #575757;
     border-radius: 5px;
     padding: 5px 10px;
+    z-index: 1;
 }
 
 #form-button {

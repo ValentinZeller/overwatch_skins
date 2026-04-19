@@ -13,20 +13,19 @@ $filtered = ['hero' => false, 'category' => false, 'rarity' => false, 'season' =
 setupArrayByFilter('hero', $heroes, $heroList, $filtered, $heroList);
 setupArrayByFilter('category', $categories, $categoryList, $filtered, $categoryList);
 setupArrayByFilter('rarity', $rarities, $rarityList, $filtered);
+
+$columnCategories = $categories;
 if ($version == 'base') {
-    $temp = NULL;
-    setupArrayByFilter('rarity', $temp, $rarityList, $filtered);
-    $categories = raritiesAsCategory($temp);
-}
-if ($version == 'main' || $version == 'season') {
+    $columnCategories = raritiesAsCategory($rarities);
+} else if ($version == 'main') {
     $seasonIdList = array_map(function($season) { return $season['id']; }, $seasonList);
     setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
-    if ($version == 'season') {
-        $temp = NULL;
-        array_reverse($seasonList);
-        setupArrayByFilter('season', $temp, array_reverse($seasonList), $filtered, array_reverse($seasonList));
-        $categories = seasonsAsCategory($temp);
-    }
+} else if ($version == 'season') {
+    $seasonIdList = array_map(function($season) { return $season['id']; }, $seasonList);
+    setupArrayByFilter('season', $seasons, $seasonIdList, $filtered);
+    $temp = NULL;
+    setupArrayByFilter('season', $temp, $seasonList, $filtered, $seasonList, 'id');
+    $columnCategories = seasonsAsCategory(array_reverse($temp));
 } else if ($version == 'legacy') {
     setupArrayByFilter('year', $yearsSelected, YEARS, $filtered);
 } else if ($version == null) {
@@ -58,7 +57,7 @@ if (isset($_GET['recolor-only'])) {
 }
 
 filterSkin($skinData, $version, $heroes, $categories, $rarities, $seasons, $yearsSelected, $skins);
-$maxSkinCategory = getMaxSkinCategory($categoryList, $heroList, $skins, $skinManager);
+$maxSkinCategory = getMaxSkinCategory($columnCategories, $heroes, $skins, $skinManager);
 
 function getMaxSkinCategory($categories, $heroes, $skins, $manager) {
     $maxSkinCategory = [];
@@ -72,12 +71,12 @@ function getMaxSkinCategory($categories, $heroes, $skins, $manager) {
     return $maxSkinCategory;
 }
 
-function setupArrayByFilter($key, &$array, $defaut, &$filtered, $list = null) {
+function setupArrayByFilter($key, &$array, $defaut, &$filtered, $list = null, $column = 'name') {
     if (isset($_GET[$key])) {
         $filtered[$key] = true;
         foreach ($_GET[$key] as $value) {
             if ($list) {
-                $array[] = $list[array_search($value, array_column($list, 'name'))];
+                $array[] = $list[array_search($value, array_column($list, $column))];
             } else {
                 $array[] = $value;
             }
@@ -94,8 +93,8 @@ function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seaso
             in_array($skin['category_name'], array_column($categories, 'name')) &&
             in_array($skin['rarity'], $rarities) &&
             ( (($version == 'legacy' || $version == null) && in_array($skin['year'], $yearsSelected)) ||
-            (($version == 'main' || $version == null  || $version == 'season') && in_array($skin['id_season'], $seasons)) || 
-            ($version == 'base' || $version == null ) )
+            (($version == 'main' || $version == null || $version == 'season') && in_array($skin['id_season'], $seasons)) || 
+            ($version == 'base' || $version == null ))
             ) {
                 $skins[] = $skin;
             }
@@ -103,5 +102,32 @@ function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seaso
     } else {
         $skins = $skinData;
     }
+}
+
+function raritiesAsCategory($rarityList) {
+    $rarities = array();
+    foreach ($rarityList as $index => $rarity) {
+        $rarities[$index] = array(
+            'id' => $index + 1,
+            'name' => $rarity,
+            'icon_url' => null,
+            'display_order' => $index + 1,
+        );
+    }
+    return $rarities;
+}
+
+function seasonsAsCategory($seasonList) {
+    $seasons = array();
+    foreach ($seasonList as $index => $season) {
+        $seasons[$index] = array(
+            'id' => $season['id'],
+            'name' => $season['name'],
+            'icon_url' => null,
+            'display_order' => $index,
+            'start_date' => $season['start_date']
+        );
+    }
+    return $seasons;
 }
 ?>

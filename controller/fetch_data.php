@@ -20,7 +20,7 @@ if ($version == 'base') {
     $skinData = initialValue('base_skin','main',[$skinManager,'getBaseSkin']);
     $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
     $rarityList = ['common','rare','epic','legendary'];
-    $categoryList = raritiesAsCategory($rarityList);
+    $categoryList[] = ['name' => 'Base'];
     $seasonList = null;
     $chapterList = null;
 } else if ($version == 'season') {
@@ -29,7 +29,7 @@ if ($version == 'base') {
     $seasonList = initialValue('season','main',[$seasonManager,'getListeSeason']);
     $chapterList = initialValue('chapter','main',[$chapterManager,'getListeChapter']);
     $rarityList = ['rare','epic','legendary','mythic'];
-    $categoryList = seasonsAsCategory($seasonList);
+    $categoryList = initialValue('category','main',[$categoryManager,'getCategoryOW']);
 } else if ($version != null ) {
     $skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
     $heroList = initialValue('hero',$version,[$heroManager,'getListeHero']);
@@ -64,33 +64,6 @@ function initialValue($type,$version,$fetchFunction) {
         file_put_contents(CACHE_PATH.$type.'_'.$version.'.php', '<?php return ' . var_export($list, true) . ';');
     }
     return $list;
-}
-
-function raritiesAsCategory($rarityList) {
-    $rarities = array();
-    foreach ($rarityList as $index => $rarity) {
-        $rarities[$index] = array(
-            'id' => $index + 1,
-            'name' => $rarity,
-            'icon_url' => null,
-            'display_order' => $index + 1,
-        );
-    }
-    return $rarities;
-}
-
-function seasonsAsCategory($seasonList) {
-    $seasons = array();
-    foreach ($seasonList as $index => $season) {
-        $seasons[$index] = array(
-            'id' => $season['id'],
-            'name' => $season['name'],
-            'icon_url' => null,
-            'display_order' => $index,
-            'start_date' => $season['start_date']
-        );
-    }
-    return $seasons;
 }
 
 ?>
