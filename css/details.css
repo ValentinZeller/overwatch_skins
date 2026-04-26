@@ -9,5 +9,6 @@ details {
 }
 
 #legacy-season {
-    columns: 2;
+    column-count: 2;
+    column-gap: 0px;
 }

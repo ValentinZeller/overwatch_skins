@@ -2,7 +2,8 @@
 $legacyCategoryList = [];
 $mainCategoryList = [];
 $legacySeasonList = [];
-$chapteredSeasonList = []; 
+$chapteredSeasonList = [];
+$roleList = ['tank','damage','support'];
 
 if ($version != 'base') {
     foreach ($categoryList as $category) {
@@ -70,12 +71,18 @@ if ($version == 'main' || $version == null || $version == 'season') {
                 <button type="button" class='select-hero' onclick="selectRole('damage')">Select Damages</button>
                 <button type="button" class='select-hero' onclick="selectRole('support')">Select Supports</button>
             </div>
-            <?php foreach ($heroList as $hero): ?>
-                <?php if ( $version == 'legacy' && $hero['name'] == 'Doomfist') { $hero['role'] = 'damage'; } ?><!-- Doomfist role fix -->
-                <label class="hero" <?= ($version != 'legacy') ? 'style="color:var(--'.$hero['subrole'].');"' : '' ?>>
-                    <input type="checkbox" data-role="<?= $hero['role'] ?>" name="hero[]" value="<?= $hero['name'] ?>" <?php echo (in_array($hero['name'], array_column($heroes, 'name'))&&$filtered['hero'] ? "checked" : "") ?>>
-                    <img width="50px" src="<?= $hero['portrait_url'] ?>">
-                </label>
+            <?php foreach ($roleList as $role): ?>
+                <div class="role" id="<?php $role ?>">
+                    <?php foreach ($heroList as $hero): ?>
+                        <?php if ( $version == 'legacy' && $hero['name'] == 'Doomfist') { $hero['role'] = 'damage'; /*Doomfist role fix */ } ?>
+                        <?php if ($hero['role'] == $role): ?>
+                            <label class="hero" <?= ($version != 'legacy') ? 'style="color:var(--'.$hero['subrole'].');"' : '' ?>>
+                                <input type="checkbox" data-role="<?= $hero['role'] ?>" name="hero[]" value="<?= $hero['name'] ?>" <?php echo (in_array($hero['name'], array_column($heroes, 'name'))&&$filtered['hero'] ? "checked" : "") ?>>
+                                <img src="<?= $hero['portrait_url'] ?>">
+                            </label>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </div>
             <?php endforeach; ?>
         </div>
         <div class="season-filter filter-section">

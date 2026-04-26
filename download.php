@@ -30,7 +30,6 @@
         <li><a href="downloads/hero.zip" target="_blank">All Skins</a></li>
         <li><a href="downloads/hero_portrait.zip" target="_blank">All Heroes Portraits</a></li>
         <li><a href="downloads/category.zip" target="_blank">All Categories Icons</a></li>
-        <li><a href="downloads/rarity.zip" target="_blank">All Rarities Icons</a></li>
     </ul>
     <h2>Database</h2>
     <ul class="download-list">

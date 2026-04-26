@@ -21,7 +21,11 @@ input[type=checkbox] {
 }
 
 .hero-filter {
-    width: 650px;
+    width: 725px;
+
+    .hero img {
+        width: 45px;
+    }
 }
 
 .season-filter {
