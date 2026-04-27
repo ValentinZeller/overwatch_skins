@@ -67,3 +67,118 @@
 
 
 }
+
+#skin-topbar {
+    background-color: #046daa;
+    text-align: center;
+    padding: 5px;
+    color: rgb(219, 218, 218);
+
+    a {
+        color: rgb(203, 203, 203);
+
+        &:visited {
+            color: rgb(203, 203, 203);
+        }
+
+        &:hover {
+            color: white;
+        }
+
+    }
+
+
+}
+
+.hero-dialog {
+    background-color: rgb(0, 0, 0, 0.7);
+    border: none;
+    padding: 5%;
+    color: white;
+
+    #close-setting {
+        position: absolute;
+        right: 6px;
+        top: 0px;
+        font-size: 60px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+#change-hero {
+    text-decoration: underline;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+#skin-main {
+    display: flex;
+
+}
+
+#skin-selection {
+    background-color: #212537;
+    width: fit-content;
+    min-height: 100vh;
+    z-index: 1;
+
+    .skin-name {
+        label {
+            font-size: large;
+            border: inherit;
+            display: block;
+            margin: 5px;
+            padding: 5px 105px 5px 25px;
+
+            img {
+                width: 15px;
+            }
+        }
+
+        input {
+            appearance: none;
+            width: 1px;
+        }
+
+        &:hover,
+        &:has(input:focus),
+        &:has(input:active) {
+            background-color: #243e67;
+        }
+    }
+
+    a,
+    #change-hero {
+        text-align: center;
+        padding: 3%;
+        font-size: large;
+        display: block;
+        background-color: #212537;
+        color: rgb(162, 162, 162);
+
+        &:visited {
+            color: #6c7e9a
+        }
+
+        &:hover {
+            background-color: #243e67;
+            color: white;
+        }
+    }
+}
+
+#skin-display {
+    img {
+        z-index: 0;
+        width: 87%;
+        position: fixed;
+        top: -15px;
+        left: 200px;
+    }
+}

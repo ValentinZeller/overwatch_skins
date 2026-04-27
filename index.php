@@ -1,3 +1,4 @@
+<?php require_once('function.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +25,7 @@
         <a class="static" href="image/All_Skins.webp" target="_blank">All Skins Static Recap</a>
         <a class="static" href="image/Season_Skins.webp">Season Skins Static Recap</a>
     </div>
+    <?php include('template/hero_selection.php') ?>
     <p>Visualization of skins distribution in Overwatch with settings and filters to customize the visual.</p>
     <p>Report issues or suggest features on <a href="https://github.com/ValentinZeller/overwatch_skins/issues">GitHub</a></p>
     <footer>

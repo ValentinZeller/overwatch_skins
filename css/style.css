@@ -8,6 +8,7 @@
 @import url(button.css);
 @import url(details.css);
 @import url(settings.css);
+@import url(hero_selection.css);
 
 #main-page {
   text-align: center;

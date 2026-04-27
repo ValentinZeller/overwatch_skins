@@ -1,0 +1,26 @@
+#hero-selection {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px 90px;
+
+    a {
+        display: inline-block;
+        height: 45px;
+
+        img {
+            display: inline-block;
+            width: 45px;
+            background-color: rgba(0, 0, 0, 0.621);
+            border-radius: 5px;
+            border: 2px solid white;
+            overflow: hidden;
+
+            &:hover {
+                background-color: white;
+                transform: scale(1.5);
+                transition: 70ms 20ms ease
+            }
+        }
+    }
+}
