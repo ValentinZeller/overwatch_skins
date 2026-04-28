@@ -828,7 +828,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="8" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="140" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1668" Avg_row_length="147" Data_length="245760" Max_data_length="0" Index_length="360448" Data_free="0" Auto_increment="1907" Create_time="2026-03-10 18:34:03" Update_time="2026-04-14 19:39:38" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1629" Avg_row_length="150" Data_length="245760" Max_data_length="0" Index_length="360448" Data_free="0" Auto_increment="1940" Create_time="2026-03-10 18:34:03" Update_time="2026-04-28 18:20:45" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -22773,6 +22773,71 @@
 		<field name="name">Painter</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition">10</field>
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1935</field>
+		<field name="id_hero">20</field>
+		<field name="id_category">15</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/DRUID.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Druid</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1936</field>
+		<field name="id_hero">26</field>
+		<field name="id_category">15</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/MEPHISTO.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Mephisto</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1937</field>
+		<field name="id_hero">10</field>
+		<field name="id_category">15</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/ROGUE.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rogue</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1938</field>
+		<field name="id_hero">18</field>
+		<field name="id_category">15</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/WARLOCK.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Warlock</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1939</field>
+		<field name="id_hero">5</field>
+		<field name="id_category">15</field>
+		<field name="id_season">22</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/PALADIN.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Paladin</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
 		<field name="recolor_of" xsi:nil="true" />
 	</row>
 	</table_data>

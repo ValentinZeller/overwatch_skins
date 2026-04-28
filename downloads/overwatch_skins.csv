@@ -1809,3 +1809,8 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1904,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/WHITE_SANDS.webp,rare,White Sands,null,null,null
 1905,51,16,null,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/YELLOWSTONE.webp,rare,Yellowstone,null,null,null
 1906,51,18,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sierra/PAINTER.webp,legendary,Painter,null,10,null
+1935,20,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/DRUID.webp,legendary,Druid,null,null,null
+1936,26,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/MEPHISTO.webp,legendary,Mephisto,null,null,null
+1937,10,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/ROGUE.webp,legendary,Rogue,null,null,null
+1938,18,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/WARLOCK.webp,legendary,Warlock,null,null,null
+1939,5,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/PALADIN.webp,legendary,Paladin,null,null,null
