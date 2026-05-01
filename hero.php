@@ -96,7 +96,7 @@ function initialValueSkin($id,$skinManager) {
         <?php endforeach; ?>
     </div>
     <?php endif; ?>
-    <dialog id="hero" class="hero-dialog">
+    <dialog id="hero" class="hero-dialog" closedby="any">
         <?php include('template/hero_selection.php') ?>
         <div href="javascript:void(0)" id="close-setting" onclick="hero.close()">&times;</div>
     </dialog>
