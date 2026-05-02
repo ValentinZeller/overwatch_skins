@@ -159,6 +159,19 @@
         return $result;
     }
 
+    public function filterSkinByCategoryColumn($categoryName, $array) {
+        $result = [];
+        if ($array === null) {
+            return $result;
+        }
+        foreach ($array as $item) {
+            if ($item['category_column'] === $categoryName) {
+                $result[] = $item;
+            }
+        }
+        return $result;
+    }
+
     public function getSkinById($id) {
         $req = 'SELECT hero.name AS hero_name, skin.id_hero, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.recolor_of as recolor_of, skin2.name AS recolor_name, condition_special.name AS condition_name
               FROM skin

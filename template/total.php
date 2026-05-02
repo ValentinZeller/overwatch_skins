@@ -4,7 +4,7 @@
     <div class="row-header category-title">Total</div>
     <?php foreach ($categories as $category): ?>
         <?php
-            $filterSkin = $manager->filterSkinByCategory($category['name'], $skinData);
+            $filterSkin = $manager->filterSkinByCategoryColumn($category['name'], $skinData);
             $filterSkinCount = count($filterSkin);
             $nbColumn = getNbColumn($category, $maxSkinCategory);
         ?>
