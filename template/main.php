@@ -19,9 +19,9 @@
             <a href="index">Home ↗</a>
             <a href="main">Overwatch Skins ↗</a>
             <a href="legacy">Legacy Skins ↗</a>
-            <a href="base">Base Skin ↗</a>
+            <a href="base">Base Skins ↗</a>
             <a href="all">All Skins ↗</a>
-            <a href="season">Season ↗</a>
+            <a href="season">Seasons ↗</a>
             <a href="download">Download ↗</a>
             <?php echo template('template/visual_settings.php', ['rarities' => $rarityList, 'version' => $version]); ?>
             <?php echo template('template/filter_form.php', [

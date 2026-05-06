@@ -19112,3 +19112,58 @@
       id_category_secondary: null
       id_condition: 10
       recolor_of: null
+    - id: 1935
+      id_hero: 20
+      id_category: 15
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/DRUID.webp
+      rarity: legendary
+      name: Druid
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1936
+      id_hero: 26
+      id_category: 15
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/MEPHISTO.webp
+      rarity: legendary
+      name: Mephisto
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1937
+      id_hero: 10
+      id_category: 15
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/ROGUE.webp
+      rarity: legendary
+      name: Rogue
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1938
+      id_hero: 18
+      id_category: 15
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/WARLOCK.webp
+      rarity: legendary
+      name: Warlock
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1939
+      id_hero: 5
+      id_category: 15
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/PALADIN.webp
+      rarity: legendary
+      name: Paladin
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
