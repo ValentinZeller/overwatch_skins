@@ -16,12 +16,16 @@
                         <a target="_blank" href="skin.php?id=<?= $skin['id'] ?>">
                             <?php
                                 $skin['image_url'] = str_replace("'", "\'", $skin['image_url']);
+                                $image = renameFile($skin['image_url']);
+                                if (isset($_GET['hd'])) {
+                                    $image = $skin['image_url'];
+                                }
                             ?>
                             <div class="<?= split($filterSkinCount, $nbColumn) ?> <?= $skin['rarity'] ?> <?= $skin['recolor_of']? 'recolor' : ''  ?>" title="<?= $skin['skin_name'] ?>"
                                 <?php if (isset($_GET['screenshot'])): ?>
-                                    style="background-image: url('<?= renameFile($skin['image_url']) ?>');"
+                                    style="background-image: url('<?= $image ?>');"
                                 <?php else: ?>
-                                    data-bg="url('<?= renameFile($skin['image_url']) ?>')"
+                                    data-bg="url('<?= $image ?>')"
                                 <?php endif; ?>
                                 <?php if (isset($skin['id_season']) && $skin['id_season']):?> 
                                     data-recent="<?= number_format($skin['id_season']/21,3)?>"

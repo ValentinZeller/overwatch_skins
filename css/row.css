@@ -16,6 +16,11 @@
         background-position: 50% 0%;
     }
 
+    .zoom {
+        background-size: 300%;
+        background-position: 50% 15%;
+    }
+
     .category {
         height: var(--height)/2;
         background-repeat: no-repeat;

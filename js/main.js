@@ -111,6 +111,20 @@ function selectRole(role) {
     }
 }
 
+function selectDate(date) {
+    unselectHeroes();
+    let elmt = document.querySelectorAll('input[name="hero[]"][data-release-date]')
+    for (let i = 0; i < elmt.length; i++) {
+        if (date == 'legacy' && elmt[i].dataset.releaseDate < '2022-10-04') {
+            elmt[i].checked = true
+        } else if (date == 'main' && elmt[i].dataset.releaseDate >= '2022-10-04') {
+            elmt[i].checked = true
+        } else if (date == 'launch' && elmt[i].dataset.releaseDate == '2016-05-24') {
+            elmt[i].checked = true
+        }
+    }
+}
+
 function sortHeroes(parameter) {
     let container = document.getElementById('container');
     let category = document.getElementById('category');
@@ -152,5 +166,16 @@ function updateRecentness(recent) {
     document.querySelectorAll('[data-recent]').forEach(function (element) {
         let percent = recent ? parseFloat(element.dataset.recent).toFixed(3) * 100 : 100;
         element.style.filter = 'opacity(' + percent + '%)';
+    });
+}
+
+function updateZoom(zoom) {
+    document.querySelectorAll('.item').forEach(function (element) {
+        if (zoom) {
+            element.classList.add('zoom');
+        } else {
+            element.classList.remove('zoom');
+        }
+
     });
 }

@@ -18630,7 +18630,7 @@
       recolor_of: null
     - id: 1863
       id_hero: 7
-      id_category: 12
+      id_category: 9
       id_season: 22
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/FLAMEBOUND.webp
@@ -18718,7 +18718,7 @@
       recolor_of: null
     - id: 1871
       id_hero: 32
-      id_category: 12
+      id_category: 9
       id_season: 22
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/FLAMEBOUND.webp
@@ -18839,7 +18839,7 @@
       recolor_of: null
     - id: 1882
       id_hero: 36
-      id_category: 12
+      id_category: 9
       id_season: 22
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/FLAMEBOUND.webp
@@ -18920,7 +18920,7 @@
       id_season: 22
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/FORCE_FIGHTER.webp
-      rarity: legendary
+      rarity: epic
       name: Force Fighter
       id_category_secondary: null
       id_condition: null
@@ -18982,7 +18982,7 @@
       recolor_of: 1549
     - id: 1895
       id_hero: 22
-      id_category: 12
+      id_category: 9
       id_season: 22
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/FLAMEBOUND.webp

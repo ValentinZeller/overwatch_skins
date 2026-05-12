@@ -1791,7 +1791,7 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1886,10,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/SAKURA.webp,legendary,Sakura,null,null,null
 1887,25,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
 1888,33,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Sombra/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
-1889,1,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/FORCE_FIGHTER.webp,epic,Force Fighter,null,null,20
+1889,1,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/FORCE_FIGHTER.webp,legendary,Force Fighter,null,null,20
 1890,49,18,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Jetpack_Cat/PANDA.webp,epic,Panda,null,9,null
 1891,43,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/CLOUDY_DAY.webp,legendary,Cloudy Day,null,null,1540
 1892,43,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
@@ -1814,3 +1814,44 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1937,10,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Freja/ROGUE.webp,legendary,Rogue,null,null,null
 1938,18,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/WARLOCK.webp,legendary,Warlock,null,null,null
 1939,5,15,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/PALADIN.webp,legendary,Paladin,null,null,null
+1940,7,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/DIY.webp,legendary,DIY,null,null,1516
+1941,7,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/DECENNIUM.webp,epic,Decennium,1,null,null
+1942,39,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Winston/DECENNIUM.webp,epic,Decennium,1,null,null
+1943,20,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/SCUBA.webp,legendary,Scuba,null,null,null
+1944,29,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/DECENNIUM.webp,epic,Decennium,1,null,null
+1945,41,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/DECENNIUM.webp,epic,Decennium,1,null,null
+1946,28,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/DECENNIUM.webp,epic,Decennium,1,null,null
+1947,4,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/DECENNIUM.webp,epic,Decennium,1,null,null
+1948,16,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/DECENNIUM.webp,epic,Decennium,1,null,null
+1949,21,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/DECENNIUM.webp,epic,Decennium,1,null,null
+1950,32,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/DECENNIUM.webp,epic,Decennium,1,null,null
+1951,34,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/DECENNIUM.webp,epic,Decennium,1,null,null
+1952,35,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/DECENNIUM.webp,epic,Decennium,1,null,null
+1953,6,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/DECENNIUM.webp,epic,Decennium,1,null,null
+1954,12,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/DECENNIUM.webp,epic,Decennium,1,null,null
+1955,38,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/DECENNIUM.webp,epic,Decennium,1,null,null
+1956,11,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DECENNIUM.webp,epic,Decennium,1,null,null
+1957,27,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/DECENNIUM.webp,epic,Decennium,1,null,null
+1958,36,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/10-YEARS_CHEERS.webp,legendary,10-Years Cheers,1,null,null
+1959,25,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/DECENNIUM.webp,epic,Decennium,1,null,null
+1960,19,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/DECENNIUM.webp,epic,Decennium,1,null,null
+1961,42,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/DECENNIUM.webp,epic,Decennium,1,null,null
+1962,22,5,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/DECENNIUM.webp,epic,Decennium,1,null,null
+1963,41,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/SIBERIAN_HARE.webp,legendary,Siberian Hare,null,null,null
+1964,46,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Domina/BUNNY_BUSINESS.webp,legendary,Bunny Business,null,null,null
+1965,15,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junker_Queen/DATE_NIGHT.webp,legendary,Date Night,null,null,null
+1966,26,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/APOCALYPSE_WARRIOR.webp,legendary,Apocalypse Warrior,null,null,null
+1967,26,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/MAID.webp,legendary,Maid,null,null,null
+1968,28,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/APOCALYPSE_WARRIOR.webp,legendary,Apocalypse Warrior,null,null,null
+1969,47,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Emre/APOCALYPSE_WARRIOR.webp,legendary,Apocalypse Warrior,null,null,null
+1970,11,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DATE_NIGHT.webp,legendary,Date Night,null,null,null
+1971,45,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/FITNESS_COACH.webp,legendary,Fitness Coach,null,null,null
+1972,45,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/RAGING_RABBIT.webp,legendary,Raging Rabbit,null,null,null
+1973,37,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/APOCALYPSE_WARRIOR.webp,legendary,Apocalypse Warrior,null,null,null
+1974,1,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/APOCALYPSE_WARRIOR.webp,legendary,Apocalypse Warrior,null,null,null
+1975,1,8,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/RA.webp,mythic,Ra,null,null,null
+1976,22,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/HEAVENLY_HOP.webp,legendary,Heavenly Hop,null,null,null
+1977,5,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/BASH_BUNNY.webp,legendary,Bash Bunny,null,null,null
+1978,5,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/DIY.webp,legendary,DIY,null,null,1515
+1979,17,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SPACEBUN.webp,legendary,Spacebun,null,null,null
+1980,44,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/FIREFIGHTER.webp,legendary,Firefighter,null,null,null

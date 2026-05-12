@@ -70,6 +70,11 @@ if ($version == 'main' || $version == null || $version == 'season') {
                 <button type="button" class='select-hero' onclick="selectRole('tank')">Select Tanks</button>
                 <button type="button" class='select-hero' onclick="selectRole('damage')">Select Damages</button>
                 <button type="button" class='select-hero' onclick="selectRole('support')">Select Supports</button>
+                <button type="button" class='select-hero' onclick="selectDate('launch')">Select Launch</button>
+                <?php if ($version != 'legacy'): ?>
+                    <button type="button" class='select-hero' onclick="selectDate('legacy')">Select Pre-F2P</button>
+                    <button type="button" class='select-hero' onclick="selectDate('main')">Select Post-F2P</button>
+                <?php endif; ?>
             </div>
             <?php foreach ($roleList as $role): ?>
                 <div class="role" id="<?php $role ?>">
@@ -77,7 +82,7 @@ if ($version == 'main' || $version == null || $version == 'season') {
                         <?php if ( $version == 'legacy' && $hero['name'] == 'Doomfist') { $hero['role'] = 'damage'; /*Doomfist role fix */ } ?>
                         <?php if ($hero['role'] == $role): ?>
                             <label class="hero" <?= ($version != 'legacy') ? 'style="color:var(--'.$hero['subrole'].');"' : '' ?>>
-                                <input type="checkbox" data-role="<?= $hero['role'] ?>" name="hero[]" value="<?= $hero['name'] ?>" <?php echo (in_array($hero['name'], array_column($heroes, 'name'))&&$filtered['hero'] ? "checked" : "") ?>>
+                                <input type="checkbox" data-release-date="<?= $hero['release_date'] ?>" data-role="<?= $hero['role'] ?>" name="hero[]" value="<?= $hero['name'] ?>" <?php echo (in_array($hero['name'], array_column($heroes, 'name'))&&$filtered['hero'] ? "checked" : "") ?>>
                                 <img src="<?= $hero['portrait_url'] ?>">
                             </label>
                         <?php endif; ?>

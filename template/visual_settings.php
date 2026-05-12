@@ -1,5 +1,5 @@
 <div class="visual-settings">
-    <span id='show-hide-text'>Toggle Rarity : </span>
+    <span id='show-hide-text'>Visual change : </span>
     <?php foreach ($rarities as $rarity): ?>
         <label class="<?= $rarity ?>-skin rarity">
             <?= $rarity ?>
@@ -10,8 +10,11 @@
     <button class='select-hero' id="sort-name" data-sort="asc" onclick="sortHeroes('name')">Sort Heroes Alphabetically</button>
     <button class='select-hero' id="sort-release-date" data-sort="desc" onclick="sortHeroes('release-date')">Sort Heroes by Release Date</button>
     <label>Category Colors <input type="checkbox" onchange="updateCategoryColor(event.target.checked);" checked id='categories-colors' /></label>
-    <label>Display Recolors <input type="checkbox" onchange="updateRecolors(event.target.checked);" checked id='display-recolors' /></label>
+    <label>Recolors <input type="checkbox" onchange="updateRecolors(event.target.checked);" checked id='display-recolors' /></label>
     <?php if ($version == 'main' || $version == 'season'): ?>
-        <label>Display Recentness <input type="checkbox" onchange="updateRecentness(event.target.checked);" id='display-recentness' /></label>
+        <label>Recentness <input type="checkbox" onchange="updateRecentness(event.target.checked);" id='display-recentness' /></label>
+    <?php endif; ?>
+    <?php if (isset($_GET['hd'])): ?>
+        <label>Zoom <input type="checkbox" onchange="updateZoom(event.target.checked);" id="zoom"/></label>
     <?php endif; ?>
 </div>
