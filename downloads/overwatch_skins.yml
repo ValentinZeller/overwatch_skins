@@ -18920,7 +18920,7 @@
       id_season: 22
       year: null
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/FORCE_FIGHTER.webp
-      rarity: epic
+      rarity: legendary
       name: Force Fighter
       id_category_secondary: null
       id_condition: null
@@ -19164,6 +19164,457 @@
       image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/PALADIN.webp
       rarity: legendary
       name: Paladin
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1940
+      id_hero: 7
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/DIY.webp
+      rarity: legendary
+      name: DIY
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1516
+    - id: 1941
+      id_hero: 7
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/D.Va/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1942
+      id_hero: 39
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Winston/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1943
+      id_hero: 20
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mauga/SCUBA.webp
+      rarity: legendary
+      name: Scuba
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1944
+      id_hero: 29
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Roadhog/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1945
+      id_hero: 41
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1946
+      id_hero: 28
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1947
+      id_hero: 4
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Bastion/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1948
+      id_hero: 16
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1949
+      id_hero: 21
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mei/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1950
+      id_hero: 32
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Soldier_76/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1951
+      id_hero: 34
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Symmetra/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1952
+      id_hero: 35
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Torbjorn/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1953
+      id_hero: 6
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Cassidy/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1954
+      id_hero: 12
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1955
+      id_hero: 38
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Widowmaker/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1956
+      id_hero: 11
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1957
+      id_hero: 27
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reaper/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1958
+      id_hero: 36
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Tracer/10-YEARS_CHEERS.webp
+      rarity: legendary
+      name: 10-Years Cheers
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1959
+      id_hero: 25
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Pharah/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1960
+      id_hero: 19
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lucio/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1961
+      id_hero: 42
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zenyatta/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1962
+      id_hero: 22
+      id_category: 5
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/DECENNIUM.webp
+      rarity: epic
+      name: Decennium
+      id_category_secondary: 1
+      id_condition: null
+      recolor_of: null
+    - id: 1963
+      id_hero: 41
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Zarya/SIBERIAN_HARE.webp
+      rarity: legendary
+      name: Siberian Hare
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1964
+      id_hero: 46
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Domina/BUNNY_BUSINESS.webp
+      rarity: legendary
+      name: Bunny Business
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1965
+      id_hero: 15
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junker_Queen/DATE_NIGHT.webp
+      rarity: legendary
+      name: Date Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1966
+      id_hero: 26
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/APOCALYPSE_WARRIOR.webp
+      rarity: legendary
+      name: Apocalypse Warrior
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1967
+      id_hero: 26
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ramattra/MAID.webp
+      rarity: legendary
+      name: Maid
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1968
+      id_hero: 28
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Reinhardt/APOCALYPSE_WARRIOR.webp
+      rarity: legendary
+      name: Apocalypse Warrior
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1969
+      id_hero: 47
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Emre/APOCALYPSE_WARRIOR.webp
+      rarity: legendary
+      name: Apocalypse Warrior
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1970
+      id_hero: 11
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DATE_NIGHT.webp
+      rarity: legendary
+      name: Date Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1971
+      id_hero: 45
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/FITNESS_COACH.webp
+      rarity: legendary
+      name: Fitness Coach
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1972
+      id_hero: 45
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Vendetta/RAGING_RABBIT.webp
+      rarity: legendary
+      name: Raging Rabbit
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1973
+      id_hero: 37
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Venture/APOCALYPSE_WARRIOR.webp
+      rarity: legendary
+      name: Apocalypse Warrior
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1974
+      id_hero: 1
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/APOCALYPSE_WARRIOR.webp
+      rarity: legendary
+      name: Apocalypse Warrior
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1975
+      id_hero: 1
+      id_category: 8
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Ana/RA.webp
+      rarity: mythic
+      name: Ra
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1976
+      id_hero: 22
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mercy/HEAVENLY_HOP.webp
+      rarity: legendary
+      name: Heavenly Hop
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1977
+      id_hero: 5
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/BASH_BUNNY.webp
+      rarity: legendary
+      name: Bash Bunny
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1978
+      id_hero: 5
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/DIY.webp
+      rarity: legendary
+      name: DIY
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1515
+    - id: 1979
+      id_hero: 17
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SPACEBUN.webp
+      rarity: legendary
+      name: Spacebun
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 1980
+      id_hero: 44
+      id_category: 12
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/FIREFIGHTER.webp
+      rarity: legendary
+      name: Firefighter
       id_category_secondary: null
       id_condition: null
       recolor_of: null

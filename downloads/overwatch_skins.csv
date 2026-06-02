@@ -1855,3 +1855,4 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1978,5,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Brigitte/DIY.webp,legendary,DIY,null,null,1515
 1979,17,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Juno/SPACEBUN.webp,legendary,Spacebun,null,null,null
 1980,44,12,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Wuyang/FIREFIGHTER.webp,legendary,Firefighter,null,null,null
+1982,18,4,22,null,https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/DAYGLOW.webp,rare,Dayglow,null,7,null
