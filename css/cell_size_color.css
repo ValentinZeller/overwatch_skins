@@ -19,6 +19,10 @@
         border-bottom: 3px solid var(--exclusive);
     }
 
+    .ultra {
+        border-bottom: 3px solid var(--ultra);
+    }
+
     .mythic {
         border-bottom: 3px solid transparent;
         border-image: var(--mythic);

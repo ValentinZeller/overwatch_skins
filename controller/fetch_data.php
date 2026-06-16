@@ -8,6 +8,7 @@ require_once('ChapterManager.php');
 define('YEARS', [2016,2017,2018,2019,2020,2021,2022]);
 define('MAX_SKIN_AMOUNT', 8);
 define('CACHE_PATH', 'cache/');
+define('RARITY', ['common','rare','epic','ultra','legandary']);
 
 $db = ConnectBDD();
 $skinManager = new SkinManager($db);
@@ -19,7 +20,7 @@ $chapterManager = new ChapterManager($db);
 if ($version == 'base') {
     $skinData = initialValue('base_skin','main',[$skinManager,'getBaseSkin']);
     $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
-    $rarityList = ['common','rare','epic','legendary'];
+    $rarityList = RARITY;
     $categoryList[] = ['name' => 'Base'];
     $seasonList = null;
     $chapterList = null;
@@ -28,7 +29,7 @@ if ($version == 'base') {
     $heroList = initialValue('hero','main',[$heroManager,'getListeHero']);
     $seasonList = initialValue('season','main',[$seasonManager,'getListeSeason']);
     $chapterList = initialValue('chapter','main',[$chapterManager,'getListeChapter']);
-    $rarityList = ['rare','epic','legendary','mythic'];
+    $rarityList = RARITY;
     $categoryList = initialValue('category','main',[$categoryManager,'getCategoryOW']);
 } else if ($version != null ) {
     $skinData = initialValue('skin',$version,[$skinManager,'getOWSkin']);
@@ -36,7 +37,7 @@ if ($version == 'base') {
     $categoryList = initialValue('category',$version,[$categoryManager,'getCategoryOW']);
     $seasonList = initialValue('season',$version,[$seasonManager,'getListeSeason']);
     $chapterList = initialValue('chapter',$version,[$chapterManager,'getListeChapter']);
-    $rarityList = ['rare','epic','legendary','mythic'];
+    $rarityList = RARITY;
     
     if ($version === 'legacy') {
         $seasonList = null;

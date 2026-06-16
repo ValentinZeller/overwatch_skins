@@ -18,6 +18,10 @@
     color: var(--exclusive);
 }
 
+.ultra-skin {
+    color: var(--ultra);
+}
+
 .mythic-skin {
     color: #00ffd0;
     background: #00ffd0;

@@ -31,7 +31,15 @@
         }
 
         &.legendary {
-            border-bottom: 4px solid #ffa500;
+            border-bottom: 4px solid var(--legendary);
+        }
+
+        &.exclusive {
+            border-bottom: 4px solid var(--exclusive);
+        }
+
+        &.ultra {
+            border-bottom: 4px solid var(--ultra);
         }
 
         &.mythic {

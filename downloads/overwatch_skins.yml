@@ -19618,3 +19618,14 @@
       id_category_secondary: null
       id_condition: null
       recolor_of: null
+    - id: 1982
+      id_hero: 18
+      id_category: 4
+      id_season: 22
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Lifeweaver/DAYGLOW.webp
+      rarity: rare
+      name: Dayglow
+      id_category_secondary: null
+      id_condition: 7
+      recolor_of: null
