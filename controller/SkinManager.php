@@ -125,6 +125,8 @@
             return $result;
         }
         foreach ($array as $item) {
+            if ($item['rarity'] === 'legendary') {
+            }
             if ($item['rarity'] === $rarity) {
                 $result[] = $item;
             }

@@ -1,3 +1,5 @@
+<?php 
+?>
 <?php foreach( $rarities as $rarity ): ?>
     <?php $filterSkin = $manager->filterSkinByRarity($rarity, $skinData); ?>
     <?php $filterSkinCount = count($filterSkin); ?>
