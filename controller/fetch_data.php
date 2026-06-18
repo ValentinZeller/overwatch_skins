@@ -49,7 +49,7 @@ if ($version == 'base') {
     $categoryList = initialValue('all_category','main',[$categoryManager,'getListeCategory']);
     $seasonList = initialValue('season','main',[$seasonManager,'getListeSeason']);
     $rarityList = ['common','rare','epic','legendary','ultra','exclusive','mythic'];
-    $chapterList = initialValue('chapter',$version,[$chapterManager,'getListeChapter']);
+    $chapterList = initialValue('chapter','main',[$chapterManager,'getListeChapter']);
 }
 
 function initialValue($type,$version,$fetchFunction) {
