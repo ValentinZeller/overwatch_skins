@@ -20036,3 +20036,80 @@
       id_category_secondary: null
       id_condition: null
       recolor_of: null
+    - id: 2019
+      id_hero: 16
+      id_category: 17
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Junkrat/STADIUM_ALL-STAR.webp
+      rarity: legendary
+      name: Stadium All-Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2020
+      id_hero: 48
+      id_category: 15
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Anran/FIRE_STAR.webp
+      rarity: legendary
+      name: Fire Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2021
+      id_hero: 11
+      id_category: 15
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Genji/DRAGON_STAR.webp
+      rarity: legendary
+      name: Dragon Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2022
+      id_hero: 12
+      id_category: 15
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Hanzo/DRAGON_STAR.webp
+      rarity: legendary
+      name: Dragon Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2023
+      id_hero: 50
+      id_category: 15
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Mizuki/SPIRIT_STAR.webp
+      rarity: legendary
+      name: Spirit Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2024
+      id_hero: 43
+      id_category: 15
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/FOX_STAR.webp
+      rarity: legendary
+      name: Fox Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2025
+      id_hero: 43
+      id_category: 15
+      id_season: 23
+      year: null
+      image_url: https://foxyjr.cloudns.ph/overwatch_skins/image/hero/Kiriko/SPACE_STAR.webp
+      rarity: legendary
+      name: Space Star
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null

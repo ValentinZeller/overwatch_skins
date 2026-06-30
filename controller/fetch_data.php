@@ -8,7 +8,7 @@ require_once('ChapterManager.php');
 define('YEARS', [2016,2017,2018,2019,2020,2021,2022]);
 define('MAX_SKIN_AMOUNT', 8);
 define('CACHE_PATH', 'cache/');
-define('RARITY', ['common','rare','epic','ultra','legendary']);
+define('RARITY', ['common','rare','epic','ultra','legendary','mythic']);
 
 $db = ConnectBDD();
 $skinManager = new SkinManager($db);
