@@ -9,7 +9,7 @@
         }
         ?>
         <?php if (isset($category['icon_url'])  && $category['icon_url']): ?>
-            <div title="<?= $category['name'] ?>" data-category="<?= $category['name'] ?>" class="item category" style="background-image: url('<?= $category['icon_url'] ?>'); width: calc(var(--width) * <?= $nbColumn ?>);"></div>
+            <div title="<?= $category['name'] ?>" data-category="<?= $category['name'] ?>" class="item category" style="background-image: url('image/category/<?= $category['icon_url'] ?>'); width: calc(var(--width) * <?= $nbColumn ?>);"></div>
         <?php else: ?>
             <div title="<?= $category['name'] ?>" data-category="<?= $category['name'] ?>" class="item category category-title" style="width: calc(var(--width) * <?= $nbColumn ?>);"><?= $category['name'] ?></div>
         <?php endif; ?>

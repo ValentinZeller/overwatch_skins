@@ -55,19 +55,19 @@ function initialValueSkin($id,$skinManager) {
             <div onclick="hero.showModal()" id="change-hero">Change Hero</div>
             <?php foreach($skins as $skin): ?>
                 <?php if ($skin['id_category'] == 15 || $skin['id_category'] == 18 || $skin['id_category'] == 19) {
-                    $skin['category_icon_url'] = 'https://foxyjr.cloudns.ph/overwatch_skins/image/category/shop.webp';
+                    $skin['category_icon_url'] = 'shop.webp';
                 } else if($skin['id_category'] == 5 ) {
-                    $skin['category_icon_url'] = 'https://foxyjr.cloudns.ph/overwatch_skins/image/category/blizzard.webp';
+                    $skin['category_icon_url'] = 'blizzard.webp';
                 }?>
                 <div class="skin-name">
                     <label for="<?= $skin['id'] ?>">
                         <?php if($skin['id_category'] != 16 && $skin['id_category'] != 11): ?>
-                            <img loading="lazy" class="" src="<?= $skin['category_icon_url'] ?>">
+                            <img loading="lazy" class="" src="image/category/<?= $skin['category_icon_url'] ?>">
                         <?php endif; ?>
                         <span class="<?= $skin['rarity'] ?>-skin"> 
                             <?= $skin['skin_name'] ?>
                         </span>
-                        <input id="<?= $skin['id'] ?>" type="radio" name="skin" value="<?= $skin['image_url'] ?>">
+                        <input id="<?= $skin['id'] ?>" type="radio" name="skin" value="image/hero/<?= $skin['image_url'] ?>">
                     </label>
                 </div>
             <?php endforeach ?>
@@ -88,8 +88,8 @@ function initialValueSkin($id,$skinManager) {
         <?php foreach ($skins as $skin): ?>
             <?php $skin['image_url'] = str_replace("'", "\'", $skin['image_url']); ?>
             <a target="_blank" href="skin.php?id=<?= $skin['id'] ?>">
-                <div class="item-gallery lazy-background <?= $skin['rarity'] ?> <?= $skin['recolor_of'] ? 'recolor' : '' ?>" title="<?= $skin['skin_name'] ?>" data-bg="url('<?= $skin['image_url'] ?>')">
-                    <img loading="lazy" class="category-icon" src="<?= $skin['category_icon_url'] ?>">
+                <div class="item-gallery lazy-background <?= $skin['rarity'] ?> <?= $skin['recolor_of'] ? 'recolor' : '' ?>" title="<?= $skin['skin_name'] ?>" data-bg="url('image/hero/<?= $skin['image_url'] ?>')">
+                    <img loading="lazy" class="category-icon" src="image/category/<?= $skin['category_icon_url'] ?>">
                     <span class="item-name"><?= $skin['skin_name'] ?></span>
                 </div>
             </a>

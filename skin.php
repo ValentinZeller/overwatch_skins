@@ -29,7 +29,7 @@ if (!$skin) {
 ?>
 <body>
     <div class="skin-information">
-        <img src="<?= $skin['image_url'] ?>" alt="<?= $skin['skin_name'] ?>">
+        <img src="image/hero/<?= $skin['image_url'] ?>" alt="<?= $skin['skin_name'] ?>">
         <h1><?= $skin['skin_name'] ?></h1>
         <p>Hero: <a href="hero.php?id=<?= $skin['id_hero'] ?>" target="_blank"><?= $skin['hero_name'] ?></a></p>
         <p>Category: <?= $skin['category_name'] ?></p>

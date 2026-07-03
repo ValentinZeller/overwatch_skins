@@ -29,7 +29,7 @@ function initialValueHero($heroManager) {
             <?php foreach($heroes as $hero): ?>
                 <?php if($role == $hero['role']): ?>
                     <a href="hero.php?id=<?= $hero['id'] ?><?= isset($_GET['ingame']) ? '&ingame' : '' ?>" style="color:var(--'<?= $hero['subrole'] ?>');">
-                        <img src="<?= $hero['portrait_url'] ?>">
+                        <img src="image/hero_portrait/<?= $hero['portrait_url'] ?>">
                     </a>
                 <?php endif; ?>
             <?php endforeach; ?>

@@ -83,7 +83,7 @@ if ($version == 'main' || $version == null || $version == 'season') {
                         <?php if ($hero['role'] == $role): ?>
                             <label class="hero" <?= ($version != 'legacy') ? 'style="color:var(--'.$hero['subrole'].');"' : '' ?>>
                                 <input type="checkbox" data-release-date="<?= $hero['release_date'] ?>" data-role="<?= $hero['role'] ?>" name="hero[]" value="<?= $hero['name'] ?>" <?php echo (in_array($hero['name'], array_column($heroes, 'name'))&&$filtered['hero'] ? "checked" : "") ?>>
-                                <img src="<?= $hero['portrait_url'] ?>">
+                                <img src="image/hero_portrait/<?= $hero['portrait_url'] ?>">
                             </label>
                         <?php endif; ?>
                     <?php endforeach; ?>

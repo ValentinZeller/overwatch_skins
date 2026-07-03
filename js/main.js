@@ -33,12 +33,12 @@ if (document.querySelector('[data-rarity="mythic"]') != null) {
     document.querySelector('[data-rarity="mythic"]').checked = mythicBar
     updateBarVisibility(mythicBar, 'mythic');
 }
-if (document.querySelector('[data-rarity="exclusive"') != null) {
-    document.querySelector('[data-rarity="exclusive"').checked = exclusiveBar
+if (document.querySelector('[data-rarity="exclusive"]') != null) {
+    document.querySelector('[data-rarity="exclusive"]').checked = exclusiveBar
     updateBarVisibility(exclusiveBar, 'exclusive')
 }
-if (document.querySelector('data-rarity="ultra"') != null) {
-    document.querySelector('[data-rarity="ultra"').checked = ultraBar
+if (document.querySelector('[data-rarity="ultra"]') != null) {
+    document.querySelector('[data-rarity="ultra"]').checked = ultraBar
     updateBarVisibility(ultraBar, 'ultra')
 }
 
