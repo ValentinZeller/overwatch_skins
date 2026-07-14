@@ -7,62 +7,30 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <?php
+require_once('function.php');
 require_once('controller/connect.php');
 require_once("controller/SkinManager.php");
+require_once("controller/StatSkins.php");
 $db = ConnectBDD();
 $skinManager = new SkinManager($db);
 
 $skins = require_once("cache/skin_main.php");
 $heroes = require_once("cache/hero_main.php");
 $seasons = require_once("cache/season_main.php");
-$categories = ['total','seasons','average','last season','recolor'];
+$categories = require_once("cache/category_main.php");
 $rarities = ['epic','legendary','ultra','mythic'];
 
-function categoryCalc($category, $skins, $hero, $seasons) {
-    $result = 0;
-    switch($category) {
-        case 'total':
-            $result = count($skins);
-            break;
-        case 'seasons':
-            $firstSeason = array_search($hero['release_date'], array_column($seasons, 'start_date'));
-            $firstSeason = ($firstSeason == null) ? 0 : $firstSeason;
-            $nbSeasons = count($seasons) - $firstSeason;
-            $with = 0;
-            for($i=$firstSeason ; $i<=count($seasons) ; $i++) {
-                $hasSkin = in_array($i, array_column($skins, 'id_season'));
-                if ($hasSkin) {
-                    $with++;
-                }
-            }
-            $result = $with . '/' . $nbSeasons;
-            break;
-        case 'average':
-            $firstSeason = array_search($hero['release_date'], array_column($seasons, 'start_date'));
-            $nbSeasons = count($seasons) - $firstSeason;
-            $result = round(count($skins) / $nbSeasons, 2);
-            break;
-        case 'last season':
-            foreach($skins as $skin) {
-                $result = ($skin['id_season'] > $result) ? $skin['id_season'] : $result;
-            }
-            break;
-        case 'recolor':
-            $recolors = array_filter($skins, function($skin) {
-                if ($skin['recolor_of'] != null) {
-                    return $skin;
-                }
-                return;
-            });
-            $result = count($recolors);
-            break;
-        default :
-            break;
-    }
-    return $result;
+$headers;
+foreach(StatType::cases() as $type) {
+    $headers[] = array('id' => $type->id(), 'display' => $type->value);
 }
 
 ?>
+<style>
+<?php foreach ($headers as $header): ?>
+    [data-category="<?= $header['id'] ?>"] { background-color: <?= randomColor($header['id']) ?>; }
+<?php endforeach; ?>
+</style>
 <body>
     <div id="open-setting" onclick="openSettings()">&#9881;</div>
     <div class="overlay" id="setting">
@@ -93,33 +61,64 @@ function categoryCalc($category, $skins, $hero, $seasons) {
     <div id="container" class="container">
         <div id='category' class='row row-category'>
             <div class='row-header'></div>
-                <?php foreach ($categories as $category): ?>
-                    <div title="<?= $category ?>" data-category="<?= $category ?>" class="item category category-title" style="width: calc(var(--width));"><?= $category ?></div>
+                <?php foreach ($headers as $header): ?>
+                    <div title="<?= $header['id'] ?>" data-category="<?= $header['id'] ?>" class="item category category-title" style="width: calc(var(--width));"><?= $header['display'] ?></div>
                 <?php endforeach; ?>
+                <?php foreach ($categories as $category): ?>
+                    <div class='row-header'></div>
+                    <?php foreach ($headers as $header): ?>
+                        <div title="<?= $header['id'] ?>" data-category="<?= $header['id'] ?>" class="item category category-title" style="width: calc(var(--width));"><?= $header['display'] . ' ' . $category['name'] ?></div>
+                    <?php endforeach ?>
+                <?php endforeach ?>
             <div class="row-header"></div>
         </div>
         <?php foreach ($heroes as $hero): ?>
             <?php $filterSkins = $skinManager->filterSkinByHero($hero['name'], $skins); ?>
             <div class="row">
-                <div class="row-header" style="background-image: url('<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
-                <?php foreach ($categories as $category): ?>
-                    <div class="row-count">
+                <div class="row-header" style="background-image: url('image/hero_portrait/<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
+                <?php foreach ($headers as $header): ?>
+                    <div class="row-count" data-category="<?= $header['id'] ?>">
                         <?php foreach ($rarities as $rarity): ?>
                             <?php $filterSkinsRarity = $skinManager->filterSkinByRarity($rarity, $filterSkins); 
-                            $resultRarity = categoryCalc($category, $filterSkinsRarity, $hero, $seasons)?>
-                            <p class="count <?= $rarity ?>-skin"><?= $resultRarity ?></p>
+                                $stat =  new StatSkins($filterSkinsRarity, $hero, $seasons);
+                                $resultRarity = $stat->results()[$header['id']] ?>
+                                <p class="count <?= $rarity ?>-skin"><?= $resultRarity ?></p>
                         <?php endforeach; ?>
-                        <?php $result = categoryCalc($category, $filterSkins, $hero, $seasons) ?>
+                        <?php $stat = new StatSkins($filterSkins, $hero, $seasons); ?>
+                        <?php $result = $stat->results()[$header['id']] ?>
                         <p class="count"><?= $result ?></p>
                     </div>
+                <?php endforeach; ?>
+                <?php foreach($categories as $category): ?>
+                    <?php $filterSkinsCategory = $skinManager->filterSkinByCategory($category['name'], $filterSkins); ?>
+                    <div class="row-header" style="background-image: url('image/hero_portrait/<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
+                    <?php foreach($headers as $header): ?>
+                        <div class="row-count" data-category="<?= $header['id'] ?>">
+                            <?php foreach ($rarities as $rarity): ?>
+                                <?php $filterSkinsRarity = $skinManager->filterSkinByRarity($rarity, $filterSkinsCategory);
+                                    $stat =  new StatSkins($filterSkinsRarity, $hero, $seasons);
+                                    $resultRarity = $stat->results()[$header['id']] ?>
+                                    <p class="count <?= $rarity ?>-skin"><?= $resultRarity ?></p>
+                            <?php endforeach; ?>
+                            <?php $stat = new StatSkins($filterSkinsCategory, $hero, $seasons); ?>
+                            <?php $result = $stat->results()[$header['id']] ?>
+                            <p class="count"><?= $result ?></p>
+                        </div>
+                    <?php endforeach; ?>
                 <?php endforeach; ?>
             </div>
         <?php endforeach; ?>
         <div id='category' class='row row-category'>
             <div class='row-header'></div>
-                <?php foreach ($categories as $category): ?>
-                    <div title="<?= $category ?>" data-category="<?= $category ?>" class="item category category-title" style="width: calc(var(--width));"><?= $category ?></div>
+                <?php foreach ($headers as $header): ?>
+                    <div title="<?= $header['id'] ?>" data-category="<?= $header['id'] ?>" class="item category category-title" style="width: calc(var(--width));"><?= $header['display'] ?></div>
                 <?php endforeach; ?>
+                <?php foreach ($categories as $category): ?>
+                    <div class='row-header'></div>
+                    <?php foreach ($headers as $header): ?>
+                        <div title="<?= $header['id'] ?>" data-category="<?= $header['id'] ?>" class="item category category-title" style="width: calc(var(--width));"><?= $header['display'] . ' ' . $category['name'] ?></div>
+                    <?php endforeach ?>
+                <?php endforeach ?>
             <div class="row-header"></div>
         </div>
     </div>

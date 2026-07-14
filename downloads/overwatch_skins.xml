@@ -10,7 +10,7 @@
 		<key Table="category" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="19" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="category" Non_unique="1" Key_name="display_ow1" Seq_in_index="1" Column_name="display_legacy_order" Collation="A" Cardinality="11" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="category" Non_unique="1" Key_name="display_ow2" Seq_in_index="1" Column_name="display_main_order" Collation="A" Cardinality="11" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="category" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="19" Avg_row_length="862" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="20" Create_time="2026-06-02 07:09:18" Update_time="2026-07-03 18:15:27" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="category" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="19" Avg_row_length="862" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="0" Auto_increment="20" Create_time="2026-06-02 07:09:18" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="category">
 	<row>
@@ -229,7 +229,7 @@
 		<field Field="release_date" Type="date" Null="NO" Key="" Default="curdate()" Extra="DEFAULT_GENERATED" Comment="" />
 		<field Field="portrait_url" Type="text" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="hero" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="52" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="hero" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="52" Avg_row_length="315" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="53" Create_time="2026-06-02 07:09:20" Update_time="2026-07-03 18:10:03" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="hero" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="52" Avg_row_length="315" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="53" Create_time="2026-06-02 07:09:20" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="hero">
 	<row>
@@ -843,7 +843,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="9" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="151" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1778" Avg_row_length="138" Data_length="245760" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2026" Create_time="2026-06-15 17:16:08" Update_time="2026-07-03 18:00:20" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1794" Avg_row_length="136" Data_length="245760" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2042" Create_time="2026-06-15 17:16:08" Update_time="2026-07-14 18:56:36" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -23956,6 +23956,214 @@
 		<field name="image_url">Kiriko/SPACE_STAR.webp</field>
 		<field name="rarity">legendary</field>
 		<field name="name">Space Star</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2026</field>
+		<field name="id_hero">8</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Doomfist/BEACHSIDE.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Beachside</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2027</field>
+		<field name="id_hero">20</field>
+		<field name="id_category">8</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mauga/WORLD_FORGER.webp</field>
+		<field name="rarity">mythic</field>
+		<field name="name">World Forger</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2028</field>
+		<field name="id_hero">48</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Anran/BEACHSIDE.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Beachside</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2029</field>
+		<field name="id_hero">6</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Cassidy/DATE_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Date Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2030</field>
+		<field name="id_hero">47</field>
+		<field name="id_category">9</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Emre/RADIANT_WATCHER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Radiant Watcher</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2031</field>
+		<field name="id_hero">11</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Genji/COURTLY_KNIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Courtly Knight</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1563</field>
+	</row>
+	<row>
+		<field name="id">2032</field>
+		<field name="id_hero">16</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Junkrat/ROYAL_RAT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Royal Rat</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">327</field>
+	</row>
+	<row>
+		<field name="id">2033</field>
+		<field name="id_hero">45</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Vendetta/BEACHSIDE.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Beachside</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2034</field>
+		<field name="id_hero">38</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Widowmaker/BEACHSIDE.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Beachside</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2035</field>
+		<field name="id_hero">1</field>
+		<field name="id_category">9</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Ana/RADIANT_GUARDIAN.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Radiant Guardian</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2036</field>
+		<field name="id_hero">17</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Juno/BEACHSIDE.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Beachside</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2037</field>
+		<field name="id_hero">17</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Juno/DATE_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Date Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2038</field>
+		<field name="id_hero">18</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Lifeweaver/DATE_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Date Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2039</field>
+		<field name="id_hero">18</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Lifeweaver/VIOLET_VALET.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Violet Valet</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1585</field>
+	</row>
+	<row>
+		<field name="id">2040</field>
+		<field name="id_hero">22</field>
+		<field name="id_category">12</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mercy/TWILIGHT_HEIRESS.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Twilight Heiress</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1574</field>
+	</row>
+	<row>
+		<field name="id">2041</field>
+		<field name="id_hero">50</field>
+		<field name="id_category">9</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mizuki/RADIANT_SPIRIT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Radiant Spirit</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
 		<field name="recolor_of" xsi:nil="true" />

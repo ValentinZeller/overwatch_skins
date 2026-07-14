@@ -1901,3 +1901,19 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2023,50,15,23,null,Mizuki/SPIRIT_STAR.webp,legendary,Spirit Star,null,null,null
 2024,43,15,23,null,Kiriko/FOX_STAR.webp,legendary,Fox Star,null,null,null
 2025,17,15,23,null,Kiriko/SPACE_STAR.webp,legendary,Space Star,null,null,null
+2026,8,12,23,null,Doomfist/BEACHSIDE.webp,legendary,Beachside,null,null,null
+2027,20,8,23,null,Mauga/WORLD_FORGER.webp,mythic,World Forger,null,null,null
+2028,48,12,23,null,Anran/BEACHSIDE.webp,legendary,Beachside,null,null,null
+2029,6,12,23,null,Cassidy/DATE_NIGHT.webp,legendary,Date Night,null,null,null
+2030,47,9,23,null,Emre/RADIANT_WATCHER.webp,legendary,Radiant Watcher,null,null,null
+2031,11,12,23,null,Genji/COURTLY_KNIGHT.webp,legendary,Courtly Knight,null,null,1563
+2032,16,12,23,null,Junkrat/ROYAL_RAT.webp,legendary,Royal Rat,null,null,327
+2033,45,12,23,null,Vendetta/BEACHSIDE.webp,legendary,Beachside,null,null,null
+2034,38,12,23,null,Widowmaker/BEACHSIDE.webp,legendary,Beachside,null,null,null
+2035,1,9,23,null,Ana/RADIANT_GUARDIAN.webp,legendary,Radiant Guardian,null,null,null
+2036,17,12,23,null,Juno/BEACHSIDE.webp,legendary,Beachside,null,null,null
+2037,17,12,23,null,Juno/DATE_NIGHT.webp,legendary,Date Night,null,null,null
+2038,18,12,23,null,Lifeweaver/DATE_NIGHT.webp,legendary,Date Night,null,null,null
+2039,18,12,23,null,Lifeweaver/VIOLET_VALET.webp,legendary,Violet Valet,null,null,1585
+2040,22,12,23,null,Mercy/TWILIGHT_HEIRESS.webp,legendary,Twilight Heiress,null,null,1574
+2041,50,9,23,null,Mizuki/RADIANT_SPIRIT.webp,legendary,Radiant Spirit,null,null,null
