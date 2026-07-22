@@ -11,12 +11,7 @@
 <body id="main-page">
     <h1>Overwatch Skins</h1>
     <div id="navigation">
-        <a href="main">Overwatch Skins ↗</a>
-        <a href="legacy">Legacy Skins ↗</a>
-        <a href="base">Base Skin ↗</a>
-        <a href="all">All Skins ↗</a>
-        <a href="season">Season ↗</a>
-        <a href="download">Download ↗</a>
+        <?php include('template/nav_link.php'); ?>
     </div>
     <div class="static-recap">
         <a class="static" href="image/Overwatch_Skins.webp" target="_blank">Overwatch Skins Static Recap</a>

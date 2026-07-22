@@ -8,44 +8,25 @@ function closeSettings() {
     document.getElementById("setting").style.width = "0%";
 }
 
+
+// Manage rarity bar
+let rarities = ['common', 'rare', 'epic', 'legendary', 'exclusive', 'ultra', 'mythic'];
+
+rarities.forEach(rarity => {
+    let bar = localStorage.getItem(rarity) === 'true' ? true : null;
+    if (document.querySelector('[data-rarity="' + rarity + '"') != null) {
+        document.querySelector('[data-rarity="' + rarity + '"').checked = bar
+        updateBarVisibility(bar, rarity);
+    }
+});
+
 // Get Local storage data
-let commonBar = localStorage.getItem('common') === 'true' ? true : null;
-let rareBar = localStorage.getItem('rare') === 'true' ? true : null;
-let epicBar = localStorage.getItem('epic') === 'true' ? true : null;
-let legendaryBar = localStorage.getItem('legendary') === 'true' ? true : null;
-let mythicBar = localStorage.getItem('mythic') === 'true' ? true : null;
-let exclusiveBar = localStorage.getItem('exclusive') === 'true' ? true : null;
-let ultraBar = localStorage.getItem('ultra') === 'true' ? true : null;
 let categoriesColor = localStorage.getItem('categoriesColor') === 'true' ? true : null;
 let displayRecolors = localStorage.getItem('displayRecolors') === 'true' ? true : null;
 let recent = localStorage.getItem('recent') === 'true' ? true : null;
 
-// Apply data
-if (document.querySelector('[data-rarity="common"]') != null) {
-    document.querySelector('[data-rarity="common"]').checked = commonBar
-    updateBarVisibility(commonBar, 'common');
-}
-if (document.querySelector('[data-rarity="rare"]') != null) {
-    document.querySelector('[data-rarity="rare"]').checked = rareBar
-    updateBarVisibility(rareBar, 'rare');
-}
-if (document.querySelector('[data-rarity="mythic"]') != null) {
-    document.querySelector('[data-rarity="mythic"]').checked = mythicBar
-    updateBarVisibility(mythicBar, 'mythic');
-}
-if (document.querySelector('[data-rarity="exclusive"]') != null) {
-    document.querySelector('[data-rarity="exclusive"]').checked = exclusiveBar
-    updateBarVisibility(exclusiveBar, 'exclusive')
-}
-if (document.querySelector('[data-rarity="ultra"]') != null) {
-    document.querySelector('[data-rarity="ultra"]').checked = ultraBar
-    updateBarVisibility(ultraBar, 'ultra')
-}
-
 document.getElementById('categories-colors').checked = categoriesColor
 document.getElementById('display-recolors').checked = displayRecolors
-document.querySelector('[data-rarity="epic"]').checked = epicBar
-document.querySelector('[data-rarity="legendary"]').checked = legendaryBar
 
 if (document.getElementById('display-recentness') != null) {
     document.getElementById('display-recentness').checked = recent
@@ -54,8 +35,6 @@ if (document.getElementById('display-recentness') != null) {
 
 updateCategoryColor(categoriesColor);
 updateRecolors(displayRecolors);
-updateBarVisibility(epicBar, 'epic');
-updateBarVisibility(legendaryBar, 'legendary');
 
 function updateCategoryColor(show) {
     localStorage.setItem('categoriesColor', show);

@@ -15,8 +15,10 @@
         border-bottom: 3px solid var(--legendary);
     }
 
-    .exclusive {
-        border-bottom: 3px solid var(--exclusive);
+    .evolution {
+        border-bottom: 3px solid transparent;
+        border-image: var(--evolution);
+        border-image-slice: 1;
     }
 
     .ultra {

@@ -92,9 +92,9 @@ function filterSkin($skinData, $version, $heroes, $categories, $rarities, $seaso
             if (in_array($skin['hero_name'], array_column($heroes, 'name')) &&
             in_array($skin['category_name'], array_column($categories, 'name')) &&
             in_array($skin['rarity'], $rarities) &&
-            ( (($version == 'legacy' || $version == null) && in_array($skin['year'], $yearsSelected)) ||
-            (($version == 'main' || $version == null || $version == 'season') && in_array($skin['id_season'], $seasons)) || 
-            ($version == 'base' || $version == null ))
+            ( (($version == 'legacy' || is_null($version)) && in_array($skin['year'], $yearsSelected)) ||
+            (($version == 'main' || is_null($version) || $version == 'season') && in_array($skin['id_season'], $seasons)) || 
+            ($version == 'base' || is_null($version) == null ))
             ) {
                 $skins[] = $skin;
             }

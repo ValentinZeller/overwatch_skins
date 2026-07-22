@@ -11,11 +11,7 @@
     <h1>Download</h1>
     <div id="navigation">
         <a href="index">Home ↗</a>
-        <a href="main">Overwatch Skins ↗</a>
-        <a href="legacy">Legacy Skins ↗</a>
-        <a href="base">Base Skin ↗</a>
-        <a href="all">All Skins ↗</a>
-        <a href="season">Season ↗</a>
+        <?php include('template/nav_link.php'); ?>
     </div>
     <h2>Static Recaps</h2>
     <ul class="download-list">

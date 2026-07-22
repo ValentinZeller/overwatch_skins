@@ -829,21 +829,21 @@
 		<field Field="id_season" Type="int" Null="YES" Key="MUL" Extra="" Comment="" />
 		<field Field="year" Type="int" Null="YES" Key="" Extra="" Comment="" />
 		<field Field="image_url" Type="text" Null="NO" Key="" Extra="" Comment="" />
-		<field Field="rarity" Type="enum('common','rare','epic','legendary','exclusive','ultra','mythic')" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="rarity" Type="enum('common','rare','epic','legendary','evolution','ultra','mythic')" Null="YES" Key="" Extra="" Comment="" />
 		<field Field="name" Type="varchar(100)" Null="NO" Key="" Extra="" Comment="" />
 		<field Field="id_category_secondary" Type="int" Null="YES" Key="MUL" Extra="" Comment="" />
 		<field Field="id_condition" Type="int" Null="YES" Key="MUL" Extra="" Comment="" />
 		<field Field="recolor_of" Type="int" Null="YES" Key="MUL" Extra="" Comment="" />
-		<key Table="skin" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="1778" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="skin" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="1794" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="0" Key_name="id_hero_2" Seq_in_index="1" Column_name="id_hero" Collation="A" Cardinality="52" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<key Table="skin" Non_unique="0" Key_name="id_hero_2" Seq_in_index="2" Column_name="name" Collation="A" Cardinality="1778" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<key Table="skin" Non_unique="0" Key_name="id_hero_2" Seq_in_index="2" Column_name="name" Collation="A" Cardinality="1794" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_category" Seq_in_index="1" Column_name="id_category" Collation="A" Cardinality="19" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_season" Seq_in_index="1" Column_name="id_season" Collation="A" Cardinality="24" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_hero" Seq_in_index="1" Column_name="id_hero" Collation="A" Cardinality="52" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="9" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="151" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1794" Avg_row_length="136" Data_length="245760" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2042" Create_time="2026-06-15 17:16:08" Update_time="2026-07-14 18:56:36" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="155" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1795" Avg_row_length="91" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2043" Create_time="2026-07-19 18:39:22" Update_time="2026-07-22 21:45:13" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -22212,7 +22212,7 @@
 		<field name="id_season">21</field>
 		<field name="year" xsi:nil="true" />
 		<field name="image_url">Widowmaker/SCARLET_BRIDE_VIPER.webp</field>
-		<field name="rarity">exclusive</field>
+		<field name="rarity">evolution</field>
 		<field name="name">Scarlet Bride Viper</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
@@ -24166,6 +24166,19 @@
 		<field name="name">Radiant Spirit</field>
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2042</field>
+		<field name="id_hero">21</field>
+		<field name="id_category">4</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mei/LICH_QUEEN.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Lich Queen</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition">3</field>
 		<field name="recolor_of" xsi:nil="true" />
 	</row>
 	</table_data>

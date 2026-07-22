@@ -17,12 +17,7 @@
         <a href="javascript:void(0)" id="close-setting" onclick="closeSettings()">&times;</a>
         <div class="overlay-content">
             <a href="index">Home ↗</a>
-            <a href="main">Overwatch Skins ↗</a>
-            <a href="legacy">Legacy Skins ↗</a>
-            <a href="base">Base Skins ↗</a>
-            <a href="all">All Skins ↗</a>
-            <a href="season">Seasons ↗</a>
-            <a href="download">Download ↗</a>
+            <?php include('template/nav_link.php'); ?>
             <?php echo template('template/visual_settings.php', ['rarities' => $rarityList, 'version' => $version]); ?>
             <?php echo template('template/filter_form.php', [
                 'rarityList' => $rarityList,

@@ -59,7 +59,7 @@
                     $result++;
                 }
             }
-            return $result;
+            return $result . "/" . $this->_nbSeason;
         }
 
         public function average() {
@@ -67,7 +67,7 @@
         }
 
         public function lastSeason() {
-            $result = $this->_firstSeason;
+            $result = 0;
             foreach($this->_skins as $skin) {
                 $result = ($skin['id_season'] > $result) ? $skin['id_season'] : $result;
             }

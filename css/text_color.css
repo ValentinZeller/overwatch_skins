@@ -14,8 +14,14 @@
     color: var(--legendary);
 }
 
-.exclusive-skin {
-    color: var(--exclusive);
+.evolution-skin {
+    color: #fdfab3;
+    background: #fdfab3;
+    background-image: var(--evolution);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .ultra-skin {

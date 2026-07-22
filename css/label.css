@@ -39,6 +39,11 @@ label.mythic-skin:has(input[type=checkbox]:checked) {
     text-shadow: #000000 0 0 1px;
 }
 
+label.evolution-skin:has(input[type=checkbox]:checked) {
+    background: var(--evolution);
+    text-shadow: #000000 0 0 1px;
+}
+
 .season-filter label {
     margin-bottom: 5px;
 }

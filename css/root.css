@@ -5,7 +5,7 @@
     --rare: #1ac9ff;
     --epic: #ff00ff;
     --legendary: #ff9c00;
-    --exclusive: #fec700;
+    --evolution: linear-gradient(90deg, #fdfab3 0%, #e29f53 100%);
     --ultra: #ff1c00;
     --mythic: linear-gradient(90deg, #00ffd0 0%, #bebcd8 50%, #ff33ce 100%);
     --initiator: #06cfc2;

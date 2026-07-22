@@ -1766,7 +1766,7 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 1859,27,19,21,null,Reaper/YUESHAN.webp,legendary,Yueshan,null,null,null
 1860,44,19,21,null,Wuyang/WUCHEN.webp,legendary,Wuchen,null,null,null
 1861,38,19,21,null,Widowmaker/VIPER_NING.webp,legendary,Viper Ning,null,null,null
-1862,38,19,21,null,Widowmaker/SCARLET_BRIDE_VIPER.webp,exclusive,Scarlet Bride Viper,null,null,null
+1862,38,19,21,null,Widowmaker/SCARLET_BRIDE_VIPER.webp,evolution,Scarlet Bride Viper,null,null,null
 1863,7,9,22,null,D.Va/FLAMEBOUND.webp,legendary,Flamebound,null,null,412
 1864,7,12,22,null,D.Va/RAINY_DAY.webp,legendary,Rainy Day,null,null,null
 1865,8,12,22,null,Doomfist/CRIMSON_COURT.webp,legendary,Crimson Court,null,null,null
@@ -1917,3 +1917,4 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2039,18,12,23,null,Lifeweaver/VIOLET_VALET.webp,legendary,Violet Valet,null,null,1585
 2040,22,12,23,null,Mercy/TWILIGHT_HEIRESS.webp,legendary,Twilight Heiress,null,null,1574
 2041,50,9,23,null,Mizuki/RADIANT_SPIRIT.webp,legendary,Radiant Spirit,null,null,null
+2042,21,4,23,null,Mei/LICH_QUEEN.webp,legendary,Lich Queen,null,3,null
