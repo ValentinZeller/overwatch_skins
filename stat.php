@@ -57,7 +57,8 @@ foreach(StatType::cases() as $type) {
                     'rarities' => $rarities,
                     'filterSkins' => $filterSkins,
                     'skinManager' => $skinManager,
-                    'seasons' => $seasons
+                    'seasons' => $seasons,
+                    'category' => null
                 ]) ?>
                 <?php foreach($categories as $category): ?>
                     <?php $filterSkinsCategory = $skinManager->filterSkinByCategory($category['name'], $filterSkins); ?>
@@ -67,15 +68,34 @@ foreach(StatType::cases() as $type) {
                         'rarities' => $rarities,
                         'filterSkins' => $filterSkinsCategory,
                         'skinManager' => $skinManager,
-                        'seasons' => $seasons
+                        'seasons' => $seasons,
+                        'category' => $category
                     ]) ?>
                 <?php endforeach; ?>
+                <div class="row-header" style="background-image: url('image/hero_portrait/<?= $hero['portrait_url'] ?>');" title=<?= $hero['name'] ?> ></div>
             </div>
         <?php endforeach; ?>
         <?php include('template/stat_category.php'); ?>
     </div>
     <script src="js/lazy_loading.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/column_sort.js" type="text/javascript"></script>
+    <script src="js/stat.js" type="text/javascript"></script>
 </body>
 </html>
+<?php 
+$file = fopen("downloads/stat.csv","w");
+fprintf($file, chr(0xEF).chr(0xBB).chr(0xBF));
+$line = array("SEP=,");
+fputcsv($file, $line);
+$line = array("Hero", "Total", "Seasons", "Average", "Last Season", "Recolors");
+fputcsv($file, $line);
+foreach($heroes as $hero) {
+    $filterSkins = $skinManager->filterSkinByHero($hero['name'], $skins);
+    $stat = new StatSkins($filterSkins, $hero, $seasons);
+    $line = array($hero['name'], $stat->total(), $stat->seasons(), $stat->average(), $stat->lastSeason(), $stat->recolors());
+    $line = array_map("utf8_decode", $line);
+    fputcsv($file, $line);
+}
+
+fclose($file);
+?>

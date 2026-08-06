@@ -27,6 +27,17 @@
         background-size: contain;
         background-attachment: scroll;
         background-position: 50% 0%;
+
+        &[data-sort="asc"]::after {
+            content: " ▲";
+            cursor: pointer;
+        }
+
+        &[data-sort="desc"]::after {
+            content: " ▼";
+            cursor: pointer;
+        }
+
     }
 }
 

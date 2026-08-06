@@ -4,3 +4,4 @@
 <a href="all">All Skins ↗</a>
 <a href="season">Season ↗</a>
 <a href="download">Download ↗</a>
+<!-- <a href="stat">Stat ↗</a> -->

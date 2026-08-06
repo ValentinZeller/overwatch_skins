@@ -13,6 +13,6 @@
         <?php endforeach; ?>
         <?php $stat = new StatSkins($filterSkins, $hero, $seasons); ?>
         <?php $result = $stat->results()[$header['id']] ?>
-        <p class="count total"><?= $result ?></p>
+        <p class="count" data-index="<?= $header['id'] ?>_<?= $category ? $category['id'] : 'defaut' ?>"><?= $result ?></p>
     </div>
 <?php endforeach; ?>

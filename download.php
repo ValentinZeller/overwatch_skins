@@ -35,5 +35,8 @@
         <li><a href="downloads/overwatch_skins.xml" target="_blank">XML</a></li>
         <li><a href="downloads/overwatch_skins.yml" target="_blank">YAML</a></li>
     </ul>
+    <ul class="download-list">
+        <li><a href="downloads/stat.csv" target="_blank">Stat</a></li>
+    </ul>
 </body>
 </html>

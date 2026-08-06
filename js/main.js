@@ -137,11 +137,14 @@ function sortHeroes(parameter) {
         });
     }
     container.innerHTML = '';
-    container.append(category);
+    container.append(category.cloneNode(true));
     heroes.forEach(hero => {
         container.append(hero);
     });
-    container.append(total);
+    if (total) {
+        container.append(total);
+    }
+    container.append(category.cloneNode(true));
     closeSettings();
 }
 
