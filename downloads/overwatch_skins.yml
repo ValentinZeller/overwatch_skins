@@ -18634,7 +18634,7 @@
       id_season: 21
       year: null
       image_url: Widowmaker/SCARLET_BRIDE_VIPER.webp
-      rarity: exclusive
+      rarity: evolution
       name: Scarlet Bride Viper
       id_category_secondary: null
       id_condition: null
@@ -20288,4 +20288,15 @@
       name: Radiant Spirit
       id_category_secondary: null
       id_condition: null
+      recolor_of: null
+    - id: 2042
+      id_hero: 21
+      id_category: 4
+      id_season: 23
+      year: null
+      image_url: Mei/LICH_QUEEN.webp
+      rarity: legendary
+      name: Lich Queen
+      id_category_secondary: null
+      id_condition: 3
       recolor_of: null

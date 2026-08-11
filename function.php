@@ -1,4 +1,5 @@
 <?php
+define('MAX_CATEGORIES_SCREEN', 4);
 
 function template($filename, $data) {
     extract($data);
@@ -40,7 +41,12 @@ function split($count, $nbColumn) {
     return $splitClass;
 }
 
-function getNbColumn($category, $maxSkinCategory) {
+function getNbColumn($category, $maxSkinCategory, $nbCategories = 1) {
+    // if ($nbCategories < MAX_CATEGORIES_SCREEN) {
+    //     return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), ceil(MAX_CATEGORIES_SCREEN / $nbCategories));
+    // } else {
+    //     return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), 1);
+    // }
     return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), 1);
 }
 

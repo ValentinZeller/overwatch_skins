@@ -92,7 +92,8 @@
 {"id":49,"name":"Jetpack Cat","role":"support","subrole":"tactician","release_date":"10/02/2026","portrait_url":"Icon-Jetpack_Cat.webp"},
 {"id":50,"name":"Mizuki","role":"support","subrole":"survivor","release_date":"10/02/2026","portrait_url":"Icon-Mizuki.webp"},
 {"id":51,"name":"Sierra","role":"damage","subrole":"recon","release_date":"14/04/2026","portrait_url":"Icon-Sierra.webp"},
-{"id":52,"name":"Shion","role":"damage","subrole":"flanker","release_date":"16/06/2026","portrait_url":"Icon-Shion.webp"}]
+{"id":52,"name":"Shion","role":"damage","subrole":"flanker","release_date":"16/06/2026","portrait_url":"Icon-Shion.webp"},
+{"id":53,"name":"D.Mon","role":"tank","subrole":"stalwart","release_date":"11/08/2026","portrait_url":"Icon-D.Mon.webp"}]
 },
 {
 "season":
@@ -118,7 +119,8 @@
 {"id":20,"name":"Season 20: Vendetta","start_date":"09/12/2025","end_date":"09/02/2026","id_chapter":null},
 {"id":21,"name":"S1: Conquest","start_date":"10/02/2026","end_date":"14/04/2026","id_chapter":1},
 {"id":22,"name":"S2: Summit","start_date":"14/04/2026","end_date":"16/06/2026","id_chapter":1},
-{"id":23,"name":"S3: Into the Tiger's Den","start_date":"16/06/2026","end_date":"11/08/2026","id_chapter":1}]
+{"id":23,"name":"S3: Into the Tiger's Den","start_date":"16/06/2026","end_date":"11/08/2026","id_chapter":1},
+{"id":24,"name":"S4: Heroes of Busan","start_date":"11/08/2026","end_date":"12/10/2026","id_chapter":1}]
 },
 {
 "skin":
@@ -1916,5 +1918,40 @@
 {"id":2039,"id_hero":18,"id_category":12,"id_season":23,"year":null,"image_url":"Lifeweaver/VIOLET_VALET.webp","rarity":"legendary","name":"Violet Valet","id_category_secondary":null,"id_condition":null,"recolor_of":1585},
 {"id":2040,"id_hero":22,"id_category":12,"id_season":23,"year":null,"image_url":"Mercy/TWILIGHT_HEIRESS.webp","rarity":"legendary","name":"Twilight Heiress","id_category_secondary":null,"id_condition":null,"recolor_of":1574},
 {"id":2041,"id_hero":50,"id_category":9,"id_season":23,"year":null,"image_url":"Mizuki/RADIANT_SPIRIT.webp","rarity":"legendary","name":"Radiant Spirit","id_category_secondary":null,"id_condition":null,"recolor_of":null},
-{"id":2042,"id_hero":21,"id_category":4,"id_season":23,"year":null,"image_url":"Mei/LICH_QUEEN.webp","rarity":"legendary","name":"Lich Queen","id_category_secondary":null,"id_condition":3,"recolor_of":null}]
+{"id":2042,"id_hero":21,"id_category":4,"id_season":23,"year":null,"image_url":"Mei/LICH_QUEEN.webp","rarity":"legendary","name":"Lich Queen","id_category_secondary":null,"id_condition":3,"recolor_of":null},
+{"id":2043,"id_hero":53,"id_category":16,"id_season":null,"year":null,"image_url":"D.Mon/OVERWATCH.webp","rarity":"common","name":"Overwatch","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2044,"id_hero":53,"id_category":16,"id_season":null,"year":null,"image_url":"D.Mon/SUPER_GOLD.webp","rarity":"rare","name":"Super Gold","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2045,"id_hero":53,"id_category":16,"id_season":null,"year":null,"image_url":"D.Mon/SKY_BLUE.webp","rarity":"rare","name":"Sky Blue","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2046,"id_hero":53,"id_category":16,"id_season":null,"year":null,"image_url":"D.Mon/CHARGED_VIOLET.webp","rarity":"rare","name":"Charged Violet","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2047,"id_hero":53,"id_category":16,"id_season":null,"year":null,"image_url":"D.Mon/AVIATOR_GREEN.webp","rarity":"rare","name":"Aviator Green","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2048,"id_hero":53,"id_category":18,"id_season":24,"year":null,"image_url":"D.Mon/DIVINE_DEMON.webp","rarity":"legendary","name":"Divine Demon","id_category_secondary":null,"id_condition":10,"recolor_of":null},
+{"id":2049,"id_hero":15,"id_category":18,"id_season":24,"year":null,"image_url":"Junker_Queen/METALCORE.webp","rarity":"legendary","name":"Metalcore","id_category_secondary":null,"id_condition":10,"recolor_of":null},
+{"id":2050,"id_hero":50,"id_category":18,"id_season":24,"year":null,"image_url":"Mizuki/BLUE_CRANE.webp","rarity":"legendary","name":"Blue Crane","id_category_secondary":null,"id_condition":9,"recolor_of":null},
+{"id":2051,"id_hero":7,"id_category":3,"id_season":24,"year":null,"image_url":"D.Va/CYBER_MECHANIC.webp","rarity":"legendary","name":"Cyber Mechanic","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2052,"id_hero":8,"id_category":12,"id_season":24,"year":null,"image_url":"Doomfist/SHANGO_REBORN.webp","rarity":"legendary","name":"Shango Reborn","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2053,"id_hero":24,"id_category":12,"id_season":24,"year":null,"image_url":"Orisa/PIXEL_BUNNY.webp","rarity":"legendary","name":"Pixel Bunny","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2054,"id_hero":26,"id_category":17,"id_season":24,"year":null,"image_url":"Ramattra/STADIUM_ALL-STAR.webp","rarity":"legendary","name":"Stadium All-Star","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2055,"id_hero":39,"id_category":3,"id_season":24,"year":null,"image_url":"Winston/CYBER_APE.webp","rarity":"epic","name":"Cyber Ape","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2056,"id_hero":6,"id_category":3,"id_season":24,"year":null,"image_url":"Cassidy/CYBER_COWBOY.webp","rarity":"legendary","name":"Cyber Cowboy","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2057,"id_hero":47,"id_category":12,"id_season":24,"year":null,"image_url":"Emre/PIXEL_SOLDIER.webp","rarity":"legendary","name":"Pixel Soldier","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2058,"id_hero":10,"id_category":12,"id_season":24,"year":null,"image_url":"Freja/ARTEMIS_REBORN.webp","rarity":"legendary","name":"Artemis Reborn","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2059,"id_hero":11,"id_category":8,"id_season":24,"year":null,"image_url":"Genji/KOI_OF_DUALITY.webp","rarity":"mythic","name":"Koi of Duality","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2060,"id_hero":12,"id_category":12,"id_season":24,"year":null,"image_url":"Hanzo/FANCY_FLEECE.webp","rarity":"legendary","name":"Fancy Fleece","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2061,"id_hero":21,"id_category":12,"id_season":24,"year":null,"image_url":"Mei/FANCY_FLEECE.webp","rarity":"legendary","name":"Fancy Fleece","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2062,"id_hero":25,"id_category":3,"id_season":24,"year":null,"image_url":"Pharah/CYBER_RAPTOR.webp","rarity":"legendary","name":"Cyber Raptor","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2063,"id_hero":27,"id_category":12,"id_season":24,"year":null,"image_url":"Reaper/FANCY_FANGS.webp","rarity":"legendary","name":"Fancy Fangs","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2064,"id_hero":31,"id_category":3,"id_season":24,"year":null,"image_url":"Sojourn/NIGHT_WATCH.webp","rarity":"epic","name":"Night Watch","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2065,"id_hero":45,"id_category":12,"id_season":24,"year":null,"image_url":"Vendetta/PIXEL_FIGHTER.webp","rarity":"legendary","name":"Pixel Fighter","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2066,"id_hero":45,"id_category":12,"id_season":24,"year":null,"image_url":"Vendetta/FANCY_FANGS.webp","rarity":"epic","name":"Fancy Fangs","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2067,"id_hero":5,"id_category":3,"id_season":24,"year":null,"image_url":"Brigitte/CYBER_CHAMP.webp","rarity":"legendary","name":"Cyber Champ","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2068,"id_hero":14,"id_category":17,"id_season":24,"year":null,"image_url":"Illari/CRIMSON_WOLF.webp","rarity":"legendary","name":"Crimson Wolf","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2069,"id_hero":49,"id_category":12,"id_season":24,"year":null,"image_url":"Jetpack_Cat/SEKHMET_REBORN.webp","rarity":"legendary","name":"Sekhmet Reborn","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2070,"id_hero":17,"id_category":12,"id_season":24,"year":null,"image_url":"Juno/FANCY_FLEECE.webp","rarity":"legendary","name":"Fancy Fleece","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2071,"id_hero":43,"id_category":12,"id_season":24,"year":null,"image_url":"Kiriko/IZANAMI_REBORN.webp","rarity":"legendary","name":"Izanami Reborn","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2072,"id_hero":19,"id_category":12,"id_season":24,"year":null,"image_url":"Lucio/PIXEL_GAMER.webp","rarity":"legendary","name":"Pixel Gamer","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2073,"id_hero":22,"id_category":12,"id_season":24,"year":null,"image_url":"Mercy/FANCY_FANGS.webp","rarity":"legendary","name":"Fancy Fangs","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2074,"id_hero":22,"id_category":12,"id_season":24,"year":null,"image_url":"Mercy/PIXEL_STAR.webp","rarity":"legendary","name":"Pixel Star","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2075,"id_hero":23,"id_category":3,"id_season":24,"year":null,"image_url":"Moira/CYBER_CHIC.webp","rarity":"legendary","name":"Cyber Chic","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2076,"id_hero":23,"id_category":12,"id_season":24,"year":null,"image_url":"Moira/NEZHA_REBORN.webp","rarity":"legendary","name":"Nezha Reborn","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2077,"id_hero":42,"id_category":3,"id_season":24,"year":null,"image_url":"Zenyatta/CYBER_CAT.webp","rarity":"epic","name":"Cyber Cat","id_category_secondary":null,"id_condition":null,"recolor_of":null}]
 }]

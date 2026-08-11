@@ -5,7 +5,7 @@
    </a>
     <?php foreach ($categories as $category): ?>
         <?php
-            $nbColumn = getNbColumn($category, $maxSkinCategory, $manager);
+            $nbColumn = getNbColumn($category, $maxSkinCategory, count($categories));
         ?>
         <div data-category="<?= $category['name'] ?>" class="cell " style="width: calc(var(--width) * <?= $nbColumn ?>);">
             <?php

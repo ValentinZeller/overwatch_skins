@@ -3,7 +3,7 @@
 <div id='category' class='row row-category'>
     <div class='row-header'></div>
     <?php foreach ($categories as $category): ?>
-        <?php $nbColumn = getNbColumn($category, $maxSkinCategory); 
+        <?php $nbColumn = getNbColumn($category, $maxSkinCategory, count($categories)); 
         if (isset($category['start_date'])) {
             $category['name'] = explode('-',$category['start_date'])[0] . ' - ' . $category['name'];
         }
