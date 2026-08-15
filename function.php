@@ -42,12 +42,11 @@ function split($count, $nbColumn) {
 }
 
 function getNbColumn($category, $maxSkinCategory, $nbCategories = 1) {
-    // if ($nbCategories < MAX_CATEGORIES_SCREEN) {
-    //     return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), ceil(MAX_CATEGORIES_SCREEN / $nbCategories));
-    // } else {
-    //     return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), 1);
-    // }
-    return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), 1);
+    if ($nbCategories < MAX_CATEGORIES_SCREEN) {
+        return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), ceil(MAX_CATEGORIES_SCREEN / $nbCategories));
+    } else {
+        return max(ceil($maxSkinCategory[$category['name']] / MAX_SKIN_AMOUNT), 1);
+    }
 }
 
 function renameFile($filename, $suffix = 'web') {

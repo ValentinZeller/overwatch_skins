@@ -6,7 +6,7 @@
         <?php
             $filterSkin = $manager->filterSkinByCategoryColumn($category['name'], $skinData);
             $filterSkinCount = count($filterSkin);
-            $nbColumn = getNbColumn($category, $maxSkinCategory);
+            $nbColumn = getNbColumn($category, $maxSkinCategory, count($categories));
         ?>
         <div class="row-count" data-category="<?= $category['name'] ?>" style="width: calc(var(--width) * <?= $nbColumn ?>);" >
             <?php echo template('template/rarity_count.php',[
