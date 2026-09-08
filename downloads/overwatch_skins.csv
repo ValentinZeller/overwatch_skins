@@ -1955,3 +1955,18 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2075,23,3,24,null,Moira/CYBER_CHIC.webp,legendary,Cyber Chic,null,null,null
 2076,23,12,24,null,Moira/NEZHA_REBORN.webp,legendary,Nezha Reborn,null,null,null
 2077,42,3,24,null,Zenyatta/CYBER_CAT.webp,epic,Cyber Cat,null,null,null
+2078,46,9,24,null,Domina/STARLIGHT_CHAMPION.webp,legendary,Starlight Champion,null,null,null
+2079,29,12,24,null,Roadhog/METALCORE.webp,legendary,Metalcore,null,null,null
+2080,2,12,24,null,Ashe/METALCORE.webp,legendary,Metalcore,null,null,null
+2081,6,9,24,null,Cassidy/STARLIGHT_CHAMPION.webp,legendary,Starlight Champion,null,null,null
+2082,31,9,24,null,Sojourn/MARINE_CHAMPION.webp,legendary,Marine Champion,null,null,1108
+2083,38,8,24,null,Widowmaker/VOID_DANCER.webp,mythic,Void Dancer,null,null,null
+2084,1,12,24,null,Ana/METALCORE.webp,legendary,Metalcore,null,null,null
+2085,1,12,24,null,Ana/SILENT_GUARDIAN.webp,legendary,Silent Guardian,null,null,null
+2086,3,12,24,null,Baptiste/FUGITIVE.webp,legendary,Fugitive,null,null,null
+2087,17,12,24,null,Juno/METALCORE.webp,legendary,Metalcore,null,null,null
+2088,43,9,24,null,Kiriko/STARLIGHT_CHAMPION.webp,legendary,Starlight Champion,null,null,null
+2089,18,12,24,null,Lifeweaver/METALCORE.webp,legendary,Metalcore,null,null,null
+2090,22,9,24,null,Mercy/STARLIGHT_CHAMPION.webp,legendary,Starlight Champion,null,null,56
+2091,22,12,24,null,Mercy/CAIRO_HOLIDAY.webp,legendary,Cairo Holiday,null,null,null
+2092,42,12,24,null,Zenyatta/METALCORE.webp,legendary,Metalcore,null,null,null
