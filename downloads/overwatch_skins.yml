@@ -20696,3 +20696,168 @@
       id_category_secondary: null
       id_condition: null
       recolor_of: null
+    - id: 2078
+      id_hero: 46
+      id_category: 9
+      id_season: 24
+      year: null
+      image_url: Domina/STARLIGHT_CHAMPION.webp
+      rarity: legendary
+      name: Starlight Champion
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2079
+      id_hero: 29
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Roadhog/METALCORE.webp
+      rarity: legendary
+      name: Metalcore
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2080
+      id_hero: 2
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Ashe/METALCORE.webp
+      rarity: legendary
+      name: Metalcore
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2081
+      id_hero: 6
+      id_category: 9
+      id_season: 24
+      year: null
+      image_url: Cassidy/STARLIGHT_CHAMPION.webp
+      rarity: legendary
+      name: Starlight Champion
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2082
+      id_hero: 31
+      id_category: 9
+      id_season: 24
+      year: null
+      image_url: Sojourn/MARINE_CHAMPION.webp
+      rarity: legendary
+      name: Marine Champion
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1108
+    - id: 2083
+      id_hero: 38
+      id_category: 8
+      id_season: 24
+      year: null
+      image_url: Widowmaker/VOID_DANCER.webp
+      rarity: mythic
+      name: Void Dancer
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2084
+      id_hero: 1
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Ana/METALCORE.webp
+      rarity: legendary
+      name: Metalcore
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2085
+      id_hero: 1
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Ana/SILENT_GUARDIAN.webp
+      rarity: legendary
+      name: Silent Guardian
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2086
+      id_hero: 3
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Baptiste/FUGITIVE.webp
+      rarity: legendary
+      name: Fugitive
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2087
+      id_hero: 17
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Juno/METALCORE.webp
+      rarity: legendary
+      name: Metalcore
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2088
+      id_hero: 43
+      id_category: 9
+      id_season: 24
+      year: null
+      image_url: Kiriko/STARLIGHT_CHAMPION.webp
+      rarity: legendary
+      name: Starlight Champion
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2089
+      id_hero: 18
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Lifeweaver/METALCORE.webp
+      rarity: legendary
+      name: Metalcore
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2090
+      id_hero: 22
+      id_category: 9
+      id_season: 24
+      year: null
+      image_url: Mercy/STARLIGHT_CHAMPION.webp
+      rarity: legendary
+      name: Starlight Champion
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 56
+    - id: 2091
+      id_hero: 22
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Mercy/CAIRO_HOLIDAY.webp
+      rarity: legendary
+      name: Cairo Holiday
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2092
+      id_hero: 42
+      id_category: 12
+      id_season: 24
+      year: null
+      image_url: Zenyatta/METALCORE.webp
+      rarity: legendary
+      name: Metalcore
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null

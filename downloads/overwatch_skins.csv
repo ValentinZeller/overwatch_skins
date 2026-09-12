@@ -1970,3 +1970,14 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2090,22,9,24,null,Mercy/STARLIGHT_CHAMPION.webp,legendary,Starlight Champion,null,null,56
 2091,22,12,24,null,Mercy/CAIRO_HOLIDAY.webp,legendary,Cairo Holiday,null,null,null
 2092,42,12,24,null,Zenyatta/METALCORE.webp,legendary,Metalcore,null,null,null
+2094,53,15,24,null,D.Mon/MADE_MY_NIGHT.webp,ultra,Made My Night,null,null,null
+2095,48,15,24,null,Anran/MADE_MY_NIGHT.webp,legendary,Made My Night,null,null,null
+2096,51,15,24,null,Sierra/MADE_MY_NIGHT.webp,legendary,Made My Night,null,null,null
+2097,10,15,24,null,Freja/MADE_MY_NIGHT.webp,legendary,Made My Night,null,null,null
+2098,50,15,24,null,Mizuki/MADE_MY_NIGHT.webp,legendary,Made My Night,null,null,null
+2099,23,15,24,null,Moira/MADE_MY_NIGHT.webp,ultra,Made My Night,null,null,null
+2100,7,15,24,null,D.Va/PUREFLOW.webp,legendary,Pureflow,null,null,1545
+2101,2,15,24,null,Ashe/PUREFLOW.webp,legendary,Pureflow,null,null,615
+2102,17,15,24,null,Juno/PUREFLOW.webp,legendary,Pureflow,null,null,1554
+2103,22,15,24,null,Mercy/PUREFLOW.webp,legendary,Pureflow,null,null,1560
+2104,14,15,24,null,Illari/PUREFLOW.webp,legendary,Pureflow,null,null,1553

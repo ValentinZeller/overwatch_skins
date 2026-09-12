@@ -858,7 +858,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="9" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="155" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1809" Avg_row_length="90" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2094" Create_time="2026-07-19 18:39:22" Update_time="2026-09-08 18:34:24" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1805" Avg_row_length="90" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2105" Create_time="2026-07-19 18:39:22" Update_time="2026-09-12 18:41:39" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -24845,6 +24845,149 @@
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
 		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2094</field>
+		<field name="id_hero">53</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">D.Mon/MADE_MY_NIGHT.webp</field>
+		<field name="rarity">ultra</field>
+		<field name="name">Made My Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2095</field>
+		<field name="id_hero">48</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Anran/MADE_MY_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Made My Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2096</field>
+		<field name="id_hero">51</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Sierra/MADE_MY_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Made My Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2097</field>
+		<field name="id_hero">10</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Freja/MADE_MY_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Made My Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2098</field>
+		<field name="id_hero">50</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mizuki/MADE_MY_NIGHT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Made My Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2099</field>
+		<field name="id_hero">23</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Moira/MADE_MY_NIGHT.webp</field>
+		<field name="rarity">ultra</field>
+		<field name="name">Made My Night</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2100</field>
+		<field name="id_hero">7</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">D.Va/PUREFLOW.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Pureflow</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1545</field>
+	</row>
+	<row>
+		<field name="id">2101</field>
+		<field name="id_hero">2</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Ashe/PUREFLOW.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Pureflow</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">615</field>
+	</row>
+	<row>
+		<field name="id">2102</field>
+		<field name="id_hero">17</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Juno/PUREFLOW.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Pureflow</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1554</field>
+	</row>
+	<row>
+		<field name="id">2103</field>
+		<field name="id_hero">22</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mercy/PUREFLOW.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Pureflow</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1560</field>
+	</row>
+	<row>
+		<field name="id">2104</field>
+		<field name="id_hero">14</field>
+		<field name="id_category">15</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Illari/PUREFLOW.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Pureflow</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1553</field>
 	</row>
 	</table_data>
 </database>

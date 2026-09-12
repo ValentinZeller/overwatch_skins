@@ -1968,5 +1968,16 @@
 {"id":2089,"id_hero":18,"id_category":12,"id_season":24,"year":null,"image_url":"Lifeweaver/METALCORE.webp","rarity":"legendary","name":"Metalcore","id_category_secondary":null,"id_condition":null,"recolor_of":null},
 {"id":2090,"id_hero":22,"id_category":9,"id_season":24,"year":null,"image_url":"Mercy/STARLIGHT_CHAMPION.webp","rarity":"legendary","name":"Starlight Champion","id_category_secondary":null,"id_condition":null,"recolor_of":56},
 {"id":2091,"id_hero":22,"id_category":12,"id_season":24,"year":null,"image_url":"Mercy/CAIRO_HOLIDAY.webp","rarity":"legendary","name":"Cairo Holiday","id_category_secondary":null,"id_condition":null,"recolor_of":null},
-{"id":2092,"id_hero":42,"id_category":12,"id_season":24,"year":null,"image_url":"Zenyatta/METALCORE.webp","rarity":"legendary","name":"Metalcore","id_category_secondary":null,"id_condition":null,"recolor_of":null}]
+{"id":2092,"id_hero":42,"id_category":12,"id_season":24,"year":null,"image_url":"Zenyatta/METALCORE.webp","rarity":"legendary","name":"Metalcore","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2094,"id_hero":53,"id_category":15,"id_season":24,"year":null,"image_url":"D.Mon/MADE_MY_NIGHT.webp","rarity":"ultra","name":"Made My Night","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2095,"id_hero":48,"id_category":15,"id_season":24,"year":null,"image_url":"Anran/MADE_MY_NIGHT.webp","rarity":"legendary","name":"Made My Night","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2096,"id_hero":51,"id_category":15,"id_season":24,"year":null,"image_url":"Sierra/MADE_MY_NIGHT.webp","rarity":"legendary","name":"Made My Night","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2097,"id_hero":10,"id_category":15,"id_season":24,"year":null,"image_url":"Freja/MADE_MY_NIGHT.webp","rarity":"legendary","name":"Made My Night","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2098,"id_hero":50,"id_category":15,"id_season":24,"year":null,"image_url":"Mizuki/MADE_MY_NIGHT.webp","rarity":"legendary","name":"Made My Night","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2099,"id_hero":23,"id_category":15,"id_season":24,"year":null,"image_url":"Moira/MADE_MY_NIGHT.webp","rarity":"ultra","name":"Made My Night","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2100,"id_hero":7,"id_category":15,"id_season":24,"year":null,"image_url":"D.Va/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1545},
+{"id":2101,"id_hero":2,"id_category":15,"id_season":24,"year":null,"image_url":"Ashe/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":615},
+{"id":2102,"id_hero":17,"id_category":15,"id_season":24,"year":null,"image_url":"Juno/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1554},
+{"id":2103,"id_hero":22,"id_category":15,"id_season":24,"year":null,"image_url":"Mercy/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1560},
+{"id":2104,"id_hero":14,"id_category":15,"id_season":24,"year":null,"image_url":"Illari/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1553}]
 }]
