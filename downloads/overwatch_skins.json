@@ -73,7 +73,7 @@
 {"id":30,"name":"Sigma","role":"tank","subrole":"stalwart","release_date":"13/08/2019","portrait_url":"Icon-Sigma.webp"},
 {"id":31,"name":"Sojourn","role":"damage","subrole":"sharpshooter","release_date":"04/10/2022","portrait_url":"Icon-Sojourn.webp"},
 {"id":32,"name":"Soldier 76","role":"damage","subrole":"specialist","release_date":"24/05/2016","portrait_url":"Icon-Soldier76.webp"},
-{"id":33,"name":"Sombra","role":"damage","subrole":"recon","release_date":"15/11/2016","portrait_url":"Icon-Sombra.webp"},
+{"id":33,"name":"Sombra","role":"support","subrole":"tactician","release_date":"15/11/2016","portrait_url":"Icon-Sombra.webp"},
 {"id":34,"name":"Symmetra","role":"damage","subrole":"specialist","release_date":"24/05/2016","portrait_url":"Icon-Symmetra.webp"},
 {"id":35,"name":"Torbjörn","role":"damage","subrole":"specialist","release_date":"24/05/2016","portrait_url":"Icon-Torbjorn.webp"},
 {"id":36,"name":"Tracer","role":"damage","subrole":"flanker","release_date":"24/05/2016","portrait_url":"Icon-Tracer.webp"},
@@ -93,7 +93,8 @@
 {"id":50,"name":"Mizuki","role":"support","subrole":"survivor","release_date":"10/02/2026","portrait_url":"Icon-Mizuki.webp"},
 {"id":51,"name":"Sierra","role":"damage","subrole":"recon","release_date":"14/04/2026","portrait_url":"Icon-Sierra.webp"},
 {"id":52,"name":"Shion","role":"damage","subrole":"flanker","release_date":"16/06/2026","portrait_url":"Icon-Shion.webp"},
-{"id":53,"name":"D.Mon","role":"tank","subrole":"stalwart","release_date":"11/08/2026","portrait_url":"Icon-D.Mon.webp"}]
+{"id":53,"name":"D.Mon","role":"tank","subrole":"stalwart","release_date":"11/08/2026","portrait_url":"Icon-D.Mon.webp"},
+{"id":54,"name":"Doctrine","role":"support","subrole":"survivor","release_date":"06/10/2026","portrait_url":"Icon-Doctrine.webp"}]
 },
 {
 "season":
@@ -120,7 +121,8 @@
 {"id":21,"name":"S1: Conquest","start_date":"10/02/2026","end_date":"14/04/2026","id_chapter":1},
 {"id":22,"name":"S2: Summit","start_date":"14/04/2026","end_date":"16/06/2026","id_chapter":1},
 {"id":23,"name":"S3: Into the Tiger's Den","start_date":"16/06/2026","end_date":"11/08/2026","id_chapter":1},
-{"id":24,"name":"S4: Heroes of Busan","start_date":"11/08/2026","end_date":"12/10/2026","id_chapter":1}]
+{"id":24,"name":"S4: Heroes of Busan","start_date":"11/08/2026","end_date":"06/10/2026","id_chapter":1},
+{"id":25,"name":"S5: A Grim Doctrine","start_date":"06/10/2026","end_date":"08/12/2026","id_chapter":1}]
 },
 {
 "skin":
@@ -1979,5 +1981,19 @@
 {"id":2101,"id_hero":2,"id_category":15,"id_season":24,"year":null,"image_url":"Ashe/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":615},
 {"id":2102,"id_hero":17,"id_category":15,"id_season":24,"year":null,"image_url":"Juno/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1554},
 {"id":2103,"id_hero":22,"id_category":15,"id_season":24,"year":null,"image_url":"Mercy/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1560},
-{"id":2104,"id_hero":14,"id_category":15,"id_season":24,"year":null,"image_url":"Illari/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1553}]
+{"id":2104,"id_hero":14,"id_category":15,"id_season":24,"year":null,"image_url":"Illari/PUREFLOW.webp","rarity":"legendary","name":"Pureflow","id_category_secondary":null,"id_condition":null,"recolor_of":1553},
+{"id":2105,"id_hero":20,"id_category":19,"id_season":24,"year":null,"image_url":"Mauga/ALOHA_PORT-DE-PAIX.webp","rarity":"legendary","name":"Aloha Port-de-Paix","id_category_secondary":null,"id_condition":null,"recolor_of":1436},
+{"id":2106,"id_hero":7,"id_category":19,"id_season":24,"year":null,"image_url":"D.Va/SPLASH_SURFER.webp","rarity":"legendary","name":"Splash Surfer","id_category_secondary":null,"id_condition":null,"recolor_of":64},
+{"id":2107,"id_hero":38,"id_category":19,"id_season":24,"year":null,"image_url":"Widowmaker/DEATHSTALKER.webp","rarity":"legendary","name":"Deathstalker","id_category_secondary":null,"id_condition":null,"recolor_of":139},
+{"id":2108,"id_hero":37,"id_category":19,"id_season":24,"year":null,"image_url":"Venture/ABYSSWALKER.webp","rarity":"legendary","name":"Abysswalker","id_category_secondary":null,"id_condition":null,"recolor_of":1849},
+{"id":2109,"id_hero":17,"id_category":19,"id_season":24,"year":null,"image_url":"Juno/SPLASH_TEO_MINH.webp","rarity":"legendary","name":"Splash Teo Minh","id_category_secondary":null,"id_condition":null,"recolor_of":1610},
+{"id":2110,"id_hero":19,"id_category":19,"id_season":24,"year":null,"image_url":"Lucio/URBAN_HOPPER.webp","rarity":"legendary","name":"Urban Hopper","id_category_secondary":null,"id_condition":null,"recolor_of":1645},
+{"id":2111,"id_hero":3,"id_category":19,"id_season":24,"year":null,"image_url":"Baptiste/KAISEKI.webp","rarity":"legendary","name":"Kaiseki","id_category_secondary":null,"id_condition":null,"recolor_of":1412},
+{"id":2112,"id_hero":25,"id_category":19,"id_season":23,"year":null,"image_url":"Pharah/CAIRO_DETECTIVE.webp","rarity":"evolution","name":"Cairo Detective","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2113,"id_hero":49,"id_category":19,"id_season":24,"year":null,"image_url":"Jetpack_Cat/DREAMY_CUTY_KITTEN.webp","rarity":"evolution","name":"Dreamy Cuty Kitten","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2114,"id_hero":46,"id_category":19,"id_season":24,"year":null,"image_url":"Domina/PRESIDENT.webp","rarity":"legendary","name":"President","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2115,"id_hero":18,"id_category":19,"id_season":24,"year":null,"image_url":"Lifeweaver/ASSISTANT_RESEARCHER.webp","rarity":"legendary","name":"Assistant Researcher","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2116,"id_hero":19,"id_category":19,"id_season":24,"year":null,"image_url":"Lucio/INTERN_ASSISTANT.webp","rarity":"legendary","name":"Intern Assistant","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2117,"id_hero":33,"id_category":19,"id_season":24,"year":null,"image_url":"Sombra/REBEL_LEADER.webp","rarity":"legendary","name":"Rebel Leader","id_category_secondary":null,"id_condition":null,"recolor_of":null},
+{"id":2118,"id_hero":34,"id_category":19,"id_season":24,"year":null,"image_url":"Symmetra/CHIEF_SCIENTIST.webp","rarity":"legendary","name":"Chief Scientist","id_category_secondary":null,"id_condition":null,"recolor_of":null}]
 }]

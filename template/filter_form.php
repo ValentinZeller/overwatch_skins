@@ -80,6 +80,7 @@ if ($version == 'main' || $version == null || $version == 'season') {
                 <div class="role" id="<?php $role ?>">
                     <?php foreach ($heroList as $hero): ?>
                         <?php if ( $version == 'legacy' && $hero['name'] == 'Doomfist') { $hero['role'] = 'damage'; /*Doomfist role fix */ } ?>
+                        <?php if ( $version == 'legacy' && $hero['name'] == 'Sombra') { $hero['role'] = 'damage'; /*Sombra role fix */ } ?>
                         <?php if ($hero['role'] == $role): ?>
                             <label class="hero" <?= ($version != 'legacy') ? 'style="color:var(--'.$hero['subrole'].');"' : '' ?>>
                                 <input type="checkbox" data-release-date="<?= $hero['release_date'] ?>" data-role="<?= $hero['role'] ?>" name="hero[]" value="<?= $hero['name'] ?>" <?php echo (in_array($hero['name'], array_column($heroes, 'name'))&&$filtered['hero'] ? "checked" : "") ?>>

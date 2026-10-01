@@ -74,7 +74,7 @@ id,name,role,subrole,release_date,portrait_url
 30,Sigma,tank,stalwart,13/08/2019,Icon-Sigma.webp
 31,Sojourn,damage,sharpshooter,04/10/2022,Icon-Sojourn.webp
 32,Soldier 76,damage,specialist,24/05/2016,Icon-Soldier76.webp
-33,Sombra,damage,recon,15/11/2016,Icon-Sombra.webp
+33,Sombra,support,tactician,15/11/2016,Icon-Sombra.webp
 34,Symmetra,damage,specialist,24/05/2016,Icon-Symmetra.webp
 35,TorbjÃ¶rn,damage,specialist,24/05/2016,Icon-Torbjorn.webp
 36,Tracer,damage,flanker,24/05/2016,Icon-Tracer.webp
@@ -95,6 +95,7 @@ id,name,role,subrole,release_date,portrait_url
 51,Sierra,damage,recon,14/04/2026,Icon-Sierra.webp
 52,Shion,damage,flanker,16/06/2026,Icon-Shion.webp
 53,D.Mon,tank,stalwart,11/08/2026,Icon-D.Mon.webp
+54,Doctrine,support,survivor,06/10/2026,Icon-Doctrine.webp
 
 season:
 id,name,start_date,end_date,id_chapter
@@ -121,7 +122,8 @@ id,name,start_date,end_date,id_chapter
 21,S1: Conquest,10/02/2026,14/04/2026,1
 22,S2: Summit,14/04/2026,16/06/2026,1
 23,S3: Into the Tiger's Den,16/06/2026,11/08/2026,1
-24,S4: Heroes of Busan,11/08/2026,12/10/2026,1
+24,S4: Heroes of Busan,11/08/2026,06/10/2026,1
+25,S5: A Grim Doctrine,06/10/2026,08/12/2026,1
 
 skin:
 id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondary,id_condition,recolor_of
@@ -1981,3 +1983,17 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2102,17,15,24,null,Juno/PUREFLOW.webp,legendary,Pureflow,null,null,1554
 2103,22,15,24,null,Mercy/PUREFLOW.webp,legendary,Pureflow,null,null,1560
 2104,14,15,24,null,Illari/PUREFLOW.webp,legendary,Pureflow,null,null,1553
+2105,20,19,24,null,Mauga/ALOHA_PORT-DE-PAIX.webp,legendary,Aloha Port-de-Paix,null,null,1436
+2106,7,19,24,null,D.Va/SPLASH_SURFER.webp,legendary,Splash Surfer,null,null,64
+2107,38,19,24,null,Widowmaker/DEATHSTALKER.webp,legendary,Deathstalker,null,null,139
+2108,37,19,24,null,Venture/ABYSSWALKER.webp,legendary,Abysswalker,null,null,1849
+2109,17,19,24,null,Juno/SPLASH_TEO_MINH.webp,legendary,Splash Teo Minh,null,null,1610
+2110,19,19,24,null,Lucio/URBAN_HOPPER.webp,legendary,Urban Hopper,null,null,1645
+2111,3,19,24,null,Baptiste/KAISEKI.webp,legendary,Kaiseki,null,null,1412
+2112,25,19,23,null,Pharah/CAIRO_DETECTIVE.webp,evolution,Cairo Detective,null,null,null
+2113,49,19,24,null,Jetpack_Cat/DREAMY_CUTY_KITTEN.webp,evolution,Dreamy Cuty Kitten,null,null,null
+2114,46,19,24,null,Domina/PRESIDENT.webp,legendary,President,null,null,null
+2115,18,19,24,null,Lifeweaver/ASSISTANT_RESEARCHER.webp,legendary,Assistant Researcher,null,null,null
+2116,19,19,24,null,Lucio/INTERN_ASSISTANT.webp,legendary,Intern Assistant,null,null,null
+2117,33,19,24,null,Sombra/REBEL_LEADER.webp,legendary,Rebel Leader,null,null,null
+2118,34,19,24,null,Symmetra/CHIEF_SCIENTIST.webp,legendary,Chief Scientist,null,null,null

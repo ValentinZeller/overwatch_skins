@@ -229,7 +229,7 @@
 		<field Field="release_date" Type="date" Null="NO" Key="" Default="curdate()" Extra="DEFAULT_GENERATED" Comment="" />
 		<field Field="portrait_url" Type="text" Null="NO" Key="" Extra="" Comment="" />
 		<key Table="hero" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="52" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="hero" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="52" Avg_row_length="315" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="54" Create_time="2026-06-02 07:09:20" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="hero" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="52" Avg_row_length="315" Data_length="16384" Max_data_length="0" Index_length="0" Data_free="0" Auto_increment="55" Create_time="2026-06-02 07:09:20" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="hero">
 	<row>
@@ -491,8 +491,8 @@
 	<row>
 		<field name="id">33</field>
 		<field name="name">Sombra</field>
-		<field name="role">damage</field>
-		<field name="subrole">recon</field>
+		<field name="role">support</field>
+		<field name="subrole">tactician</field>
 		<field name="release_date">2016-11-15</field>
 		<field name="portrait_url">Icon-Sombra.webp</field>
 	</row>
@@ -656,6 +656,14 @@
 		<field name="release_date">2026-08-11</field>
 		<field name="portrait_url">Icon-D.Mon.webp</field>
 	</row>
+	<row>
+		<field name="id">54</field>
+		<field name="name">Doctrine</field>
+		<field name="role">support</field>
+		<field name="subrole">survivor</field>
+		<field name="release_date">2026-10-06</field>
+		<field name="portrait_url">Icon-Doctrine.webp</field>
+	</row>
 	</table_data>
 	<table_structure name="season">
 		<field Field="id" Type="int" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
@@ -665,7 +673,7 @@
 		<field Field="id_chapter" Type="int" Null="YES" Key="MUL" Extra="" Comment="" />
 		<key Table="season" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="22" Null="" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="season" Non_unique="1" Key_name="id_chapter" Seq_in_index="1" Column_name="id_chapter" Collation="A" Cardinality="2" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="season" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="22" Avg_row_length="744" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="25" Create_time="2026-06-02 07:09:20" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="season" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="22" Avg_row_length="744" Data_length="16384" Max_data_length="0" Index_length="16384" Data_free="0" Auto_increment="26" Create_time="2026-06-02 07:09:20" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="season">
 	<row>
@@ -833,7 +841,14 @@
 		<field name="id">24</field>
 		<field name="name">S4: Heroes of Busan</field>
 		<field name="start_date">2026-08-11</field>
-		<field name="end_date">2026-10-12</field>
+		<field name="end_date">2026-10-06</field>
+		<field name="id_chapter">1</field>
+	</row>
+	<row>
+		<field name="id">25</field>
+		<field name="name">S5: A Grim Doctrine</field>
+		<field name="start_date">2026-10-06</field>
+		<field name="end_date">2026-12-08</field>
 		<field name="id_chapter">1</field>
 	</row>
 	</table_data>
@@ -858,7 +873,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="9" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="155" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1805" Avg_row_length="90" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2105" Create_time="2026-07-19 18:39:22" Update_time="2026-09-12 18:41:39" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1794" Avg_row_length="91" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2119" Create_time="2026-07-19 18:39:22" Update_time="2026-10-01 11:15:54" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -24988,6 +25003,188 @@
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
 		<field name="recolor_of">1553</field>
+	</row>
+	<row>
+		<field name="id">2105</field>
+		<field name="id_hero">20</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Mauga/ALOHA_PORT-DE-PAIX.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Aloha Port-de-Paix</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1436</field>
+	</row>
+	<row>
+		<field name="id">2106</field>
+		<field name="id_hero">7</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">D.Va/SPLASH_SURFER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Splash Surfer</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">64</field>
+	</row>
+	<row>
+		<field name="id">2107</field>
+		<field name="id_hero">38</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Widowmaker/DEATHSTALKER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Deathstalker</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">139</field>
+	</row>
+	<row>
+		<field name="id">2108</field>
+		<field name="id_hero">37</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Venture/ABYSSWALKER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Abysswalker</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1849</field>
+	</row>
+	<row>
+		<field name="id">2109</field>
+		<field name="id_hero">17</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Juno/SPLASH_TEO_MINH.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Splash Teo Minh</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1610</field>
+	</row>
+	<row>
+		<field name="id">2110</field>
+		<field name="id_hero">19</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Lucio/URBAN_HOPPER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Urban Hopper</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1645</field>
+	</row>
+	<row>
+		<field name="id">2111</field>
+		<field name="id_hero">3</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Baptiste/KAISEKI.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Kaiseki</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">1412</field>
+	</row>
+	<row>
+		<field name="id">2112</field>
+		<field name="id_hero">25</field>
+		<field name="id_category">19</field>
+		<field name="id_season">23</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Pharah/CAIRO_DETECTIVE.webp</field>
+		<field name="rarity">evolution</field>
+		<field name="name">Cairo Detective</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2113</field>
+		<field name="id_hero">49</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Jetpack_Cat/DREAMY_CUTY_KITTEN.webp</field>
+		<field name="rarity">evolution</field>
+		<field name="name">Dreamy Cuty Kitten</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2114</field>
+		<field name="id_hero">46</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Domina/PRESIDENT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">President</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2115</field>
+		<field name="id_hero">18</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Lifeweaver/ASSISTANT_RESEARCHER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Assistant Researcher</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2116</field>
+		<field name="id_hero">19</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Lucio/INTERN_ASSISTANT.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Intern Assistant</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2117</field>
+		<field name="id_hero">33</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Sombra/REBEL_LEADER.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Rebel Leader</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2118</field>
+		<field name="id_hero">34</field>
+		<field name="id_category">19</field>
+		<field name="id_season">24</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Symmetra/CHIEF_SCIENTIST.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Chief Scientist</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of" xsi:nil="true" />
 	</row>
 	</table_data>
 </database>

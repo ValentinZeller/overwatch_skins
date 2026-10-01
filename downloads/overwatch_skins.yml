@@ -320,8 +320,8 @@
       portrait_url: Icon-Soldier76.webp
     - id: 33
       name: Sombra
-      role: damage
-      subrole: recon
+      role: support
+      subrole: tactician
       release_date: 15/11/2016
       portrait_url: Icon-Sombra.webp
     - id: 34
@@ -444,6 +444,12 @@
       subrole: stalwart
       release_date: 11/08/2026
       portrait_url: Icon-D.Mon.webp
+    - id: 54
+      name: Doctrine
+      role: support
+      subrole: survivor
+      release_date: 06/10/2026
+      portrait_url: Icon-Doctrine.webp
 - season:
     - id: 1
       name: Season 1
@@ -563,7 +569,7 @@
     - id: 24
       name: 'S4: Heroes of Busan'
       start_date: 11/08/2026
-      end_date: 12/10/2026
+      end_date: 06/10/2026
       id_chapter: 1
 - skin:
     - id: 1
@@ -20861,3 +20867,201 @@
       id_category_secondary: null
       id_condition: null
       recolor_of: null
+    - id: 2094
+      id_hero: 53
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: D.Mon/MADE_MY_NIGHT.webp
+      rarity: ultra
+      name: Made My Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2095
+      id_hero: 48
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Anran/MADE_MY_NIGHT.webp
+      rarity: legendary
+      name: Made My Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2096
+      id_hero: 51
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Sierra/MADE_MY_NIGHT.webp
+      rarity: legendary
+      name: Made My Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2097
+      id_hero: 10
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Freja/MADE_MY_NIGHT.webp
+      rarity: legendary
+      name: Made My Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2098
+      id_hero: 50
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Mizuki/MADE_MY_NIGHT.webp
+      rarity: legendary
+      name: Made My Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2099
+      id_hero: 23
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Moira/MADE_MY_NIGHT.webp
+      rarity: ultra
+      name: Made My Night
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2100
+      id_hero: 7
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: D.Va/PUREFLOW.webp
+      rarity: legendary
+      name: Pureflow
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1545
+    - id: 2101
+      id_hero: 2
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Ashe/PUREFLOW.webp
+      rarity: legendary
+      name: Pureflow
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 615
+    - id: 2102
+      id_hero: 17
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Juno/PUREFLOW.webp
+      rarity: legendary
+      name: Pureflow
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1554
+    - id: 2103
+      id_hero: 22
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Mercy/PUREFLOW.webp
+      rarity: legendary
+      name: Pureflow
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1560
+    - id: 2104
+      id_hero: 14
+      id_category: 15
+      id_season: 24
+      year: null
+      image_url: Illari/PUREFLOW.webp
+      rarity: legendary
+      name: Pureflow
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1553
+    - id: 2105
+      id_hero: 20
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Mauga/ALOHA_PORT-DE-PAIX.webp
+      rarity: legendary
+      name: Aloha Port-de-Paix
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1436
+    - id: 2106
+      id_hero: 7
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: D.Va/SPLASH_SURFER.webp
+      rarity: legendary
+      name: Splash Surfer
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 64
+    - id: 2107
+      id_hero: 38
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Widowmaker/DEATHSTALKER.webp
+      rarity: legendary
+      name: Deathstalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 139
+    - id: 2108
+      id_hero: 37
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Venture/ABYSSWALKER.webp
+      rarity: legendary
+      name: Abysswalker
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1849
+    - id: 2109
+      id_hero: 17
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Juno/SPLASH_TEO_MINH
+      rarity: legendary
+      name: Splash Teo Minh
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1610
+    - id: 2110
+      id_hero: 19
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Lucio/URBAN_HOPPER
+      rarity: legendary
+      name: Urban Hopper
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1645
+    - id: 2111
+      id_hero: 3
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Baptiste/VENOM
+      rarity: legendary
+      name: Venom
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: 1412
