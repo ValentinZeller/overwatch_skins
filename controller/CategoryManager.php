@@ -37,19 +37,14 @@
         return $result;
     }
 
-    public function getCategoryById($num) {
-      $req = "SELECT * FROM category WHERE id = '".$num."'";
+    public function getCategoryById($id) {
+      $req = "SELECT category.id, category.name as category_name FROM category WHERE category.id = :id ";
       $stmt = $this->_db->prepare($req);
+      $stmt->bindParam(':id', $id, PDO::PARAM_INT);
       $stmt->execute();
       $stmt->setFetchMode(PDO::FETCH_ASSOC);
-
-      foreach ($stmt as $value) {
-        $mCategory[] = $value;
-      }
-
-      $category = new Category;
-      $category->hydrate($mCategory[0]);
-      return $category;
+      $stmt->fetchAll();
+      return $stmt;
     }
 
   }

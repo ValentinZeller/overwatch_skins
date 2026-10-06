@@ -1997,3 +1997,44 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2116,19,19,24,null,Lucio/INTERN_ASSISTANT.webp,legendary,Intern Assistant,null,null,null
 2117,33,19,24,null,Sombra/REBEL_LEADER.webp,legendary,Rebel Leader,null,null,null
 2118,34,19,24,null,Symmetra/CHIEF_SCIENTIST.webp,legendary,Chief Scientist,null,null,null
+2119,53,12,25,null,D.Mon/TECH_WITCH.webp,legendary,Tech Witch,null,null,null
+2120,7,12,25,null,D.Va/HEART_OF_VALOR.webp,legendary,Heart of Valor,null,null,null
+2121,46,12,25,null,Domina/ADVANCED_WEARABLES.webp,legendary,Advanced Wearables,null,null,null
+2122,15,3,25,null,Junker_Queen/BAT_EMPRESS.webp,legendary,Bat Empress,null,null,null
+2123,26,12,25,null,Ramattra/MALUS.webp,ultra,Malus,null,null,null
+2124,28,5,25,null,Reinhardt/INFLATABLE.webp,legendary,Inflatable,null,null,null
+2125,28,15,25,null,Reinhardt/IRON.webp,legendary,Iron,null,null,null
+2126,48,15,25,null,Anran/CHA_HAE-IN.webp,legendary,Cha Hea-In,null,null,null
+2127,48,12,25,null,Anran/HEART_OF_TENACITY.webp,legendary,Heart of Tenacity,null,null,null
+2128,2,3,25,null,Ashe/GHOSTLY_BELLE.webp,legendary,Ghostly Belle,null,null,null
+2129,2,12,25,null,Ashe/PRESTIGE_INFLUENCE.webp,legendary,Prestige Influence,null,null,null
+2130,4,3,25,null,Bastion/SKELLY.webp,epic,Skelly,null,null,null
+2131,6,12,25,null,Cassidy/PRESTIGE_INFLUENCE.webp,legendary,Prestige Influence,null,null,null
+2132,47,18,25,null,Emre/HAUNTED.webp,epic,Haunted,null,9,null
+2133,11,15,25,null,Genji/SUNG_JINWOO.webp,legendary,Sung Jinwoo,null,null,null
+2134,21,3,25,null,Mei/GHOST_BRIDE.webp,legendary,Ghost Bride,null,null,null
+2135,27,15,25,null,Reaper/IGRIS.webp,legendary,Igris,null,null,null
+2136,52,12,25,null,Shion/TECH_WITCH.webp,legendary,Tech Witch,null,null,null
+2137,51,12,25,null,Sierra/TECH_WITCH.webp,legendary,Tech Witch,null,null,null
+2138,32,3,25,null,Soldier_76/JACK_O_RIPPER.webp,legendary,Jack O' Ripper,null,null,null
+2139,34,3,25,null,Symmetra/SPECTRAL_SHROUD.webp,epic,Spectral Shroud,null,null,null
+2140,37,18,25,null,Venture/GHOST_VOYAGER.webp,legendary,Ghost Voyager,null,10,null
+2141,54,18,25,null,Doctrine/CRIMSON_REGENT.webp,legendary,Crimson Regent,null,10,null
+2142,1,12,25,null,Ana/ADVANCED_WEARABLES.webp,legendary,Advanced Wearables,null,null,null
+2143,5,3,25,null,Brigitte/WITCHING_HOUR.webp,epic,Witching Hour,null,null,null
+2144,14,12,25,null,Illari/ECLYPSE.webp,legendary,Eclypse,null,null,null
+2145,49,12,25,null,Jetpack_Cat/TECH_WITCH.webp,legendary,Tech Witch,null,null,null
+2146,17,12,25,null,Juno/TECH_WITCH.webp,legendary,Tech Witch,null,null,null
+2147,18,15,25,null,Lifeweaver/CHOI_JONG-IN.webp,legendary,Choi Jong-In,null,null,null
+2148,18,12,25,null,Lifeweaver/WOEBRINGER.webp,legendary,Woebringer,null,null,null
+2149,19,17,25,null,Lucio/STADIUM_ALL-STAR.webp,legendary,Stadium All-Star,null,null,null
+2150,22,12,25,null,Mercy/HEART_OF_MERCY.webp,legendary,Heart of Mercy,null,null,null
+2151,50,12,25,null,Mizuki/ADVANCED_WEARABLES.webp,legendary,Advanced Wearables,null,null,null
+2152,23,12,25,null,Moira/ADVANCED_WEARABLES.webp,legendary,Advanced Wearables,null,null,null
+2153,44,8,25,null,Wuyang/DRAGON_SHAOXIA.webp,mythic,Dragon Shaoxia,null,null,null
+2154,44,9,25,null,Wuyang/EMBER_SENTRY.webp,legendary,Ember Sentry,null,null,1774
+2155,42,3,25,null,Zenyatta/AUTUMN_FOX.webp,legendary,Autumn Fox,null,null,null
+2156,54,16,null,null,Doctrine/BHURUU.webp,rare,Bhuruu,null,null,null
+2157,54,16,null,null,Doctrine/GIRINHI.webp,rare,Girinhi,null,null,null
+2158,54,16,null,null,Doctrine/PEPURU.webp,rare,Pepuru,null,null,null
+2159,54,16,null,null,Doctrine/YERO.webp,rare,Yero,null,null,null

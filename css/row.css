@@ -16,13 +16,17 @@
         background-position: 50% 0%;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .zoom {
         background-size: 300%;
         background-position: 50% 15%;
     }
 
     .category {
-        height: var(--height)/2;
+        height: var(--height);
         background-repeat: no-repeat;
         background-size: contain;
         background-attachment: scroll;

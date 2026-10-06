@@ -29,18 +29,32 @@ if (!$skin) {
 ?>
 <body>
     <div class="skin-information">
-        <img src="image/hero/<?= $skin['image_url'] ?>" alt="<?= $skin['skin_name'] ?>">
-        <h1><?= $skin['skin_name'] ?></h1>
-        <p>Hero: <a href="hero.php?id=<?= $skin['id_hero'] ?>" target="_blank"><?= $skin['hero_name'] ?></a></p>
-        <p>Category: <?= $skin['category_name'] ?></p>
-        <p>Rarity: <?= $skin['rarity'] ?></p>
-        <?php if (!empty($skin['recolor_of'])): ?>
-            <p>Recolor of: <a href="skin.php?id=<?= $skin['recolor_of'] ?>" target="_blank"><?= $skin['recolor_name'] ?></a></p>
-        <?php endif; ?>
-        <?php if (!empty($skin['condition_name'])): ?>
-            <p>Special Condition: <?= $skin['condition_name'] ?></p>
-        <?php endif; ?>
+        <div class="img_slot">
+            <a target="_blank" href="image/hero/<?= $skin['image_url'] ?>"><img src="image/hero/<?= $skin['image_url'] ?>" alt="<?= $skin['skin_name'] ?>"></a>
+        </div>
+        <section>
+            <h1><?= $skin['skin_name'] ?></h1>
+            <p>Hero: <a href="hero.php?id=<?= $skin['id_hero'] ?>" target="_blank"><?= $skin['hero_name'] ?></a></p>
+            <p>Category: <a href="category?id=<?= $skin['id_category'] ?>"><?= $skin['category_name'] ?></a></p>
+            <p>Rarity: <span class="<?= $skin['rarity'] ?>-skin"><?= $skin['rarity'] ?></span></p>
+            <?php if ((!empty($skin['chapter_name']))): ?>
+                <p><?= $skin['chapter_name'] ?></p>
+            <?php endif;?>
+            <?php if (!empty($skin['season_name'])): ?>
+                <p><?= $skin['season_name'] ?></p>
+            <?php endif; ?>
+            <?php if (!empty($skin['year'])): ?>
+                <p>Year: <?= $skin['year'] ?></p>
+            <?php endif; ?>
+            <?php if (!empty($skin['recolor_of'])): ?>
+                <p>Recolor of: <a href="skin.php?id=<?= $skin['recolor_of'] ?>" target="_blank"><?= $skin['recolor_name'] ?></a></p>
+            <?php endif; ?>
+            <?php if (!empty($skin['condition_name'])): ?>
+                <p>Special Condition: <?= $skin['condition_name'] ?></p>
+            <?php endif; ?>
+            <a href="index.php" class="back-home">← Back to Home</a>
+        </section>
     </div>
-    <a href="index.php" class="back-home">← Back to Home</a>
+
 </body>
 </html>

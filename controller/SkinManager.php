@@ -46,18 +46,6 @@
       $stmt->execute();
       return $stmt;
     }
-    
-    public function getBaseSkin() {
-        $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity AS rarity, skin.image_url, skin.rarity AS category_column, category.name AS category_name, skin.recolor_of
-                FROM skin
-                LEFT JOIN hero ON skin.id_hero = hero.id
-                LEFT JOIN category ON skin.id_category = category.id
-                WHERE skin.id_category = 16
-                ORDER BY hero.name, rarity, skin.name';
-        $stmt = $this->_db->prepare($req);
-        $stmt->execute();
-        return $stmt;
-    }
 
     public function getSeasonSkin() {
                 $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, season.name AS category_column, skin.id_season, skin.recolor_of, category.icon_url as category_icon_url
@@ -125,8 +113,6 @@
             return $result;
         }
         foreach ($array as $item) {
-            if ($item['rarity'] === 'legendary') {
-            }
             if ($item['rarity'] === $rarity) {
                 $result[] = $item;
             }
@@ -175,11 +161,13 @@
     }
 
     public function getSkinById($id) {
-        $req = 'SELECT hero.name AS hero_name, skin.id_hero, skin.name AS skin_name, skin.rarity, skin.image_url, category.name AS category_name, skin.recolor_of as recolor_of, skin2.name AS recolor_name, condition_special.name AS condition_name
+        $req = 'SELECT hero.name AS hero_name, skin.id_hero, skin.name AS skin_name, skin.year, skin.rarity, season.name as season_name, chapter.name as chapter_name, skin.image_url,skin.id_category, category.name AS category_name, skin.recolor_of as recolor_of, skin2.name AS recolor_name, condition_special.name AS condition_name
               FROM skin
               LEFT JOIN hero ON skin.id_hero = hero.id
               LEFT JOIN category ON skin.id_category = category.id
               LEFT JOIN skin AS skin2 ON skin.recolor_of = skin2.id
+              LEFT JOIN season ON skin.id_season = season.id
+              LEFT JOIN chapter ON season.id_chapter = chapter.id
               LEFT JOIN condition_special ON skin.id_condition = condition_special.id
               WHERE skin.id = :id
               ORDER BY hero.name, skin.name';
@@ -198,6 +186,19 @@
               ORDER BY skin.rarity DESC, skin.name';
         $stmt = $this->_db->prepare($req);
         $stmt->bindParam(':heroId', $heroId, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt;
+    }
+
+        public function getSkinByCategoryId($categoryId) {
+        $req = 'SELECT skin.id, hero.name AS hero_name, skin.name AS skin_name, skin.rarity AS rarity, skin.image_url, skin.rarity AS category_column, category.name AS category_name, skin.recolor_of
+                FROM skin
+                LEFT JOIN hero ON skin.id_hero = hero.id
+                LEFT JOIN category ON skin.id_category = category.id
+                WHERE skin.id_category = :categoryId
+                ORDER BY hero.name, rarity, skin.name';
+        $stmt = $this->_db->prepare($req);
+        $stmt->bindParam(':categoryId', $categoryId, PDO::PARAM_INT);
         $stmt->execute();
         return $stmt;
     }

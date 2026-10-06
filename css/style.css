@@ -91,17 +91,25 @@
 
 .skin-information {
   font-size: 20px;
-  width: 100%;
-  max-width: 1200px;
+  text-align: center;
 
   p,
   h1 {
     margin-left: 10px;
-    text-align: center;
+    margin-top: 1px;
+  }
+
+  section {
+    background-color: rgba(44, 49, 59, 0.262);
+    display: inline-block;
+    padding: 1%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
     object-position: 50% 10%;
   }

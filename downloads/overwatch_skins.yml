@@ -571,6 +571,11 @@
       start_date: 11/08/2026
       end_date: 06/10/2026
       id_chapter: 1
+    - id: 25
+      name: 'S5: A Grim Doctrine'
+      start_date: 06/10/2026
+      end_date: 08/12/2026
+      id_chapter: 1
 - skin:
     - id: 1
       id_hero: 1
@@ -21037,7 +21042,7 @@
       id_category: 19
       id_season: 24
       year: null
-      image_url: Juno/SPLASH_TEO_MINH
+      image_url: Juno/SPLASH_TEO_MINH.webp
       rarity: legendary
       name: Splash Teo Minh
       id_category_secondary: null
@@ -21048,7 +21053,7 @@
       id_category: 19
       id_season: 24
       year: null
-      image_url: Lucio/URBAN_HOPPER
+      image_url: Lucio/URBAN_HOPPER.webp
       rarity: legendary
       name: Urban Hopper
       id_category_secondary: null
@@ -21059,9 +21064,86 @@
       id_category: 19
       id_season: 24
       year: null
-      image_url: Baptiste/VENOM
+      image_url: Baptiste/KAISEKI.webp
       rarity: legendary
-      name: Venom
+      name: Kaiseki
       id_category_secondary: null
       id_condition: null
       recolor_of: 1412
+    - id: 2112
+      id_hero: 25
+      id_category: 19
+      id_season: 23
+      year: null
+      image_url: Pharah/CAIRO_DETECTIVE.webp
+      rarity: evolution
+      name: Cairo Detective
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2113
+      id_hero: 49
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Jetpack_Cat/DREAMY_CUTY_KITTEN.webp
+      rarity: evolution
+      name: Dreamy Cuty Kitten
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2114
+      id_hero: 46
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Domina/PRESIDENT.webp
+      rarity: legendary
+      name: President
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2115
+      id_hero: 18
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Lifeweaver/ASSISTANT_RESEARCHER.webp
+      rarity: legendary
+      name: Assistant Researcher
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2116
+      id_hero: 19
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Lucio/INTERN_ASSISTANT.webp
+      rarity: legendary
+      name: Intern Assistant
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2117
+      id_hero: 33
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Sombra/REBEL_LEADER.webp
+      rarity: legendary
+      name: Rebel Leader
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2118
+      id_hero: 34
+      id_category: 19
+      id_season: 24
+      year: null
+      image_url: Symmetra/CHIEF_SCIENTIST.webp
+      rarity: legendary
+      name: Chief Scientist
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null

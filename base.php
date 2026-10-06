@@ -2,7 +2,8 @@
 require_once('function.php');
 
 echo template('template/main.php', [
-    'version' => 'base'
+    'version' => 'category',
+    'id_category' => 16
 ]);
 
 ?>

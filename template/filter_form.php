@@ -5,7 +5,7 @@ $legacySeasonList = [];
 $chapteredSeasonList = [];
 $roleList = ['tank','damage','support'];
 
-if ($version != 'base') {
+if ($version != 'category') {
     foreach ($categoryList as $category) {
         if ($category['display_main_order'] == null && $category['name'] != 'Exclusive') {
             $legacyCategoryList[] = $category;
@@ -38,7 +38,7 @@ if ($version == 'main' || $version == null || $version == 'season') {
                 </label>
             <?php endforeach; ?>
         </div>
-        <?php if ($version != 'base'): ?>
+        <?php if ($version != 'category'): ?>
             <div class="category-filter filter-section">
                 <?php if ($version == 'legacy' || $version == null): ?>
                     <details name="category" <?= ($version == 'legacy') ? 'open' : '' ?>>
