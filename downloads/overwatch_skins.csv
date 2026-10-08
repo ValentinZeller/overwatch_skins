@@ -2040,6 +2040,6 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2159,54,16,null,null,Doctrine/YERO.webp,rare,Yero,null,null,null
 2160,52,19,25,null,Shion/ARBITER.webp,evolution,Arbiter,null,null,null
 2161,47,19,25,null,Emre/CONSUL.webp,legendary,Consul,null,null,null
-2162,43,19,25,null,Kiriko/HIGH_PRIEST,legendary,High Priest,null,null,null
-2163,53,19,25,null,D.Mon/HOLY_MAIDEN,legendary,Holy Maiden,null,null,null
-2164,27,19,25,null,Reaper/PURGE_OFFICIALS,legendary,Purge Officials,null,null,null
+2162,43,19,25,null,Kiriko/HIGH_PRIEST.webp,legendary,High Priest,null,null,null
+2163,53,19,25,null,D.Mon/HOLY_MAIDEN.webp,legendary,Holy Maiden,null,null,null
+2164,27,19,25,null,Reaper/PURGE_OFFICIALS.webp,legendary,Purge Officials,null,null,null

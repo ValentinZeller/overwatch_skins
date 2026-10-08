@@ -21598,3 +21598,58 @@
       id_category_secondary: null
       id_condition: null
       recolor_of: null
+    - id: 2160
+      id_hero: 52
+      id_category: 19
+      id_season: 25
+      year: null
+      image_url: Shion/ARBITER.webp
+      rarity: evolution
+      name: Arbiter
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2161
+      id_hero: 47
+      id_category: 19
+      id_season: 25
+      year: null
+      image_url: Emre/CONSUL.webp
+      rarity: legendary
+      name: Consul
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2162
+      id_hero: 43
+      id_category: 19
+      id_season: 25
+      year: null
+      image_url: Kiriko/HIGH_PRIEST
+      rarity: legendary
+      name: High Priest
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2163
+      id_hero: 53
+      id_category: 19
+      id_season: 25
+      year: null
+      image_url: D.Mon/HOLY_MAIDEN
+      rarity: legendary
+      name: Holy Maiden
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
+    - id: 2164
+      id_hero: 27
+      id_category: 19
+      id_season: 25
+      year: null
+      image_url: Reaper/PURGE_OFFICIALS
+      rarity: legendary
+      name: Purge Officials
+      id_category_secondary: null
+      id_condition: null
+      recolor_of: null
