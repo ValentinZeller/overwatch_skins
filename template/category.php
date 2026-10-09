@@ -8,7 +8,7 @@
             $category['name'] = explode('-',$category['start_date'])[0] . ' - ' . $category['name'];
         }
         ?>
-        <a href="category?id=<?= $category['id'] ?>">
+        <a href="category?id=<?= $category['id'] < 20 ? $category['id'] : rand(1, 19) ?>">
         <?php if (isset($category['icon_url'])  && $category['icon_url']): ?>
             <div title="<?= $category['name'] ?>" data-category="<?= $category['name'] ?>" class="item category" style="background-image: url('image/category/<?= $category['icon_url'] ?>'); width: calc(var(--width) * <?= $nbColumn ?>);"></div>
         <?php else: ?>

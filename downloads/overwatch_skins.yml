@@ -21625,7 +21625,7 @@
       id_category: 19
       id_season: 25
       year: null
-      image_url: Kiriko/HIGH_PRIEST
+      image_url: Kiriko/HIGH_PRIEST.webp
       rarity: legendary
       name: High Priest
       id_category_secondary: null
@@ -21636,7 +21636,7 @@
       id_category: 19
       id_season: 25
       year: null
-      image_url: D.Mon/HOLY_MAIDEN
+      image_url: D.Mon/HOLY_MAIDEN.webp
       rarity: legendary
       name: Holy Maiden
       id_category_secondary: null
@@ -21647,7 +21647,7 @@
       id_category: 19
       id_season: 25
       year: null
-      image_url: Reaper/PURGE_OFFICIALS
+      image_url: Reaper/PURGE_OFFICIALS.webp
       rarity: legendary
       name: Purge Officials
       id_category_secondary: null

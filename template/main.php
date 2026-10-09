@@ -40,7 +40,8 @@
     <?php
     echo template('template/category.php', [
         'maxSkinCategory' => $maxSkinCategory,
-        'categories' => $columnCategories
+        'categories' => $columnCategories,
+        'version' => $version
     ]);
 
     foreach ($heroes as $hero) {

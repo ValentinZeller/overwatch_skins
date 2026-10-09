@@ -2043,3 +2043,4 @@ id,id_hero,id_category,id_season,year,image_url,rarity,name,id_category_secondar
 2162,43,19,25,null,Kiriko/HIGH_PRIEST.webp,legendary,High Priest,null,null,null
 2163,53,19,25,null,D.Mon/HOLY_MAIDEN.webp,legendary,Holy Maiden,null,null,null
 2164,27,19,25,null,Reaper/PURGE_OFFICIALS.webp,legendary,Purge Officials,null,null,null
+2165,6,19,25,null,Cassidy/GHOST_GUARD.webp,legendary,Ghost Guard,null,null,250

@@ -873,7 +873,7 @@
 		<key Table="skin" Non_unique="1" Key_name="id_category_secondary" Seq_in_index="1" Column_name="id_category_secondary" Collation="A" Cardinality="9" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="id_condition" Seq_in_index="1" Column_name="id_condition" Collation="A" Cardinality="14" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
 		<key Table="skin" Non_unique="1" Key_name="recolor_of_skin" Seq_in_index="1" Column_name="recolor_of" Collation="A" Cardinality="155" Null="YES" Index_type="BTREE" Comment="" Index_comment="" Visible="YES" />
-		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1794" Avg_row_length="91" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2165" Create_time="2026-07-19 18:39:22" Update_time="2026-10-08 13:06:53" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
+		<options Name="skin" Engine="InnoDB" Version="10" Row_format="Dynamic" Rows="1795" Avg_row_length="91" Data_length="163840" Max_data_length="0" Index_length="376832" Data_free="0" Auto_increment="2166" Create_time="2026-07-19 18:39:22" Update_time="2026-10-09 13:12:48" Collation="utf8mb4_0900_ai_ci" Create_options="" Comment="" />
 	</table_structure>
 	<table_data name="skin">
 	<row>
@@ -25783,6 +25783,19 @@
 		<field name="id_category_secondary" xsi:nil="true" />
 		<field name="id_condition" xsi:nil="true" />
 		<field name="recolor_of" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2165</field>
+		<field name="id_hero">6</field>
+		<field name="id_category">19</field>
+		<field name="id_season">25</field>
+		<field name="year" xsi:nil="true" />
+		<field name="image_url">Cassidy/GHOST_GUARD.webp</field>
+		<field name="rarity">legendary</field>
+		<field name="name">Ghost Guard</field>
+		<field name="id_category_secondary" xsi:nil="true" />
+		<field name="id_condition" xsi:nil="true" />
+		<field name="recolor_of">250</field>
 	</row>
 	</table_data>
 </database>

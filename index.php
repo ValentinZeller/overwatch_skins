@@ -23,7 +23,7 @@
     <?php include('template/hero_selection.php') ?>
     <p>Visualization of skins distribution in Overwatch with settings and filters to customize the visual.</p>
     <p>Report issues or suggest features on <a href="https://github.com/ValentinZeller/overwatch_skins/issues">GitHub</a></p>
-    <p>Last update: 08/10/2026</p>
+    <p>Last update: 09/10/2026 - Nexon Cassidy Recolor</p>
     <footer>
         <p>Created by <a href="https://github.com/ValentinZeller">Foxy_Jr</a></p>
     </footer>
