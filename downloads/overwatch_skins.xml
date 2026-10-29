@@ -5,7 +5,7 @@
 - https://www.phpmyadmin.net
 -
 - Hôte : 127.0.0.1:3306
-- Généré le : lun. 26 oct. 2026 à 14:16
+- Généré le : jeu. 29 oct. 2026 à 20:17
 - Version du serveur : 9.7.2
 - Version de PHP : 8.5.12
 -->
@@ -93,7 +93,7 @@
                   CONSTRAINT `skin_hero` FOREIGN KEY (`id_hero`) REFERENCES `hero` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
                   CONSTRAINT `skin_ibfk_1` FOREIGN KEY (`recolor_of`) REFERENCES `skin` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
                   CONSTRAINT `skin_season` FOREIGN KEY (`id_season`) REFERENCES `season` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=2170 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+                ) ENGINE=InnoDB AUTO_INCREMENT=2171 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -25877,6 +25877,19 @@
             <column name="id_category_secondary">NULL</column>
             <column name="id_condition">NULL</column>
             <column name="recolor_of">143</column>
+        </table>
+        <table name="skin">
+            <column name="id">2170</column>
+            <column name="id_hero">8</column>
+            <column name="id_category">16</column>
+            <column name="id_season">25</column>
+            <column name="year">NULL</column>
+            <column name="image_url">Doomfist/NEW_EVOLUTION.webp</column>
+            <column name="rarity">common</column>
+            <column name="name">New Evolution</column>
+            <column name="id_category_secondary">NULL</column>
+            <column name="id_condition">NULL</column>
+            <column name="recolor_of">NULL</column>
         </table>
     </database>
 </pma_xml_export>

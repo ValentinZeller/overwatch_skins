@@ -2055,7 +2055,8 @@
 {"id":"2166","id_hero":"23","id_category":"19","id_season":"25","year":null,"image_url":"Moira\/BLOOD_SACRIFICE.webp","rarity":"legendary","name":"Blood Sacrifice","id_category_secondary":null,"id_condition":null,"recolor_of":"268"},
 {"id":"2167","id_hero":"22","id_category":"19","id_season":"25","year":null,"image_url":"Mercy\/CEREMONIAL_ATTIRE.webp","rarity":"legendary","name":"Ceremonial Attire","id_category_secondary":null,"id_condition":null,"recolor_of":"281"},
 {"id":"2168","id_hero":"2","id_category":"19","id_season":"25","year":null,"image_url":"Ashe\/MIDNIGHT_HEROINE.webp","rarity":"legendary","name":"Midnight Heroine","id_category_secondary":null,"id_condition":null,"recolor_of":"273"},
-{"id":"2169","id_hero":"7","id_category":"19","id_season":"25","year":null,"image_url":"D.Va\/FLOWER_SPIRIT_FOX.webp","rarity":"legendary","name":"Flower Spirit Fox","id_category_secondary":null,"id_condition":null,"recolor_of":"143"}
+{"id":"2169","id_hero":"7","id_category":"19","id_season":"25","year":null,"image_url":"D.Va\/FLOWER_SPIRIT_FOX.webp","rarity":"legendary","name":"Flower Spirit Fox","id_category_secondary":null,"id_condition":null,"recolor_of":"143"},
+{"id":"2170","id_hero":"8","id_category":"16","id_season":"25","year":null,"image_url":"Doomfist\/NEW_EVOLUTION.webp","rarity":"common","name":"New Evolution","id_category_secondary":null,"id_condition":null,"recolor_of":null}
 ]
 }
 ]

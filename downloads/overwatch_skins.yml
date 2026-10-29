@@ -23743,4 +23743,16 @@
   id_category_secondary: null
   id_condition: null
   recolor_of: 143
+-
+  id: 2170
+  id_hero: 8
+  id_category: 16
+  id_season: 25
+  year: null
+  image_url: "Doomfist/NEW_EVOLUTION.webp"
+  rarity: "common"
+  name: "New Evolution"
+  id_category_secondary: null
+  id_condition: null
+  recolor_of: null
 ...
